@@ -1,13 +1,13 @@
 {
-  "name": "@veaf/735th_training_airdefense_mission",
+  "name": "@veaf/veaf-demo-mission",
   "version": "1.0.0",
-  "description": "Training mission",
+  "description": "Demonstration mission",
   "main": "",
-  "author": "Couby",
+  "author": "Zip",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VEAF/735th_Training_AirDefense_Mission.git"
+    "url": "git+https://github.com/VEAF/VEAF-Demo-Mission"
   },
   "dependencies": {
     "veaf-mission-creation-tools": "latest"
