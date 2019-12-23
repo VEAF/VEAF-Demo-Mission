@@ -15,13 +15,15 @@
 -- ----------------
 -- load it in a trigger after loading veafCombatZone
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-veafCombatZone.logInfo("Loading configuration")
+if veafCombatZone then 
+	veafCombatZone.logInfo("Loading configuration")
 
-veafCombatZone.AddZone(
-	Zone:new()
-		:setMissionEditorZoneName("combatZoneCrossKobuleti")
-		:setFriendlyName("Cross Kobuleti")
-		:setBriefing("This is a simple mission\n" ..
-		             "You must destroy the comm antenna before 11:30 local time\n" ..
-					 "The other ennemy units are secondary targets\n")
-)
+	veafCombatZone.AddZone(
+		Zone:new()
+			:setMissionEditorZoneName("combatZoneCrossKobuleti")
+			:setFriendlyName("Cross Kobuleti")
+			:setBriefing("This is a simple mission\n" ..
+						 "You must destroy the comm antenna before 11:30 local time\n" ..
+						 "The other ennemy units are secondary targets\n")
+	)
+end
