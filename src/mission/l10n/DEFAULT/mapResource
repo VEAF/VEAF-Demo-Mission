@@ -10,6 +10,7 @@ mapResource =
     ["ResKey_Action_148"] = "CTLD.lua",
     ["ResKey_Action_171"] = "veafCTLDConfig.lua",
     ["ResKey_Action_28"] = "veafMove.lua",
+    ["ResKey_Action_219"] = "veafInterpreter.lua",
     ["ResKey_Action_23"] = "veafSpawn.lua",
     ["ResKey_Action_167"] = "veafSecurity.lua",
     ["ResKey_Action_177"] = "veafCombatZoneConfig.lua",
