@@ -10,7 +10,7 @@ options =
         ["f11_free_camera"] = true,
         ["F2_view_effects"] = 1,
         ["f10_awacs"] = true,
-        ["Coordinate_Display"] = "Lat Long",
+        ["Coordinate_Display"] = "Metric",
         ["accidental_failures"] = false,
         ["autologin"] = true,
         ["force_feedback_enabled"] = false,
@@ -21,10 +21,10 @@ options =
     }, -- end of ["miscellaneous"]
     ["difficulty"] = 
     {
-        ["fuel"] = false,
+        ["fuel"] = true,
         ["compassTape"] = true,
         ["miniHUD"] = false,
-        ["optionsView"] = "optview_allies",
+        ["optionsView"] = "optview_all",
         ["setGlobal"] = false,
         ["avionicsLanguage"] = "english",
         ["cockpitVisualRM"] = true,
@@ -32,11 +32,11 @@ options =
         ["spectatorExternalViews"] = true,
         ["userSnapView"] = true,
         ["iconsTheme"] = "nato",
-        ["weapons"] = false,
+        ["weapons"] = true,
         ["padlock"] = false,
         ["birds"] = 0,
         ["permitCrash"] = false,
-        ["immortal"] = false,
+        ["immortal"] = true,
         ["cockpitStatusBarAllowed"] = true,
         ["wakeTurbulence"] = false,
         ["geffect"] = "realistic",
@@ -45,7 +45,7 @@ options =
         ["radio"] = false,
         ["reports"] = true,
         ["tips"] = true,
-        ["unrestrictedSATNAV"] = false,
+        ["unrestrictedSATNAV"] = true,
         ["easyRadar"] = false,
         ["units"] = "imperial",
         ["externalViews"] = true,
@@ -119,8 +119,8 @@ options =
         }, -- end of ["CA"]
         ["DCS-SRS"] = 
         {
-            ["srsAutoLaunchEnabled"] = true,
-            ["srsOverlayEnabled"] = true,
+            ["srsAutoLaunchEnabled"] = false,
+            ["srsOverlayEnabled"] = false,
         }, -- end of ["DCS-SRS"]
         ["Yak52"] = 
         {

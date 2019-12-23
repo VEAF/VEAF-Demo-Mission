@@ -17,8 +17,11 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 veafCombatZone.logInfo("Loading configuration")
 
-veafCombatZone.addZone(
+veafCombatZone.AddZone(
 	Zone:new()
 		:setMissionEditorZoneName("combatZoneCrossKobuleti")
 		:setFriendlyName("Cross Kobuleti")
+		:setBriefing("This is a simple mission\n" ..
+		             "You must destroy the comm antenna before 11:30 local time\n" ..
+					 "The other ennemy units are secondary targets\n")
 )
