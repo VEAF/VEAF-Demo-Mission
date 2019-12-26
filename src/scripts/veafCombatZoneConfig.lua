@@ -19,7 +19,7 @@ if veafCombatZone then
 	veafCombatZone.logInfo("Loading configuration")
 
 	veafCombatZone.AddZone(
-		Zone:new()
+		VeafCombatZone.new()
 			:setMissionEditorZoneName("combatZone_CrossKobuleti")
 			:setFriendlyName("Cross Kobuleti")
 			:setBriefing("This is a simple mission\n" ..
@@ -27,9 +27,9 @@ if veafCombatZone then
 						 "The other ennemy units are secondary targets\n")
 	)
 	veafCombatZone.AddZone(
-		Zone:new()
+		VeafCombatZone.new()
 			:setMissionEditorZoneName("combatZone_Batumi")
 			:setFriendlyName("Batumi")
-			--:setBriefing("This is a second test mission")
+			:setBriefing("This is a second test mission")
 	)
 end
