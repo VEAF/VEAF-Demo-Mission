@@ -5,8 +5,8 @@ mission =
     }, -- end of ["requiredModules"]
     ["date"] = 
     {
-        ["Day"] = 23,
         ["Year"] = 2011,
+        ["Day"] = 23,
         ["Month"] = 12,
     }, -- end of ["date"]
     ["trig"] = 
@@ -83,7 +83,7 @@ mission =
             }, -- end of ["func"]
         }, -- end of ["red"]
     }, -- end of ["result"]
-    ["maxDictId"] = 247,
+    ["maxDictId"] = 250,
     ["pictureFileNameN"] = 
     {
     }, -- end of ["pictureFileNameN"]
@@ -131,8 +131,8 @@ mission =
                     ["zone"] = 166,
                 }, -- end of [1]
             }, -- end of ["rules"]
-            ["side"] = "OFFLINE",
             ["score"] = 100,
+            ["side"] = "OFFLINE",
             ["predicate"] = "score",
             ["comment"] = "",
         }, -- end of [1]
@@ -147,19 +147,23 @@ mission =
                 ["speed"] = 15,
                 ["dir"] = 23,
             }, -- end of ["at8000"]
-            ["atGround"] = 
-            {
-                ["speed"] = 2,
-                ["dir"] = 275,
-            }, -- end of ["atGround"]
             ["at2000"] = 
             {
                 ["speed"] = 8,
                 ["dir"] = 53,
             }, -- end of ["at2000"]
+            ["atGround"] = 
+            {
+                ["speed"] = 2,
+                ["dir"] = 275,
+            }, -- end of ["atGround"]
         }, -- end of ["wind"]
         ["enable_fog"] = true,
-        ["dust_density"] = 0,
+        ["fog"] = 
+        {
+            ["thickness"] = 660,
+            ["visibility"] = 1350,
+        }, -- end of ["fog"]
         ["season"] = 
         {
             ["temperature"] = 10.39999961853,
@@ -197,17 +201,13 @@ mission =
             }, -- end of [3]
         }, -- end of ["cyclones"]
         ["name"] = "VEAF - realistic 3 cyclones and fog in Winter",
-        ["fog"] = 
-        {
-            ["thickness"] = 660,
-            ["visibility"] = 1350,
-        }, -- end of ["fog"]
+        ["dust_density"] = 0,
+        ["enable_dust"] = false,
+        ["groundTurbulence"] = 0.9144,
         ["visibility"] = 
         {
             ["distance"] = 80000,
         }, -- end of ["visibility"]
-        ["groundTurbulence"] = 0.9144,
-        ["enable_dust"] = false,
         ["clouds"] = 
         {
             ["thickness"] = 1600,
@@ -238,42 +238,37 @@ mission =
                 {
                 }, -- end of ["properties"]
                 ["hidden"] = false,
-                ["name"] = "combatZoneCrossKobuleti",
+                ["name"] = "combatZone_CrossKobuleti",
             }, -- end of [1]
+            [2] = 
+            {
+                ["y"] = 617257.10828621,
+                ["radius"] = 3000,
+                ["zoneId"] = 332,
+                ["x"] = -356394.27025756,
+                ["color"] = 
+                {
+                    [1] = 1,
+                    [2] = 1,
+                    [3] = 1,
+                    [4] = 0.15,
+                }, -- end of ["color"]
+                ["properties"] = 
+                {
+                }, -- end of ["properties"]
+                ["hidden"] = false,
+                ["name"] = "combatZone_Batumi",
+            }, -- end of [2]
         }, -- end of ["zones"]
     }, -- end of ["triggers"]
     ["map"] = 
     {
-        ["centerY"] = 631904.91969349,
-        ["zoom"] = 5674.8491881319,
-        ["centerX"] = -328344.21656825,
+        ["centerY"] = 635849.80980534,
+        ["zoom"] = 83075.456110025,
+        ["centerX"] = -331874.62834816,
     }, -- end of ["map"]
     ["coalitions"] = 
     {
-        ["blue"] = 
-        {
-            [1] = 21,
-            [2] = 11,
-            [3] = 8,
-            [4] = 28,
-            [5] = 26,
-            [6] = 13,
-            [7] = 5,
-            [8] = 16,
-            [9] = 6,
-            [10] = 15,
-            [11] = 20,
-            [12] = 12,
-            [13] = 40,
-            [14] = 45,
-            [15] = 9,
-            [16] = 46,
-            [17] = 10,
-            [18] = 3,
-            [19] = 4,
-            [20] = 1,
-            [21] = 2,
-        }, -- end of ["blue"]
         ["neutrals"] = 
         {
             [1] = 70,
@@ -321,6 +316,30 @@ mission =
             [43] = 48,
             [44] = 67,
         }, -- end of ["neutrals"]
+        ["blue"] = 
+        {
+            [1] = 21,
+            [2] = 11,
+            [3] = 8,
+            [4] = 28,
+            [5] = 26,
+            [6] = 13,
+            [7] = 5,
+            [8] = 16,
+            [9] = 6,
+            [10] = 15,
+            [11] = 20,
+            [12] = 12,
+            [13] = 40,
+            [14] = 45,
+            [15] = 9,
+            [16] = 46,
+            [17] = 10,
+            [18] = 3,
+            [19] = 4,
+            [20] = 1,
+            [21] = 2,
+        }, -- end of ["blue"]
         ["red"] = 
         {
             [1] = 18,
@@ -422,10 +441,10 @@ mission =
                                                     {
                                                         [1] = 
                                                         {
-                                                            ["enabled"] = true,
+                                                            ["number"] = 1,
                                                             ["key"] = "CAS",
                                                             ["id"] = "EngageTargets",
-                                                            ["number"] = 1,
+                                                            ["enabled"] = true,
                                                             ["auto"] = true,
                                                             ["params"] = 
                                                             {
@@ -737,11 +756,11 @@ mission =
                                                 ["y"] = 630898.23019507,
                                                 ["x"] = -327804.01297649,
                                             }, -- end of [18]
-                                            [31] = 
+                                            [15] = 
                                             {
-                                                ["y"] = 631041.46493842,
-                                                ["x"] = -327707.11336981,
-                                            }, -- end of [31]
+                                                ["y"] = 630890.67177228,
+                                                ["x"] = -327827.78403267,
+                                            }, -- end of [15]
                                             [5] = 
                                             {
                                                 ["y"] = 630920.88201043,
@@ -797,11 +816,11 @@ mission =
                                                 ["y"] = 630917.71814282,
                                                 ["x"] = -327775.15067121,
                                             }, -- end of [24]
-                                            [19] = 
+                                            [23] = 
                                             {
-                                                ["y"] = 630902.76758075,
-                                                ["x"] = -327795.10585145,
-                                            }, -- end of [19]
+                                                ["y"] = 630914.33535772,
+                                                ["x"] = -327778.83216419,
+                                            }, -- end of [23]
                                             [25] = 
                                             {
                                                 ["y"] = 630924.97341209,
@@ -817,16 +836,16 @@ mission =
                                                 ["y"] = 630932.76263228,
                                                 ["x"] = -327762.00596978,
                                             }, -- end of [26]
-                                            [27] = 
-                                            {
-                                                ["y"] = 630940.95180675,
-                                                ["x"] = -327756.26920836,
-                                            }, -- end of [27]
                                             [7] = 
                                             {
                                                 ["y"] = 630916.78466996,
                                                 ["x"] = -327974.25093238,
                                             }, -- end of [7]
+                                            [27] = 
+                                            {
+                                                ["y"] = 630940.95180675,
+                                                ["x"] = -327756.26920836,
+                                            }, -- end of [27]
                                             [14] = 
                                             {
                                                 ["y"] = 630889.84095137,
@@ -837,21 +856,21 @@ mission =
                                                 ["y"] = 630953.75211228,
                                                 ["x"] = -327748.45427491,
                                             }, -- end of [28]
-                                            [23] = 
+                                            [19] = 
                                             {
-                                                ["y"] = 630914.33535772,
-                                                ["x"] = -327778.83216419,
-                                            }, -- end of [23]
+                                                ["y"] = 630902.76758075,
+                                                ["x"] = -327795.10585145,
+                                            }, -- end of [19]
                                             [29] = 
                                             {
                                                 ["y"] = 630971.40367803,
                                                 ["x"] = -327739.05572174,
                                             }, -- end of [29]
-                                            [15] = 
+                                            [31] = 
                                             {
-                                                ["y"] = 630890.67177228,
-                                                ["x"] = -327827.78403267,
-                                            }, -- end of [15]
+                                                ["y"] = 631041.46493842,
+                                                ["x"] = -327707.11336981,
+                                            }, -- end of [31]
                                         }, -- end of [2]
                                         [3] = 
                                         {
@@ -895,11 +914,11 @@ mission =
                                                 ["y"] = 631529.40474492,
                                                 ["x"] = -327590.94981497,
                                             }, -- end of [18]
-                                            [31] = 
+                                            [15] = 
                                             {
-                                                ["y"] = 631571.25187801,
-                                                ["x"] = -327696.77602857,
-                                            }, -- end of [31]
+                                                ["y"] = 631505.22886723,
+                                                ["x"] = -327573.2994605,
+                                            }, -- end of [15]
                                             [5] = 
                                             {
                                                 ["y"] = 631398.12250224,
@@ -955,11 +974,11 @@ mission =
                                                 ["y"] = 631563.68991821,
                                                 ["x"] = -327639.62057737,
                                             }, -- end of [24]
-                                            [19] = 
+                                            [23] = 
                                             {
-                                                ["y"] = 631536.51921066,
-                                                ["x"] = -327597.97420313,
-                                            }, -- end of [19]
+                                                ["y"] = 631559.51879577,
+                                                ["x"] = -327630.53480766,
+                                            }, -- end of [23]
                                             [25] = 
                                             {
                                                 ["y"] = 631567.10069887,
@@ -975,16 +994,16 @@ mission =
                                                 ["y"] = 631569.65678307,
                                                 ["x"] = -327658.68160055,
                                             }, -- end of [26]
-                                            [27] = 
-                                            {
-                                                ["y"] = 631570.58323528,
-                                                ["x"] = -327663.59423972,
-                                            }, -- end of [27]
                                             [7] = 
                                             {
                                                 ["y"] = 631427.77195252,
                                                 ["x"] = -327559.0901259,
                                             }, -- end of [7]
+                                            [27] = 
+                                            {
+                                                ["y"] = 631570.58323528,
+                                                ["x"] = -327663.59423972,
+                                            }, -- end of [27]
                                             [14] = 
                                             {
                                                 ["y"] = 631496.31144101,
@@ -995,21 +1014,21 @@ mission =
                                                 ["y"] = 631571.73701991,
                                                 ["x"] = -327673.52416787,
                                             }, -- end of [28]
-                                            [23] = 
+                                            [19] = 
                                             {
-                                                ["y"] = 631559.51879577,
-                                                ["x"] = -327630.53480766,
-                                            }, -- end of [23]
+                                                ["y"] = 631536.51921066,
+                                                ["x"] = -327597.97420313,
+                                            }, -- end of [19]
                                             [29] = 
                                             {
                                                 ["y"] = 631572.03744697,
                                                 ["x"] = -327683.51691328,
                                             }, -- end of [29]
-                                            [15] = 
+                                            [31] = 
                                             {
-                                                ["y"] = 631505.22886723,
-                                                ["x"] = -327573.2994605,
-                                            }, -- end of [15]
+                                                ["y"] = 631571.25187801,
+                                                ["x"] = -327696.77602857,
+                                            }, -- end of [31]
                                         }, -- end of [3]
                                         [1] = 
                                         {
@@ -1356,31 +1375,31 @@ mission =
                                                 ["y"] = 631324.25558525,
                                                 ["x"] = -327582.45222766,
                                             }, -- end of [29]
-                                            [71] = 
-                                            {
-                                                ["y"] = 631120.82889756,
-                                                ["x"] = -328382.21530495,
-                                            }, -- end of [71]
-                                            [67] = 
-                                            {
-                                                ["y"] = 631078.75042341,
-                                                ["x"] = -328358.45927167,
-                                            }, -- end of [67]
-                                            [30] = 
-                                            {
-                                                ["y"] = 631268.43211968,
-                                                ["x"] = -327604.43011657,
-                                            }, -- end of [30]
-                                            [63] = 
-                                            {
-                                                ["y"] = 630949.2734005,
-                                                ["x"] = -328350.39904268,
-                                            }, -- end of [63]
                                             [47] = 
                                             {
                                                 ["y"] = 630885.93275563,
                                                 ["x"] = -327848.27099338,
                                             }, -- end of [47]
+                                            [63] = 
+                                            {
+                                                ["y"] = 630949.2734005,
+                                                ["x"] = -328350.39904268,
+                                            }, -- end of [63]
+                                            [30] = 
+                                            {
+                                                ["y"] = 631268.43211968,
+                                                ["x"] = -327604.43011657,
+                                            }, -- end of [30]
+                                            [67] = 
+                                            {
+                                                ["y"] = 631078.75042341,
+                                                ["x"] = -328358.45927167,
+                                            }, -- end of [67]
+                                            [71] = 
+                                            {
+                                                ["y"] = 631120.82889756,
+                                                ["x"] = -328382.21530495,
+                                            }, -- end of [71]
                                         }, -- end of [4]
                                         [5] = 
                                         {
@@ -2003,6 +2022,92 @@ mission =
                                 ["name"] = "DictKey_GroupName_245",
                                 ["start_time"] = 0,
                             }, -- end of [6]
+                            [7] = 
+                            {
+                                ["visible"] = false,
+                                ["lateActivation"] = true,
+                                ["tasks"] = 
+                                {
+                                }, -- end of ["tasks"]
+                                ["uncontrollable"] = false,
+                                ["task"] = "Ground Nothing",
+                                ["taskSelected"] = true,
+                                ["route"] = 
+                                {
+                                    ["spans"] = 
+                                    {
+                                        [1] = 
+                                        {
+                                            [1] = 
+                                            {
+                                                ["y"] = 631701.59986951,
+                                                ["x"] = -328047.96645123,
+                                            }, -- end of [1]
+                                            [2] = 
+                                            {
+                                                ["y"] = 632714.18257975,
+                                                ["x"] = -328515.66160439,
+                                            }, -- end of [2]
+                                        }, -- end of [1]
+                                    }, -- end of ["spans"]
+                                    ["points"] = 
+                                    {
+                                        [1] = 
+                                        {
+                                            ["alt"] = 10,
+                                            ["type"] = "Turning Point",
+                                            ["ETA"] = 0,
+                                            ["alt_type"] = "BARO",
+                                            ["formation_template"] = "",
+                                            ["y"] = 616975.33319324,
+                                            ["x"] = -356394.27025756,
+                                            ["name"] = "DictKey_WptName_250",
+                                            ["ETA_locked"] = true,
+                                            ["speed"] = 5.5555555555556,
+                                            ["action"] = "Off Road",
+                                            ["task"] = 
+                                            {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = 
+                                                {
+                                                    ["tasks"] = 
+                                                    {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["speed_locked"] = true,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                }, -- end of ["route"]
+                                ["groupId"] = 13,
+                                ["hidden"] = false,
+                                ["units"] = 
+                                {
+                                    [1] = 
+                                    {
+                                        ["type"] = "T-55",
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["unitId"] = 20,
+                                        ["skill"] = "Average",
+                                        ["y"] = 616975.33319324,
+                                        ["x"] = -356394.27025756,
+                                        ["name"] = "DictKey_UnitName_249",
+                                        ["heading"] = 2.0034884355963,
+                                        ["playerCanDrive"] = false,
+                                        ["wagons"] = 
+                                        {
+                                        }, -- end of ["wagons"]
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["y"] = 616975.33319324,
+                                ["x"] = -356394.27025756,
+                                ["name"] = "DictKey_GroupName_248",
+                                ["start_time"] = 0,
+                            }, -- end of [7]
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
                 }, -- end of [7]
@@ -2035,6 +2140,7 @@ mission =
             }, -- end of ["rules"]
             ["comment"] = "mission start",
             ["eventlist"] = "",
+            ["predicate"] = "triggerStart",
             ["actions"] = 
             {
                 [1] = 
@@ -2069,9 +2175,9 @@ mission =
                 }, -- end of [3]
                 [4] = 
                 {
-                    ["KeyDict_text"] = "DictKey_ActionText_164",
-                    ["text"] = "DictKey_ActionText_164",
                     ["predicate"] = "a_do_script",
+                    ["text"] = "DictKey_ActionText_164",
+                    ["KeyDict_text"] = "DictKey_ActionText_164",
                     ["ai_task"] = 
                     {
                         [1] = "",
@@ -2310,9 +2416,9 @@ mission =
                 }, -- end of [27]
                 [28] = 
                 {
-                    ["KeyDict_text"] = "DictKey_ActionText_178",
-                    ["text"] = "DictKey_ActionText_178",
                     ["predicate"] = "a_do_script",
+                    ["text"] = "DictKey_ActionText_178",
+                    ["KeyDict_text"] = "DictKey_ActionText_178",
                     ["ai_task"] = 
                     {
                         [1] = "",
@@ -2320,11 +2426,10 @@ mission =
                     }, -- end of ["ai_task"]
                 }, -- end of [28]
             }, -- end of ["actions"]
-            ["predicate"] = "triggerStart",
             ["colorItem"] = "0x00ff00ff",
         }, -- end of [1]
     }, -- end of ["trigrules"]
-    ["currentKey"] = 8399,
+    ["currentKey"] = 8460,
     ["start_time"] = 35000,
     ["forcedOptions"] = 
     {

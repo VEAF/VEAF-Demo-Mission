@@ -20,10 +20,16 @@ if veafCombatZone then
 
 	veafCombatZone.AddZone(
 		Zone:new()
-			:setMissionEditorZoneName("combatZoneCrossKobuleti")
+			:setMissionEditorZoneName("combatZone_CrossKobuleti")
 			:setFriendlyName("Cross Kobuleti")
 			:setBriefing("This is a simple mission\n" ..
 						 "You must destroy the comm antenna before 11:30 local time\n" ..
 						 "The other ennemy units are secondary targets\n")
+	)
+	veafCombatZone.AddZone(
+		Zone:new()
+			:setMissionEditorZoneName("combatZone_Batumi")
+			:setFriendlyName("Batumi")
+			--:setBriefing("This is a second test mission")
 	)
 end
