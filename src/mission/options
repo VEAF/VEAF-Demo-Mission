@@ -120,7 +120,7 @@ options =
         ["DCS-SRS"] = 
         {
             ["srsAutoLaunchEnabled"] = true,
-            ["srsOverlayEnabled"] = true,
+            ["srsOverlayEnabled"] = false,
         }, -- end of ["DCS-SRS"]
         ["Yak52"] = 
         {
