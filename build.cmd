@@ -1,5 +1,5 @@
 @echo off
-set MISSION_NAME=Test
+set MISSION_NAME=Ka50-Training
 echo -
 echo ----------------------------------------
 echo building Test Mission
@@ -34,7 +34,7 @@ IF [%MISSION_FILE_SUFFIX%] == [] GOTO DefineDefaultMISSION_FILE_SUFFIX
 goto DontDefineDefaultMISSION_FILE_SUFFIX
 :DefineDefaultMISSION_FILE_SUFFIX
 set TIMEBUILD=%TIME: =0%
-set MISSION_FILE_SUFFIX=%date:~-4,4%%date:~-7,2%%date:~-10,2%-%TIMEBUILD:~0,2%%TIMEBUILD:~3,2%%TIMEBUILD:~6,2%
+set MISSION_FILE_SUFFIX=%date:~-4,4%%date:~-7,2%%date:~-10,2%
 :DontDefineDefaultMISSION_FILE_SUFFIX
 set MISSION_FILE=.\build\%MISSION_NAME%_%MISSION_FILE_SUFFIX%
 echo MISSION_FILE = %MISSION_FILE%.miz
