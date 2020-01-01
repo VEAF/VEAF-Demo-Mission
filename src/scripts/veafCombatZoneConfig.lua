@@ -20,16 +20,37 @@ if veafCombatZone then
 
 	veafCombatZone.AddZone(
 		VeafCombatZone.new()
-			:setMissionEditorZoneName("combatZone_CrossKobuleti")
-			:setFriendlyName("Cross Kobuleti")
-			:setBriefing("This is a simple mission\n" ..
-						 "You must destroy the comm antenna before 11:30 local time\n" ..
-						 "The other ennemy units are secondary targets\n")
+			:setMissionEditorZoneName("Training zone EASY-1")
+			:setFriendlyName("Training zone EASY-1")
+			:setBriefing("Training zone EASY-1")
+			:activate()
 	)
 	veafCombatZone.AddZone(
 		VeafCombatZone.new()
-			:setMissionEditorZoneName("combatZone_Batumi")
-			:setFriendlyName("Batumi")
-			:setBriefing("This is a second test mission")
+			:setMissionEditorZoneName("Training zone MEDIUM-2")
+			:setFriendlyName("Training zone MEDIUM-2")
+			:setBriefing("Training zone MEDIUM-2")
+			:activate()
+	)
+	veafCombatZone.AddZone(
+		VeafCombatZone.new()
+			:setMissionEditorZoneName("Training zone MEDIUM-3")
+			:setFriendlyName("Training zone MEDIUM-3")
+			:setBriefing("Training zone MEDIUM-3")
+			:activate()
+	)
+	veafCombatZone.AddZone(
+		VeafCombatZone.new()
+			:setMissionEditorZoneName("Training zone HARD-4")
+			:setFriendlyName("Training zone HARD-4")
+			:setBriefing("Training zone HARD-4")
+			:activate()
+	)
+	veafCombatZone.AddZone(
+		VeafCombatZone.new()
+			:setMissionEditorZoneName("Training zone HARD-5")
+			:setFriendlyName("Training zone HARD-5")
+			:setBriefing("Training zone HARD-5")
+			:activate()
 	)
 end
