@@ -17,8 +17,9 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 veafAssets.Assets = {
-    -- list the assets of the mission below
-    --{sort=1, name="CSG-01 Tarawa", description="Tarawa (LHA)", information="Tacan 1X\nDatalink 310 Mhz\nVHF 304 Mhz"},  
+    -- list the assets common to all missions below
+    {sort=1, name="Arco", description="Arco (KC-135)", information="Tacan 11Y\nVHF 130.4 Mhz\nZone OUEST", linked={"Arco-escort1","Arco-escort2"}}, 
+    {sort=2, name="Petrolsky", description="900 (IL-78M, RED)", information="VHF 267 Mhz", linked="Petrolsky-escort"},  
 }
 
 veafAssets.logInfo("Loading configuration")
