@@ -1,5 +1,5 @@
 @echo off
-set MISSION_NAME=Test
+set MISSION_NAME=VEAF-Demo-Mission
 echo.
 echo ----------------------------------------
 echo building %MISSION_NAME%
