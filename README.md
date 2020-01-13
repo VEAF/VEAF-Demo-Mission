@@ -1,14 +1,16 @@
 # VEAF demonstration mission
 
 ## Abstract
+
 This is a barebones mission to demonstrate the [VEAF Mission Creation Tools framework](https://github.com/VEAF/VEAF-Mission-Creation-Tools)
 Please read the documentation for further information on the concept.
 
-*Link to the documentation - in progress*
+TODO *Link to the documentation - in progress*
 
 This mission uses the normalizer and radio preset editor tools, also found in the [VEAF Mission Creation Tools framework](https://github.com/VEAF/VEAF-Mission-Creation-Tools/tree/master/mission-editor-tools)
 
 ## Prerequisites
+
 * 7za from the [7-Zip Extra: standalone console version](https://www.7-zip.org/a/7z1900-extra.7z)
 * lua from [Lua for Windows](https://github.com/rjpcomputing/luaforwindows)
 
@@ -21,6 +23,7 @@ Note: it is easier to install all the prerequisites with [Chocolatey](https://ch
 Simply execute **build** in order to build the mission.
 
 For developpement purpose you way want to use some special flags.
+
 * *VERBOSE_LOG_FLAG* if set to "true", will create a mission with tracing enabled (meaning that, when run, it will log a lot of details in the dcs log file); defaults to "false"
 * *LUA_SCRIPTS_DEBUG_PARAMETER* can be set to "-debug" or "-trace" (or not set) ; this will be passed to the lua helper scripts (e.g. veafMissionRadioPresetsEditor and veafMissionNormalizer); defaults to not set
 * *SECURITY_DISABLED_FLAG* if set to "true", will create a mission with security disabled (meaning that no password is ever required); defaults to "false"
@@ -40,6 +43,7 @@ Within DCS World; you can have a look in the dcs.log file (specially if you set 
 
 Copy the built .miz file (the one you edited and tested) to the root directory of this project and run **extract**.
 This will :
+
 * explode the mission into its constituing files
 * copy these files in the *src* folder
 * clean up everything that is not needed (i.e. lua scripts)
