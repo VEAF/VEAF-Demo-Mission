@@ -8,175 +8,6 @@ mission =
             },
             country = {
                 {
-                    id = 21,
-                    name = "Australia"
-                },
-                {
-                    id = 11,
-                    name = "Belgium"
-                },
-                {
-                    id = 8,
-                    name = "Canada"
-                },
-                {
-                    id = 28,
-                    name = "Croatia"
-                },
-                {
-                    id = 26,
-                    name = "Czech Republic",
-                    plane = {
-                        group = {
-                            {
-                                communication = true,
-                                frequency = 124,
-                                groupId = 1,
-                                hidden = false,
-                                modulation = 0,
-                                name = "DictKey_GroupName_173",
-                                radioSet = false,
-                                route = {
-                                    points = {
-                                        {
-                                            action = "From Runway",
-                                            airdromeId = 24,
-                                            alt = 18,
-                                            alt_type = "BARO",
-                                            ETA = 0,
-                                            ETA_locked = true,
-                                            formation_template = "",
-                                            name = "DictKey_WptName_175",
-                                            properties = {
-                                                addopt = {}
-                                            },
-                                            speed = 138.88888888888999,
-                                            speed_locked = true,
-                                            task = {
-                                                id = "ComboTask",
-                                                params = {
-                                                    tasks = {
-                                                        {
-                                                            auto = true,
-                                                            enabled = true,
-                                                            id = "EngageTargets",
-                                                            key = "CAS",
-                                                            number = 1,
-                                                            params = {
-                                                                priority = 0,
-                                                                targetTypes = {
-                                                                    "Helicopters",
-                                                                    "Ground Units",
-                                                                    "Light armed ships"
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            },
-                                            type = "TakeOff",
-                                            x = -317962.296875,
-                                            y = 635632.96875
-                                        }
-                                    }
-                                },
-                                start_time = 0,
-                                task = "CAS",
-                                tasks = {},
-                                uncontrolled = false,
-                                units = {
-                                    {
-                                        alt = 18,
-                                        alt_type = "BARO",
-                                        callsign = {
-                                            1,
-                                            1,
-                                            1,
-                                            name = "Enfield11"
-                                        },
-                                        heading = 0,
-                                        livery_id = "Abkhazian Air Force",
-                                        name = "DictKey_UnitName_174",
-                                        onboard_num = "010",
-                                        payload = {
-                                            chaff = 128,
-                                            flare = 128,
-                                            fuel = "2835",
-                                            gun = 100,
-                                            pylons = {}
-                                        },
-                                        psi = 0,
-                                        skill = "Player",
-                                        speed = 138.88888888888999,
-                                        type = "Su-25",
-                                        unitId = 1,
-                                        x = -317962.296875,
-                                        y = 635632.96875
-                                    }
-                                },
-                                x = -317962.296875,
-                                y = 635632.96875
-                            }
-                        }
-                    }
-                },
-                {
-                    id = 13,
-                    name = "Denmark"
-                },
-                {
-                    id = 5,
-                    name = "France"
-                },
-                {
-                    id = 16,
-                    name = "Georgia"
-                },
-                {
-                    id = 6,
-                    name = "Germany"
-                },
-                {
-                    id = 15,
-                    name = "Israel"
-                },
-                {
-                    id = 20,
-                    name = "Italy"
-                },
-                {
-                    id = 12,
-                    name = "Norway"
-                },
-                {
-                    id = 40,
-                    name = "Poland"
-                },
-                {
-                    id = 45,
-                    name = "South Korea"
-                },
-                {
-                    id = 9,
-                    name = "Spain"
-                },
-                {
-                    id = 46,
-                    name = "Sweden"
-                },
-                {
-                    id = 10,
-                    name = "The Netherlands"
-                },
-                {
-                    id = 3,
-                    name = "Turkey"
-                },
-                {
-                    id = 4,
-                    name = "UK"
-                },
-                {
                     id = 1,
                     name = "Ukraine"
                 },
@@ -920,6 +751,175 @@ mission =
                             }
                         }
                     }
+                },
+                {
+                    id = 3,
+                    name = "Turkey"
+                },
+                {
+                    id = 4,
+                    name = "UK"
+                },
+                {
+                    id = 5,
+                    name = "France"
+                },
+                {
+                    id = 6,
+                    name = "Germany"
+                },
+                {
+                    id = 8,
+                    name = "Canada"
+                },
+                {
+                    id = 9,
+                    name = "Spain"
+                },
+                {
+                    id = 10,
+                    name = "The Netherlands"
+                },
+                {
+                    id = 11,
+                    name = "Belgium"
+                },
+                {
+                    id = 12,
+                    name = "Norway"
+                },
+                {
+                    id = 13,
+                    name = "Denmark"
+                },
+                {
+                    id = 15,
+                    name = "Israel"
+                },
+                {
+                    id = 16,
+                    name = "Georgia"
+                },
+                {
+                    id = 20,
+                    name = "Italy"
+                },
+                {
+                    id = 21,
+                    name = "Australia"
+                },
+                {
+                    id = 26,
+                    name = "Czech Republic",
+                    plane = {
+                        group = {
+                            {
+                                communication = true,
+                                frequency = 124,
+                                groupId = 1,
+                                hidden = false,
+                                modulation = 0,
+                                name = "DictKey_GroupName_173",
+                                radioSet = false,
+                                route = {
+                                    points = {
+                                        {
+                                            action = "From Runway",
+                                            airdromeId = 24,
+                                            alt = 18,
+                                            alt_type = "BARO",
+                                            ETA = 0,
+                                            ETA_locked = true,
+                                            formation_template = "",
+                                            name = "DictKey_WptName_175",
+                                            properties = {
+                                                addopt = {}
+                                            },
+                                            speed = 138.88888888888999,
+                                            speed_locked = true,
+                                            task = {
+                                                id = "ComboTask",
+                                                params = {
+                                                    tasks = {
+                                                        {
+                                                            auto = true,
+                                                            enabled = true,
+                                                            id = "EngageTargets",
+                                                            key = "CAS",
+                                                            number = 1,
+                                                            params = {
+                                                                priority = 0,
+                                                                targetTypes = {
+                                                                    "Helicopters",
+                                                                    "Ground Units",
+                                                                    "Light armed ships"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            type = "TakeOff",
+                                            x = -317962.296875,
+                                            y = 635632.96875
+                                        }
+                                    }
+                                },
+                                start_time = 0,
+                                task = "CAS",
+                                tasks = {},
+                                uncontrolled = false,
+                                units = {
+                                    {
+                                        alt = 18,
+                                        alt_type = "BARO",
+                                        callsign = {
+                                            1,
+                                            1,
+                                            1,
+                                            name = "Enfield11"
+                                        },
+                                        heading = 0,
+                                        livery_id = "Abkhazian Air Force",
+                                        name = "DictKey_UnitName_174",
+                                        onboard_num = "010",
+                                        payload = {
+                                            chaff = 128,
+                                            flare = 128,
+                                            fuel = "2835",
+                                            gun = 100,
+                                            pylons = {}
+                                        },
+                                        psi = 0,
+                                        skill = "Player",
+                                        speed = 138.88888888888999,
+                                        type = "Su-25",
+                                        unitId = 1,
+                                        x = -317962.296875,
+                                        y = 635632.96875
+                                    }
+                                },
+                                x = -317962.296875,
+                                y = 635632.96875
+                            }
+                        }
+                    }
+                },
+                {
+                    id = 28,
+                    name = "Croatia"
+                },
+                {
+                    id = 40,
+                    name = "Poland"
+                },
+                {
+                    id = 45,
+                    name = "South Korea"
+                },
+                {
+                    id = 46,
+                    name = "Sweden"
                 }
             },
             name = "blue",
@@ -931,30 +931,6 @@ mission =
                 y = 371700
             },
             country = {
-                {
-                    id = 18,
-                    name = "Abkhazia"
-                },
-                {
-                    id = 24,
-                    name = "Belarus"
-                },
-                {
-                    id = 27,
-                    name = "China"
-                },
-                {
-                    id = 34,
-                    name = "Iran"
-                },
-                {
-                    id = 37,
-                    name = "Kazakhstan"
-                },
-                {
-                    id = 38,
-                    name = "North Korea"
-                },
                 {
                     id = 0,
                     name = "Russia",
@@ -2686,12 +2662,36 @@ mission =
                     }
                 },
                 {
-                    id = 43,
-                    name = "Serbia"
+                    id = 18,
+                    name = "Abkhazia"
                 },
                 {
                     id = 19,
                     name = "South Ossetia"
+                },
+                {
+                    id = 24,
+                    name = "Belarus"
+                },
+                {
+                    id = 27,
+                    name = "China"
+                },
+                {
+                    id = 34,
+                    name = "Iran"
+                },
+                {
+                    id = 37,
+                    name = "Kazakhstan"
+                },
+                {
+                    id = 38,
+                    name = "North Korea"
+                },
+                {
+                    id = 43,
+                    name = "Serbia"
                 },
                 {
                     id = 47,
