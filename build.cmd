@@ -85,6 +85,7 @@ mkdir .\build\tempsrc
 echo building the mission
 rem -- copy all the source mission files and mission-specific scripts
 xcopy /y /e src\mission .\build\tempsrc\ >nul 2>&1
+xcopy /y src\options .\build\tempsrc\  >nul 2>&1
 xcopy /y /e src\scripts\*.lua .\build\tempsrc\l10n\Default\  >nul 2>&1
 
 rem -- set the radio presets according to the settings file
