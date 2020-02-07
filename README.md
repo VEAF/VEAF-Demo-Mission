@@ -13,8 +13,15 @@ This mission uses the normalizer and radio preset editor tools, also found in th
 
 * 7za from the [7-Zip Extra: standalone console version](https://www.7-zip.org/a/7z1900-extra.7z)
 * lua from [Lua for Windows](https://github.com/rjpcomputing/luaforwindows)
+* npm from [NodeJS](https://nodejs.org/en/)
 
 Note: it is easier to install all the prerequisites with [Chocolatey](https://chocolatey.org)
+
+We created some scripts that you can use (in the folder named *setup*) :
+1. run *install-chocolatey.cmd* in an **elevated** shell (as administrator)
+2. restart your shell (**important**)
+3. run *install-requirements.cmd* in an **elevated** shell (as administrator)
+4. (optional) run *install-optionals.cmd* in an **elevated** shell (as administrator)
 
 ## Workflow
 
