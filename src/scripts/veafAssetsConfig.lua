@@ -15,11 +15,14 @@
 -- ----------------
 -- load it in a trigger after loading veafAssets
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+veafAssets.logInfo("Loading configuration")
 
 veafAssets.Assets = {
     -- list the assets common to all missions below
-    {sort=1, name="Arco", description="Arco (KC-135)", information="Tacan 11Y\nVHF 130.4 Mhz\nZone OUEST", linked={"Arco-escort1","Arco-escort2"}}, 
+    {sort=1, name="Arco", description="Arco (KC-135)", information="Tacan 11Y\nVHF 251 Mhz\nZone OUEST", linked={"Arco-escort1","Arco-escort2"}}, 
     {sort=2, name="Petrolsky", description="900 (IL-78M, RED)", information="VHF 267 Mhz", linked="Petrolsky-escort"},  
 }
 
-veafAssets.logInfo("Loading configuration")
+veafAssets.logInfo("Setting move tanker radio menus")
+table.insert(veafMove.Tankers, "Arco")
+table.insert(veafMove.Tankers, "Petrolsky")
