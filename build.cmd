@@ -53,7 +53,7 @@ echo current value is "%MISSION_FILE_SUFFIX%"
 echo ----------------------------------------
 echo SEVENZIP (a string) points to the 7za executable
 echo defaults "7za", so it needs to be in the path
-IF [%SEVENZIP%] == [] GOTO DefineDefaultSEVENZIP
+IF ["%SEVENZIP%"] == [] GOTO DefineDefaultSEVENZIP
 goto DontDefineDefaultSEVENZIP
 :DefineDefaultSEVENZIP
 set SEVENZIP=7za
