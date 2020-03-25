@@ -629,6 +629,310 @@ mission = {
                                 ["x"] = -261877.20638152,
                                 ["y"] = 642733.62641008,
                             }, -- end of [3]
+                            [4] = {
+                                ["communication"] = true,
+                                ["frequency"] = 305,
+                                ["groupId"] = 27,
+                                ["hidden"] = false,
+                                ["modulation"] = 0,
+                                ["name"] = "DictKey_GroupName_321",
+                                ["radioSet"] = false,
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 9144,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_323",
+                                            ["properties"] = {
+                                                ["addopt"] = {
+                                                }, -- end of ["addopt"]
+                                            }, -- end of ["properties"]
+                                            ["speed"] = 245.12605736641,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                        [1] = {
+                                                            ["auto"] = true,
+                                                            ["enabled"] = true,
+                                                            ["id"] = "EngageTargets",
+                                                            ["key"] = "CAP",
+                                                            ["number"] = 1,
+                                                            ["params"] = {
+                                                                ["priority"] = 0,
+                                                                ["targetTypes"] = {
+                                                                    [1] = "Air",
+                                                                }, -- end of ["targetTypes"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                        [2] = {
+                                                            ["auto"] = true,
+                                                            ["enabled"] = true,
+                                                            ["id"] = "WrappedAction",
+                                                            ["number"] = 2,
+                                                            ["params"] = {
+                                                                ["action"] = {
+                                                                    ["id"] = "EPLRS",
+                                                                    ["params"] = {
+                                                                        ["groupId"] = 3,
+                                                                        ["value"] = true,
+                                                                    }, -- end of ["params"]
+                                                                }, -- end of ["action"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [2]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -300504.15610651,
+                                            ["y"] = 610036.72047293,
+                                        }, -- end of [1]
+                                        [2] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 9144,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 307.3444200063,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_324",
+                                            ["properties"] = {
+                                                ["addopt"] = {
+                                                }, -- end of ["addopt"]
+                                            }, -- end of ["properties"]
+                                            ["speed"] = 245.12605736641,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -284657.04174548,
+                                            ["y"] = 683689.29805871,
+                                        }, -- end of [2]
+                                        [3] = {
+                                            ["action"] = "Landing",
+                                            ["airdromeId"] = 24,
+                                            ["alt"] = 18,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 728.32287287089,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_326",
+                                            ["properties"] = {
+                                                ["addopt"] = {
+                                                }, -- end of ["addopt"]
+                                            }, -- end of ["properties"]
+                                            ["speed"] = 138.88888888889,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Land",
+                                            ["x"] = -317962.296875,
+                                            ["y"] = 635632.96875,
+                                        }, -- end of [3]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "CAP",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["uncontrolled"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["AddPropAircraft"] = {
+                                            ["InnerBoard"] = 0,
+                                            ["OuterBoard"] = 0,
+                                        }, -- end of ["AddPropAircraft"]
+                                        ["alt"] = 9144,
+                                        ["alt_type"] = "BARO",
+                                        ["callsign"] = {
+                                            [1] = 2,
+                                            [2] = 1,
+                                            [3] = 1,
+                                            ["name"] = "Springfield11",
+                                        }, -- end of ["callsign"]
+                                        ["dataCartridge"] = {
+                                            ["GroupsPoints"] = {
+                                                ["A/A Waypoint"] = {
+                                                }, -- end of ["A/A Waypoint"]
+                                                ["Initial Point"] = {
+                                                }, -- end of ["Initial Point"]
+                                                ["PB"] = {
+                                                }, -- end of ["PB"]
+                                                ["PP"] = {
+                                                }, -- end of ["PP"]
+                                                ["Sequence 1 Blue"] = {
+                                                }, -- end of ["Sequence 1 Blue"]
+                                                ["Sequence 2 Red"] = {
+                                                }, -- end of ["Sequence 2 Red"]
+                                                ["Sequence 3 Yellow"] = {
+                                                }, -- end of ["Sequence 3 Yellow"]
+                                                ["Start Location"] = {
+                                                }, -- end of ["Start Location"]
+                                            }, -- end of ["GroupsPoints"]
+                                            ["Points"] = {
+                                            }, -- end of ["Points"]
+                                        }, -- end of ["dataCartridge"]
+                                        ["hardpoint_racks"] = true,
+                                        ["heading"] = 1.3588669066546,
+                                        ["livery_id"] = "VFA-37",
+                                        ["name"] = "DictKey_UnitName_322",
+                                        ["onboard_num"] = "015",
+                                        ["payload"] = {
+                                            ["ammo_type"] = 1,
+                                            ["chaff"] = 60,
+                                            ["flare"] = 30,
+                                            ["fuel"] = 2940,
+                                            ["gun"] = 100,
+                                            ["pylons"] = {
+                                                [1] = {
+                                                    ["CLSID"] = "{5CE2FF2A-645A-4197-B48D-8720AC69394F}",
+                                                }, -- end of [1]
+                                                [2] = {
+                                                    ["CLSID"] = "{B06DD79A-F21E-4EB9-BD9D-AB3844618C93}",
+                                                }, -- end of [2]
+                                                [3] = {
+                                                    ["CLSID"] = "LAU_117_AGM_65F",
+                                                }, -- end of [3]
+                                                [4] = {
+                                                    ["CLSID"] = "{40EF17B7-F508-45de-8566-6FFECC0C1AB8}",
+                                                }, -- end of [4]
+                                                [5] = {
+                                                    ["CLSID"] = "{BRU33_2X_ROCKEYE}",
+                                                }, -- end of [5]
+                                                [6] = {
+                                                    ["CLSID"] = "{40EF17B7-F508-45de-8566-6FFECC0C1AB8}",
+                                                }, -- end of [6]
+                                                [7] = {
+                                                    ["CLSID"] = "LAU_117_AGM_65F",
+                                                }, -- end of [7]
+                                                [8] = {
+                                                    ["CLSID"] = "{B06DD79A-F21E-4EB9-BD9D-AB3844618C93}",
+                                                }, -- end of [8]
+                                                [9] = {
+                                                    ["CLSID"] = "{5CE2FF2A-645A-4197-B48D-8720AC69394F}",
+                                                }, -- end of [9]
+                                            }, -- end of ["pylons"]
+                                        }, -- end of ["payload"]
+                                        ["psi"] = -1.3588669066546,
+                                        ["Radio"] = {
+                                            [1] = {
+                                                ["channels"] = {
+                                                    [1] = 305,
+                                                    [2] = 264,
+                                                    [3] = 265,
+                                                    [4] = 256,
+                                                    [5] = 254,
+                                                    [6] = 250,
+                                                    [7] = 270,
+                                                    [8] = 257,
+                                                    [9] = 255,
+                                                    [10] = 262,
+                                                    [11] = 259,
+                                                    [12] = 268,
+                                                    [13] = 269,
+                                                    [14] = 260,
+                                                    [15] = 263,
+                                                    [16] = 261,
+                                                    [17] = 267,
+                                                    [18] = 251,
+                                                    [19] = 253,
+                                                    [20] = 266,
+                                                }, -- end of ["channels"]
+                                                ["modulations"] = {
+                                                    [1] = 0,
+                                                    [2] = 0,
+                                                    [3] = 0,
+                                                    [4] = 0,
+                                                    [5] = 0,
+                                                    [6] = 0,
+                                                    [7] = 0,
+                                                    [8] = 0,
+                                                    [9] = 0,
+                                                    [10] = 0,
+                                                    [11] = 0,
+                                                    [12] = 0,
+                                                    [13] = 0,
+                                                    [14] = 0,
+                                                    [15] = 0,
+                                                    [16] = 0,
+                                                    [17] = 0,
+                                                    [18] = 0,
+                                                    [19] = 0,
+                                                    [20] = 0,
+                                                }, -- end of ["modulations"]
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["channels"] = {
+                                                    [1] = 305,
+                                                    [2] = 264,
+                                                    [3] = 265,
+                                                    [4] = 256,
+                                                    [5] = 254,
+                                                    [6] = 250,
+                                                    [7] = 270,
+                                                    [8] = 257,
+                                                    [9] = 255,
+                                                    [10] = 262,
+                                                    [11] = 259,
+                                                    [12] = 268,
+                                                    [13] = 269,
+                                                    [14] = 260,
+                                                    [15] = 263,
+                                                    [16] = 261,
+                                                    [17] = 267,
+                                                    [18] = 251,
+                                                    [19] = 253,
+                                                    [20] = 266,
+                                                }, -- end of ["channels"]
+                                                ["modulations"] = {
+                                                    [1] = 0,
+                                                    [2] = 0,
+                                                    [3] = 0,
+                                                    [4] = 0,
+                                                    [5] = 0,
+                                                    [6] = 0,
+                                                    [7] = 0,
+                                                    [8] = 0,
+                                                    [9] = 0,
+                                                    [10] = 0,
+                                                    [11] = 0,
+                                                    [12] = 0,
+                                                    [13] = 0,
+                                                    [14] = 0,
+                                                    [15] = 0,
+                                                    [16] = 0,
+                                                    [17] = 0,
+                                                    [18] = 0,
+                                                    [19] = 0,
+                                                    [20] = 0,
+                                                }, -- end of ["modulations"]
+                                            }, -- end of [2]
+                                        }, -- end of ["Radio"]
+                                        ["skill"] = "Player",
+                                        ["speed"] = 245.12605736641,
+                                        ["type"] = "FA-18C_hornet",
+                                        ["unitId"] = 39,
+                                        ["x"] = -300504.15610651,
+                                        ["y"] = 610036.72047293,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -300504.15610651,
+                                ["y"] = 610036.72047293,
+                            }, -- end of [4]
                         }, -- end of ["group"]
                     }, -- end of ["plane"]
                     ["vehicle"] = {
@@ -918,7 +1222,7 @@ mission = {
                                             }, -- end of ["pylons"]
                                         }, -- end of ["payload"]
                                         ["psi"] = 0,
-                                        ["skill"] = "Player",
+                                        ["skill"] = "Average",
                                         ["speed"] = 138.88888888889,
                                         ["type"] = "Su-25",
                                         ["unitId"] = 1,
@@ -2894,6 +3198,76 @@ mission = {
                                 ["x"] = -356394.27025756,
                                 ["y"] = 616975.33319324,
                             }, -- end of [7]
+                            [8] = {
+                                ["groupId"] = 26,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_318",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 10,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_320",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -284651.82476112,
+                                            ["y"] = 686572.30688645,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                        [1] = {
+                                            [1] = {
+                                                ["x"] = -328047.96645123,
+                                                ["y"] = 631701.59986951,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -328515.66160439,
+                                                ["y"] = 632714.18257975,
+                                            }, -- end of [2]
+                                        }, -- end of [1]
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 2.0034884355963,
+                                        ["name"] = "DictKey_UnitName_319",
+                                        ["playerCanDrive"] = false,
+                                        ["skill"] = "Excellent",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "Kub 1S91 str",
+                                        ["unitId"] = 38,
+                                        ["wagons"] = {
+                                        }, -- end of ["wagons"]
+                                        ["x"] = -284651.82476112,
+                                        ["y"] = 686572.30688645,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -284651.82476112,
+                                ["y"] = 686572.30688645,
+                            }, -- end of [8]
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
                 }, -- end of [1]
@@ -3022,81 +3396,385 @@ mission = {
             [10] = 47,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 11195,
+    ["currentKey"] = 11626,
     ["date"] = {
-        ["Day"] = 24,
-        ["Month"] = 3,
-        ["Year"] = 2019,
+        ["Day"] = 23,
+        ["Month"] = 5,
+        ["Year"] = 2011,
     }, -- end of ["date"]
     ["descriptionBlueTask"] = "DictKey_descriptionBlueTask_3",
     ["descriptionNeutralsTask"] = "DictKey_descriptionNeutralsTask_4",
     ["descriptionRedTask"] = "DictKey_descriptionRedTask_2",
     ["descriptionText"] = "DictKey_descriptionText_1",
     ["failures"] = {
-        ["asc"] = {
+        ["Failure_Comp_ADC"] = {
             ["enable"] = false,
             ["hh"] = 0,
-            ["id"] = "asc",
+            ["id"] = "Failure_Comp_ADC",
             ["mm"] = 0,
             ["mmint"] = 1,
             ["prob"] = 100,
-        }, -- end of ["asc"]
-        ["ecm"] = {
+        }, -- end of ["Failure_Comp_ADC"]
+        ["Failure_Comp_MC1"] = {
             ["enable"] = false,
             ["hh"] = 0,
-            ["id"] = "ecm",
+            ["id"] = "Failure_Comp_MC1",
             ["mm"] = 0,
             ["mmint"] = 1,
             ["prob"] = 100,
-        }, -- end of ["ecm"]
-        ["eos"] = {
+        }, -- end of ["Failure_Comp_MC1"]
+        ["Failure_Comp_MC2"] = {
             ["enable"] = false,
             ["hh"] = 0,
-            ["id"] = "eos",
+            ["id"] = "Failure_Comp_MC2",
             ["mm"] = 0,
             ["mmint"] = 1,
             ["prob"] = 100,
-        }, -- end of ["eos"]
-        ["hud"] = {
+        }, -- end of ["Failure_Comp_MC2"]
+        ["Failure_Ctrl_Aileron"] = {
             ["enable"] = false,
             ["hh"] = 0,
-            ["id"] = "hud",
+            ["id"] = "Failure_Ctrl_Aileron",
             ["mm"] = 0,
             ["mmint"] = 1,
             ["prob"] = 100,
-        }, -- end of ["hud"]
-        ["hydro"] = {
+        }, -- end of ["Failure_Ctrl_Aileron"]
+        ["Failure_Ctrl_FCS_Ch1"] = {
             ["enable"] = false,
             ["hh"] = 0,
-            ["id"] = "hydro",
+            ["id"] = "Failure_Ctrl_FCS_Ch1",
             ["mm"] = 0,
             ["mmint"] = 1,
             ["prob"] = 100,
-        }, -- end of ["hydro"]
-        ["l_engine"] = {
+        }, -- end of ["Failure_Ctrl_FCS_Ch1"]
+        ["Failure_Ctrl_FCS_Ch2"] = {
             ["enable"] = false,
             ["hh"] = 0,
-            ["id"] = "l_engine",
+            ["id"] = "Failure_Ctrl_FCS_Ch2",
             ["mm"] = 0,
             ["mmint"] = 1,
             ["prob"] = 100,
-        }, -- end of ["l_engine"]
-        ["r_engine"] = {
+        }, -- end of ["Failure_Ctrl_FCS_Ch2"]
+        ["Failure_Ctrl_FCS_Ch3"] = {
             ["enable"] = false,
             ["hh"] = 0,
-            ["id"] = "r_engine",
+            ["id"] = "Failure_Ctrl_FCS_Ch3",
             ["mm"] = 0,
             ["mmint"] = 1,
             ["prob"] = 100,
-        }, -- end of ["r_engine"]
-        ["rws"] = {
+        }, -- end of ["Failure_Ctrl_FCS_Ch3"]
+        ["Failure_Ctrl_FCS_Ch4"] = {
             ["enable"] = false,
             ["hh"] = 0,
-            ["id"] = "rws",
+            ["id"] = "Failure_Ctrl_FCS_Ch4",
             ["mm"] = 0,
             ["mmint"] = 1,
             ["prob"] = 100,
-        }, -- end of ["rws"]
+        }, -- end of ["Failure_Ctrl_FCS_Ch4"]
+        ["Failure_Ctrl_LEF"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Ctrl_LEF",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Ctrl_LEF"]
+        ["Failure_ECS_OBOGS"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_ECS_OBOGS",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_ECS_OBOGS"]
+        ["Failure_ECS_Valve"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_ECS_Valve",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_ECS_Valve"]
+        ["Failure_Elec_EmergencyBattery"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Elec_EmergencyBattery",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Elec_EmergencyBattery"]
+        ["Failure_Elec_LeftGenerator"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Elec_LeftGenerator",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Elec_LeftGenerator"]
+        ["Failure_Elec_LeftTransformerRectifier"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Elec_LeftTransformerRectifier",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Elec_LeftTransformerRectifier"]
+        ["Failure_Elec_RightGenerator"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Elec_RightGenerator",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Elec_RightGenerator"]
+        ["Failure_Elec_RightTransformerRectifier"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Elec_RightTransformerRectifier",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Elec_RightTransformerRectifier"]
+        ["Failure_Elec_UtilityBattery"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Elec_UtilityBattery",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Elec_UtilityBattery"]
+        ["Failure_Fuel_ExtTankTransferC"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Fuel_ExtTankTransferC",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Fuel_ExtTankTransferC"]
+        ["Failure_Fuel_ExtTankTransferL"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Fuel_ExtTankTransferL",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Fuel_ExtTankTransferL"]
+        ["Failure_Fuel_ExtTankTransferR"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Fuel_ExtTankTransferR",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Fuel_ExtTankTransferR"]
+        ["Failure_Fuel_LeftBoostPump"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Fuel_LeftBoostPump",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Fuel_LeftBoostPump"]
+        ["Failure_Fuel_QuantityGaging"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Fuel_QuantityGaging",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Fuel_QuantityGaging"]
+        ["Failure_Fuel_RightBoostPump"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Fuel_RightBoostPump",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Fuel_RightBoostPump"]
+        ["Failure_Fuel_Tank1Transfer"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Fuel_Tank1Transfer",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Fuel_Tank1Transfer"]
+        ["Failure_Fuel_Tank4Transfer"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Fuel_Tank4Transfer",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Fuel_Tank4Transfer"]
+        ["Failure_Gear_NWS"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Gear_NWS",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Gear_NWS"]
+        ["Failure_Gear_WOW"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Gear_WOW",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Gear_WOW"]
+        ["Failure_Hyd_HYD1A_Leak"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Hyd_HYD1A_Leak",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Hyd_HYD1A_Leak"]
+        ["Failure_Hyd_HYD1B_Leak"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Hyd_HYD1B_Leak",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Hyd_HYD1B_Leak"]
+        ["Failure_Hyd_HYD2A_Leak"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Hyd_HYD2A_Leak",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Hyd_HYD2A_Leak"]
+        ["Failure_Hyd_HYD2B_Leak"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Hyd_HYD2B_Leak",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Hyd_HYD2B_Leak"]
+        ["Failure_Hyd_IsolatedHYD2BSystem_Leak"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Hyd_IsolatedHYD2BSystem_Leak",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Hyd_IsolatedHYD2BSystem_Leak"]
+        ["Failure_PP_EngL_AB_FFCS"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_PP_EngL_AB_FFCS",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_PP_EngL_AB_FFCS"]
+        ["Failure_PP_EngL_Main_FFCS"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_PP_EngL_Main_FFCS",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_PP_EngL_Main_FFCS"]
+        ["Failure_PP_EngL_Nozzle_CS"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_PP_EngL_Nozzle_CS",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_PP_EngL_Nozzle_CS"]
+        ["Failure_PP_EngL_OilLeak"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_PP_EngL_OilLeak",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_PP_EngL_OilLeak"]
+        ["Failure_PP_EngR_AB_FFCS"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_PP_EngR_AB_FFCS",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_PP_EngR_AB_FFCS"]
+        ["Failure_PP_EngR_Main_FFCS"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_PP_EngR_Main_FFCS",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_PP_EngR_Main_FFCS"]
+        ["Failure_PP_EngR_Nozzle_CS"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_PP_EngR_Nozzle_CS",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_PP_EngR_Nozzle_CS"]
+        ["Failure_PP_EngR_OilLeak"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_PP_EngR_OilLeak",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_PP_EngR_OilLeak"]
+        ["Failure_PP_LeftAMAD_OilLeak"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_PP_LeftAMAD_OilLeak",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_PP_LeftAMAD_OilLeak"]
+        ["Failure_PP_LeftPTS"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_PP_LeftPTS",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_PP_LeftPTS"]
+        ["Failure_PP_RightAMAD_OilLeak"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_PP_RightAMAD_OilLeak",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_PP_RightAMAD_OilLeak"]
+        ["Failure_PP_RightPTS"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_PP_RightPTS",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_PP_RightPTS"]
+        ["Failure_Sens_LeftPitotHeater"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Sens_LeftPitotHeater",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Sens_LeftPitotHeater"]
+        ["Failure_Sens_RightPitotHeater"] = {
+            ["enable"] = false,
+            ["hh"] = 0,
+            ["id"] = "Failure_Sens_RightPitotHeater",
+            ["mm"] = 0,
+            ["mmint"] = 1,
+            ["prob"] = 100,
+        }, -- end of ["Failure_Sens_RightPitotHeater"]
     }, -- end of ["failures"]
     ["forcedOptions"] = {
     }, -- end of ["forcedOptions"]
@@ -3141,11 +3819,11 @@ mission = {
         }, -- end of ["roles"]
     }, -- end of ["groundControl"]
     ["map"] = {
-        ["centerX"] = -324448.46514921,
-        ["centerY"] = 632464.89448182,
-        ["zoom"] = 558946.91686033,
+        ["centerX"] = -305421.48563046,
+        ["centerY"] = 666038.44710375,
+        ["zoom"] = 150311.38282812,
     }, -- end of ["map"]
-    ["maxDictId"] = 317,
+    ["maxDictId"] = 328,
     ["pictureFileNameB"] = {
     }, -- end of ["pictureFileNameB"]
     ["pictureFileNameN"] = {
@@ -3185,11 +3863,11 @@ mission = {
         ["total"] = 1,
     }, -- end of ["result"]
     ["sortie"] = "DictKey_sortie_5",
-    ["start_time"] = 32400,
+    ["start_time"] = 61200,
     ["theatre"] = "Caucasus",
     ["trig"] = {
         ["actions"] = {
-            [1] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_149\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_160\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_148\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_163\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_21\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_165\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_166\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_35\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_27\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_176\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_26\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_22\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_28\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_93\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_147\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_167\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_23\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_80\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_30\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_219\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_168\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_170\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_171\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_177\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_169\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_172\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_178\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_316\"));",
+            [1] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_149\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_160\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_148\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_163\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_21\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_165\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_166\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_35\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_27\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_176\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_26\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_22\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_28\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_93\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_147\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_167\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_23\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_80\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_30\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_219\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_327\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_168\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_170\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_171\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_177\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_169\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_172\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_328\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_178\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_316\"));",
         }, -- end of ["actions"]
         ["conditions"] = {
             [1] = "return(true)",
@@ -3413,7 +4091,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_168",
+                    ["file"] = "ResKey_Action_327",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [21]
                 [22] = {
@@ -3421,7 +4099,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_170",
+                    ["file"] = "ResKey_Action_168",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [22]
                 [23] = {
@@ -3429,7 +4107,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_171",
+                    ["file"] = "ResKey_Action_170",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [23]
                 [24] = {
@@ -3437,7 +4115,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_177",
+                    ["file"] = "ResKey_Action_171",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [24]
                 [25] = {
@@ -3445,7 +4123,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_169",
+                    ["file"] = "ResKey_Action_177",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [25]
                 [26] = {
@@ -3453,7 +4131,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_172",
+                    ["file"] = "ResKey_Action_169",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [26]
                 [27] = {
@@ -3461,11 +4139,27 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
+                    ["file"] = "ResKey_Action_172",
+                    ["predicate"] = "a_do_script_file",
+                }, -- end of [27]
+                [28] = {
+                    ["ai_task"] = {
+                        [1] = "",
+                        [2] = "",
+                    }, -- end of ["ai_task"]
+                    ["file"] = "ResKey_Action_328",
+                    ["predicate"] = "a_do_script_file",
+                }, -- end of [28]
+                [29] = {
+                    ["ai_task"] = {
+                        [1] = "",
+                        [2] = "",
+                    }, -- end of ["ai_task"]
                     ["KeyDict_text"] = "DictKey_ActionText_178",
                     ["predicate"] = "a_do_script",
                     ["text"] = "DictKey_ActionText_178",
-                }, -- end of [27]
-                [28] = {
+                }, -- end of [29]
+                [30] = {
                     ["ai_task"] = {
                         [1] = "",
                         [2] = "",
@@ -3473,7 +4167,7 @@ mission = {
                     ["KeyDict_text"] = "DictKey_ActionText_316",
                     ["predicate"] = "a_do_script",
                     ["text"] = "DictKey_ActionText_316",
-                }, -- end of [28]
+                }, -- end of [30]
             }, -- end of ["actions"]
             ["colorItem"] = "0x00ff00ff",
             ["comment"] = "mission start",
@@ -3487,10 +4181,10 @@ mission = {
     ["weather"] = {
         ["atmosphere_type"] = 0,
         ["clouds"] = {
-            ["base"] = 1600,
-            ["density"] = 7,
+            ["base"] = 0,
+            ["density"] = 0,
             ["iprecptns"] = 0,
-            ["thickness"] = 2000,
+            ["thickness"] = 0,
         }, -- end of ["clouds"]
         ["cyclones"] = {
             [1] = {
@@ -3525,16 +4219,16 @@ mission = {
             ["thickness"] = 0,
             ["visibility"] = 0,
         }, -- end of ["fog"]
-        ["groundTurbulence"] = 1,
-        ["name"] = "Scattered, medium winds",
+        ["groundTurbulence"] = 0,
+        ["name"] = "Spring, Clear sky",
         ["name_cn"] = "春季 晴天",
         ["name_de"] = "Frühling, Klar",
         ["name_es"] = "Primavera. Despejado",
         ["name_fr"] = "Printemps, ciel dégagé",
         ["name_ru"] = "Весна. Штиль",
-        ["qnh"] = 760,
+        ["qnh"] = 775,
         ["season"] = {
-            ["temperature"] = 10,
+            ["temperature"] = 21,
         }, -- end of ["season"]
         ["type_weather"] = 0,
         ["visibility"] = {
@@ -3542,16 +4236,16 @@ mission = {
         }, -- end of ["visibility"]
         ["wind"] = {
             ["at2000"] = {
-                ["dir"] = 252,
-                ["speed"] = 15,
+                ["dir"] = 0,
+                ["speed"] = 0,
             }, -- end of ["at2000"]
             ["at8000"] = {
-                ["dir"] = 110,
-                ["speed"] = 25,
+                ["dir"] = 0,
+                ["speed"] = 0,
             }, -- end of ["at8000"]
             ["atGround"] = {
-                ["dir"] = 121,
-                ["speed"] = 5,
+                ["dir"] = 0,
+                ["speed"] = 0,
             }, -- end of ["atGround"]
         }, -- end of ["wind"]
     }, -- end of ["weather"]
