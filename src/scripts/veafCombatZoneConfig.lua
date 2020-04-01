@@ -17,7 +17,7 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafCombatZone then 
 	veafCombatZone.logInfo("Loading configuration")
-
+--[[
 	veafCombatZone.AddZone(
 		VeafCombatZone.new()
 			:setMissionEditorZoneName("combatZone_CrossKobuleti")
@@ -25,11 +25,14 @@ if veafCombatZone then
 			:setBriefing("This is a simple mission\n" ..
 						 "You must destroy the comm antenna before 11:30 local time\n" ..
 						 "The other ennemy units are secondary targets\n")
+			:initialize()
 	)
 	veafCombatZone.AddZone(
 		VeafCombatZone.new()
 			:setMissionEditorZoneName("combatZone_Batumi")
 			:setFriendlyName("Batumi")
 			:setBriefing("This is a second test mission")
+			:initialize()
 	)
+]]
 end
