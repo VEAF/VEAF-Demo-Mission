@@ -45,7 +45,7 @@ VEAF_DYNAMIC_MISSIONPATH = 'D:/DEV/VEAF-Demo-Mission'",
     ["DictKey_ActionText_386"] = "return VEAF_DYNAMIC_PATH==nil",
     ["DictKey_ActionText_387"] = "env.info(\"STATIC LOADING\")",
     ["DictKey_ActionText_388"] = "env.info(\"DYNAMIC LOADING\")",
-    ["DictKey_ActionText_445"] = "return true",
+    ["DictKey_ActionText_445"] = "return true --dynamic=true, static=false",
     ["DictKey_ActionText_468"] = "env.info(\"DYNAMIC LOADING\")\
 local script = VEAF_DYNAMIC_PATH .. \"/scripts/VeafDynamicLoader.lua\"\
 assert(loadfile(script))()\

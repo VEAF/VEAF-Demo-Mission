@@ -222,7 +222,6 @@ end
 -- convifuge COMBAT ZONE
 if veafCombatZone then 
 	veafCombatZone.logInfo("Loading configuration")
---[[
 	veafCombatZone.AddZone(
 		VeafCombatZone.new()
 			:setMissionEditorZoneName("combatZone_CrossKobuleti")
@@ -239,7 +238,6 @@ if veafCombatZone then
 			:setBriefing("This is a second test mission")
 			:initialize()
 	)
-]]
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
