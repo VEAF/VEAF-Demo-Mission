@@ -128,6 +128,11 @@ rem -- cleanup the mission files
 echo cleanup the mission files
 rd /s /q .\build\tempsrc
 
+rem -- cleanup the veaf-mission-creation-tools scripts
+echo cleanup the veaf-mission-creation-tools scripts
+echo ----------------------------------------
+rd /s /q .\build\tempscripts
+
 echo.
 echo ----------------------------------------
 rem -- done !
