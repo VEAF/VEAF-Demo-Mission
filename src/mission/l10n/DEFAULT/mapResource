@@ -7,7 +7,7 @@ mapResource = {
     ["ResKey_Action_473"] = "veaf.lua",
     ["ResKey_Action_474"] = "dcsUnits.lua",
     ["ResKey_Action_475"] = "veafAssets.lua",
-    ["ResKey_Action_476"] = "veafCarrierOperations2.lua",
+    ["ResKey_Action_476"] = "veafCarrierOperations.lua",
     ["ResKey_Action_477"] = "veafCasMission.lua",
     ["ResKey_Action_478"] = "veafCombatZone.lua",
     ["ResKey_Action_479"] = "veafGrass.lua",
@@ -22,4 +22,5 @@ mapResource = {
     ["ResKey_Action_488"] = "veafShortcuts.lua",
     ["ResKey_Action_489"] = "veafInterpreter.lua",
     ["ResKey_Action_490"] = "veafCombatMission.lua",
+    ["ResKey_Action_494"] = "veafCarrierOperations2.lua",
 } -- end of mapResource

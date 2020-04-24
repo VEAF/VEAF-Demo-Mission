@@ -1,26 +1,24 @@
 -- initialize all the scripts
 veafRadio.initialize()
-veafMove.initialize()
-veafAssets.initialize()
-veafCasMission.initialize()
-veafGrass.initialize()
 veafSpawn.initialize()
-veafTransportMission.initialize()
-veafNamedPoints.initialize()
-veafSecurity.initialize()
-veafCombatZone.initialize()
-veafInterpreter.initialize()
+veafGrass.initialize()
 veafShortcuts.initialize()
-ctld.initialize()
-veafCombatMission.initialize()
+veafCasMission.initialize()
+veafTransportMission.initialize()
+veafInterpreter.initialize()
+
+-- No MOOSE settings menu. Comment out this line if required.
+_SETTINGS:SetPlayerMenuOff()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- PSEUDOATC
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 pseudoATC=PSEUDOATC:New()
 pseudoATC:Start()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- SCORING
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 local Scoring = SCORING:New( "Scoring File" )
 Scoring:SetScaleDestroyScore( 10 )
 Scoring:SetScaleDestroyPenalty( 40 )
@@ -29,6 +27,7 @@ Scoring:SetMessagesToCoalition()
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- ATIS configuration
 --based on 476 vFG Flight Info Pubs by WarLord
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 atisBatumi=ATIS:New(AIRBASE.Caucasus.Batumi, 122.550)
 --:SetRadioRelayUnitName("Radio Relay Batumi")
 :SetTowerFrequencies({260, 131, 40.4})
@@ -157,6 +156,7 @@ trigger.action.outText("ATIS Loaded....", 10)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure ASSETS
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 veafAssets.logInfo("Loading configuration")
 
 veafAssets.Assets = {
@@ -165,12 +165,21 @@ veafAssets.Assets = {
     {sort=2, name="Petrolsky", description="900 (IL-78M, RED)", information="VHF 267 Mhz", linked="Petrolsky-escort"},  
 }
 
+veafAssets.initialize()
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- configure MOVE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 veafAssets.logInfo("Setting move tanker radio menus")
 table.insert(veafMove.Tankers, "Arco")
 table.insert(veafMove.Tankers, "Petrolsky")
 
+veafMove.initialize()
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure COMBAT MISSION
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafCombatMission then 
 	veafCombatMission.logInfo("Loading configuration")
 	veafCombatMission.AddMission(
@@ -209,14 +218,9 @@ if veafCombatMission then
 			:setMessage("%d bomber(s) destroyed !")
 			:configureAsKillEnemiesObjective(1)
 		)
---[[ 		:addObjective(
-			VeafCombatMissionObjective.new()
-			:setName("Kill everyone")
-			:setDescription("you must kill all the bombers")
-			:configureAsKillEnemiesObjective()
-		)
- ]]		:initialize()
-	)
+        :initialize()
+    )
+    veafCombatMission.initialize()
 end
 
 -- convifuge COMBAT ZONE
@@ -237,11 +241,14 @@ if veafCombatZone then
 			:setFriendlyName("Batumi")
 			:setBriefing("This is a second test mission")
 			:initialize()
-	)
+    )
+    
+    veafCombatZone.initialize()
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure NAMEDPOINTS
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 veafNamedPoints.Points = {
     -- airbases in Georgia
     {name="AIRBASE Kobuleti",point={x=-318000,y=0,z=636620, atc=true, tower="133.00", tacan="67X KBL"
@@ -289,15 +296,19 @@ veafNamedPoints.Points = {
 }
 
 veafNamedPoints.logInfo("Loading configuration")
+veafNamedPoints.initialize()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure SECURITY
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 veafSecurity.password_L9["6ade6629f9219d87a011e7b8fbf8ef9584f2786d"] = true
 
 veafSecurity.logInfo("Loading configuration")
+veafSecurity.initialize()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure SHORTCUTS
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafShortcuts then 
     -- example
     -- veafShortcuts.AddAlias(
@@ -311,17 +322,21 @@ end
 ----------------------------------------------------------------------------------------------------------------------------
 -- configure CARRIER OPERATIONS 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+local useMooseAirboss = true
 
--- No MOOSE settings menu. Comment out this line if required.
-_SETTINGS:SetPlayerMenuOff()
-
-veafCarrierOperations.logInfo("Configuring carrier operations")
-veafCarrierOperations.setCarrierInfo("CVN-74 Stennis", 119.700, 305)
-veafCarrierOperations.setTankerInfo("Stennis Refueler", 250, 75, "S3B", 511)
-veafCarrierOperations.setPedroInfo("Rescue Helo", "Lake Erie", 42)
-veafCarrierOperations.setRepeaterInfo("Stennis Radio Repeater LSO", "Stennis Radio Repeater MARSHAL")
-
-veafCarrierOperations.initialize()
+if useMooseAirboss then
+	veafCarrierOperations2.logInfo("Configuring carrier operations")
+    veafCarrierOperations2.setCarrierInfo("CVN-74 Stennis", 119.700, 305)
+    veafCarrierOperations2.setTankerInfo("Stennis Refueler", 250, 75, "S3B", 511)
+    veafCarrierOperations2.setPedroInfo("Rescue Helo", "Lake Erie", 42)
+    veafCarrierOperations2.setRepeaterInfo("Stennis Radio Repeater LSO", "Stennis Radio Repeater MARSHAL")
+    veafCarrierOperations2.setTraining()
+    veafCarrierOperations2.initialize()
+    --veafCarrierOperations2.addRecoveryWindows()
+else
+	veafCarrierOperations.logInfo("Configuring carrier operations")
+    veafCarrierOperations.initialize(true)
+end
 
 ---------------------------
 --- Generate AI Traffic ---
@@ -812,3 +827,5 @@ ctld.spawnableCrates = {
 ctld.jtacUnitTypes = {
     "SKP", "Hummer" -- there are some wierd encoding issues so if you write SKP-11 it wont match as the - sign is encoded differently...
 }
+
+ctld.initialize()
