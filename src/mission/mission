@@ -3894,7 +3894,7 @@ mission = {
                                     ["points"] = {
                                         [1] = {
                                             ["action"] = "Off Road",
-                                            ["alt"] = 10,
+                                            ["alt"] = 9,
                                             ["alt_type"] = "BARO",
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
@@ -3910,8 +3910,8 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -328296.57766895,
-                                            ["y"] = 630876.09706502,
+                                            ["x"] = -328295.1375534,
+                                            ["y"] = 630865.23225387,
                                         }, -- end of [1]
                                         [2] = {
                                             ["action"] = "On Road",
@@ -4001,8 +4001,8 @@ mission = {
                                     ["spans"] = {
                                         [1] = {
                                             [1] = {
-                                                ["x"] = -328296.57766895,
-                                                ["y"] = 630876.09706502,
+                                                ["x"] = -328295.1375534,
+                                                ["y"] = 630865.23225387,
                                             }, -- end of [1]
                                             [2] = {
                                                 ["x"] = -328273.29702265,
@@ -4567,7 +4567,7 @@ mission = {
                                 ["uncontrollable"] = false,
                                 ["units"] = {
                                     [1] = {
-                                        ["heading"] = 0.86120177600912,
+                                        ["heading"] = 1.0488353842142,
                                         ["name"] = "DictKey_UnitName_180",
                                         ["playerCanDrive"] = true,
                                         ["skill"] = "Average",
@@ -4576,11 +4576,11 @@ mission = {
                                         }, -- end of ["transportable"]
                                         ["type"] = "BTR-80",
                                         ["unitId"] = 2,
-                                        ["x"] = -328296.57766895,
-                                        ["y"] = 630876.09706502,
+                                        ["x"] = -328295.1375534,
+                                        ["y"] = 630865.23225387,
                                     }, -- end of [1]
                                     [2] = {
-                                        ["heading"] = 0.86120177600912,
+                                        ["heading"] = 1.0488353842142,
                                         ["name"] = "DictKey_UnitName_238",
                                         ["playerCanDrive"] = true,
                                         ["skill"] = "Average",
@@ -4589,11 +4589,11 @@ mission = {
                                         }, -- end of ["transportable"]
                                         ["type"] = "BTR-80",
                                         ["unitId"] = 15,
-                                        ["x"] = -328335.9434275,
-                                        ["y"] = 630869.00220396,
+                                        ["x"] = -328334.50331195,
+                                        ["y"] = 630858.13739281,
                                     }, -- end of [2]
                                     [3] = {
-                                        ["heading"] = 0.86120177600912,
+                                        ["heading"] = 1.0488353842142,
                                         ["name"] = "DictKey_UnitName_239",
                                         ["playerCanDrive"] = true,
                                         ["skill"] = "Average",
@@ -4602,11 +4602,11 @@ mission = {
                                         }, -- end of ["transportable"]
                                         ["type"] = "BTR-80",
                                         ["unitId"] = 16,
-                                        ["x"] = -328375.30918606,
-                                        ["y"] = 630861.90734289,
+                                        ["x"] = -328373.86907051,
+                                        ["y"] = 630851.04253174,
                                     }, -- end of [3]
                                     [4] = {
-                                        ["heading"] = 0.86120177600912,
+                                        ["heading"] = 1.0488353842142,
                                         ["name"] = "DictKey_UnitName_240",
                                         ["playerCanDrive"] = true,
                                         ["skill"] = "Average",
@@ -4615,13 +4615,13 @@ mission = {
                                         }, -- end of ["transportable"]
                                         ["type"] = "BTR-80",
                                         ["unitId"] = 17,
-                                        ["x"] = -328414.67494461,
-                                        ["y"] = 630854.81248183,
+                                        ["x"] = -328413.23482906,
+                                        ["y"] = 630843.94767068,
                                     }, -- end of [4]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -328296.57766895,
-                                ["y"] = 630876.09706502,
+                                ["x"] = -328295.1375534,
+                                ["y"] = 630865.23225387,
                             }, -- end of [1]
                             [2] = {
                                 ["condition"] = "",
@@ -4957,20 +4957,19 @@ mission = {
                                 ["y"] = 631457.41730037,
                             }, -- end of [6]
                             [7] = {
-                                ["groupId"] = 13,
+                                ["groupId"] = 44,
                                 ["hidden"] = false,
-                                ["lateActivation"] = true,
-                                ["name"] = "DictKey_GroupName_248",
+                                ["name"] = "DictKey_GroupName_495",
                                 ["route"] = {
                                     ["points"] = {
                                         [1] = {
                                             ["action"] = "Off Road",
-                                            ["alt"] = 10,
+                                            ["alt"] = 16,
                                             ["alt_type"] = "BARO",
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
                                             ["formation_template"] = "",
-                                            ["name"] = "DictKey_WptName_250",
+                                            ["name"] = "DictKey_WptName_497",
                                             ["speed"] = 5.5555555555556,
                                             ["speed_locked"] = true,
                                             ["task"] = {
@@ -4981,22 +4980,11 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -356394.27025756,
-                                            ["y"] = 616975.33319324,
+                                            ["x"] = -355383.9435172,
+                                            ["y"] = 618729.20287862,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
-                                    ["routeRelativeTOT"] = true,
                                     ["spans"] = {
-                                        [1] = {
-                                            [1] = {
-                                                ["x"] = -328047.96645123,
-                                                ["y"] = 631701.59986951,
-                                            }, -- end of [1]
-                                            [2] = {
-                                                ["x"] = -328515.66160439,
-                                                ["y"] = 632714.18257975,
-                                            }, -- end of [2]
-                                        }, -- end of [1]
                                     }, -- end of ["spans"]
                                 }, -- end of ["route"]
                                 ["start_time"] = 0,
@@ -5007,40 +4995,37 @@ mission = {
                                 ["uncontrollable"] = false,
                                 ["units"] = {
                                     [1] = {
-                                        ["heading"] = 2.0034884355963,
-                                        ["name"] = "DictKey_UnitName_249",
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_496",
                                         ["playerCanDrive"] = false,
                                         ["skill"] = "Average",
                                         ["transportable"] = {
                                             ["randomTransportable"] = false,
                                         }, -- end of ["transportable"]
-                                        ["type"] = "T-55",
-                                        ["unitId"] = 20,
-                                        ["wagons"] = {
-                                        }, -- end of ["wagons"]
-                                        ["x"] = -356394.27025756,
-                                        ["y"] = 616975.33319324,
+                                        ["type"] = "SA-18 Igla-S manpad",
+                                        ["unitId"] = 66,
+                                        ["x"] = -355383.9435172,
+                                        ["y"] = 618729.20287862,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -356394.27025756,
-                                ["y"] = 616975.33319324,
+                                ["x"] = -355383.9435172,
+                                ["y"] = 618729.20287862,
                             }, -- end of [7]
                             [8] = {
-                                ["groupId"] = 26,
+                                ["groupId"] = 57,
                                 ["hidden"] = false,
-                                ["lateActivation"] = true,
-                                ["name"] = "DictKey_GroupName_318",
+                                ["name"] = "DictKey_GroupName_534",
                                 ["route"] = {
                                     ["points"] = {
                                         [1] = {
                                             ["action"] = "Off Road",
-                                            ["alt"] = 10,
+                                            ["alt"] = 16,
                                             ["alt_type"] = "BARO",
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
                                             ["formation_template"] = "",
-                                            ["name"] = "DictKey_WptName_320",
+                                            ["name"] = "DictKey_WptName_536",
                                             ["speed"] = 5.5555555555556,
                                             ["speed_locked"] = true,
                                             ["task"] = {
@@ -5051,22 +5036,11 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -284651.82476112,
-                                            ["y"] = 686572.30688645,
+                                            ["x"] = -356376.21247114,
+                                            ["y"] = 615781.15743574,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
-                                    ["routeRelativeTOT"] = true,
                                     ["spans"] = {
-                                        [1] = {
-                                            [1] = {
-                                                ["x"] = -328047.96645123,
-                                                ["y"] = 631701.59986951,
-                                            }, -- end of [1]
-                                            [2] = {
-                                                ["x"] = -328515.66160439,
-                                                ["y"] = 632714.18257975,
-                                            }, -- end of [2]
-                                        }, -- end of [1]
                                     }, -- end of ["spans"]
                                 }, -- end of ["route"]
                                 ["start_time"] = 0,
@@ -5077,25 +5051,2450 @@ mission = {
                                 ["uncontrollable"] = false,
                                 ["units"] = {
                                     [1] = {
-                                        ["heading"] = 2.0034884355963,
-                                        ["name"] = "DictKey_UnitName_319",
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_535",
                                         ["playerCanDrive"] = false,
-                                        ["skill"] = "Excellent",
+                                        ["skill"] = "Average",
                                         ["transportable"] = {
                                             ["randomTransportable"] = false,
                                         }, -- end of ["transportable"]
-                                        ["type"] = "Kub 1S91 str",
-                                        ["unitId"] = 38,
-                                        ["wagons"] = {
-                                        }, -- end of ["wagons"]
-                                        ["x"] = -284651.82476112,
-                                        ["y"] = 686572.30688645,
+                                        ["type"] = "SA-18 Igla-S manpad",
+                                        ["unitId"] = 79,
+                                        ["x"] = -356376.21247114,
+                                        ["y"] = 615781.15743574,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -284651.82476112,
-                                ["y"] = 686572.30688645,
+                                ["x"] = -356376.21247114,
+                                ["y"] = 615781.15743574,
                             }, -- end of [8]
+                            [9] = {
+                                ["groupId"] = 58,
+                                ["hidden"] = false,
+                                ["name"] = "DictKey_GroupName_537",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 16,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_539",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -354708.05017176,
+                                            ["y"] = 616672.76142335,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_538",
+                                        ["playerCanDrive"] = false,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "SA-18 Igla-S manpad",
+                                        ["unitId"] = 80,
+                                        ["x"] = -354708.05017176,
+                                        ["y"] = 616672.76142335,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -354708.05017176,
+                                ["y"] = 616672.76142335,
+                            }, -- end of [9]
+                            [10] = {
+                                ["groupId"] = 59,
+                                ["hidden"] = false,
+                                ["name"] = "DictKey_GroupName_540",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 16,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_542",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -357325.33929665,
+                                            ["y"] = 618340.92372273,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_541",
+                                        ["playerCanDrive"] = false,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "SA-18 Igla-S manpad",
+                                        ["unitId"] = 81,
+                                        ["x"] = -357325.33929665,
+                                        ["y"] = 618340.92372273,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -357325.33929665,
+                                ["y"] = 618340.92372273,
+                            }, -- end of [10]
+                            [11] = {
+                                ["groupId"] = 60,
+                                ["hidden"] = false,
+                                ["name"] = "DictKey_GroupName_543",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 16,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_545",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -353658.25837991,
+                                            ["y"] = 617880.74101945,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_544",
+                                        ["playerCanDrive"] = false,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "SA-18 Igla-S manpad",
+                                        ["unitId"] = 82,
+                                        ["x"] = -353658.25837991,
+                                        ["y"] = 617880.74101945,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -353658.25837991,
+                                ["y"] = 617880.74101945,
+                            }, -- end of [11]
+                            [12] = {
+                                ["groupId"] = 61,
+                                ["hidden"] = false,
+                                ["name"] = "DictKey_GroupName_546",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 16,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_548",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -358260.08541269,
+                                            ["y"] = 617082.61164345,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_547",
+                                        ["playerCanDrive"] = false,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "SA-18 Igla-S manpad",
+                                        ["unitId"] = 83,
+                                        ["x"] = -358260.08541269,
+                                        ["y"] = 617082.61164345,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -358260.08541269,
+                                ["y"] = 617082.61164345,
+                            }, -- end of [12]
+                            [13] = {
+                                ["condition"] = "",
+                                ["groupId"] = 63,
+                                ["hidden"] = false,
+                                ["name"] = "DictKey_GroupName_552",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 9,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_557",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -356465.05932007,
+                                            ["y"] = 618604.47476933,
+                                        }, -- end of [1]
+                                        [2] = {
+                                            ["action"] = "On Road",
+                                            ["alt"] = 10,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 12.819459325556,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_558",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -356413.71608896,
+                                            ["y"] = 618583.83570375,
+                                        }, -- end of [2]
+                                        [3] = {
+                                            ["action"] = "On Road",
+                                            ["alt"] = 10,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 196.69979229506,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_559",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -355418.90159204,
+                                            ["y"] = 618355.23803425,
+                                        }, -- end of [3]
+                                        [4] = {
+                                            ["action"] = "On Road",
+                                            ["alt"] = 10,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 546.26269630141,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_560",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -354369.09686883,
+                                            ["y"] = 619275.32000178,
+                                        }, -- end of [4]
+                                        [5] = {
+                                            ["action"] = "On Road",
+                                            ["alt"] = 10,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 1013.2182761702,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_561",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -356560.18234037,
+                                            ["y"] = 620330.10588479,
+                                        }, -- end of [5]
+                                        [6] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 12,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 1272.7079789164,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_562",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                        [1] = {
+                                                            ["auto"] = false,
+                                                            ["enabled"] = true,
+                                                            ["id"] = "GoToWaypoint",
+                                                            ["number"] = 1,
+                                                            ["params"] = {
+                                                                ["fromWaypointIndex"] = 6,
+                                                                ["nWaypointIndx"] = 1,
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -356485.24338471,
+                                            ["y"] = 618890.44551261,
+                                        }, -- end of [6]
+                                    }, -- end of ["points"]
+                                    ["spans"] = {
+                                        [1] = {
+                                            [1] = {
+                                                ["x"] = -356465.05932007,
+                                                ["y"] = 618604.47476933,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -356413.71608896,
+                                                ["y"] = 618583.83570375,
+                                            }, -- end of [2]
+                                        }, -- end of [1]
+                                        [2] = {
+                                            [1] = {
+                                                ["x"] = -356413.56124723,
+                                                ["y"] = 618585.33177146,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -356354.13604558,
+                                                ["y"] = 618577.09267981,
+                                            }, -- end of [2]
+                                            [3] = {
+                                                ["x"] = -356290.31499601,
+                                                ["y"] = 618564.80149574,
+                                            }, -- end of [3]
+                                            [4] = {
+                                                ["x"] = -356193.10790657,
+                                                ["y"] = 618541.37322244,
+                                            }, -- end of [4]
+                                            [5] = {
+                                                ["x"] = -355898.31355546,
+                                                ["y"] = 618463.48278901,
+                                            }, -- end of [5]
+                                            [6] = {
+                                                ["x"] = -355448.93431774,
+                                                ["y"] = 618365.33195189,
+                                            }, -- end of [6]
+                                            [7] = {
+                                                ["x"] = -355418.48679401,
+                                                ["y"] = 618356.52582664,
+                                            }, -- end of [7]
+                                        }, -- end of [2]
+                                        [3] = {
+                                            [1] = {
+                                                ["x"] = -355418.48148809,
+                                                ["y"] = 618356.52422278,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -355365.71574359,
+                                                ["y"] = 618341.03935222,
+                                            }, -- end of [2]
+                                            [3] = {
+                                                ["x"] = -355235.085245,
+                                                ["y"] = 618307.06790629,
+                                            }, -- end of [3]
+                                            [4] = {
+                                                ["x"] = -355173.42844179,
+                                                ["y"] = 618286.51177181,
+                                            }, -- end of [4]
+                                            [5] = {
+                                                ["x"] = -355061.11015926,
+                                                ["y"] = 618244.34370158,
+                                            }, -- end of [5]
+                                            [6] = {
+                                                ["x"] = -354998.9337518,
+                                                ["y"] = 618225.4492545,
+                                            }, -- end of [6]
+                                            [7] = {
+                                                ["x"] = -354989.6636961,
+                                                ["y"] = 618221.70144012,
+                                            }, -- end of [7]
+                                            [8] = {
+                                                ["x"] = -354980.60429301,
+                                                ["y"] = 618217.47039158,
+                                            }, -- end of [8]
+                                            [9] = {
+                                                ["x"] = -354962.98390136,
+                                                ["y"] = 618208.01327371,
+                                            }, -- end of [9]
+                                            [10] = {
+                                                ["x"] = -354932.17231258,
+                                                ["y"] = 618191.42260142,
+                                            }, -- end of [10]
+                                            [11] = {
+                                                ["x"] = -354909.58306191,
+                                                ["y"] = 618180.7147079,
+                                            }, -- end of [11]
+                                            [12] = {
+                                                ["x"] = -354900.3179957,
+                                                ["y"] = 618176.94286958,
+                                            }, -- end of [12]
+                                            [13] = {
+                                                ["x"] = -354895.44390932,
+                                                ["y"] = 618175.89507336,
+                                            }, -- end of [13]
+                                            [14] = {
+                                                ["x"] = -354891.35136105,
+                                                ["y"] = 618178.31459449,
+                                            }, -- end of [14]
+                                            [15] = {
+                                                ["x"] = -354888.81776688,
+                                                ["y"] = 618182.65255851,
+                                            }, -- end of [15]
+                                            [16] = {
+                                                ["x"] = -354857.8496076,
+                                                ["y"] = 618245.40343514,
+                                            }, -- end of [16]
+                                            [17] = {
+                                                ["x"] = -354852.44403969,
+                                                ["y"] = 618253.81510624,
+                                            }, -- end of [17]
+                                            [18] = {
+                                                ["x"] = -354843.65803142,
+                                                ["y"] = 618265.97044927,
+                                            }, -- end of [18]
+                                            [19] = {
+                                                ["x"] = -354824.80046024,
+                                                ["y"] = 618289.29854127,
+                                            }, -- end of [19]
+                                            [20] = {
+                                                ["x"] = -354741.09860191,
+                                                ["y"] = 618382.12308159,
+                                            }, -- end of [20]
+                                            [21] = {
+                                                ["x"] = -354544.56024994,
+                                                ["y"] = 618588.50013051,
+                                            }, -- end of [21]
+                                            [22] = {
+                                                ["x"] = -354533.5293695,
+                                                ["y"] = 618598.66077282,
+                                            }, -- end of [22]
+                                            [23] = {
+                                                ["x"] = -354529.63587565,
+                                                ["y"] = 618601.79673128,
+                                            }, -- end of [23]
+                                            [24] = {
+                                                ["x"] = -354525.52207384,
+                                                ["y"] = 618604.63533849,
+                                            }, -- end of [24]
+                                            [25] = {
+                                                ["x"] = -354521.10370297,
+                                                ["y"] = 618606.96726495,
+                                            }, -- end of [25]
+                                            [26] = {
+                                                ["x"] = -354516.40835283,
+                                                ["y"] = 618608.67737139,
+                                            }, -- end of [26]
+                                            [27] = {
+                                                ["x"] = -354511.58205308,
+                                                ["y"] = 618609.97829792,
+                                            }, -- end of [27]
+                                            [28] = {
+                                                ["x"] = -354506.67273606,
+                                                ["y"] = 618610.92217402,
+                                            }, -- end of [28]
+                                            [29] = {
+                                                ["x"] = -354496.74538981,
+                                                ["y"] = 618612.10549947,
+                                            }, -- end of [29]
+                                            [30] = {
+                                                ["x"] = -354481.7702308,
+                                                ["y"] = 618612.94190777,
+                                            }, -- end of [30]
+                                            [31] = {
+                                                ["x"] = -354371.78866093,
+                                                ["y"] = 618614.95300708,
+                                            }, -- end of [31]
+                                            [32] = {
+                                                ["x"] = -354367.86184936,
+                                                ["y"] = 618617.60666956,
+                                            }, -- end of [32]
+                                            [33] = {
+                                                ["x"] = -354367.1364547,
+                                                ["y"] = 618622.50044942,
+                                            }, -- end of [33]
+                                            [34] = {
+                                                ["x"] = -354366.78381154,
+                                                ["y"] = 618632.52522482,
+                                            }, -- end of [34]
+                                            [35] = {
+                                                ["x"] = -354370.44748496,
+                                                ["y"] = 619275.21062564,
+                                            }, -- end of [35]
+                                        }, -- end of [3]
+                                        [4] = {
+                                            [1] = {
+                                                ["x"] = -354370.44748602,
+                                                ["y"] = 619275.21082259,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -354371.50237461,
+                                                ["y"] = 619350.22126109,
+                                            }, -- end of [2]
+                                            [3] = {
+                                                ["x"] = -354372.08085717,
+                                                ["y"] = 619355.19687481,
+                                            }, -- end of [3]
+                                            [4] = {
+                                                ["x"] = -354374.8006113,
+                                                ["y"] = 619359.00753966,
+                                            }, -- end of [4]
+                                            [5] = {
+                                                ["x"] = -354379.71867166,
+                                                ["y"] = 619359.73620006,
+                                            }, -- end of [5]
+                                            [6] = {
+                                                ["x"] = -354389.74873471,
+                                                ["y"] = 619360.05256913,
+                                            }, -- end of [6]
+                                            [7] = {
+                                                ["x"] = -355119.65446037,
+                                                ["y"] = 619365.55214686,
+                                            }, -- end of [7]
+                                            [8] = {
+                                                ["x"] = -355194.39498196,
+                                                ["y"] = 619371.70509856,
+                                            }, -- end of [8]
+                                            [9] = {
+                                                ["x"] = -355229.0809162,
+                                                ["y"] = 619376.35078682,
+                                            }, -- end of [9]
+                                            [10] = {
+                                                ["x"] = -355248.72953248,
+                                                ["y"] = 619380.07232606,
+                                            }, -- end of [10]
+                                            [11] = {
+                                                ["x"] = -355272.99125658,
+                                                ["y"] = 619386.09023278,
+                                            }, -- end of [11]
+                                            [12] = {
+                                                ["x"] = -355340.21985788,
+                                                ["y"] = 619405.56342961,
+                                            }, -- end of [12]
+                                            [13] = {
+                                                ["x"] = -355373.23503659,
+                                                ["y"] = 619417.17209303,
+                                            }, -- end of [13]
+                                            [14] = {
+                                                ["x"] = -355410.233172,
+                                                ["y"] = 619432.36342122,
+                                            }, -- end of [14]
+                                            [15] = {
+                                                ["x"] = -355455.48821947,
+                                                ["y"] = 619453.61201216,
+                                            }, -- end of [15]
+                                            [16] = {
+                                                ["x"] = -355499.69279579,
+                                                ["y"] = 619476.96708205,
+                                            }, -- end of [16]
+                                            [17] = {
+                                                ["x"] = -355534.04848118,
+                                                ["y"] = 619497.44359305,
+                                            }, -- end of [17]
+                                            [18] = {
+                                                ["x"] = -355563.10799005,
+                                                ["y"] = 619516.94462359,
+                                            }, -- end of [18]
+                                            [19] = {
+                                                ["x"] = -355634.94697484,
+                                                ["y"] = 619571.14854354,
+                                            }, -- end of [19]
+                                            [20] = {
+                                                ["x"] = -356202.86453216,
+                                                ["y"] = 620029.55105029,
+                                            }, -- end of [20]
+                                            [21] = {
+                                                ["x"] = -356400.91677383,
+                                                ["y"] = 620165.02710318,
+                                            }, -- end of [21]
+                                            [22] = {
+                                                ["x"] = -356420.21069591,
+                                                ["y"] = 620180.91950304,
+                                            }, -- end of [22]
+                                            [23] = {
+                                                ["x"] = -356442.29062353,
+                                                ["y"] = 620201.22403124,
+                                            }, -- end of [23]
+                                            [24] = {
+                                                ["x"] = -356477.22838783,
+                                                ["y"] = 620236.98498151,
+                                            }, -- end of [24]
+                                            [25] = {
+                                                ["x"] = -356561.40374629,
+                                                ["y"] = 620329.16600374,
+                                            }, -- end of [25]
+                                        }, -- end of [4]
+                                        [5] = {
+                                            [1] = {
+                                                ["x"] = -356560.18234037,
+                                                ["y"] = 620330.10588479,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -356485.24338471,
+                                                ["y"] = 618890.44551261,
+                                            }, -- end of [2]
+                                        }, -- end of [5]
+                                        [6] = {
+                                            [1] = {
+                                                ["x"] = -356454.56109662,
+                                                ["y"] = 618900.99065214,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -356454.56109662,
+                                                ["y"] = 618900.99065214,
+                                            }, -- end of [2]
+                                        }, -- end of [6]
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = -0.38221401114403,
+                                        ["name"] = "DictKey_UnitName_553",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 85,
+                                        ["x"] = -356465.05932007,
+                                        ["y"] = 618604.47476933,
+                                    }, -- end of [1]
+                                    [2] = {
+                                        ["heading"] = -0.38221401114403,
+                                        ["name"] = "DictKey_UnitName_554",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 86,
+                                        ["x"] = -356500.6712021,
+                                        ["y"] = 618578.47336215,
+                                    }, -- end of [2]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -356465.05932007,
+                                ["y"] = 618604.47476933,
+                            }, -- end of [13]
+                            [14] = {
+                                ["condition"] = "",
+                                ["groupId"] = 64,
+                                ["hidden"] = false,
+                                ["name"] = "DictKey_GroupName_563",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 9,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_566",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -353768.10145263,
+                                            ["y"] = 617105.73021377,
+                                        }, -- end of [1]
+                                        [2] = {
+                                            ["action"] = "On Road",
+                                            ["alt"] = 10,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 16.64496620033,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_567",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -353685.03323237,
+                                            ["y"] = 617146.35961122,
+                                        }, -- end of [2]
+                                        [3] = {
+                                            ["action"] = "On Road",
+                                            ["alt"] = 10,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 422.36689021825,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_568",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -351847.75199676,
+                                            ["y"] = 618449.0535015,
+                                        }, -- end of [3]
+                                        [4] = {
+                                            ["action"] = "On Road",
+                                            ["alt"] = 10,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 794.97988236207,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_569",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -353390.72689886,
+                                            ["y"] = 619746.37131454,
+                                        }, -- end of [4]
+                                        [5] = {
+                                            ["action"] = "On Road",
+                                            ["alt"] = 10,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 1141.2917392373,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_570",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -354364.95561508,
+                                            ["y"] = 618635.00376105,
+                                        }, -- end of [5]
+                                        [6] = {
+                                            ["action"] = "On Road",
+                                            ["alt"] = 12,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 1538.7408296918,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_571",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                        [1] = {
+                                                            ["auto"] = false,
+                                                            ["enabled"] = true,
+                                                            ["id"] = "GoToWaypoint",
+                                                            ["number"] = 1,
+                                                            ["params"] = {
+                                                                ["fromWaypointIndex"] = 6,
+                                                                ["nWaypointIndx"] = 1,
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -353945.53527661,
+                                            ["y"] = 617000.34162635,
+                                        }, -- end of [6]
+                                    }, -- end of ["points"]
+                                    ["spans"] = {
+                                        [1] = {
+                                            [1] = {
+                                                ["x"] = -353768.10145263,
+                                                ["y"] = 617105.73021377,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -353685.03323237,
+                                                ["y"] = 617146.35961122,
+                                            }, -- end of [2]
+                                        }, -- end of [1]
+                                        [2] = {
+                                            [1] = {
+                                                ["x"] = -353685.60197056,
+                                                ["y"] = 617147.58726499,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -353564.99462517,
+                                                ["y"] = 617208.20632775,
+                                            }, -- end of [2]
+                                            [3] = {
+                                                ["x"] = -353534.98469335,
+                                                ["y"] = 617226.21066766,
+                                            }, -- end of [3]
+                                            [4] = {
+                                                ["x"] = -353368.7534291,
+                                                ["y"] = 617337.40208534,
+                                            }, -- end of [4]
+                                            [5] = {
+                                                ["x"] = -353272.33515645,
+                                                ["y"] = 617408.81942249,
+                                            }, -- end of [5]
+                                            [6] = {
+                                                ["x"] = -352182.74362604,
+                                                ["y"] = 618205.77390185,
+                                            }, -- end of [6]
+                                            [7] = {
+                                                ["x"] = -351945.58898101,
+                                                ["y"] = 618372.58098735,
+                                            }, -- end of [7]
+                                            [8] = {
+                                                ["x"] = -351848.59758665,
+                                                ["y"] = 618450.10384032,
+                                            }, -- end of [8]
+                                        }, -- end of [2]
+                                        [3] = {
+                                            [1] = {
+                                                ["x"] = -351848.60337108,
+                                                ["y"] = 618450.09916129,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -351840.92189945,
+                                                ["y"] = 618456.50094569,
+                                            }, -- end of [2]
+                                            [3] = {
+                                                ["x"] = -351837.42656958,
+                                                ["y"] = 618460.10405306,
+                                            }, -- end of [3]
+                                            [4] = {
+                                                ["x"] = -351836.57326119,
+                                                ["y"] = 618464.74809976,
+                                            }, -- end of [4]
+                                            [5] = {
+                                                ["x"] = -351839.0667127,
+                                                ["y"] = 618469.0663992,
+                                            }, -- end of [5]
+                                            [6] = {
+                                                ["x"] = -351845.06780278,
+                                                ["y"] = 618477.09698246,
+                                            }, -- end of [6]
+                                            [7] = {
+                                                ["x"] = -352249.21457724,
+                                                ["y"] = 618966.85538228,
+                                            }, -- end of [7]
+                                            [8] = {
+                                                ["x"] = -352301.70019533,
+                                                ["y"] = 619027.22674526,
+                                            }, -- end of [8]
+                                            [9] = {
+                                                ["x"] = -352305.36884096,
+                                                ["y"] = 619030.6219908,
+                                            }, -- end of [9]
+                                            [10] = {
+                                                ["x"] = -352309.25895888,
+                                                ["y"] = 619033.76210638,
+                                            }, -- end of [10]
+                                            [11] = {
+                                                ["x"] = -352317.40219369,
+                                                ["y"] = 619039.56387571,
+                                            }, -- end of [11]
+                                            [12] = {
+                                                ["x"] = -352408.36378733,
+                                                ["y"] = 619101.37029286,
+                                            }, -- end of [12]
+                                            [13] = {
+                                                ["x"] = -352423.96587734,
+                                                ["y"] = 619113.87809319,
+                                            }, -- end of [13]
+                                            [14] = {
+                                                ["x"] = -352488.33721915,
+                                                ["y"] = 619169.36457175,
+                                            }, -- end of [14]
+                                            [15] = {
+                                                ["x"] = -352504.4274759,
+                                                ["y"] = 619181.23944938,
+                                            }, -- end of [15]
+                                            [16] = {
+                                                ["x"] = -352582.15717878,
+                                                ["y"] = 619235.79910437,
+                                            }, -- end of [16]
+                                            [17] = {
+                                                ["x"] = -352672.05829783,
+                                                ["y"] = 619307.48998189,
+                                            }, -- end of [17]
+                                            [18] = {
+                                                ["x"] = -352684.59399846,
+                                                ["y"] = 619315.7216945,
+                                            }, -- end of [18]
+                                            [19] = {
+                                                ["x"] = -353291.38280976,
+                                                ["y"] = 619674.11275744,
+                                            }, -- end of [19]
+                                            [20] = {
+                                                ["x"] = -353392.87195228,
+                                                ["y"] = 619728.19613631,
+                                            }, -- end of [20]
+                                            [21] = {
+                                                ["x"] = -353395.93897941,
+                                                ["y"] = 619732.00209458,
+                                            }, -- end of [21]
+                                            [22] = {
+                                                ["x"] = -353396.05068269,
+                                                ["y"] = 619736.93080541,
+                                            }, -- end of [22]
+                                            [23] = {
+                                                ["x"] = -353394.55084723,
+                                                ["y"] = 619741.70784242,
+                                            }, -- end of [23]
+                                            [24] = {
+                                                ["x"] = -353392.45886478,
+                                                ["y"] = 619746.25007782,
+                                            }, -- end of [24]
+                                            [25] = {
+                                                ["x"] = -353392.06295911,
+                                                ["y"] = 619747.05307132,
+                                            }, -- end of [25]
+                                        }, -- end of [3]
+                                        [4] = {
+                                            [1] = {
+                                                ["x"] = -353389.52484802,
+                                                ["y"] = 619745.75853171,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -353543.40118298,
+                                                ["y"] = 619442.58950082,
+                                            }, -- end of [2]
+                                            [3] = {
+                                                ["x"] = -353559.3796967,
+                                                ["y"] = 619405.93526629,
+                                            }, -- end of [3]
+                                            [4] = {
+                                                ["x"] = -353561.96523298,
+                                                ["y"] = 619401.65787774,
+                                            }, -- end of [4]
+                                            [5] = {
+                                                ["x"] = -353564.99012476,
+                                                ["y"] = 619397.68069108,
+                                            }, -- end of [5]
+                                            [6] = {
+                                                ["x"] = -353568.51659288,
+                                                ["y"] = 619394.14209112,
+                                            }, -- end of [6]
+                                            [7] = {
+                                                ["x"] = -353572.48462896,
+                                                ["y"] = 619391.10455538,
+                                            }, -- end of [7]
+                                            [8] = {
+                                                ["x"] = -353601.93638659,
+                                                ["y"] = 619372.19571897,
+                                            }, -- end of [8]
+                                            [9] = {
+                                                ["x"] = -353610.7110863,
+                                                ["y"] = 619367.41381079,
+                                            }, -- end of [9]
+                                            [10] = {
+                                                ["x"] = -353615.42395437,
+                                                ["y"] = 619365.76255195,
+                                            }, -- end of [10]
+                                            [11] = {
+                                                ["x"] = -353620.36070339,
+                                                ["y"] = 619365.00432422,
+                                            }, -- end of [11]
+                                            [12] = {
+                                                ["x"] = -353625.35503195,
+                                                ["y"] = 619364.78744244,
+                                            }, -- end of [12]
+                                            [13] = {
+                                                ["x"] = -354360.36467225,
+                                                ["y"] = 619359.82663016,
+                                            }, -- end of [13]
+                                            [14] = {
+                                                ["x"] = -354365.14186852,
+                                                ["y"] = 619358.66743382,
+                                            }, -- end of [14]
+                                            [15] = {
+                                                ["x"] = -354367.03958428,
+                                                ["y"] = 619354.25560838,
+                                            }, -- end of [15]
+                                            [16] = {
+                                                ["x"] = -354367.43418152,
+                                                ["y"] = 619349.25787376,
+                                            }, -- end of [16]
+                                            [17] = {
+                                                ["x"] = -354367.80248052,
+                                                ["y"] = 619319.23711534,
+                                            }, -- end of [17]
+                                            [18] = {
+                                                ["x"] = -354363.45574549,
+                                                ["y"] = 618635.01498757,
+                                            }, -- end of [18]
+                                        }, -- end of [4]
+                                        [5] = {
+                                            [1] = {
+                                                ["x"] = -354363.455752,
+                                                ["y"] = 618635.01582117,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -354362.97018874,
+                                                ["y"] = 618595.02078879,
+                                            }, -- end of [2]
+                                            [3] = {
+                                                ["x"] = -354362.54795418,
+                                                ["y"] = 618590.03928249,
+                                            }, -- end of [3]
+                                            [4] = {
+                                                ["x"] = -354361.82640863,
+                                                ["y"] = 618585.09250798,
+                                            }, -- end of [4]
+                                            [5] = {
+                                                ["x"] = -354360.79467099,
+                                                ["y"] = 618580.20097198,
+                                            }, -- end of [5]
+                                            [6] = {
+                                                ["x"] = -354359.47972538,
+                                                ["y"] = 618575.37762031,
+                                            }, -- end of [6]
+                                            [7] = {
+                                                ["x"] = -354356.19083896,
+                                                ["y"] = 618565.93695727,
+                                            }, -- end of [7]
+                                            [8] = {
+                                                ["x"] = -354352.17692288,
+                                                ["y"] = 618556.78054023,
+                                            }, -- end of [8]
+                                            [9] = {
+                                                ["x"] = -354347.51050703,
+                                                ["y"] = 618547.9378212,
+                                            }, -- end of [9]
+                                            [10] = {
+                                                ["x"] = -354344.94930171,
+                                                ["y"] = 618543.64422271,
+                                            }, -- end of [10]
+                                            [11] = {
+                                                ["x"] = -354339.30329739,
+                                                ["y"] = 618535.39310943,
+                                            }, -- end of [11]
+                                            [12] = {
+                                                ["x"] = -354330.06437194,
+                                                ["y"] = 618523.57826508,
+                                            }, -- end of [12]
+                                            [13] = {
+                                                ["x"] = -354085.81876944,
+                                                ["y"] = 618239.04551061,
+                                            }, -- end of [13]
+                                            [14] = {
+                                                ["x"] = -354065.025096,
+                                                ["y"] = 618217.42629734,
+                                            }, -- end of [14]
+                                            [15] = {
+                                                ["x"] = -354035.81355445,
+                                                ["y"] = 618190.10730502,
+                                            }, -- end of [15]
+                                            [16] = {
+                                                ["x"] = -354013.66035545,
+                                                ["y"] = 618169.82768051,
+                                            }, -- end of [16]
+                                            [17] = {
+                                                ["x"] = -354010.2355261,
+                                                ["y"] = 618165.98884133,
+                                            }, -- end of [17]
+                                            [18] = {
+                                                ["x"] = -354007.95434573,
+                                                ["y"] = 618161.73697011,
+                                            }, -- end of [18]
+                                            [19] = {
+                                                ["x"] = -354010.75247888,
+                                                ["y"] = 618158.52056281,
+                                            }, -- end of [19]
+                                            [20] = {
+                                                ["x"] = -354015.87540936,
+                                                ["y"] = 618157.48381717,
+                                            }, -- end of [20]
+                                            [21] = {
+                                                ["x"] = -354025.82824191,
+                                                ["y"] = 618156.28929188,
+                                            }, -- end of [21]
+                                            [22] = {
+                                                ["x"] = -354030.71688203,
+                                                ["y"] = 618155.24546802,
+                                            }, -- end of [22]
+                                            [23] = {
+                                                ["x"] = -354040.31640759,
+                                                ["y"] = 618152.45046857,
+                                            }, -- end of [23]
+                                            [24] = {
+                                                ["x"] = -354063.85388613,
+                                                ["y"] = 618144.03280693,
+                                            }, -- end of [24]
+                                            [25] = {
+                                                ["x"] = -354310.2379075,
+                                                ["y"] = 618046.50138115,
+                                            }, -- end of [25]
+                                            [26] = {
+                                                ["x"] = -354329.47669725,
+                                                ["y"] = 618041.04355311,
+                                            }, -- end of [26]
+                                            [27] = {
+                                                ["x"] = -354353.83884985,
+                                                ["y"] = 618035.45581689,
+                                            }, -- end of [27]
+                                            [28] = {
+                                                ["x"] = -354358.79244982,
+                                                ["y"] = 618034.78432041,
+                                            }, -- end of [28]
+                                            [29] = {
+                                                ["x"] = -354368.76904123,
+                                                ["y"] = 618034.10132882,
+                                            }, -- end of [29]
+                                            [30] = {
+                                                ["x"] = -354373.74735928,
+                                                ["y"] = 618033.67007149,
+                                            }, -- end of [30]
+                                            [31] = {
+                                                ["x"] = -354378.48926644,
+                                                ["y"] = 618032.16732913,
+                                            }, -- end of [31]
+                                            [32] = {
+                                                ["x"] = -354380.78132592,
+                                                ["y"] = 618027.97184886,
+                                            }, -- end of [32]
+                                            [33] = {
+                                                ["x"] = -354381.06904867,
+                                                ["y"] = 618022.95426604,
+                                            }, -- end of [33]
+                                            [34] = {
+                                                ["x"] = -354381.10744602,
+                                                ["y"] = 617872.97763987,
+                                            }, -- end of [34]
+                                            [35] = {
+                                                ["x"] = -354382.26951108,
+                                                ["y"] = 617863.04744416,
+                                            }, -- end of [35]
+                                            [36] = {
+                                                ["x"] = -354383.99268217,
+                                                ["y"] = 617853.19854961,
+                                            }, -- end of [36]
+                                            [37] = {
+                                                ["x"] = -354386.74623297,
+                                                ["y"] = 617838.45116386,
+                                            }, -- end of [37]
+                                            [38] = {
+                                                ["x"] = -354385.70520218,
+                                                ["y"] = 617833.68043713,
+                                            }, -- end of [38]
+                                            [39] = {
+                                                ["x"] = -354381.57598661,
+                                                ["y"] = 617830.99123331,
+                                            }, -- end of [39]
+                                            [40] = {
+                                                ["x"] = -354376.80103956,
+                                                ["y"] = 617829.49868144,
+                                            }, -- end of [40]
+                                            [41] = {
+                                                ["x"] = -354347.92060289,
+                                                ["y"] = 617821.40322269,
+                                            }, -- end of [41]
+                                            [42] = {
+                                                ["x"] = -354338.51244138,
+                                                ["y"] = 617818.01769978,
+                                            }, -- end of [42]
+                                            [43] = {
+                                                ["x"] = -354324.69272705,
+                                                ["y"] = 617812.18992306,
+                                            }, -- end of [43]
+                                            [44] = {
+                                                ["x"] = -354311.23729156,
+                                                ["y"] = 617805.56658296,
+                                            }, -- end of [44]
+                                            [45] = {
+                                                ["x"] = -354289.49122331,
+                                                ["y"] = 617793.23921984,
+                                            }, -- end of [45]
+                                            [46] = {
+                                                ["x"] = -354243.11297472,
+                                                ["y"] = 617763.68433305,
+                                            }, -- end of [46]
+                                            [47] = {
+                                                ["x"] = -354234.9977252,
+                                                ["y"] = 617757.84334447,
+                                            }, -- end of [47]
+                                            [48] = {
+                                                ["x"] = -354227.42451947,
+                                                ["y"] = 617751.32439205,
+                                            }, -- end of [48]
+                                            [49] = {
+                                                ["x"] = -354220.54271431,
+                                                ["y"] = 617744.07019654,
+                                            }, -- end of [49]
+                                            [50] = {
+                                                ["x"] = -354217.38761625,
+                                                ["y"] = 617740.19517713,
+                                            }, -- end of [50]
+                                            [51] = {
+                                                ["x"] = -354214.4895434,
+                                                ["y"] = 617736.12453866,
+                                            }, -- end of [51]
+                                            [52] = {
+                                                ["x"] = -354209.26261163,
+                                                ["y"] = 617727.599488,
+                                            }, -- end of [52]
+                                            [53] = {
+                                                ["x"] = -354207.08237383,
+                                                ["y"] = 617723.1018043,
+                                            }, -- end of [53]
+                                            [54] = {
+                                                ["x"] = -354205.21248438,
+                                                ["y"] = 617718.46528879,
+                                            }, -- end of [54]
+                                            [55] = {
+                                                ["x"] = -354202.06205938,
+                                                ["y"] = 617708.97634493,
+                                            }, -- end of [55]
+                                            [56] = {
+                                                ["x"] = -354193.09675211,
+                                                ["y"] = 617675.14701471,
+                                            }, -- end of [56]
+                                            [57] = {
+                                                ["x"] = -354139.12097225,
+                                                ["y"] = 617446.4415685,
+                                            }, -- end of [57]
+                                            [58] = {
+                                                ["x"] = -354121.21252738,
+                                                ["y"] = 617358.26446357,
+                                            }, -- end of [58]
+                                            [59] = {
+                                                ["x"] = -354060.84808234,
+                                                ["y"] = 617131.15948453,
+                                            }, -- end of [59]
+                                            [60] = {
+                                                ["x"] = -354059.23719692,
+                                                ["y"] = 617126.42667485,
+                                            }, -- end of [60]
+                                            [61] = {
+                                                ["x"] = -354053.65256498,
+                                                ["y"] = 617112.508974,
+                                            }, -- end of [61]
+                                            [62] = {
+                                                ["x"] = -354049.16701906,
+                                                ["y"] = 617103.57614964,
+                                            }, -- end of [62]
+                                            [63] = {
+                                                ["x"] = -354041.49020923,
+                                                ["y"] = 617090.69334518,
+                                            }, -- end of [63]
+                                            [64] = {
+                                                ["x"] = -354035.62846416,
+                                                ["y"] = 617082.59320265,
+                                            }, -- end of [64]
+                                            [65] = {
+                                                ["x"] = -354026.17705476,
+                                                ["y"] = 617070.94737741,
+                                            }, -- end of [65]
+                                            [66] = {
+                                                ["x"] = -353962.60755601,
+                                                ["y"] = 617000.3576216,
+                                            }, -- end of [66]
+                                            [67] = {
+                                                ["x"] = -353958.83603063,
+                                                ["y"] = 616997.04533892,
+                                            }, -- end of [67]
+                                            [68] = {
+                                                ["x"] = -353954.13692446,
+                                                ["y"] = 616996.17132005,
+                                            }, -- end of [68]
+                                            [69] = {
+                                                ["x"] = -353949.71837827,
+                                                ["y"] = 616998.49026509,
+                                            }, -- end of [69]
+                                            [70] = {
+                                                ["x"] = -353946.43800415,
+                                                ["y"] = 617001.34696649,
+                                            }, -- end of [70]
+                                        }, -- end of [5]
+                                        [6] = {
+                                            [1] = {
+                                                ["x"] = -353788.28551726,
+                                                ["y"] = 617391.70095705,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -353788.28551726,
+                                                ["y"] = 617391.70095705,
+                                            }, -- end of [2]
+                                        }, -- end of [6]
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0.45489674768642,
+                                        ["name"] = "DictKey_UnitName_564",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 89,
+                                        ["x"] = -353768.10145263,
+                                        ["y"] = 617105.73021377,
+                                    }, -- end of [1]
+                                    [2] = {
+                                        ["heading"] = 0.45489674768642,
+                                        ["name"] = "DictKey_UnitName_565",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 90,
+                                        ["x"] = -353803.71333466,
+                                        ["y"] = 617079.72880659,
+                                    }, -- end of [2]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -353768.10145263,
+                                ["y"] = 617105.73021377,
+                            }, -- end of [14]
+                            [15] = {
+                                ["condition"] = "",
+                                ["groupId"] = 65,
+                                ["hidden"] = false,
+                                ["name"] = "DictKey_GroupName_572",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 9,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_575",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -355249.29596649,
+                                            ["y"] = 617024.54183769,
+                                        }, -- end of [1]
+                                        [2] = {
+                                            ["action"] = "On Road",
+                                            ["alt"] = 10,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 26.607218393311,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_576",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -355182.579566,
+                                            ["y"] = 616919.55126287,
+                                        }, -- end of [2]
+                                        [3] = {
+                                            ["action"] = "On Road",
+                                            ["alt"] = 10,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 117.19764950722,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_577",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -354829.08756772,
+                                            ["y"] = 616427.80574747,
+                                        }, -- end of [3]
+                                        [4] = {
+                                            ["action"] = "On Road",
+                                            ["alt"] = 10,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 615.02500350612,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_578",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -353185.88064699,
+                                            ["y"] = 618235.45227391,
+                                        }, -- end of [4]
+                                        [5] = {
+                                            ["action"] = "On Road",
+                                            ["alt"] = 10,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 1026.1608999686,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_579",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -355361.91658707,
+                                            ["y"] = 618338.69916007,
+                                        }, -- end of [5]
+                                        [6] = {
+                                            ["action"] = "On Road",
+                                            ["alt"] = 12,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 1229.0675097301,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_580",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                        [1] = {
+                                                            ["auto"] = false,
+                                                            ["enabled"] = true,
+                                                            ["id"] = "GoToWaypoint",
+                                                            ["number"] = 1,
+                                                            ["params"] = {
+                                                                ["fromWaypointIndex"] = 6,
+                                                                ["nWaypointIndx"] = 1,
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -355389.96558832,
+                                            ["y"] = 617211.78923537,
+                                        }, -- end of [6]
+                                    }, -- end of ["points"]
+                                    ["spans"] = {
+                                        [1] = {
+                                            [1] = {
+                                                ["x"] = -355249.29596649,
+                                                ["y"] = 617024.54183769,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -355182.579566,
+                                                ["y"] = 616919.55126287,
+                                            }, -- end of [2]
+                                        }, -- end of [1]
+                                        [2] = {
+                                            [1] = {
+                                                ["x"] = -355181.3991183,
+                                                ["y"] = 616920.47868623,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -354835.37508083,
+                                                ["y"] = 616436.46285402,
+                                            }, -- end of [2]
+                                            [3] = {
+                                                ["x"] = -354832.10802419,
+                                                ["y"] = 616432.6787589,
+                                            }, -- end of [3]
+                                            [4] = {
+                                                ["x"] = -354828.49816479,
+                                                ["y"] = 616429.22500647,
+                                            }, -- end of [4]
+                                            [5] = {
+                                                ["x"] = -354828.07143002,
+                                                ["y"] = 616428.86932992,
+                                            }, -- end of [5]
+                                        }, -- end of [2]
+                                        [3] = {
+                                            [1] = {
+                                                ["x"] = -354828.11121974,
+                                                ["y"] = 616428.90369464,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -354823.75513813,
+                                                ["y"] = 616426.45300573,
+                                            }, -- end of [2]
+                                            [3] = {
+                                                ["x"] = -354819.12981037,
+                                                ["y"] = 616424.57192091,
+                                            }, -- end of [3]
+                                            [4] = {
+                                                ["x"] = -354814.25477054,
+                                                ["y"] = 616423.50435195,
+                                            }, -- end of [4]
+                                            [5] = {
+                                                ["x"] = -354809.27311236,
+                                                ["y"] = 616423.07267662,
+                                            }, -- end of [5]
+                                            [6] = {
+                                                ["x"] = -354804.32759466,
+                                                ["y"] = 616423.74758523,
+                                            }, -- end of [6]
+                                            [7] = {
+                                                ["x"] = -354799.50079674,
+                                                ["y"] = 616425.04802227,
+                                            }, -- end of [7]
+                                            [8] = {
+                                                ["x"] = -354790.01766864,
+                                                ["y"] = 616428.21860893,
+                                            }, -- end of [8]
+                                            [9] = {
+                                                ["x"] = -354455.02559266,
+                                                ["y"] = 616560.03509585,
+                                            }, -- end of [9]
+                                            [10] = {
+                                                ["x"] = -354441.29265812,
+                                                ["y"] = 616566.06302306,
+                                            }, -- end of [10]
+                                            [11] = {
+                                                ["x"] = -354432.49708267,
+                                                ["y"] = 616570.81823041,
+                                            }, -- end of [11]
+                                            [12] = {
+                                                ["x"] = -354424.03260637,
+                                                ["y"] = 616576.13784618,
+                                            }, -- end of [12]
+                                            [13] = {
+                                                ["x"] = -354415.95133245,
+                                                ["y"] = 616582.02219469,
+                                            }, -- end of [13]
+                                            [14] = {
+                                                ["x"] = -354396.97770557,
+                                                ["y"] = 616598.29814124,
+                                            }, -- end of [14]
+                                            [15] = {
+                                                ["x"] = -353923.41672465,
+                                                ["y"] = 617021.31009509,
+                                            }, -- end of [15]
+                                            [16] = {
+                                                ["x"] = -353915.29160363,
+                                                ["y"] = 617027.13538715,
+                                            }, -- end of [16]
+                                            [17] = {
+                                                ["x"] = -353906.76868944,
+                                                ["y"] = 617032.36278532,
+                                            }, -- end of [17]
+                                            [18] = {
+                                                ["x"] = -353711.81681854,
+                                                ["y"] = 617134.30142997,
+                                            }, -- end of [18]
+                                            [19] = {
+                                                ["x"] = -353560.1262278,
+                                                ["y"] = 617210.99539241,
+                                            }, -- end of [19]
+                                            [20] = {
+                                                ["x"] = -353526.04432641,
+                                                ["y"] = 617231.92515025,
+                                            }, -- end of [20]
+                                            [21] = {
+                                                ["x"] = -353497.21326024,
+                                                ["y"] = 617251.6520552,
+                                            }, -- end of [21]
+                                            [22] = {
+                                                ["x"] = -353495.70240107,
+                                                ["y"] = 617256.36842177,
+                                            }, -- end of [22]
+                                            [23] = {
+                                                ["x"] = -353494.86946876,
+                                                ["y"] = 617261.2985322,
+                                            }, -- end of [23]
+                                            [24] = {
+                                                ["x"] = -353493.09786907,
+                                                ["y"] = 617271.12955542,
+                                            }, -- end of [24]
+                                            [25] = {
+                                                ["x"] = -353491.39473741,
+                                                ["y"] = 617275.82876315,
+                                            }, -- end of [25]
+                                            [26] = {
+                                                ["x"] = -353487.25706607,
+                                                ["y"] = 617284.93065293,
+                                            }, -- end of [26]
+                                            [27] = {
+                                                ["x"] = -353470.91000568,
+                                                ["y"] = 617315.87491541,
+                                            }, -- end of [27]
+                                            [28] = {
+                                                ["x"] = -353217.63092387,
+                                                ["y"] = 617781.40709529,
+                                            }, -- end of [28]
+                                            [29] = {
+                                                ["x"] = -353209.43728655,
+                                                ["y"] = 617799.64777881,
+                                            }, -- end of [29]
+                                            [30] = {
+                                                ["x"] = -353206.08042433,
+                                                ["y"] = 617809.06371008,
+                                            }, -- end of [30]
+                                            [31] = {
+                                                ["x"] = -353204.85062085,
+                                                ["y"] = 617813.90853004,
+                                            }, -- end of [31]
+                                            [32] = {
+                                                ["x"] = -353204.02768802,
+                                                ["y"] = 617818.83938266,
+                                            }, -- end of [32]
+                                            [33] = {
+                                                ["x"] = -353190.509652,
+                                                ["y"] = 617907.80910549,
+                                            }, -- end of [33]
+                                            [34] = {
+                                                ["x"] = -353187.10721897,
+                                                ["y"] = 617927.51120451,
+                                            }, -- end of [34]
+                                            [35] = {
+                                                ["x"] = -353186.71662487,
+                                                ["y"] = 617932.49492717,
+                                            }, -- end of [35]
+                                            [36] = {
+                                                ["x"] = -353186.66680916,
+                                                ["y"] = 617937.49364959,
+                                            }, -- end of [36]
+                                            [37] = {
+                                                ["x"] = -353186.99478611,
+                                                ["y"] = 617942.48146755,
+                                            }, -- end of [37]
+                                            [38] = {
+                                                ["x"] = -353187.68631304,
+                                                ["y"] = 617947.43209996,
+                                            }, -- end of [38]
+                                            [39] = {
+                                                ["x"] = -353188.66081682,
+                                                ["y"] = 617952.33587989,
+                                            }, -- end of [39]
+                                            [40] = {
+                                                ["x"] = -353190.02135891,
+                                                ["y"] = 617957.1457312,
+                                            }, -- end of [40]
+                                            [41] = {
+                                                ["x"] = -353191.70926926,
+                                                ["y"] = 617961.85147769,
+                                            }, -- end of [41]
+                                            [42] = {
+                                                ["x"] = -353195.67007137,
+                                                ["y"] = 617971.03189374,
+                                            }, -- end of [42]
+                                            [43] = {
+                                                ["x"] = -353214.41733705,
+                                                ["y"] = 618011.92601804,
+                                            }, -- end of [43]
+                                            [44] = {
+                                                ["x"] = -353217.58964965,
+                                                ["y"] = 618021.40605334,
+                                            }, -- end of [44]
+                                            [45] = {
+                                                ["x"] = -353218.80135726,
+                                                ["y"] = 618026.25625007,
+                                            }, -- end of [45]
+                                            [46] = {
+                                                ["x"] = -353219.67396331,
+                                                ["y"] = 618031.17821056,
+                                            }, -- end of [46]
+                                            [47] = {
+                                                ["x"] = -353220.14601063,
+                                                ["y"] = 618036.15415794,
+                                            }, -- end of [47]
+                                            [48] = {
+                                                ["x"] = -353220.18996079,
+                                                ["y"] = 618041.15264371,
+                                            }, -- end of [48]
+                                            [49] = {
+                                                ["x"] = -353219.83845701,
+                                                ["y"] = 618046.13879259,
+                                            }, -- end of [49]
+                                            [50] = {
+                                                ["x"] = -353219.18390592,
+                                                ["y"] = 618051.0955877,
+                                            }, -- end of [50]
+                                            [51] = {
+                                                ["x"] = -353216.32486249,
+                                                ["y"] = 618065.81937067,
+                                            }, -- end of [51]
+                                            [52] = {
+                                                ["x"] = -353211.03578074,
+                                                ["y"] = 618090.19871828,
+                                            }, -- end of [52]
+                                            [53] = {
+                                                ["x"] = -353212.9735646,
+                                                ["y"] = 618094.73181865,
+                                            }, -- end of [53]
+                                            [54] = {
+                                                ["x"] = -353215.52353018,
+                                                ["y"] = 618099.03053988,
+                                            }, -- end of [54]
+                                            [55] = {
+                                                ["x"] = -353217.38402274,
+                                                ["y"] = 618103.66232674,
+                                            }, -- end of [55]
+                                            [56] = {
+                                                ["x"] = -353218.10892101,
+                                                ["y"] = 618108.59493239,
+                                            }, -- end of [56]
+                                            [57] = {
+                                                ["x"] = -353217.58565278,
+                                                ["y"] = 618113.55586579,
+                                            }, -- end of [57]
+                                            [58] = {
+                                                ["x"] = -353216.10832499,
+                                                ["y"] = 618118.32695647,
+                                            }, -- end of [58]
+                                            [59] = {
+                                                ["x"] = -353214.11257811,
+                                                ["y"] = 618122.91053203,
+                                            }, -- end of [59]
+                                            [60] = {
+                                                ["x"] = -353211.83290963,
+                                                ["y"] = 618127.36036567,
+                                            }, -- end of [60]
+                                            [61] = {
+                                                ["x"] = -353199.79467641,
+                                                ["y"] = 618149.25439469,
+                                            }, -- end of [61]
+                                            [62] = {
+                                                ["x"] = -353198.16323796,
+                                                ["y"] = 618153.97621608,
+                                            }, -- end of [62]
+                                            [63] = {
+                                                ["x"] = -353197.32407374,
+                                                ["y"] = 618158.89919669,
+                                            }, -- end of [63]
+                                            [64] = {
+                                                ["x"] = -353197.36455854,
+                                                ["y"] = 618163.89072844,
+                                            }, -- end of [64]
+                                            [65] = {
+                                                ["x"] = -353198.47828683,
+                                                ["y"] = 618168.75430543,
+                                            }, -- end of [65]
+                                            [66] = {
+                                                ["x"] = -353200.57195958,
+                                                ["y"] = 618173.28681245,
+                                            }, -- end of [66]
+                                            [67] = {
+                                                ["x"] = -353203.3033244,
+                                                ["y"] = 618177.47221532,
+                                            }, -- end of [67]
+                                            [68] = {
+                                                ["x"] = -353206.3488347,
+                                                ["y"] = 618181.43693274,
+                                            }, -- end of [68]
+                                            [69] = {
+                                                ["x"] = -353212.88940365,
+                                                ["y"] = 618188.99838769,
+                                            }, -- end of [69]
+                                            [70] = {
+                                                ["x"] = -353219.21097876,
+                                                ["y"] = 618196.68725995,
+                                            }, -- end of [70]
+                                            [71] = {
+                                                ["x"] = -353220.703824,
+                                                ["y"] = 618201.43053956,
+                                            }, -- end of [71]
+                                            [72] = {
+                                                ["x"] = -353220.27636388,
+                                                ["y"] = 618206.3739355,
+                                            }, -- end of [72]
+                                            [73] = {
+                                                ["x"] = -353217.91144122,
+                                                ["y"] = 618210.74598714,
+                                            }, -- end of [73]
+                                            [74] = {
+                                                ["x"] = -353214.77089898,
+                                                ["y"] = 618214.63224815,
+                                            }, -- end of [74]
+                                            [75] = {
+                                                ["x"] = -353211.33018322,
+                                                ["y"] = 618218.25624868,
+                                            }, -- end of [75]
+                                            [76] = {
+                                                ["x"] = -353200.41301376,
+                                                ["y"] = 618228.53543146,
+                                            }, -- end of [76]
+                                            [77] = {
+                                                ["x"] = -353187.27658051,
+                                                ["y"] = 618240.20917656,
+                                            }, -- end of [77]
+                                        }, -- end of [3]
+                                        [4] = {
+                                            [1] = {
+                                                ["x"] = -353183.36298892,
+                                                ["y"] = 618235.66122874,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -353251.71608217,
+                                                ["y"] = 618177.12148508,
+                                            }, -- end of [2]
+                                            [3] = {
+                                                ["x"] = -353259.8682146,
+                                                ["y"] = 618171.33457963,
+                                            }, -- end of [3]
+                                            [4] = {
+                                                ["x"] = -353264.1464242,
+                                                ["y"] = 618168.7485351,
+                                            }, -- end of [4]
+                                            [5] = {
+                                                ["x"] = -353268.58483247,
+                                                ["y"] = 618166.4486666,
+                                            }, -- end of [5]
+                                            [6] = {
+                                                ["x"] = -353273.17098719,
+                                                ["y"] = 618164.45910435,
+                                            }, -- end of [6]
+                                            [7] = {
+                                                ["x"] = -353277.8794124,
+                                                ["y"] = 618162.77940838,
+                                            }, -- end of [7]
+                                            [8] = {
+                                                ["x"] = -353282.68388738,
+                                                ["y"] = 618161.39751949,
+                                            }, -- end of [8]
+                                            [9] = {
+                                                ["x"] = -353287.56076604,
+                                                ["y"] = 618160.29749261,
+                                            }, -- end of [9]
+                                            [10] = {
+                                                ["x"] = -353297.44128416,
+                                                ["y"] = 618158.77022708,
+                                            }, -- end of [10]
+                                            [11] = {
+                                                ["x"] = -353307.40918175,
+                                                ["y"] = 618157.99625619,
+                                            }, -- end of [11]
+                                            [12] = {
+                                                ["x"] = -353332.40489693,
+                                                ["y"] = 618157.68512975,
+                                            }, -- end of [12]
+                                            [13] = {
+                                                ["x"] = -353897.26376474,
+                                                ["y"] = 618164.31655544,
+                                            }, -- end of [13]
+                                            [14] = {
+                                                ["x"] = -354026.98087149,
+                                                ["y"] = 618156.07896874,
+                                            }, -- end of [14]
+                                            [15] = {
+                                                ["x"] = -354031.85210384,
+                                                ["y"] = 618154.95543099,
+                                            }, -- end of [15]
+                                            [16] = {
+                                                ["x"] = -354041.43079251,
+                                                ["y"] = 618152.08851596,
+                                            }, -- end of [16]
+                                            [17] = {
+                                                ["x"] = -354064.94908187,
+                                                ["y"] = 618143.61637454,
+                                            }, -- end of [17]
+                                            [18] = {
+                                                ["x"] = -354311.35871883,
+                                                ["y"] = 618046.15985275,
+                                            }, -- end of [18]
+                                            [19] = {
+                                                ["x"] = -354330.61248601,
+                                                ["y"] = 618040.75586953,
+                                            }, -- end of [19]
+                                            [20] = {
+                                                ["x"] = -354354.99600775,
+                                                ["y"] = 618035.27259206,
+                                            }, -- end of [20]
+                                            [21] = {
+                                                ["x"] = -354359.95813297,
+                                                ["y"] = 618034.66680369,
+                                            }, -- end of [21]
+                                            [22] = {
+                                                ["x"] = -354369.93849725,
+                                                ["y"] = 618034.05999226,
+                                            }, -- end of [22]
+                                            [23] = {
+                                                ["x"] = -354404.92452562,
+                                                ["y"] = 618033.29203934,
+                                            }, -- end of [23]
+                                            [24] = {
+                                                ["x"] = -354489.75488863,
+                                                ["y"] = 618038.57525976,
+                                            }, -- end of [24]
+                                            [25] = {
+                                                ["x"] = -354574.46646345,
+                                                ["y"] = 618045.49271222,
+                                            }, -- end of [25]
+                                            [26] = {
+                                                ["x"] = -354638.89172765,
+                                                ["y"] = 618054.08728063,
+                                            }, -- end of [26]
+                                            [27] = {
+                                                ["x"] = -354648.65062249,
+                                                ["y"] = 618056.25159056,
+                                            }, -- end of [27]
+                                            [28] = {
+                                                ["x"] = -354653.41414839,
+                                                ["y"] = 618057.76766961,
+                                            }, -- end of [28]
+                                            [29] = {
+                                                ["x"] = -354658.06204021,
+                                                ["y"] = 618059.60837871,
+                                            }, -- end of [29]
+                                            [30] = {
+                                                ["x"] = -354929.66006496,
+                                                ["y"] = 618187.00038561,
+                                            }, -- end of [30]
+                                            [31] = {
+                                                ["x"] = -354951.86279305,
+                                                ["y"] = 618198.48606366,
+                                            }, -- end of [31]
+                                            [32] = {
+                                                ["x"] = -354987.0835117,
+                                                ["y"] = 618217.42350479,
+                                            }, -- end of [32]
+                                            [33] = {
+                                                ["x"] = -354996.27224436,
+                                                ["y"] = 618221.36553163,
+                                            }, -- end of [33]
+                                            [34] = {
+                                                ["x"] = -355010.38022093,
+                                                ["y"] = 618226.45456781,
+                                            }, -- end of [34]
+                                            [35] = {
+                                                ["x"] = -355096.17898266,
+                                                ["y"] = 618253.51060738,
+                                            }, -- end of [35]
+                                            [36] = {
+                                                ["x"] = -355213.2718251,
+                                                ["y"] = 618297.19377108,
+                                            }, -- end of [36]
+                                            [37] = {
+                                                ["x"] = -355275.55596043,
+                                                ["y"] = 618315.76262688,
+                                            }, -- end of [37]
+                                            [38] = {
+                                                ["x"] = -355362.32196969,
+                                                ["y"] = 618337.2522088,
+                                            }, -- end of [38]
+                                        }, -- end of [4]
+                                        [5] = {
+                                            [1] = {
+                                                ["x"] = -355362.32417155,
+                                                ["y"] = 618337.25275142,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -355391.2626968,
+                                                ["y"] = 618345.14658651,
+                                            }, -- end of [2]
+                                            [3] = {
+                                                ["x"] = -355395.99233424,
+                                                ["y"] = 618346.79694162,
+                                            }, -- end of [3]
+                                            [4] = {
+                                                ["x"] = -355401.01206672,
+                                                ["y"] = 618348.25682845,
+                                            }, -- end of [4]
+                                            [5] = {
+                                                ["x"] = -355403.25890174,
+                                                ["y"] = 618345.57094401,
+                                            }, -- end of [5]
+                                            [6] = {
+                                                ["x"] = -355401.37205861,
+                                                ["y"] = 618340.87101403,
+                                            }, -- end of [6]
+                                            [7] = {
+                                                ["x"] = -355370.60347273,
+                                                ["y"] = 618277.92766769,
+                                            }, -- end of [7]
+                                            [8] = {
+                                                ["x"] = -355359.92886244,
+                                                ["y"] = 618249.89509252,
+                                            }, -- end of [8]
+                                            [9] = {
+                                                ["x"] = -355349.47628904,
+                                                ["y"] = 618216.49600037,
+                                            }, -- end of [9]
+                                            [10] = {
+                                                ["x"] = -355326.67893855,
+                                                ["y"] = 618134.62805303,
+                                            }, -- end of [10]
+                                            [11] = {
+                                                ["x"] = -355324.70064497,
+                                                ["y"] = 618130.0374777,
+                                            }, -- end of [11]
+                                            [12] = {
+                                                ["x"] = -355318.05067885,
+                                                ["y"] = 618116.59487407,
+                                            }, -- end of [12]
+                                            [13] = {
+                                                ["x"] = -355313.02799188,
+                                                ["y"] = 618107.94944587,
+                                            }, -- end of [13]
+                                            [14] = {
+                                                ["x"] = -355307.51737011,
+                                                ["y"] = 618099.60636629,
+                                            }, -- end of [14]
+                                            [15] = {
+                                                ["x"] = -355301.54436457,
+                                                ["y"] = 618091.58788599,
+                                            }, -- end of [15]
+                                            [16] = {
+                                                ["x"] = -355295.14159783,
+                                                ["y"] = 618083.90789931,
+                                            }, -- end of [16]
+                                            [17] = {
+                                                ["x"] = -355281.40685946,
+                                                ["y"] = 618069.37543824,
+                                            }, -- end of [17]
+                                            [18] = {
+                                                ["x"] = -355273.99633587,
+                                                ["y"] = 618062.66245448,
+                                            }, -- end of [18]
+                                            [19] = {
+                                                ["x"] = -355231.51062902,
+                                                ["y"] = 618027.7406266,
+                                            }, -- end of [19]
+                                            [20] = {
+                                                ["x"] = -355211.52013591,
+                                                ["y"] = 618012.73515555,
+                                            }, -- end of [20]
+                                            [21] = {
+                                                ["x"] = -355203.0022637,
+                                                ["y"] = 618007.50769868,
+                                            }, -- end of [21]
+                                            [22] = {
+                                                ["x"] = -355198.42973399,
+                                                ["y"] = 618005.49463355,
+                                            }, -- end of [22]
+                                            [23] = {
+                                                ["x"] = -355193.58968319,
+                                                ["y"] = 618004.26997127,
+                                            }, -- end of [23]
+                                            [24] = {
+                                                ["x"] = -355188.64674711,
+                                                ["y"] = 618003.51820277,
+                                            }, -- end of [24]
+                                            [25] = {
+                                                ["x"] = -355183.66850436,
+                                                ["y"] = 618003.04726436,
+                                            }, -- end of [25]
+                                            [26] = {
+                                                ["x"] = -355178.69485823,
+                                                ["y"] = 618002.55488092,
+                                            }, -- end of [26]
+                                            [27] = {
+                                                ["x"] = -355173.8448985,
+                                                ["y"] = 618001.29734252,
+                                            }, -- end of [27]
+                                            [28] = {
+                                                ["x"] = -355170.05603856,
+                                                ["y"] = 617998.24036667,
+                                            }, -- end of [28]
+                                            [29] = {
+                                                ["x"] = -355169.01777141,
+                                                ["y"] = 617993.41136776,
+                                            }, -- end of [29]
+                                            [30] = {
+                                                ["x"] = -355168.78901936,
+                                                ["y"] = 617988.39011755,
+                                            }, -- end of [30]
+                                            [31] = {
+                                                ["x"] = -355169.50906277,
+                                                ["y"] = 617943.38262789,
+                                            }, -- end of [31]
+                                            [32] = {
+                                                ["x"] = -355181.10794941,
+                                                ["y"] = 617583.58715735,
+                                            }, -- end of [32]
+                                            [33] = {
+                                                ["x"] = -355180.33465672,
+                                                ["y"] = 617568.60988543,
+                                            }, -- end of [33]
+                                            [34] = {
+                                                ["x"] = -355178.97509908,
+                                                ["y"] = 617558.70735571,
+                                            }, -- end of [34]
+                                            [35] = {
+                                                ["x"] = -355177.81237227,
+                                                ["y"] = 617553.84581863,
+                                            }, -- end of [35]
+                                            [36] = {
+                                                ["x"] = -355176.61052992,
+                                                ["y"] = 617549.00029897,
+                                            }, -- end of [36]
+                                            [37] = {
+                                                ["x"] = -355176.73381996,
+                                                ["y"] = 617544.00084817,
+                                            }, -- end of [37]
+                                            [38] = {
+                                                ["x"] = -355178.97720833,
+                                                ["y"] = 617539.67104411,
+                                            }, -- end of [38]
+                                            [39] = {
+                                                ["x"] = -355183.1578184,
+                                                ["y"] = 617536.93091239,
+                                            }, -- end of [39]
+                                            [40] = {
+                                                ["x"] = -355187.77755008,
+                                                ["y"] = 617535.02977441,
+                                            }, -- end of [40]
+                                            [41] = {
+                                                ["x"] = -355235.10491148,
+                                                ["y"] = 617518.91546978,
+                                            }, -- end of [41]
+                                            [42] = {
+                                                ["x"] = -355248.6504825,
+                                                ["y"] = 617512.47700257,
+                                            }, -- end of [42]
+                                            [43] = {
+                                                ["x"] = -355253.01852648,
+                                                ["y"] = 617510.04585714,
+                                            }, -- end of [43]
+                                            [44] = {
+                                                ["x"] = -355257.14613978,
+                                                ["y"] = 617507.22712113,
+                                            }, -- end of [44]
+                                            [45] = {
+                                                ["x"] = -355260.94772322,
+                                                ["y"] = 617503.98425038,
+                                            }, -- end of [45]
+                                            [46] = {
+                                                ["x"] = -355264.38816463,
+                                                ["y"] = 617500.35924,
+                                            }, -- end of [46]
+                                            [47] = {
+                                                ["x"] = -355267.58297991,
+                                                ["y"] = 617496.51288837,
+                                            }, -- end of [47]
+                                            [48] = {
+                                                ["x"] = -355288.63897796,
+                                                ["y"] = 617468.5580837,
+                                            }, -- end of [48]
+                                            [49] = {
+                                                ["x"] = -355291.35015543,
+                                                ["y"] = 617464.35779816,
+                                            }, -- end of [49]
+                                            [50] = {
+                                                ["x"] = -355293.80213923,
+                                                ["y"] = 617460.00107936,
+                                            }, -- end of [50]
+                                            [51] = {
+                                                ["x"] = -355295.95176581,
+                                                ["y"] = 617455.48820323,
+                                            }, -- end of [51]
+                                            [52] = {
+                                                ["x"] = -355297.78507183,
+                                                ["y"] = 617450.83726552,
+                                            }, -- end of [52]
+                                            [53] = {
+                                                ["x"] = -355299.31001098,
+                                                ["y"] = 617446.0765296,
+                                            }, -- end of [53]
+                                            [54] = {
+                                                ["x"] = -355300.5544785,
+                                                ["y"] = 617441.23485259,
+                                            }, -- end of [54]
+                                            [55] = {
+                                                ["x"] = -355302.44449193,
+                                                ["y"] = 617431.41659785,
+                                            }, -- end of [55]
+                                            [56] = {
+                                                ["x"] = -355305.00664,
+                                                ["y"] = 617411.58369897,
+                                            }, -- end of [56]
+                                            [57] = {
+                                                ["x"] = -355314.41334835,
+                                                ["y"] = 617332.15088571,
+                                            }, -- end of [57]
+                                            [58] = {
+                                                ["x"] = -355318.12643953,
+                                                ["y"] = 617312.50163558,
+                                            }, -- end of [58]
+                                            [59] = {
+                                                ["x"] = -355320.60538072,
+                                                ["y"] = 617302.81557119,
+                                            }, -- end of [59]
+                                            [60] = {
+                                                ["x"] = -355322.14610073,
+                                                ["y"] = 617298.05956621,
+                                            }, -- end of [60]
+                                            [61] = {
+                                                ["x"] = -355324.0045789,
+                                                ["y"] = 617293.41921937,
+                                            }, -- end of [61]
+                                            [62] = {
+                                                ["x"] = -355326.31358356,
+                                                ["y"] = 617288.98761297,
+                                            }, -- end of [62]
+                                            [63] = {
+                                                ["x"] = -355329.2283559,
+                                                ["y"] = 617284.93229394,
+                                            }, -- end of [63]
+                                            [64] = {
+                                                ["x"] = -355332.84425002,
+                                                ["y"] = 617281.49155665,
+                                            }, -- end of [64]
+                                            [65] = {
+                                                ["x"] = -355337.07966257,
+                                                ["y"] = 617278.84926443,
+                                            }, -- end of [65]
+                                            [66] = {
+                                                ["x"] = -355341.70992798,
+                                                ["y"] = 617276.9743006,
+                                            }, -- end of [66]
+                                            [67] = {
+                                                ["x"] = -355346.54343142,
+                                                ["y"] = 617275.70488245,
+                                            }, -- end of [67]
+                                            [68] = {
+                                                ["x"] = -355356.39653866,
+                                                ["y"] = 617274.00632603,
+                                            }, -- end of [68]
+                                            [69] = {
+                                                ["x"] = -355391.09132798,
+                                                ["y"] = 617269.48068205,
+                                            }, -- end of [69]
+                                            [70] = {
+                                                ["x"] = -355395.93485181,
+                                                ["y"] = 617268.24757587,
+                                            }, -- end of [70]
+                                            [71] = {
+                                                ["x"] = -355400.62358088,
+                                                ["y"] = 617266.52009654,
+                                            }, -- end of [71]
+                                            [72] = {
+                                                ["x"] = -355405.00188805,
+                                                ["y"] = 617264.11908845,
+                                            }, -- end of [72]
+                                            [73] = {
+                                                ["x"] = -355408.74787259,
+                                                ["y"] = 617260.82917832,
+                                            }, -- end of [73]
+                                            [74] = {
+                                                ["x"] = -355411.24367076,
+                                                ["y"] = 617256.53350502,
+                                            }, -- end of [74]
+                                            [75] = {
+                                                ["x"] = -355412.21796816,
+                                                ["y"] = 617251.64586534,
+                                            }, -- end of [75]
+                                            [76] = {
+                                                ["x"] = -355411.50993108,
+                                                ["y"] = 617246.71400877,
+                                            }, -- end of [76]
+                                            [77] = {
+                                                ["x"] = -355409.70586322,
+                                                ["y"] = 617242.05703902,
+                                            }, -- end of [77]
+                                            [78] = {
+                                                ["x"] = -355407.32962756,
+                                                ["y"] = 617237.65979582,
+                                            }, -- end of [78]
+                                            [79] = {
+                                                ["x"] = -355404.64465956,
+                                                ["y"] = 617233.44259682,
+                                            }, -- end of [79]
+                                            [80] = {
+                                                ["x"] = -355398.79379411,
+                                                ["y"] = 617225.33459691,
+                                            }, -- end of [80]
+                                            [81] = {
+                                                ["x"] = -355388.8549357,
+                                                ["y"] = 617212.79118398,
+                                            }, -- end of [81]
+                                        }, -- end of [5]
+                                        [6] = {
+                                            [1] = {
+                                                ["x"] = -355340.03684018,
+                                                ["y"] = 617150.6932584,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -355340.03684018,
+                                                ["y"] = 617150.6932584,
+                                            }, -- end of [2]
+                                        }, -- end of [6]
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = -1.0047167245215,
+                                        ["name"] = "DictKey_UnitName_573",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 91,
+                                        ["x"] = -355249.29596649,
+                                        ["y"] = 617024.54183769,
+                                    }, -- end of [1]
+                                    [2] = {
+                                        ["heading"] = -1.0047167245215,
+                                        ["name"] = "DictKey_UnitName_574",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 92,
+                                        ["x"] = -355284.90784852,
+                                        ["y"] = 616998.54043051,
+                                    }, -- end of [2]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -355249.29596649,
+                                ["y"] = 617024.54183769,
+                            }, -- end of [15]
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
                 }, -- end of [1]
@@ -5224,7 +7623,7 @@ mission = {
             [10] = 47,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 19109,
+    ["currentKey"] = 22041,
     ["date"] = {
         ["Day"] = 23,
         ["Month"] = 5,
@@ -11466,19 +13865,6 @@ mission = {
     ["forcedOptions"] = {
     }, -- end of ["forcedOptions"]
     ["goals"] = {
-        [1] = {
-            ["comment"] = "",
-            ["predicate"] = "score",
-            ["rules"] = {
-                [1] = {
-                    ["coalitionlist"] = "red",
-                    ["predicate"] = "c_all_of_coalition_in_zone",
-                    ["zone"] = 166,
-                }, -- end of [1]
-            }, -- end of ["rules"]
-            ["score"] = 100,
-            ["side"] = "OFFLINE",
-        }, -- end of [1]
     }, -- end of ["goals"]
     ["groundControl"] = {
         ["isPilotControlVehicles"] = true,
@@ -11494,9 +13880,9 @@ mission = {
                 ["red"] = 0,
             }, -- end of ["forward_observer"]
             ["instructor"] = {
-                ["blue"] = 0,
+                ["blue"] = 1,
                 ["neutrals"] = 0,
-                ["red"] = 0,
+                ["red"] = 1,
             }, -- end of ["instructor"]
             ["observer"] = {
                 ["blue"] = 0,
@@ -11506,11 +13892,11 @@ mission = {
         }, -- end of ["roles"]
     }, -- end of ["groundControl"]
     ["map"] = {
-        ["centerX"] = -341284.13327932,
-        ["centerY"] = 495943.86773914,
-        ["zoom"] = 4963.989347469,
+        ["centerX"] = -355857.47636067,
+        ["centerY"] = 618321.48927301,
+        ["zoom"] = 27777.352880948,
     }, -- end of ["map"]
-    ["maxDictId"] = 494,
+    ["maxDictId"] = 580,
     ["pictureFileNameB"] = {
     }, -- end of ["pictureFileNameB"]
     ["pictureFileNameN"] = {
@@ -11530,13 +13916,10 @@ mission = {
         }, -- end of ["blue"]
         ["offline"] = {
             ["actions"] = {
-                [1] = "a_set_mission_result(100)",
             }, -- end of ["actions"]
             ["conditions"] = {
-                [1] = "return(c_all_of_coalition_in_zone(\"red\", 166) )",
             }, -- end of ["conditions"]
             ["func"] = {
-                [1] = "if mission.result.offline.conditions[1]() then mission.result.offline.actions[1]() end",
             }, -- end of ["func"]
         }, -- end of ["offline"]
         ["red"] = {
@@ -11547,7 +13930,7 @@ mission = {
             ["func"] = {
             }, -- end of ["func"]
         }, -- end of ["red"]
-        ["total"] = 1,
+        ["total"] = 0,
     }, -- end of ["result"]
     ["sortie"] = "DictKey_sortie_5",
     ["start_time"] = 61200,
@@ -11607,28 +13990,12 @@ mission = {
                 ["name"] = "combatZone_CrossKobuleti",
                 ["properties"] = {
                 }, -- end of ["properties"]
-                ["radius"] = 762,
+                ["radius"] = 3048,
                 ["x"] = -328302.38373543,
                 ["y"] = 631221.32010778,
                 ["zoneId"] = 166,
             }, -- end of [1]
             [2] = {
-                ["color"] = {
-                    [1] = 1,
-                    [2] = 1,
-                    [3] = 1,
-                    [4] = 0.15,
-                }, -- end of ["color"]
-                ["hidden"] = false,
-                ["name"] = "combatZone_Batumi",
-                ["properties"] = {
-                }, -- end of ["properties"]
-                ["radius"] = 3000,
-                ["x"] = -356394.27025756,
-                ["y"] = 617257.10828621,
-                ["zoneId"] = 332,
-            }, -- end of [2]
-            [3] = {
                 ["color"] = {
                     [1] = 1,
                     [2] = 0,
@@ -11655,8 +14022,8 @@ mission = {
                 ["x"] = -318336.375,
                 ["y"] = 635358.3125,
                 ["zoneId"] = 500,
-            }, -- end of [3]
-            [4] = {
+            }, -- end of [2]
+            [3] = {
                 ["color"] = {
                     [1] = 1,
                     [2] = 0,
@@ -11683,8 +14050,8 @@ mission = {
                 ["x"] = -318352.6875,
                 ["y"] = 635388.125,
                 ["zoneId"] = 503,
-            }, -- end of [4]
-            [5] = {
+            }, -- end of [3]
+            [4] = {
                 ["color"] = {
                     [1] = 1,
                     [2] = 0,
@@ -11711,6 +14078,22 @@ mission = {
                 ["x"] = -317800.125,
                 ["y"] = 635457.5625,
                 ["zoneId"] = 504,
+            }, -- end of [4]
+            [5] = {
+                ["color"] = {
+                    [1] = 1,
+                    [2] = 1,
+                    [3] = 1,
+                    [4] = 0.15,
+                }, -- end of ["color"]
+                ["hidden"] = false,
+                ["name"] = "combatZone_Batumi",
+                ["properties"] = {
+                }, -- end of ["properties"]
+                ["radius"] = 3000,
+                ["x"] = -355702.71682319,
+                ["y"] = 617377.05927506,
+                ["zoneId"] = 670,
             }, -- end of [5]
         }, -- end of ["zones"]
     }, -- end of ["triggers"]
@@ -12038,10 +14421,10 @@ mission = {
     ["weather"] = {
         ["atmosphere_type"] = 0,
         ["clouds"] = {
-            ["base"] = 914,
-            ["density"] = 8,
+            ["base"] = 975,
+            ["density"] = 6,
             ["iprecptns"] = 0,
-            ["thickness"] = 336,
+            ["thickness"] = 1250,
         }, -- end of ["clouds"]
         ["cyclones"] = {
         }, -- end of ["cyclones"]
@@ -12052,16 +14435,16 @@ mission = {
             ["thickness"] = 0,
             ["visibility"] = 0,
         }, -- end of ["fog"]
-        ["groundTurbulence"] = 7.5905841991524,
+        ["groundTurbulence"] = 5.1609714901429,
         ["name"] = "Spring, Clear sky",
         ["name_cn"] = "春季 晴天",
         ["name_de"] = "Frühling, Klar",
         ["name_es"] = "Primavera. Despejado",
         ["name_fr"] = "Printemps, ciel dégagé",
         ["name_ru"] = "Весна. Штиль",
-        ["qnh"] = 763.524,
+        ["qnh"] = 754.38,
         ["season"] = {
-            ["temperature"] = 11.442,
+            ["temperature"] = 18.442,
         }, -- end of ["season"]
         ["type_weather"] = 0,
         ["visibility"] = {
@@ -12069,16 +14452,16 @@ mission = {
         }, -- end of ["visibility"]
         ["wind"] = {
             ["at2000"] = {
-                ["dir"] = 254,
-                ["speed"] = 7.9883648082364,
+                ["dir"] = 105,
+                ["speed"] = 10.963463833753,
             }, -- end of ["at2000"]
             ["at8000"] = {
-                ["dir"] = 262,
-                ["speed"] = 8.33162990447,
+                ["dir"] = 121,
+                ["speed"] = 13.895737287368,
             }, -- end of ["at8000"]
             ["atGround"] = {
-                ["dir"] = 260,
-                ["speed"] = 6,
+                ["dir"] = 110,
+                ["speed"] = 9,
             }, -- end of ["atGround"]
         }, -- end of ["wind"]
     }, -- end of ["weather"]

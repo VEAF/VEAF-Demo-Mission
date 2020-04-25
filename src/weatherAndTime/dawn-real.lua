@@ -8,10 +8,10 @@ weatherAndTime={
 	["weather"] = {
 		["atmosphere_type"] = 0,
 		["clouds"] = 	{
-			["base"] = 914,
-			["density"] = 6,
+			["base"] = 701,
+			["density"] = 7,
 			["iprecptns"] = 0,
-			["thickness"] = 336
+			["thickness"] = 671
 		},
 		["cyclones"] = {},
 		["dust_density"] = 0,
@@ -21,16 +21,16 @@ weatherAndTime={
 			["thickness"] = 0,
 			["visibility"] = 0
 		},
-		["groundTurbulence"] = 7.354249356798418,
+		["groundTurbulence"] = 1.157433037108431,
 		["name"] = "Spring, Clear sky",
 		["name_cn"] = "春季 晴天",
 		["name_de"] = "Frühling, Klar",
 		["name_es"] = "Primavera. Despejado",
 		["name_fr"] = "Printemps, ciel dégagé",
 		["name_ru"] = "Весна. Штиль",
-		["qnh"] = 763.5239999999999,
+		["qnh"] = 755.904,
 		["season"] = 	{
-			["temperature"] = 11.442
+			["temperature"] = 12.442
 		},
 		["type_weather"] = 0,
 		["visibility"] = 	{
@@ -38,16 +38,16 @@ weatherAndTime={
 		},
 		["wind"] = 	{
 			["at2000"] = 		{
-				["dir"] = 265,
-				["speed"] = 7.958120286511898
+				["dir"] = 254,
+				["speed"] = 5.649218495802706
 			},
 			["at8000"] = 		{
-				["dir"] = 244,
-				["speed"] = 11.211981533885849
+				["dir"] = 274,
+				["speed"] = 11.910377814685306
 			},
 			["atGround"] = 		{
 				["dir"] = 260,
-				["speed"] = 6
+				["speed"] = 4
 			}
 		}
 	}

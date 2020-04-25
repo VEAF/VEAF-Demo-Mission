@@ -223,7 +223,7 @@ if veafCombatMission then
     veafCombatMission.initialize()
 end
 
--- convifuge COMBAT ZONE
+-- configure COMBAT ZONE
 if veafCombatZone then 
 	veafCombatZone.logInfo("Loading configuration")
 	veafCombatZone.AddZone(
@@ -231,16 +231,17 @@ if veafCombatZone then
 			:setMissionEditorZoneName("combatZone_CrossKobuleti")
 			:setFriendlyName("Cross Kobuleti")
 			:setBriefing("This is a simple mission\n" ..
-						 "You must destroy the comm antenna before 11:30 local time\n" ..
+						 "You must destroy the comm antenna\n" ..
 						 "The other ennemy units are secondary targets\n")
 			:initialize()
 	)
 	veafCombatZone.AddZone(
 		VeafCombatZone.new()
 			:setMissionEditorZoneName("combatZone_Batumi")
-			:setFriendlyName("Batumi")
-			:setBriefing("This is a second test mission")
+			:setFriendlyName("Batumi airbase")
+			:setBriefing("A BTR patrol and a few manpads are dispersed around the Batumi airbase")
 			:initialize()
+            :setTraining(true)
     )
     
     veafCombatZone.initialize()
