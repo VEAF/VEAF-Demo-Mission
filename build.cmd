@@ -1,5 +1,5 @@
 @echo off
-set MISSION_NAME=VEAF-Demo-Mission
+set MISSION_NAME=Georgian-dance
 set THEATER_NAME=Caucasus
 echo.
 echo ----------------------------------------
