@@ -2,27 +2,74 @@
 veafRadio.initialize()
 veafSpawn.initialize()
 veafGrass.initialize()
-veafShortcuts.initialize()
 veafCasMission.initialize()
 veafTransportMission.initialize()
-veafInterpreter.initialize()
 
 -- No MOOSE settings menu. Comment out this line if required.
 _SETTINGS:SetPlayerMenuOff()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- initialize SHORTCUTS
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+veaf.logInfo("init - veafShortcuts")
+veafShortcuts.initialize()
+
+-- you can add all the shortcuts you want here. Shortcuts can be any VEAF command, as entered in a map marker.
+-- here are some examples :
+
+-- veafShortcuts.AddAlias(
+--     VeafAlias.new()
+--         :setName("-sa11")
+--         :setDescription("SA-11 Gadfly (9K37 Buk) battery")
+--         :setVeafCommand("_spawn group, name sa11")
+--         :setBypassSecurity(true)
+-- )
+
+-- veafShortcuts.AddAlias(
+--     VeafAlias.new()
+--         :setName("-login")
+--         :setDescription("Unlock the system")
+--         :setHidden(true)
+--         :setVeafCommand("_auth")
+--         :setBypassSecurity(true)
+-- )
+
+-- veafShortcuts.AddAlias(
+--     VeafAlias.new()
+--         :setName("-logout")
+--         :setDescription("Lock the system")
+--         :setHidden(true)
+--         :setVeafCommand("_auth logout")
+--         :setBypassSecurity(true)
+-- )
+
+-- veafShortcuts.AddAlias(
+--     VeafAlias.new()
+--         :setName("-mortar")
+--         :setDescription("Mortar team")
+--         :setVeafCommand("_spawn group, name mortar, country USA")
+--         :setBypassSecurity(true)
+-- )
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- configure VEAFREMOTE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+veaf.logInfo("init - veafRemote")
+veafRemote.initialize()
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- PSEUDOATC
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-pseudoATC=PSEUDOATC:New()
-pseudoATC:Start()
+--pseudoATC=PSEUDOATC:New()
+--pseudoATC:Start()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- SCORING
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-local Scoring = SCORING:New( "Scoring File" )
-Scoring:SetScaleDestroyScore( 10 )
-Scoring:SetScaleDestroyPenalty( 40 )
-Scoring:SetMessagesToCoalition()
+--local Scoring = SCORING:New( "Scoring File" )
+-- Scoring:SetScaleDestroyScore( 10 )
+-- Scoring:SetScaleDestroyPenalty( 40 )
+-- Scoring:SetMessagesToCoalition()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- ATIS configuration
@@ -33,7 +80,7 @@ atisBatumi=ATIS:New(AIRBASE.Caucasus.Batumi, 122.550)
 :SetTowerFrequencies({260, 131, 40.4})
 :SetTACAN(16)
 :AddILS(110.300, "13")
-:Start()
+-- :Start()
 
 atisKobuleti=ATIS:New(AIRBASE.Caucasus.Kobuleti, 122.300)
 :SetRadioRelayUnitName("Radio Relay Kobuleti")
@@ -41,48 +88,48 @@ atisKobuleti=ATIS:New(AIRBASE.Caucasus.Kobuleti, 122.300)
 :SetTACAN(67)
 :AddILS(111.500, "7")
 :SetSubtitleDuration(30)
-:Start()
+-- :Start()
 
 atisVaziani=ATIS:New(AIRBASE.Caucasus.Vaziani, 122.600)
 --:SetRadioRelayUnitName("Radio Relay Vaziani")
 :SetTowerFrequencies({269, 140, 42.2})
 :SetTACAN(22)
 :AddILS(108.750, "13")
-:Start()
+-- :Start()
 
 atisGelendzhik=ATIS:New(AIRBASE.Caucasus.Gelendzhik, 134.875)
 --:SetRadioRelayUnitName("Radio Relay Gelendzhik")
 :SetTowerFrequencies({255, 126, 39.4})
-:Start()
+-- :Start()
 
 atisKrasnodarP=ATIS:New(AIRBASE.Caucasus.Krasnodar_Pashkovsky, 122.450)
 --:SetRadioRelayUnitName("Radio Relay Krasnodar Pashkovsky")
 :SetTowerFrequencies({257, 128, 39.8})
-:Start()
+-- :Start()
 
 atisSukhumi=ATIS:New(AIRBASE.Caucasus.Sukhumi_Babushara, 122.500)
 --:SetRadioRelayUnitName("Radio Relay Sukhumi")
 :SetTowerFrequencies({258, 129, 40})
-:Start()
+-- :Start()
 
 atisGudauta=ATIS:New(AIRBASE.Caucasus.Gudauta, 122.225)
 --:SetRadioRelayUnitName("Radio Relay Gudauta")
 :SetTowerFrequencies({259, 130})
-:Start()
+-- :Start()
 
 atisSenaki=ATIS:New(AIRBASE.Caucasus.Senaki_Kolkhi, 122.525)
 --:SetRadioRelayUnitName("Radio Relay Senaki")
 :SetTowerFrequencies({261, 132, 40.6})
 :SetTACAN(31)
 :AddILS(108.900, "9")
-:Start()
+-- :Start()
 
 atisKutaisi=ATIS:New(AIRBASE.Caucasus.Kutaisi, 122.100)
 --:SetRadioRelayUnitName("Radio Relay Kutaisi")
 :SetTowerFrequencies({263, 134, 41})
 :SetTACAN(44)
 :AddILS(109.750, "8")
-:Start()
+-- :Start()
 
 atisTbilisi=ATIS:New(AIRBASE.Caucasus.Tbilisi_Lochini, 132.800)
 --:SetRadioRelayUnitName("Radio Relay Tbilisi")
@@ -90,67 +137,67 @@ atisTbilisi=ATIS:New(AIRBASE.Caucasus.Tbilisi_Lochini, 132.800)
 :SetTACAN(25)
 :AddILS(110.350, "13R")
 :AddILS(108.900, "31L")
-:Start()
+-- :Start()
 
 atisSoganlug=ATIS:New(AIRBASE.Caucasus.Soganlug, 122.600)
 --:SetRadioRelayUnitName("Radio Relay Soganlug")
 :SetTowerFrequencies({268, 139, 42})
-:Start()
+-- :Start()
 
 atisAnapa=ATIS:New(AIRBASE.Caucasus.Anapa_Vityazevo, 125.400)
 --:SetRadioRelayUnitName("Radio Relay Anapa")
 :SetTowerFrequencies({250, 121, 38.4})
-:Start()
+-- :Start()
 
 atisKrasnodarC=ATIS:New(AIRBASE.Caucasus.Krasnodar_Center, 128.300)
 --:SetRadioRelayUnitName("Radio Relay Krasnodar Center")
 :SetTowerFrequencies({251, 122, 38.6})
-:Start()
+-- :Start()
 
 atisNovorossiysk=ATIS:New(AIRBASE.Caucasus.Novorossiysk, 128.200)
 --:SetRadioRelayUnitName("Radio Relay Novorossiysk")
 :SetTowerFrequencies({252, 123, 38.8})
-:Start()
+-- :Start()
 
 atisKrymsk=ATIS:New(AIRBASE.Caucasus.Krymsk, 128.600)
 --:SetRadioRelayUnitName("Radio Relay Krymsk")
 :SetTowerFrequencies({253, 124, 39})
-:Start()
+-- :Start()
 
 atisMaykop_Khanskaya=ATIS:New(AIRBASE.Caucasus.Maykop_Khanskaya, 128.700)
 --:SetRadioRelayUnitName("Radio Relay Maykop")
 :SetTowerFrequencies({254, 125, 39.2})
-:Start()
+-- :Start()
 
 atisSochi=ATIS:New(AIRBASE.Caucasus.Sochi_Adler, 126.200)
 --:SetRadioRelayUnitName("Radio Relay Sochi")
 :SetTowerFrequencies({256, 127, 39.6})
 :AddILS(111.100, "6")
-:Start()
+-- :Start()
 
 atisMineralnye=ATIS:New(AIRBASE.Caucasus.Mineralnye_Vody, 125.250)
 --:SetRadioRelayUnitName("Radio Relay Mineralnye")
 :SetTowerFrequencies({264, 135, 41.2})
 :AddILS(111.700, "13")
 :AddILS(109.300, "30")
-:Start()
+-- :Start()
 
 atisNalchik=ATIS:New(AIRBASE.Caucasus.Nalchik, 128.525)
 --:SetRadioRelayUnitName("Radio Relay Nalchik")
 :SetTowerFrequencies({265, 136, 41.4})
 :AddILS(110.500, "24")
-:Start()
+-- :Start()
 
 atisMozdok=ATIS:New(AIRBASE.Caucasus.Mozdok, 128.550)
 --:SetRadioRelayUnitName("Radio Relay Mozdok")
 :SetTowerFrequencies({265, 136, 41.4})
-:Start()
+-- :Start()
 
 atisBeslan=ATIS:New(AIRBASE.Caucasus.Beslan, 128.225)
 --:SetRadioRelayUnitName("Radio Relay Beslan")
 :SetTowerFrequencies({270, 141, 42.4})
 :AddILS(110.500, "10")
-:Start()
+-- :Start()
 
 trigger.action.outText("ATIS Loaded....", 10)
 
@@ -298,6 +345,7 @@ veafNamedPoints.Points = {
 
 veafNamedPoints.logInfo("Loading configuration")
 veafNamedPoints.initialize()
+--veafNamedPoints.addAllCaucasusCities()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure SECURITY
@@ -362,7 +410,6 @@ for _,spawntime in pairs(spawntimes) do
     SCHEDULER:New(nil, S3B.Spawn,  {S3B},  _time)
   end
 end
-
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure CTLD
@@ -830,3 +877,5 @@ ctld.jtacUnitTypes = {
 }
 
 ctld.initialize()
+
+veafInterpreter.initialize()

@@ -1,8 +1,4 @@
 mapResource = {
-    ["ResKey_Action_148"] = "CTLD.lua",
-    ["ResKey_Action_160"] = "mist.lua",
-    ["ResKey_Action_163"] = "WeatherMark.lua",
-    ["ResKey_Action_333"] = "Moose.lua",
     ["ResKey_Action_382"] = "missionConfig.lua",
     ["ResKey_Action_473"] = "veaf.lua",
     ["ResKey_Action_474"] = "dcsUnits.lua",

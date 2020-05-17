@@ -47,16 +47,33 @@ VEAF_DYNAMIC_MISSIONPATH = 'D:/DEV/VEAF-Demo-Mission'",
     ["DictKey_ActionText_388"] = "env.info(\"DYNAMIC LOADING\")",
     ["DictKey_ActionText_445"] = "return false --true=dynamic, false=static",
     ["DictKey_ActionText_468"] = "env.info(\"DYNAMIC LOADING\")\
-local script = VEAF_DYNAMIC_PATH .. \"/scripts/VeafDynamicLoader.lua\"\
-assert(loadfile(script))()\
 ",
     ["DictKey_ActionText_491"] = "",
     ["DictKey_ActionText_492"] = "return VEAF_DYNAMIC_PATH~=nil",
     ["DictKey_ActionText_493"] = "return VEAF_DYNAMIC_PATH==nil",
+    ["DictKey_ActionText_581"] = "local script = VEAF_DYNAMIC_PATH .. \"/scripts/community/mist.lua\"\
+assert(loadfile(script))()\
+",
+    ["DictKey_ActionText_582"] = "local script = VEAF_DYNAMIC_PATH .. \"/scripts/VeafDynamicLoader.lua\"\
+assert(loadfile(script))()\
+",
+    ["DictKey_ActionText_583"] = "local script = VEAF_DYNAMIC_PATH .. \"/scripts/community/Moose.lua\"\
+assert(loadfile(script))()\
+",
+    ["DictKey_ActionText_584"] = "local script = VEAF_DYNAMIC_PATH .. \"/scripts/community/CTLD.lua\"\
+assert(loadfile(script))()\
+",
+    ["DictKey_ActionText_585"] = "local script = VEAF_DYNAMIC_PATH .. \"/scripts/community/WeatherMark.lua\"\
+assert(loadfile(script))()\
+",
+    ["DictKey_ActionText_586"] = "local script = VEAF_DYNAMIC_PATH .. \"/scripts/community/NIOD.lua\"\
+assert(loadfile(script))()\
+",
     ["DictKey_descriptionBlueTask_3"] = "",
     ["DictKey_descriptionNeutralsTask_4"] = "",
     ["DictKey_descriptionRedTask_2"] = "",
-    ["DictKey_descriptionText_1"] = "Demonstration mission for VEAF-Mission-Creation-Tools",
+    ["DictKey_descriptionText_1"] = "Demonstration mission for VEAF-Mission-Creation-Tools\
+Weather : ${METAR}",
     ["DictKey_GroupName_100"] = "MI8-hot #001",
     ["DictKey_GroupName_103"] = "GazM cold",
     ["DictKey_GroupName_106"] = "GazM hot #001",
