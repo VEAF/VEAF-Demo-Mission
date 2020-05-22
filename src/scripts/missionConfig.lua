@@ -55,13 +55,30 @@ veafShortcuts.initialize()
 -- configure VEAFREMOTE
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 veaf.logInfo("init - veafRemote")
-veafRemote.initialize()
+if veafRemote then
+    veafRemote.initialize()
+end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- PSEUDOATC
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 --pseudoATC=PSEUDOATC:New()
 --pseudoATC:Start()
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- MISSILETRAINER
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+local Trainer = MISSILETRAINER
+  :New( 200, "Showcasing The MOOSE Missile Trainer. Use the F10 options to set individual parameters (defaul are set). You can change these settings by editing the Moose_Test_MISSILETRAINER.lua file, and checking the helpfile" )
+  :InitMessagesOnOff(true)
+  :InitAlertsToAll(true) 
+  :InitAlertsHitsOnOff(true)
+  :InitAlertsLaunchesOnOff(true) -- I'll put it on below ...
+  :InitBearingOnOff(true)
+  :InitRangeOnOff(true)
+  :InitTrackingOnOff(true)
+  :InitTrackingToAll(true)
+  :InitMenusOnOff(true)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- SCORING
@@ -371,13 +388,13 @@ end
 ----------------------------------------------------------------------------------------------------------------------------
 -- configure CARRIER OPERATIONS 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-local useMooseAirboss = true
+local useMooseAirboss = false
 
 if useMooseAirboss then
 	veafCarrierOperations2.logInfo("Configuring carrier operations")
     veafCarrierOperations2.setCarrierInfo("CVN-74 Stennis", 119.700, 305)
-    veafCarrierOperations2.setTankerInfo("Stennis Refueler", 250, 75, "S3B", 511)
-    veafCarrierOperations2.setPedroInfo("Rescue Helo", "Lake Erie", 42)
+    veafCarrierOperations2.setTankerInfo("CVN-74 Stennis S3B-Tanker", 250, 75, "S3B", 511)
+    veafCarrierOperations2.setPedroInfo("CVN-74 Stennis Pedro", "Lake Erie", 42)
     veafCarrierOperations2.setRepeaterInfo("Stennis Radio Repeater LSO", "Stennis Radio Repeater MARSHAL")
     veafCarrierOperations2.setTraining()
     veafCarrierOperations2.initialize()
