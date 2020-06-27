@@ -69,16 +69,18 @@ veafAssets.Assets = {
     {sort=2, name="Petrolsky", description="900 (IL-78M, RED)", information="VHF 267 Mhz", linked="Petrolsky-escort"},  
 }
 
+veaf.logInfo("init - veafAssets")
 veafAssets.initialize()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure MOVE
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-veafAssets.logInfo("Setting move tanker radio menus")
+veafMove.logInfo("Setting move tanker radio menus")
 table.insert(veafMove.Tankers, "Arco")
 table.insert(veafMove.Tankers, "Petrolsky")
 
+veaf.logInfo("init - veafMove")
 veafMove.initialize()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -116,8 +118,6 @@ local function _addCapMission(missionName, missionDescription, missionBriefing, 
     )
 end
 
-if veafCombatMission then 
-	veafCombatMission.logInfo("Loading configuration")
 	veafCombatMission.AddMission(
 		VeafCombatMission.new()
 		:setName("Test")
@@ -156,6 +156,11 @@ if veafCombatMission then
 		)
         :initialize()
     )
+
+if veafCombatMission then 
+	veafCombatMission.logInfo("Loading configuration")
+
+    veaf.logInfo("init - veafCombatMission")
     veafCombatMission.initialize()
 end
 
@@ -182,6 +187,7 @@ if veafCombatZone then
             :setTraining(true)
     )
     
+    veaf.logInfo("init - veafCombatZone")
     veafCombatZone.initialize()
 end
 
@@ -243,7 +249,7 @@ veafNamedPoints.addAllCaucasusCities()
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure SECURITY
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-veafSecurity.password_L9["6ade6629f9219d87a011e7b8fbf8ef9584f2786d"] = true
+--veafSecurity.password_L9["6ade6629f9219d87a011e7b8fbf8ef9584f2786d"] = true
 veafSecurity.logInfo("Loading configuration")
 veaf.logInfo("init - veafSecurity")
 veafSecurity.initialize()
@@ -283,8 +289,9 @@ end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure CTLD 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+if ctld then
+    ctld.staticBugWorkaround = false --  DCS had a bug where destroying statics would cause a crash. If this happens again, set this to TRUE
 
-ctld.staticBugWorkaround = false --  DCS had a bug where destroying statics would cause a crash. If this happens again, set this to TRUE
 ctld.disableAllSmoke = false -- if true, all smoke is diabled at pickup and drop off zones regardless of settings below. Leave false to respect settings below
 ctld.hoverPickup = true --  if set to false you can load crates with the F10 menu instead of hovering... Only if not using real crates!
 ctld.enableCrates = true -- if false, Helis will not be able to spawn or unpack crates so will be normal CTTS
@@ -758,10 +765,12 @@ ctld.jtacUnitTypes = {
 
 veaf.logInfo("init - ctld")
 ctld.initialize()
+end
 
 veaf.logInfo("init - veafInterpreter")
 veafInterpreter.initialize()
 
+veaf.config.ww2 = false
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize the remote interface
 -------------------------------------------------------------------------------------------------------------------------------------------------------------

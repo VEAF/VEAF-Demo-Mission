@@ -1,53 +1,39 @@
 dictionary = {
-    ["DictKey_ActionText_1185"] = "qraHavadarya=\"ready\";",
-    ["DictKey_ActionText_1186"] = "return qraHavadarya==\"ready\"",
-    ["DictKey_ActionText_1187"] = "qraHavadarya=\"doing\";\
-mist.respawnGroup(\"Havadarya QRA\", true);\
+    ["DictKey_ActionText_383"] = "env.info(\"DYNAMIC CONFIGURATION\")\
+local script = VEAF_DYNAMIC_MISSIONPATH .. \"/src/scripts/missionConfig.lua\"\
+assert(loadfile(script))()\
 ",
-    ["DictKey_ActionText_1188"] = "QRA detected near Havadarya",
-    ["DictKey_ActionText_1189"] = "return qraHavadarya==\"doing\"",
-    ["DictKey_ActionText_1190"] = "return not Group.getByName(\"Havadarya QRA\")\
+    ["DictKey_ActionText_384"] = "VEAF_DYNAMIC_PATH = [[D:\\dev\\_VEAF\\VEAF-Demo-Mission\\node_modules\\veaf-mission-creation-tools\\]]",
+    ["DictKey_ActionText_385"] = "return VEAF_DYNAMIC_PATH~=nil",
+    ["DictKey_ActionText_386"] = "return VEAF_DYNAMIC_PATH==nil",
+    ["DictKey_ActionText_445"] = "return false --true=dynamic, false=static",
+    ["DictKey_ActionText_468"] = "env.info(\"DYNAMIC LOADING\")\
 ",
-    ["DictKey_ActionText_1193"] = "return qraHavadarya==\"dead\"",
-    ["DictKey_ActionText_1194"] = "qraHavadarya=\"ready\";\
+    ["DictKey_ActionText_492"] = "return VEAF_DYNAMIC_PATH~=nil",
+    ["DictKey_ActionText_493"] = "return VEAF_DYNAMIC_PATH==nil",
+    ["DictKey_ActionText_581"] = "local script = VEAF_DYNAMIC_PATH .. \"/src/scripts/community/mist.lua\"\
+assert(loadfile(script))()\
 ",
-    ["DictKey_ActionText_1195"] = "QRA  near Havadarya is ready again",
-    ["DictKey_ActionText_1196"] = "qraHavadarya=\"dead\";",
-    ["DictKey_ActionText_1197"] = "QRA destroyed near Havadarya",
-    ["DictKey_ActionText_2519"] = "return qraHavadarya==\"ready\"",
-    ["DictKey_ActionText_2577"] = "return false --true=dynamic, false=static",
-    ["DictKey_ActionText_2578"] = "VEAF_DYNAMIC_PATH = [[D:\\dev\\_VEAF\\VEAF-Open-Training-Mission-PG\\node_modules\\veaf-mission-creation-tools\\]]",
-    ["DictKey_ActionText_2579"] = "return VEAF_DYNAMIC_PATH~=nil\
+    ["DictKey_ActionText_582"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/VeafDynamicLoader.lua\"\
+assert(loadfile(script))()\
 ",
-    ["DictKey_ActionText_2580"] = "env.info(\"DYNAMIC LOADING\")",
-    ["DictKey_ActionText_2581"] = "local script = VEAF_DYNAMIC_PATH .. \"/src/scripts/community/Moose.lua\"\
-assert(loadfile(script))()",
-    ["DictKey_ActionText_2582"] = "local script = VEAF_DYNAMIC_PATH .. \"/src/scripts/community/CTLD.lua\"\
-assert(loadfile(script))()",
-    ["DictKey_ActionText_2583"] = "local script = VEAF_DYNAMIC_PATH .. \"/src/scripts/community/WeatherMark.lua\"\
-assert(loadfile(script))()",
-    ["DictKey_ActionText_2584"] = "local script = VEAF_DYNAMIC_PATH .. \"/src/scripts/VeafDynamicLoader.lua\"\
-assert(loadfile(script))()",
-    ["DictKey_ActionText_2585"] = "local script = VEAF_DYNAMIC_PATH .. \"/src/scripts/community/mist.lua\"\
-assert(loadfile(script))()",
-    ["DictKey_ActionText_2586"] = "return VEAF_DYNAMIC_PATH==nil\
+    ["DictKey_ActionText_583"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/community/Moose.lua\"\
+assert(loadfile(script))()\
 ",
-    ["DictKey_ActionText_2587"] = "env.info(\"STATIC LOADING\")",
-    ["DictKey_ActionText_2616"] = "return VEAF_DYNAMIC_PATH~=nil\
+    ["DictKey_ActionText_584"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/community/CTLD.lua\"\
+assert(loadfile(script))()\
 ",
-    ["DictKey_ActionText_2617"] = "env.info(\"DYNAMIC CONFIGURATION\")",
-    ["DictKey_ActionText_2618"] = "local script = VEAF_DYNAMIC_MISSIONPATH .. \"/src/scripts/missionConfig.lua\"\
-assert(loadfile(script))()",
-    ["DictKey_ActionText_2623"] = "return VEAF_DYNAMIC_PATH==nil\
+    ["DictKey_ActionText_585"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/community/WeatherMark.lua\"\
+assert(loadfile(script))()\
 ",
-    ["DictKey_ActionText_2624"] = "env.info(\"STATIC CONFIGURATION\")",
-    ["DictKey_ActionText_2625"] = "local script = VEAF_DYNAMIC_MISSIONPATH .. \"/src/scripts/missionConfig.lua\"\
-assert(loadfile(script))()",
-    ["DictKey_ActionText_2627"] = "VEAF_DYNAMIC_MISSIONPATH = [[D:\\dev\\_VEAF\\VEAF-Open-Training-Mission-PG\\]]",
+    ["DictKey_ActionText_586"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/community/NIOD.lua\"\
+assert(loadfile(script))()\
+",
+    ["DictKey_ActionText_614"] = "VEAF_DYNAMIC_MISSIONPATH = [[D:\\dev\\_VEAF\\VEAF-Demo-Mission\\]]",
     ["DictKey_descriptionBlueTask_3"] = "",
     ["DictKey_descriptionNeutralsTask_4"] = "",
     ["DictKey_descriptionRedTask_2"] = "",
-    ["DictKey_descriptionText_1"] = "Dynamic Training Mission\
-Use the VEAF script modules with the map markers and the F10 radio menu.",
+    ["DictKey_descriptionText_1"] = "Demonstration mission for VEAF-Mission-Creation-Tools\
+Weather : UGKO 221130Z 24011KT 9999 SCT034 OVC063 23/15 Q1006 NOSIG",
     ["DictKey_sortie_5"] = "",
 } -- end of dictionary

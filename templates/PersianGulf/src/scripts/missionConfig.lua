@@ -9,7 +9,7 @@ veaf.logInfo("init - veafGrass")
 veafGrass.initialize()
 veaf.logInfo("init - veafCasMission")
 veafCasMission.initialize()
---veafTransportMission.initialize()
+veafTransportMission.initialize()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- change some default parameters
@@ -59,23 +59,6 @@ veafShortcuts.initialize()
 --         :setBypassSecurity(true)
 -- )
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------
--- No MOOSE settings menu. Comment out this line if required.
-_SETTINGS:SetPlayerMenuOff()
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------
--- PSEUDOATC
---pseudoATC=PSEUDOATC:New()
---pseudoATC:Start()
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------
--- SCORING
--- local Scoring = SCORING:New( "Scoring File" )
--- Scoring:SetScaleDestroyScore( 10 )
--- Scoring:SetScaleDestroyPenalty( 40 )
--- Scoring:SetMessagesToCoalition()
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure ASSETS
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -132,6 +115,45 @@ local function _addCapMission(missionName, missionDescription, missionBriefing, 
     )
 end
 
+	veafCombatMission.AddMission(
+		VeafCombatMission.new()
+		:setName("Test")
+		:setFriendlyName("Test")
+		:setBriefing("Test mission - kill the bombers")
+		:addElement(
+			VeafCombatMissionElement.new()
+			:setName("Bombers")
+			:setGroups({"Bomber - 1", "Bomber - 2"})
+			:setSkill("Excellent")
+			:setSpawnRadius(0)
+		)
+		:addObjective(
+			VeafCombatMissionObjective.new()
+			:setName("< 10 minutes")
+			:setDescription("the mission will be failed after 10 minutes")
+			:setMessage("the 10 minutes have passed !")
+			:configureAsTimedObjective(605)
+		)
+		:addObjective(
+			VeafCombatMissionObjective.new()
+			:setName("HVT Kobuleti")
+			:setDescription("the mission will be failed if 3 HVT on Kobuleti are destroyed")
+			:setMessage("HVT target(s) destroyed : %s !")
+			:configureAsPreventDestructionOfSceneryObjectsInZone(
+				{"TestMission1-FailIfBombed-1", "TestMission1-FailIfBombed-2", "TestMission1-FailIfBombed-3"},
+				{[129467721] = "Helicopter", [129467705] = "Mess", [129468118] = "Tower"}
+			)
+		)
+		:addObjective(
+			VeafCombatMissionObjective.new()
+			:setName("Kill ONE bomber")
+			:setDescription("you must kill one of the bombers")
+			:setMessage("%d bomber(s) destroyed !")
+			:configureAsKillEnemiesObjective(1)
+		)
+        :initialize()
+    )
+
 if veafCombatMission then 
 	veafCombatMission.logInfo("Loading configuration")
 
@@ -172,6 +194,19 @@ veaf.logInfo("init - veafSecurity")
 veafSecurity.initialize()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- configure SHORTCUTS
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+if veafShortcuts then 
+    -- example
+    -- veafShortcuts.AddAlias(
+    --     VeafAlias.new()
+    --         :setName("-samLR") -- the name will be the text input in the marker
+    --         :setVeafCommand("_spawn samgroup, defense 5") -- the command will be executed
+    --         :setBypassSecurity(true) -- if true, no password will ever be needed
+    -- )
+end
+
+----------------------------------------------------------------------------------------------------------------------------
 -- configure CARRIER OPERATIONS 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 local useMooseAirboss = false

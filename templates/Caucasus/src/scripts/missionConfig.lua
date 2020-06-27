@@ -9,7 +9,7 @@ veaf.logInfo("init - veafGrass")
 veafGrass.initialize()
 veaf.logInfo("init - veafCasMission")
 veafCasMission.initialize()
---veafTransportMission.initialize()
+veafTransportMission.initialize()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- change some default parameters
@@ -59,30 +59,13 @@ veafShortcuts.initialize()
 --         :setBypassSecurity(true)
 -- )
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------
--- No MOOSE settings menu. Comment out this line if required.
-_SETTINGS:SetPlayerMenuOff()
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------
--- PSEUDOATC
---pseudoATC=PSEUDOATC:New()
---pseudoATC:Start()
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------
--- SCORING
--- local Scoring = SCORING:New( "Scoring File" )
--- Scoring:SetScaleDestroyScore( 10 )
--- Scoring:SetScaleDestroyPenalty( 40 )
--- Scoring:SetMessagesToCoalition()
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure ASSETS
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 veafAssets.logInfo("Loading configuration")
+
 veafAssets.Assets = {
 }
-
 
 veaf.logInfo("init - veafAssets")
 veafAssets.initialize()
@@ -132,6 +115,45 @@ local function _addCapMission(missionName, missionDescription, missionBriefing, 
     )
 end
 
+	veafCombatMission.AddMission(
+		VeafCombatMission.new()
+		:setName("Test")
+		:setFriendlyName("Test")
+		:setBriefing("Test mission - kill the bombers")
+		:addElement(
+			VeafCombatMissionElement.new()
+			:setName("Bombers")
+			:setGroups({"Bomber - 1", "Bomber - 2"})
+			:setSkill("Excellent")
+			:setSpawnRadius(0)
+		)
+		:addObjective(
+			VeafCombatMissionObjective.new()
+			:setName("< 10 minutes")
+			:setDescription("the mission will be failed after 10 minutes")
+			:setMessage("the 10 minutes have passed !")
+			:configureAsTimedObjective(605)
+		)
+		:addObjective(
+			VeafCombatMissionObjective.new()
+			:setName("HVT Kobuleti")
+			:setDescription("the mission will be failed if 3 HVT on Kobuleti are destroyed")
+			:setMessage("HVT target(s) destroyed : %s !")
+			:configureAsPreventDestructionOfSceneryObjectsInZone(
+				{"TestMission1-FailIfBombed-1", "TestMission1-FailIfBombed-2", "TestMission1-FailIfBombed-3"},
+				{[129467721] = "Helicopter", [129467705] = "Mess", [129468118] = "Tower"}
+			)
+		)
+		:addObjective(
+			VeafCombatMissionObjective.new()
+			:setName("Kill ONE bomber")
+			:setDescription("you must kill one of the bombers")
+			:setMessage("%d bomber(s) destroyed !")
+			:configureAsKillEnemiesObjective(1)
+		)
+        :initialize()
+    )
+
 if veafCombatMission then 
 	veafCombatMission.logInfo("Loading configuration")
 
@@ -147,7 +169,6 @@ if veafCombatZone then
 
     veaf.logInfo("init - veafCombatZone")
     veafCombatZone.initialize()
-
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -161,7 +182,7 @@ veafNamedPoints.logInfo("Loading configuration")
 
 veaf.logInfo("init - veafNamedPoints")
 veafNamedPoints.initialize()
-veafNamedPoints.addAllPersianGulfCities()
+veafNamedPoints.addAllCaucasusCities()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure SECURITY
@@ -172,6 +193,19 @@ veaf.logInfo("init - veafSecurity")
 veafSecurity.initialize()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- configure SHORTCUTS
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+if veafShortcuts then 
+    -- example
+    -- veafShortcuts.AddAlias(
+    --     VeafAlias.new()
+    --         :setName("-samLR") -- the name will be the text input in the marker
+    --         :setVeafCommand("_spawn samgroup, defense 5") -- the command will be executed
+    --         :setBypassSecurity(true) -- if true, no password will ever be needed
+    -- )
+end
+
+----------------------------------------------------------------------------------------------------------------------------
 -- configure CARRIER OPERATIONS 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 local useMooseAirboss = false
@@ -197,9 +231,7 @@ if ctld then
     ctld.staticBugWorkaround = false --  DCS had a bug where destroying statics would cause a crash. If this happens again, set this to TRUE
 
 ctld.disableAllSmoke = false -- if true, all smoke is diabled at pickup and drop off zones regardless of settings below. Leave false to respect settings below
-
 ctld.hoverPickup = true --  if set to false you can load crates with the F10 menu instead of hovering... Only if not using real crates!
-
 ctld.enableCrates = true -- if false, Helis will not be able to spawn or unpack crates so will be normal CTTS
 ctld.slingLoad = false -- if false, crates can be used WITHOUT slingloading, by hovering above the crate, simulating slingloading but not the weight...
 -- There are some bug with Sling-loading that can cause crashes, if these occur set slingLoad to false
