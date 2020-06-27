@@ -3,8 +3,7 @@ dictionary = {
 local script = VEAF_DYNAMIC_MISSIONPATH .. \"/src/scripts/missionConfig.lua\"\
 assert(loadfile(script))()\
 ",
-    ["DictKey_ActionText_384"] = "VEAF_DYNAMIC_PATH = 'D:/DEV/_veaf/VEAF-Mission-Creation-Tools'\
-VEAF_DYNAMIC_MISSIONPATH = 'D:/DEV/_veaf/VEAF-Demo-Mission'",
+    ["DictKey_ActionText_384"] = "VEAF_DYNAMIC_PATH = [[D:/DEV/_veaf/VEAF-Mission-Creation-Tools]]",
     ["DictKey_ActionText_385"] = "return VEAF_DYNAMIC_PATH~=nil",
     ["DictKey_ActionText_386"] = "return VEAF_DYNAMIC_PATH==nil",
     ["DictKey_ActionText_445"] = "return false --true=dynamic, false=static",
@@ -30,6 +29,7 @@ assert(loadfile(script))()\
     ["DictKey_ActionText_586"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/community/NIOD.lua\"\
 assert(loadfile(script))()\
 ",
+    ["DictKey_ActionText_614"] = "VEAF_DYNAMIC_MISSIONPATH = [[D:/DEV/_veaf/VEAF-Demo-Mission]]",
     ["DictKey_descriptionBlueTask_3"] = "",
     ["DictKey_descriptionNeutralsTask_4"] = "",
     ["DictKey_descriptionRedTask_2"] = "",

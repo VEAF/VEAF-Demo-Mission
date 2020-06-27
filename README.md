@@ -9,6 +9,10 @@ TODO *Link to the documentation - in progress*
 
 This mission uses the normalizer and radio preset editor tools, also found in the [VEAF Mission Creation Tools framework](https://github.com/VEAF/VEAF-Mission-Creation-Tools/tree/master/mission-editor-tools)
 
+## Templates
+
+Empty templates with preset triggers on different terrains can be found in the `templates` folder.
+
 ## Prerequisites
 
 * 7za from the [7-Zip Extra: standalone console version](https://www.7-zip.org/a/7z1900-extra.7z)

@@ -3081,7 +3081,7 @@ mission = {
                                 ["units"] = {
                                     [1] = {
                                         ["frequency"] = 127500000,
-                                        ["heading"] = 0.48193046790812,
+                                        ["heading"] = 0.4819304679081,
                                         ["modulation"] = 0,
                                         ["name"] = "DictKey_UnitName_348",
                                         ["skill"] = "Excellent",
@@ -3095,7 +3095,7 @@ mission = {
                                     }, -- end of [1]
                                     [2] = {
                                         ["frequency"] = 127500000,
-                                        ["heading"] = 0.48193046790812,
+                                        ["heading"] = 0.4819304679081,
                                         ["modulation"] = 0,
                                         ["name"] = "DictKey_UnitName_350",
                                         ["skill"] = "Excellent",
@@ -3109,7 +3109,7 @@ mission = {
                                     }, -- end of [2]
                                     [3] = {
                                         ["frequency"] = 127500000,
-                                        ["heading"] = 0.48193046790812,
+                                        ["heading"] = 0.4819304679081,
                                         ["modulation"] = 0,
                                         ["name"] = "DictKey_UnitName_351",
                                         ["skill"] = "Excellent",
@@ -3123,7 +3123,7 @@ mission = {
                                     }, -- end of [3]
                                     [4] = {
                                         ["frequency"] = 127500000,
-                                        ["heading"] = 0.48193046790812,
+                                        ["heading"] = 0.4819304679081,
                                         ["modulation"] = 0,
                                         ["name"] = "DictKey_UnitName_352",
                                         ["skill"] = "Excellent",
@@ -8310,7 +8310,7 @@ mission = {
             [10] = 47,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 26391,
+    ["currentKey"] = 26718,
     ["date"] = {
         ["Day"] = 23,
         ["Month"] = 5,
@@ -14583,7 +14583,7 @@ mission = {
         ["centerY"] = 496381.01990397,
         ["zoom"] = 67551.718191399,
     }, -- end of ["map"]
-    ["maxDictId"] = 612,
+    ["maxDictId"] = 614,
     ["pictureFileNameB"] = {
     }, -- end of ["pictureFileNameB"]
     ["pictureFileNameN"] = {
@@ -14624,7 +14624,7 @@ mission = {
     ["theatre"] = "Caucasus",
     ["trig"] = {
         ["actions"] = {
-            [1] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_384\"));",
+            [1] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_384\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_614\"));",
             [2] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_468\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_581\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_583\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_584\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_585\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_586\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_582\"));",
             [3] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_473\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_474\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_475\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_476\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_494\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_477\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_478\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_479\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_480\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_481\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_482\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_483\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_484\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_485\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_486\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_487\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_488\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_489\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_490\"));",
             [4] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_383\"));",
@@ -14790,6 +14790,13 @@ mission = {
                     ["text"] = "DictKey_ActionText_384",
                     ["zone"] = 332,
                 }, -- end of [1]
+                [2] = {
+                    ["KeyDict_text"] = "DictKey_ActionText_614",
+                    ["meters"] = 1000,
+                    ["predicate"] = "a_do_script",
+                    ["text"] = "DictKey_ActionText_614",
+                    ["zone"] = 332,
+                }, -- end of [2]
             }, -- end of ["actions"]
             ["colorItem"] = "0xff00ffff",
             ["comment"] = "choose - static or dynamic",
@@ -15103,7 +15110,7 @@ mission = {
             }, -- end of ["rules"]
         }, -- end of [5]
     }, -- end of ["trigrules"]
-    ["version"] = 16,
+    ["version"] = 17,
     ["weather"] = {
         ["atmosphere_type"] = 0,
         ["clouds"] = {

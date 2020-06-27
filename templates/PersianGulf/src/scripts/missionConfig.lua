@@ -9,7 +9,7 @@ veaf.logInfo("init - veafGrass")
 veafGrass.initialize()
 veaf.logInfo("init - veafCasMission")
 veafCasMission.initialize()
-veafTransportMission.initialize()
+--veafTransportMission.initialize()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- change some default parameters
@@ -59,26 +59,42 @@ veafShortcuts.initialize()
 --         :setBypassSecurity(true)
 -- )
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- No MOOSE settings menu. Comment out this line if required.
+_SETTINGS:SetPlayerMenuOff()
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- PSEUDOATC
+--pseudoATC=PSEUDOATC:New()
+--pseudoATC:Start()
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- SCORING
+-- local Scoring = SCORING:New( "Scoring File" )
+-- Scoring:SetScaleDestroyScore( 10 )
+-- Scoring:SetScaleDestroyPenalty( 40 )
+-- Scoring:SetMessagesToCoalition()
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure ASSETS
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-veafAssets.logInfo("Loading configuration")
 
+veafAssets.logInfo("Loading configuration")
 veafAssets.Assets = {
-    -- list the assets common to all missions below
-    {sort=1, name="Arco", description="Arco (KC-135)", information="Tacan 11Y\nVHF 251 Mhz\nZone OUEST", linked={"Arco-escort1","Arco-escort2"}}, 
-    {sort=2, name="Petrolsky", description="900 (IL-78M, RED)", information="VHF 267 Mhz", linked="Petrolsky-escort"},  
 }
 
+
+veaf.logInfo("init - veafAssets")
 veafAssets.initialize()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure MOVE
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-veafAssets.logInfo("Setting move tanker radio menus")
-table.insert(veafMove.Tankers, "Arco")
-table.insert(veafMove.Tankers, "Petrolsky")
+veafMove.logInfo("Setting move tanker radio menus")
+--table.insert(veafMove.Tankers, "T5-Petrolsky")
 
+veaf.logInfo("init - veafMove")
 veafMove.initialize()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -118,44 +134,8 @@ end
 
 if veafCombatMission then 
 	veafCombatMission.logInfo("Loading configuration")
-	veafCombatMission.AddMission(
-		VeafCombatMission.new()
-		:setName("Test")
-		:setFriendlyName("Test")
-		:setBriefing("Test mission - kill the bombers")
-		:addElement(
-			VeafCombatMissionElement.new()
-			:setName("Bombers")
-			:setGroups({"Bomber - 1", "Bomber - 2"})
-			:setSkill("Excellent")
-			:setSpawnRadius(0)
-		)
-		:addObjective(
-			VeafCombatMissionObjective.new()
-			:setName("< 10 minutes")
-			:setDescription("the mission will be failed after 10 minutes")
-			:setMessage("the 10 minutes have passed !")
-			:configureAsTimedObjective(605)
-		)
-		:addObjective(
-			VeafCombatMissionObjective.new()
-			:setName("HVT Kobuleti")
-			:setDescription("the mission will be failed if 3 HVT on Kobuleti are destroyed")
-			:setMessage("HVT target(s) destroyed : %s !")
-			:configureAsPreventDestructionOfSceneryObjectsInZone(
-				{"TestMission1-FailIfBombed-1", "TestMission1-FailIfBombed-2", "TestMission1-FailIfBombed-3"},
-				{[129467721] = "Helicopter", [129467705] = "Mess", [129468118] = "Tower"}
-			)
-		)
-		:addObjective(
-			VeafCombatMissionObjective.new()
-			:setName("Kill ONE bomber")
-			:setDescription("you must kill one of the bombers")
-			:setMessage("%d bomber(s) destroyed !")
-			:configureAsKillEnemiesObjective(1)
-		)
-        :initialize()
-    )
+
+    veaf.logInfo("init - veafCombatMission")
     veafCombatMission.initialize()
 end
 
@@ -164,129 +144,62 @@ end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafCombatZone then 
 	veafCombatZone.logInfo("Loading configuration")
-	veafCombatZone.AddZone(
-		VeafCombatZone.new()
-			:setMissionEditorZoneName("combatZone_CrossKobuleti")
-			:setFriendlyName("Cross Kobuleti")
-			:setBriefing("This is a simple mission\n" ..
-						 "You must destroy the comm antenna\n" ..
-						 "The other ennemy units are secondary targets\n")
-			:initialize()
-	)
-	veafCombatZone.AddZone(
-		VeafCombatZone.new()
-			:setMissionEditorZoneName("combatZone_Batumi")
-			:setFriendlyName("Batumi airbase")
-			:setBriefing("A BTR patrol and a few manpads are dispersed around the Batumi airbase")
-			:initialize()
-            :setTraining(true)
-    )
-    
+
+    veaf.logInfo("init - veafCombatZone")
     veafCombatZone.initialize()
+
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure NAMEDPOINTS
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-veafNamedPoints.Points = {
-    -- airbases in Georgia
-    {name="AIRBASE Kobuleti",point={x=-318000,y=0,z=636620, atc=true, tower="133.00", tacan="67X KBL"
-        , runways={ {name="07", hdg=69, ils="111.50"}}}},
-    {name="AIRBASE Gudauta", point={x=-196850,y=0,z=516496, atc=true, tower="130.00" 
-        , runways={ {name="15", hdg=150}, {name="33", hdg=330}}}},
-    {name="AIRBASE Vaziani", point={x=-319000,y=0,z=903271, atc=true, tower="140.00", tacan="22X VAS"
-        , runways={ {name="13", hdg=135, ils="108.75"}, {name="31", hdg=315, ils="108.75"}}}},
-    {name="AIRBASE Kutaisi", point={x=-284860,y=0,z=683839, atc=true, tower="134.00", tacan="44X KTS"
-        , runways={ {name="08", hdg=74, ils="109.75"}, {name="26", hdg=254}}}},
-    {name="AIRBASE Senaki",  point={x=-281903,y=0,z=648379, atc=true, tower="132.00", tacan="31X TSK"
-        , runways={ {name="09", hdg=94, ils="108.90"}, {name="27", hdg=274}}}},
-    {name="AIRBASE Batumi",  point={x=-356437,y=0,z=618211, atc=true, tower="131.00", tacan="16X BTM"
-        , runways={{name="13", hdg=125, ils="110.30"}, {name="31", hdg=305}}}},
-    {name="AIRBASE Sukhumi", point={x=-221382,y=0,z=565909, atc=true, tower="129.00"
-        , runways={{name="12", hdg=116}, {name="30", hdg=296}}}},
-    {name="AIRBASE Tbilisi", point={x=-314926,y=480,z=895724, atc=true, tower="138.00", tacan="25X GTB"
-        , runways={{name="13", hdg=127, ils="110.30"},{name="31", hdg=307, ils="108.90"}}}},
-    -- airbases in Russia
-    {name="AIRBASE Anapa - Vityazevo", point={x=-4448,y=0,z=244022, atc=true, tower="121.00"
-	    , runways={ {name="22", hdg=220}, {name="04", hdg=40}}}},
-    {name="AIRBASE Gelendzhik", point={x=-50996,y=0,z=297849, atc=true, tower="126.00"
-        , runways={ {hdg=40}, {hdg=220}}}},
-    {name="AIRBASE Maykop", point={x=-27626,y=0,z=457048, atc=true, tower="125.00"
-        , runways={ {name="04", hdg=40}, {name="22", hdg=220}}}},
-    {name="AIRBASE Krasnodar-Pashkovsky", point={x=-8707,y=0,z=388986, atc=true, tower="128.00"
-        , runways={ {name="23", hdg=227}, {name="05", hdg=47}}}},
-    {name="AIRBASE Krasnodar-Center", point={x=-11653,y=0,z=366766, atc=true, tower="122.00"
-        , runways={ {name="09", hdg=86}, {name="27", hdg=266}}}},
-    {name="AIRBASE Novorossiysk", point={x=-40299,y=0,z=279854, atc=true, tower="123.00"
-        , runways={ {name="04", hdg=40}, {name="22", hdg=220}}}},
-    {name="AIRBASE Krymsk", point={x=-7349,y=0,z=293712, atc=true, tower="124.00"
-        , runways={ {name="04", hdg=39}, {name="22", hdg=219}}}},
-    {name="AIRBASE Mineralnye Vody", point={x=-52090,y=0,z=707418, atc=true, tower="135.00"
-        , runways={ {name="12", hdg=115, ils="111.70"}, {name="30", hdg=295, ils="109.30"}}}},
-    {name="AIRBASE Nalchik", point={x=-125500,y=0,z=759543, atc=true, tower="136.00"
-        , runways={ {name="06", hdg=55}, {name="24", hdg=235, ils="110.50"}}}},
-    {name="AIRBASE Beslan", point={x=-148472,y=0,z=842252, atc=true, tower="141.00"
-        , runways={ {name="10", hdg=93, ils="110.50"}, {name="28", hdg=273}}}},
-    {name="AIRBASE Sochi", point={x=-165163,y=0,z=460902, atc=true, tower="127.00"
-        , runways={ {name="06", hdg=62, ils="111.10"}, {name="24", hdg=242}}}},
-    {name="AIRBASE Mozdok", point={x=-83330,y=0,z=835635, atc=true, tower="137.00"
-        , runways={ {name="08", hdg=82}, {name="26", hdg=262}}}},
 
+veafNamedPoints.Points = {
 }
 
 veafNamedPoints.logInfo("Loading configuration")
 
 veaf.logInfo("init - veafNamedPoints")
 veafNamedPoints.initialize()
-veafNamedPoints.addAllCaucasusCities()
+veafNamedPoints.addAllPersianGulfCities()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure SECURITY
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-veafSecurity.password_L9["6ade6629f9219d87a011e7b8fbf8ef9584f2786d"] = true
+--veafSecurity.password_L9["6ade6629f9219d87a011e7b8fbf8ef9584f2786d"] = true
 veafSecurity.logInfo("Loading configuration")
 veaf.logInfo("init - veafSecurity")
 veafSecurity.initialize()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
--- configure SHORTCUTS
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-if veafShortcuts then 
-    -- example
-    -- veafShortcuts.AddAlias(
-    --     VeafAlias.new()
-    --         :setName("-samLR") -- the name will be the text input in the marker
-    --         :setVeafCommand("_spawn samgroup, defense 5") -- the command will be executed
-    --         :setBypassSecurity(true) -- if true, no password will ever be needed
-    -- )
-end
-
-----------------------------------------------------------------------------------------------------------------------------
 -- configure CARRIER OPERATIONS 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 local useMooseAirboss = false
 
 if useMooseAirboss then
-	veafCarrierOperations2.logInfo("Configuring carrier operations")
-    veafCarrierOperations2.setCarrierInfo("CVN-74 Stennis", 119.700, 305)
-    veafCarrierOperations2.setTankerInfo("CVN-74 Stennis S3B-Tanker", 250, 75, "S3B", 511)
-    veafCarrierOperations2.setPedroInfo("CVN-74 Stennis Pedro", "Lake Erie", 42)
-    veafCarrierOperations2.setRepeaterInfo("Stennis Radio Repeater LSO", "Stennis Radio Repeater MARSHAL")
-    veafCarrierOperations2.setTraining()
-    veafCarrierOperations2.initialize()
+    -- veafCarrierOperations2.setCarrierInfo("CVN-74 Stennis", 119.700, 305)
+    -- veafCarrierOperations2.setTankerInfo("CVN-74 Stennis S3B-Tanker", 290.90, 75, "S3B", 511)
+    -- veafCarrierOperations2.setPedroInfo("CVN-74 Stennis Pedro", "Lake Erie", 42)
+    -- veafCarrierOperations2.setRepeaterInfo("Stennis Radio Repeater LSO", "Stennis Radio Repeater MARSHAL")
+    --veafCarrierOperations2.setTraining()
+    -- veaf.logInfo("init - veafCarrierOperations2")
+    -- veafCarrierOperations2.initialize()
     --veafCarrierOperations2.addRecoveryWindows()
 else
-	veafCarrierOperations.logInfo("Configuring carrier operations")
-    veafCarrierOperations.initialize(true)
+    -- veaf.logInfo("init - veafCarrierOperations")
+    -- veafCarrierOperations.initialize(true)
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure CTLD 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+if ctld then
+    ctld.staticBugWorkaround = false --  DCS had a bug where destroying statics would cause a crash. If this happens again, set this to TRUE
 
-ctld.staticBugWorkaround = false --  DCS had a bug where destroying statics would cause a crash. If this happens again, set this to TRUE
 ctld.disableAllSmoke = false -- if true, all smoke is diabled at pickup and drop off zones regardless of settings below. Leave false to respect settings below
+
 ctld.hoverPickup = true --  if set to false you can load crates with the F10 menu instead of hovering... Only if not using real crates!
+
 ctld.enableCrates = true -- if false, Helis will not be able to spawn or unpack crates so will be normal CTTS
 ctld.slingLoad = false -- if false, crates can be used WITHOUT slingloading, by hovering above the crate, simulating slingloading but not the weight...
 -- There are some bug with Sling-loading that can cause crashes, if these occur set slingLoad to false
@@ -426,8 +339,8 @@ ctld.pickupZones = {
     { "pickzone19", "none", 5, "yes", 0 },
     { "pickzone20", "none", 10, "yes", 0, 1000 }, -- optional extra flag number to store the current number of groups available in
 
-    { "CVN-74 Stennis", "none", 10, "yes", 0, 1001 }, -- instead of a Zone Name you can also use the UNIT NAME of a ship
-    { "LHA-1 Tarawa", "none", 10, "yes", 0, 1002 }, -- instead of a Zone Name you can also use the UNIT NAME of a ship
+    -- { "CVN-74 Stennis", "none", 10, "yes", 0, 1001 }, -- instead of a Zone Name you can also use the UNIT NAME of a ship
+    -- { "LHA-1 Tarawa", "none", 10, "yes", 0, 1002 }, -- instead of a Zone Name you can also use the UNIT NAME of a ship
 }
 
 -- dropOffZones = {"name","smoke colour",0,side 1 = Red or 2 = Blue or 0 = Both sides}
@@ -758,10 +671,12 @@ ctld.jtacUnitTypes = {
 
 veaf.logInfo("init - ctld")
 ctld.initialize()
+end
 
 veaf.logInfo("init - veafInterpreter")
 veafInterpreter.initialize()
 
+veaf.config.ww2 = false
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize the remote interface
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
