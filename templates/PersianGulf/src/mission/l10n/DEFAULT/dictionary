@@ -1,20 +1,4 @@
 dictionary = {
-    ["DictKey_ActionText_1185"] = "qraHavadarya=\"ready\";",
-    ["DictKey_ActionText_1186"] = "return qraHavadarya==\"ready\"",
-    ["DictKey_ActionText_1187"] = "qraHavadarya=\"doing\";\
-mist.respawnGroup(\"Havadarya QRA\", true);\
-",
-    ["DictKey_ActionText_1188"] = "QRA detected near Havadarya",
-    ["DictKey_ActionText_1189"] = "return qraHavadarya==\"doing\"",
-    ["DictKey_ActionText_1190"] = "return not Group.getByName(\"Havadarya QRA\")\
-",
-    ["DictKey_ActionText_1193"] = "return qraHavadarya==\"dead\"",
-    ["DictKey_ActionText_1194"] = "qraHavadarya=\"ready\";\
-",
-    ["DictKey_ActionText_1195"] = "QRA  near Havadarya is ready again",
-    ["DictKey_ActionText_1196"] = "qraHavadarya=\"dead\";",
-    ["DictKey_ActionText_1197"] = "QRA destroyed near Havadarya",
-    ["DictKey_ActionText_2519"] = "return qraHavadarya==\"ready\"",
     ["DictKey_ActionText_2577"] = "return false --true=dynamic, false=static",
     ["DictKey_ActionText_2578"] = "VEAF_DYNAMIC_PATH = [[D:\\dev\\_VEAF\\VEAF-Open-Training-Mission-PG\\node_modules\\veaf-mission-creation-tools\\]]",
     ["DictKey_ActionText_2579"] = "return VEAF_DYNAMIC_PATH~=nil\

@@ -373,7 +373,7 @@ mission = {
             [20] = 67,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 243004,
+    ["currentKey"] = 243009,
     ["date"] = {
         ["Day"] = 23,
         ["Month"] = 5,
@@ -6658,8 +6658,8 @@ mission = {
         }, -- end of ["roles"]
     }, -- end of ["groundControl"]
     ["map"] = {
-        ["centerX"] = 52570.622983525,
-        ["centerY"] = -53109.120168841,
+        ["centerX"] = 52570.622983526,
+        ["centerY"] = -53109.12016884,
         ["zoom"] = 2822969.5994372,
     }, -- end of ["map"]
     ["maxDictId"] = 2632,
@@ -6709,12 +6709,6 @@ mission = {
             [4] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_2587\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2593\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2594\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2595\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2596\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2597\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2598\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2599\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2600\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2601\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2602\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2603\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2604\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2605\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2606\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2607\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2608\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2609\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2610\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2611\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2612\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2613\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2614\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2615\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2628\"));",
             [5] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_2617\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_2618\"));",
             [6] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_2624\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_2626\"));",
-            [7] = "a_set_flag_value(9074, 0);a_set_flag_value(9074, 1);",
-            [8] = "a_set_flag_value(9001, 0);a_set_flag_value(9001, 1);",
-            [9] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_1185\")); mission.trig.func[9]=nil;",
-            [10] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_1187\"));a_out_text_delay_s(\"blue\", getValueDictByKey(\"DictKey_ActionText_1188\"), 30, false, 0);",
-            [11] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_1196\"));a_out_text_delay_s(\"blue\", getValueDictByKey(\"DictKey_ActionText_1197\"), 30, false, 0);",
-            [12] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_1194\"));a_out_text_delay_s(\"blue\", getValueDictByKey(\"DictKey_ActionText_1195\"), 30, false, 0);",
         }, -- end of ["actions"]
         ["conditions"] = {
             [1] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_2577\")) )",
@@ -6723,12 +6717,6 @@ mission = {
             [4] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_2586\")) )",
             [5] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_2616\")) )",
             [6] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_2623\")) )",
-            [7] = "return(c_time_since_flag(9074, 300) )",
-            [8] = "return(c_time_since_flag(9001, 300) )",
-            [9] = "return(true)",
-            [10] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_1186\")) or c_predicate(getValueDictByKey(\"DictKey_ActionText_2519\")) )",
-            [11] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_1189\")) and c_predicate(getValueDictByKey(\"DictKey_ActionText_1190\")) )",
-            [12] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_1193\")) )",
         }, -- end of ["conditions"]
         ["custom"] = {
         }, -- end of ["custom"]
@@ -6743,20 +6731,8 @@ mission = {
             [4] = true,
             [5] = true,
             [6] = true,
-            [7] = true,
-            [8] = true,
-            [9] = true,
-            [10] = true,
-            [11] = true,
-            [12] = true,
         }, -- end of ["flag"]
         ["func"] = {
-            [7] = "if mission.trig.conditions[7]() then if not mission.trig.flag[7] then mission.trig.actions[7](); mission.trig.flag[7] = true;end; else mission.trig.flag[7] = false; end;",
-            [8] = "if mission.trig.conditions[8]() then if not mission.trig.flag[8] then mission.trig.actions[8](); mission.trig.flag[8] = true;end; else mission.trig.flag[8] = false; end;",
-            [9] = "if mission.trig.conditions[9]() then mission.trig.actions[9]() end",
-            [10] = "if mission.trig.conditions[10]() then mission.trig.actions[10]() end",
-            [11] = "if mission.trig.conditions[11]() then mission.trig.actions[11]() end",
-            [12] = "if mission.trig.conditions[12]() then mission.trig.actions[12]() end",
         }, -- end of ["func"]
         ["funcStartup"] = {
             [1] = "if mission.trig.conditions[1]() then mission.trig.actions[1]() end",
@@ -7124,223 +7100,6 @@ mission = {
                 }, -- end of [1]
             }, -- end of ["rules"]
         }, -- end of [6]
-        [7] = {
-            ["actions"] = {
-                [1] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["flag"] = 9074,
-                    ["predicate"] = "a_set_flag_value",
-                    ["value"] = 0,
-                }, -- end of [1]
-                [2] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["flag"] = 9074,
-                    ["predicate"] = "a_set_flag_value",
-                    ["value"] = 1,
-                }, -- end of [2]
-            }, -- end of ["actions"]
-            ["comment"] = "CVN74-TCN-ILS",
-            ["eventlist"] = "",
-            ["predicate"] = "triggerFront",
-            ["rules"] = {
-                [1] = {
-                    ["coalitionlist"] = "red",
-                    ["flag"] = 9074,
-                    ["predicate"] = "c_time_since_flag",
-                    ["seconds"] = 300,
-                    ["zone"] = 51,
-                }, -- end of [1]
-            }, -- end of ["rules"]
-        }, -- end of [7]
-        [8] = {
-            ["actions"] = {
-                [1] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["flag"] = 9001,
-                    ["predicate"] = "a_set_flag_value",
-                    ["value"] = 0,
-                }, -- end of [1]
-                [2] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["flag"] = 9001,
-                    ["predicate"] = "a_set_flag_value",
-                    ["value"] = 1,
-                }, -- end of [2]
-            }, -- end of ["actions"]
-            ["comment"] = "CVN01-TCN-ILS",
-            ["eventlist"] = "",
-            ["predicate"] = "triggerFront",
-            ["rules"] = {
-                [1] = {
-                    ["coalitionlist"] = "red",
-                    ["flag"] = 9001,
-                    ["predicate"] = "c_time_since_flag",
-                    ["seconds"] = 300,
-                    ["zone"] = 51,
-                }, -- end of [1]
-            }, -- end of ["rules"]
-        }, -- end of [8]
-        [9] = {
-            ["actions"] = {
-                [1] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["KeyDict_text"] = "DictKey_ActionText_1185",
-                    ["predicate"] = "a_do_script",
-                    ["text"] = "DictKey_ActionText_1185",
-                }, -- end of [1]
-            }, -- end of ["actions"]
-            ["comment"] = "QraInit",
-            ["eventlist"] = "",
-            ["predicate"] = "triggerOnce",
-            ["rules"] = {
-            }, -- end of ["rules"]
-        }, -- end of [9]
-        [10] = {
-            ["actions"] = {
-                [1] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["KeyDict_text"] = "DictKey_ActionText_1187",
-                    ["predicate"] = "a_do_script",
-                    ["text"] = "DictKey_ActionText_1187",
-                }, -- end of [1]
-                [2] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["clearview"] = false,
-                    ["coalitionlist"] = "blue",
-                    ["KeyDict_text"] = "DictKey_ActionText_1188",
-                    ["predicate"] = "a_out_text_delay_s",
-                    ["seconds"] = 30,
-                    ["start_delay"] = 0,
-                    ["text"] = "DictKey_ActionText_1188",
-                }, -- end of [2]
-            }, -- end of ["actions"]
-            ["comment"] = "QRA Havadarya Start",
-            ["eventlist"] = "",
-            ["predicate"] = "triggerContinious",
-            ["rules"] = {
-                [1] = {
-                    ["coalitionlist"] = "red",
-                    ["KeyDict_text"] = "DictKey_ActionText_1186",
-                    ["predicate"] = "c_predicate",
-                    ["text"] = "DictKey_ActionText_1186",
-                    ["zone"] = 134,
-                }, -- end of [1]
-                [2] = {
-                    ["predicate"] = "or",
-                }, -- end of [2]
-                [3] = {
-                    ["coalitionlist"] = "red",
-                    ["KeyDict_text"] = "DictKey_ActionText_2519",
-                    ["predicate"] = "c_predicate",
-                    ["text"] = "DictKey_ActionText_2519",
-                    ["zone"] = 134,
-                }, -- end of [3]
-            }, -- end of ["rules"]
-        }, -- end of [10]
-        [11] = {
-            ["actions"] = {
-                [1] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["KeyDict_text"] = "DictKey_ActionText_1196",
-                    ["predicate"] = "a_do_script",
-                    ["text"] = "DictKey_ActionText_1196",
-                }, -- end of [1]
-                [2] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["clearview"] = false,
-                    ["coalitionlist"] = "blue",
-                    ["KeyDict_text"] = "DictKey_ActionText_1197",
-                    ["predicate"] = "a_out_text_delay_s",
-                    ["seconds"] = 30,
-                    ["start_delay"] = 0,
-                    ["text"] = "DictKey_ActionText_1197",
-                }, -- end of [2]
-            }, -- end of ["actions"]
-            ["comment"] = "Qra Havadarya Finished",
-            ["eventlist"] = "",
-            ["predicate"] = "triggerContinious",
-            ["rules"] = {
-                [1] = {
-                    ["coalitionlist"] = "red",
-                    ["KeyDict_text"] = "DictKey_ActionText_1189",
-                    ["predicate"] = "c_predicate",
-                    ["text"] = "DictKey_ActionText_1189",
-                    ["zone"] = 134,
-                }, -- end of [1]
-                [2] = {
-                    ["coalitionlist"] = "red",
-                    ["KeyDict_text"] = "DictKey_ActionText_1190",
-                    ["predicate"] = "c_predicate",
-                    ["text"] = "DictKey_ActionText_1190",
-                    ["zone"] = 134,
-                }, -- end of [2]
-            }, -- end of ["rules"]
-        }, -- end of [11]
-        [12] = {
-            ["actions"] = {
-                [1] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["KeyDict_text"] = "DictKey_ActionText_1194",
-                    ["predicate"] = "a_do_script",
-                    ["text"] = "DictKey_ActionText_1194",
-                }, -- end of [1]
-                [2] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["clearview"] = false,
-                    ["coalitionlist"] = "blue",
-                    ["KeyDict_text"] = "DictKey_ActionText_1195",
-                    ["predicate"] = "a_out_text_delay_s",
-                    ["seconds"] = 30,
-                    ["start_delay"] = 0,
-                    ["text"] = "DictKey_ActionText_1195",
-                }, -- end of [2]
-            }, -- end of ["actions"]
-            ["comment"] = "QRA Havadarya Reload",
-            ["eventlist"] = "",
-            ["predicate"] = "triggerContinious",
-            ["rules"] = {
-                [1] = {
-                    ["coalitionlist"] = "red",
-                    ["KeyDict_text"] = "DictKey_ActionText_1193",
-                    ["predicate"] = "c_predicate",
-                    ["text"] = "DictKey_ActionText_1193",
-                    ["zone"] = 134,
-                }, -- end of [1]
-            }, -- end of ["rules"]
-        }, -- end of [12]
     }, -- end of ["trigrules"]
     ["version"] = 17,
     ["weather"] = {
