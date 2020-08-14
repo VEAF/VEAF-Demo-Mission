@@ -1,6 +1,6 @@
 mapResource = {
     ["ResKey_Action_382"] = "missionConfig.lua",
-    ["ResKey_Action_473"] = "veaf.lua",
+    ["ResKey_Action_473"] = "mist.lua",
     ["ResKey_Action_474"] = "dcsUnits.lua",
     ["ResKey_Action_475"] = "veafAssets.lua",
     ["ResKey_Action_476"] = "veafCarrierOperations.lua",
@@ -19,4 +19,9 @@ mapResource = {
     ["ResKey_Action_489"] = "veafInterpreter.lua",
     ["ResKey_Action_490"] = "veafCombatMission.lua",
     ["ResKey_Action_494"] = "veafCarrierOperations2.lua",
+    ["ResKey_Action_615"] = "Moose.lua",
+    ["ResKey_Action_616"] = "CTLD.lua",
+    ["ResKey_Action_617"] = "WeatherMark.lua",
+    ["ResKey_Action_618"] = "NIOD.lua",
+    ["ResKey_Action_619"] = "veaf.lua",
 } -- end of mapResource

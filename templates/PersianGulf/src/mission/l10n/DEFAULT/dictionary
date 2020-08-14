@@ -1,6 +1,6 @@
 dictionary = {
     ["DictKey_ActionText_2577"] = "return false --true=dynamic, false=static",
-    ["DictKey_ActionText_2578"] = "VEAF_DYNAMIC_PATH = [[D:\\dev\\_VEAF\\VEAF-Open-Training-Mission-PG\\node_modules\\veaf-mission-creation-tools\\]]",
+    ["DictKey_ActionText_2578"] = "VEAF_DYNAMIC_PATH = [[D:\\dev\\_VEAF\\VEAF-Demo-Mission\\templates\\PersianGulf\\node_modules\\veaf-mission-creation-tools\\]]",
     ["DictKey_ActionText_2579"] = "return VEAF_DYNAMIC_PATH~=nil\
 ",
     ["DictKey_ActionText_2580"] = "env.info(\"DYNAMIC LOADING\")",
@@ -27,7 +27,7 @@ assert(loadfile(script))()",
     ["DictKey_ActionText_2624"] = "env.info(\"STATIC CONFIGURATION\")",
     ["DictKey_ActionText_2625"] = "local script = VEAF_DYNAMIC_MISSIONPATH .. \"/src/scripts/missionConfig.lua\"\
 assert(loadfile(script))()",
-    ["DictKey_ActionText_2627"] = "VEAF_DYNAMIC_MISSIONPATH = [[D:\\dev\\_VEAF\\VEAF-Open-Training-Mission-PG\\]]",
+    ["DictKey_ActionText_2627"] = "VEAF_DYNAMIC_MISSIONPATH = [[D:\\dev\\_VEAF\\VEAF-Demo-Mission\\templates\\PersianGulf\\]]",
     ["DictKey_descriptionBlueTask_3"] = "",
     ["DictKey_descriptionNeutralsTask_4"] = "",
     ["DictKey_descriptionRedTask_2"] = "",
