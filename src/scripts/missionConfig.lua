@@ -1,160 +1,64 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize all the scripts
-veafRadio.initialize()
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+veaf.logInfo("init - veafRadio")
+veafRadio.initialize(true)
+veaf.logInfo("init - veafSpawn")
 veafSpawn.initialize()
+veaf.logInfo("init - veafGrass")
 veafGrass.initialize()
-veafShortcuts.initialize()
+veaf.logInfo("init - veafCasMission")
 veafCasMission.initialize()
 veafTransportMission.initialize()
-veafInterpreter.initialize()
-
--- No MOOSE settings menu. Comment out this line if required.
-_SETTINGS:SetPlayerMenuOff()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
--- PSEUDOATC
+-- change some default parameters
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-pseudoATC=PSEUDOATC:New()
-pseudoATC:Start()
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------
--- SCORING
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-local Scoring = SCORING:New( "Scoring File" )
-Scoring:SetScaleDestroyScore( 10 )
-Scoring:SetScaleDestroyPenalty( 40 )
-Scoring:SetMessagesToCoalition()
+veaf.DEFAULT_GROUND_SPEED_KPH = 25
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
--- ATIS configuration
---based on 476 vFG Flight Info Pubs by WarLord
+-- initialize SHORTCUTS
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-atisBatumi=ATIS:New(AIRBASE.Caucasus.Batumi, 122.550)
---:SetRadioRelayUnitName("Radio Relay Batumi")
-:SetTowerFrequencies({260, 131, 40.4})
-:SetTACAN(16)
-:AddILS(110.300, "13")
-:Start()
+veaf.logInfo("init - veafShortcuts")
+veafShortcuts.initialize()
 
-atisKobuleti=ATIS:New(AIRBASE.Caucasus.Kobuleti, 122.300)
-:SetRadioRelayUnitName("Radio Relay Kobuleti")
-:SetTowerFrequencies({262, 133, 40.8})
-:SetTACAN(67)
-:AddILS(111.500, "7")
-:SetSubtitleDuration(30)
-:Start()
+-- you can add all the shortcuts you want here. Shortcuts can be any VEAF command, as entered in a map marker.
+-- here are some examples :
 
-atisVaziani=ATIS:New(AIRBASE.Caucasus.Vaziani, 122.600)
---:SetRadioRelayUnitName("Radio Relay Vaziani")
-:SetTowerFrequencies({269, 140, 42.2})
-:SetTACAN(22)
-:AddILS(108.750, "13")
-:Start()
+-- veafShortcuts.AddAlias(
+--     VeafAlias.new()
+--         :setName("-sa11")
+--         :setDescription("SA-11 Gadfly (9K37 Buk) battery")
+--         :setVeafCommand("_spawn group, name sa11")
+--         :setBypassSecurity(true)
+-- )
 
-atisGelendzhik=ATIS:New(AIRBASE.Caucasus.Gelendzhik, 134.875)
---:SetRadioRelayUnitName("Radio Relay Gelendzhik")
-:SetTowerFrequencies({255, 126, 39.4})
-:Start()
+-- veafShortcuts.AddAlias(
+--     VeafAlias.new()
+--         :setName("-login")
+--         :setDescription("Unlock the system")
+--         :setHidden(true)
+--         :setVeafCommand("_auth")
+--         :setBypassSecurity(true)
+-- )
 
-atisKrasnodarP=ATIS:New(AIRBASE.Caucasus.Krasnodar_Pashkovsky, 122.450)
---:SetRadioRelayUnitName("Radio Relay Krasnodar Pashkovsky")
-:SetTowerFrequencies({257, 128, 39.8})
-:Start()
+-- veafShortcuts.AddAlias(
+--     VeafAlias.new()
+--         :setName("-logout")
+--         :setDescription("Lock the system")
+--         :setHidden(true)
+--         :setVeafCommand("_auth logout")
+--         :setBypassSecurity(true)
+-- )
 
-atisSukhumi=ATIS:New(AIRBASE.Caucasus.Sukhumi_Babushara, 122.500)
---:SetRadioRelayUnitName("Radio Relay Sukhumi")
-:SetTowerFrequencies({258, 129, 40})
-:Start()
+-- veafShortcuts.AddAlias(
+--     VeafAlias.new()
+--         :setName("-mortar")
+--         :setDescription("Mortar team")
+--         :setVeafCommand("_spawn group, name mortar, country USA")
+--         :setBypassSecurity(true)
+-- )
 
-atisGudauta=ATIS:New(AIRBASE.Caucasus.Gudauta, 122.225)
---:SetRadioRelayUnitName("Radio Relay Gudauta")
-:SetTowerFrequencies({259, 130})
-:Start()
-
-atisSenaki=ATIS:New(AIRBASE.Caucasus.Senaki_Kolkhi, 122.525)
---:SetRadioRelayUnitName("Radio Relay Senaki")
-:SetTowerFrequencies({261, 132, 40.6})
-:SetTACAN(31)
-:AddILS(108.900, "9")
-:Start()
-
-atisKutaisi=ATIS:New(AIRBASE.Caucasus.Kutaisi, 122.100)
---:SetRadioRelayUnitName("Radio Relay Kutaisi")
-:SetTowerFrequencies({263, 134, 41})
-:SetTACAN(44)
-:AddILS(109.750, "8")
-:Start()
-
-atisTbilisi=ATIS:New(AIRBASE.Caucasus.Tbilisi_Lochini, 132.800)
---:SetRadioRelayUnitName("Radio Relay Tbilisi")
-:SetTowerFrequencies({267, 138, 41.8})
-:SetTACAN(25)
-:AddILS(110.350, "13R")
-:AddILS(108.900, "31L")
-:Start()
-
-atisSoganlug=ATIS:New(AIRBASE.Caucasus.Soganlug, 122.600)
---:SetRadioRelayUnitName("Radio Relay Soganlug")
-:SetTowerFrequencies({268, 139, 42})
-:Start()
-
-atisAnapa=ATIS:New(AIRBASE.Caucasus.Anapa_Vityazevo, 125.400)
---:SetRadioRelayUnitName("Radio Relay Anapa")
-:SetTowerFrequencies({250, 121, 38.4})
-:Start()
-
-atisKrasnodarC=ATIS:New(AIRBASE.Caucasus.Krasnodar_Center, 128.300)
---:SetRadioRelayUnitName("Radio Relay Krasnodar Center")
-:SetTowerFrequencies({251, 122, 38.6})
-:Start()
-
-atisNovorossiysk=ATIS:New(AIRBASE.Caucasus.Novorossiysk, 128.200)
---:SetRadioRelayUnitName("Radio Relay Novorossiysk")
-:SetTowerFrequencies({252, 123, 38.8})
-:Start()
-
-atisKrymsk=ATIS:New(AIRBASE.Caucasus.Krymsk, 128.600)
---:SetRadioRelayUnitName("Radio Relay Krymsk")
-:SetTowerFrequencies({253, 124, 39})
-:Start()
-
-atisMaykop_Khanskaya=ATIS:New(AIRBASE.Caucasus.Maykop_Khanskaya, 128.700)
---:SetRadioRelayUnitName("Radio Relay Maykop")
-:SetTowerFrequencies({254, 125, 39.2})
-:Start()
-
-atisSochi=ATIS:New(AIRBASE.Caucasus.Sochi_Adler, 126.200)
---:SetRadioRelayUnitName("Radio Relay Sochi")
-:SetTowerFrequencies({256, 127, 39.6})
-:AddILS(111.100, "6")
-:Start()
-
-atisMineralnye=ATIS:New(AIRBASE.Caucasus.Mineralnye_Vody, 125.250)
---:SetRadioRelayUnitName("Radio Relay Mineralnye")
-:SetTowerFrequencies({264, 135, 41.2})
-:AddILS(111.700, "13")
-:AddILS(109.300, "30")
-:Start()
-
-atisNalchik=ATIS:New(AIRBASE.Caucasus.Nalchik, 128.525)
---:SetRadioRelayUnitName("Radio Relay Nalchik")
-:SetTowerFrequencies({265, 136, 41.4})
-:AddILS(110.500, "24")
-:Start()
-
-atisMozdok=ATIS:New(AIRBASE.Caucasus.Mozdok, 128.550)
---:SetRadioRelayUnitName("Radio Relay Mozdok")
-:SetTowerFrequencies({265, 136, 41.4})
-:Start()
-
-atisBeslan=ATIS:New(AIRBASE.Caucasus.Beslan, 128.225)
---:SetRadioRelayUnitName("Radio Relay Beslan")
-:SetTowerFrequencies({270, 141, 42.4})
-:AddILS(110.500, "10")
-:Start()
-
-trigger.action.outText("ATIS Loaded....", 10)
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure ASSETS
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 veafAssets.logInfo("Loading configuration")
@@ -165,23 +69,55 @@ veafAssets.Assets = {
     {sort=2, name="Petrolsky", description="900 (IL-78M, RED)", information="VHF 267 Mhz", linked="Petrolsky-escort"},  
 }
 
+veaf.logInfo("init - veafAssets")
 veafAssets.initialize()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure MOVE
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-veafAssets.logInfo("Setting move tanker radio menus")
+veafMove.logInfo("Setting move tanker radio menus")
 table.insert(veafMove.Tankers, "Arco")
 table.insert(veafMove.Tankers, "Petrolsky")
 
+veaf.logInfo("init - veafMove")
 veafMove.initialize()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure COMBAT MISSION
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-if veafCombatMission then 
-	veafCombatMission.logInfo("Loading configuration")
+local function _addCapMission(missionName, missionDescription, missionBriefing, secured, radioMenu)
+    local groupName = groupName or "OnDemand-"..missionName
+    local secured = secured
+    if secured == nil then secured = true end
+    local radioMenu = radioMenu
+    if radioMenu == nil then radioMenu = false end
+
+    veafCombatMission.AddMissionsWithSkillAndScale(
+		VeafCombatMission.new()
+		:setSecured(secured)
+		:setRadioMenuEnabled(radioMenu)
+		:setName(missionName)
+		:setFriendlyName(missionDescription)
+		:setBriefing(missionBriefing)
+		:addElement(
+			VeafCombatMissionElement.new()
+			:setName(groupName)
+            :setGroups({groupName})
+            :setSkill("Random")
+            :setScalable(true)
+		)
+		:addObjective(
+			VeafCombatMissionObjective.new()
+			:setName("Kill all the fighters")
+			:setDescription("you must kill all of the fighters")
+			:setMessage("%d fighters destroyed !")
+			:configureAsKillEnemiesObjective()
+		)
+		:initialize()
+    )
+end
+
 	veafCombatMission.AddMission(
 		VeafCombatMission.new()
 		:setName("Test")
@@ -220,10 +156,17 @@ if veafCombatMission then
 		)
         :initialize()
     )
+
+if veafCombatMission then 
+	veafCombatMission.logInfo("Loading configuration")
+
+    veaf.logInfo("init - veafCombatMission")
     veafCombatMission.initialize()
 end
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure COMBAT ZONE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafCombatZone then 
 	veafCombatZone.logInfo("Loading configuration")
 	veafCombatZone.AddZone(
@@ -244,6 +187,7 @@ if veafCombatZone then
             :setTraining(true)
     )
     
+    veaf.logInfo("init - veafCombatZone")
     veafCombatZone.initialize()
 end
 
@@ -297,14 +241,17 @@ veafNamedPoints.Points = {
 }
 
 veafNamedPoints.logInfo("Loading configuration")
+
+veaf.logInfo("init - veafNamedPoints")
 veafNamedPoints.initialize()
+veafNamedPoints.addAllCaucasusCities()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure SECURITY
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-veafSecurity.password_L9["6ade6629f9219d87a011e7b8fbf8ef9584f2786d"] = true
-
+--veafSecurity.password_L9["6ade6629f9219d87a011e7b8fbf8ef9584f2786d"] = true
 veafSecurity.logInfo("Loading configuration")
+veaf.logInfo("init - veafSecurity")
 veafSecurity.initialize()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -323,13 +270,13 @@ end
 ----------------------------------------------------------------------------------------------------------------------------
 -- configure CARRIER OPERATIONS 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-local useMooseAirboss = true
+local useMooseAirboss = false
 
 if useMooseAirboss then
 	veafCarrierOperations2.logInfo("Configuring carrier operations")
     veafCarrierOperations2.setCarrierInfo("CVN-74 Stennis", 119.700, 305)
-    veafCarrierOperations2.setTankerInfo("Stennis Refueler", 250, 75, "S3B", 511)
-    veafCarrierOperations2.setPedroInfo("Rescue Helo", "Lake Erie", 42)
+    veafCarrierOperations2.setTankerInfo("CVN-74 Stennis S3B-Tanker", 250, 75, "S3B", 511)
+    veafCarrierOperations2.setPedroInfo("CVN-74 Stennis Pedro", "Lake Erie", 42)
     veafCarrierOperations2.setRepeaterInfo("Stennis Radio Repeater LSO", "Stennis Radio Repeater MARSHAL")
     veafCarrierOperations2.setTraining()
     veafCarrierOperations2.initialize()
@@ -339,34 +286,12 @@ else
     veafCarrierOperations.initialize(true)
 end
 
----------------------------
---- Generate AI Traffic ---
----------------------------
-
--- Spawn some AI flights as additional traffic.
-local F181=SPAWN:New("FA-18C Group 1"):InitModex(111) -- Coming in from NW after ~ 6 min
-local F182=SPAWN:New("FA-18C Group 2"):InitModex(112) -- Coming in from NW after ~20 min
-local F183=SPAWN:New("FA-18C Group 3"):InitModex(113) -- Coming in from W  after ~18 min
-local F14=SPAWN:New("F-14B 2ship"):InitModex(211)     -- Coming in from SW after ~ 4 min
-local S3B=SPAWN:New("S-3B Group"):InitModex(411)      -- Coming in from S  after ~16 min
-  
--- Spawn always 9 min before the recovery window opens.
-local spawntimes={"8:21", "14:51", "20:51"}
-for _,spawntime in pairs(spawntimes) do
-  local _time=UTILS.ClockToSeconds(spawntime)-timer.getAbsTime()
-  if _time>0 then
-    SCHEDULER:New(nil, F181.Spawn, {F181}, _time)
-    SCHEDULER:New(nil, F182.Spawn, {F182}, _time)
-    SCHEDULER:New(nil, F183.Spawn, {F183}, _time)
-    SCHEDULER:New(nil, F14.Spawn,  {F14},  _time)
-    SCHEDULER:New(nil, S3B.Spawn,  {S3B},  _time)
-  end
-end
-
-
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
--- configure CTLD
-ctld.staticBugWorkaround = false --  DCS had a bug where destroying statics would cause a crash. If this happens again, set this to TRUE
+-- configure CTLD 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+if ctld then
+    ctld.staticBugWorkaround = false --  DCS had a bug where destroying statics would cause a crash. If this happens again, set this to TRUE
+
 ctld.disableAllSmoke = false -- if true, all smoke is diabled at pickup and drop off zones regardless of settings below. Leave false to respect settings below
 ctld.hoverPickup = true --  if set to false you can load crates with the F10 menu instead of hovering... Only if not using real crates!
 ctld.enableCrates = true -- if false, Helis will not be able to spawn or unpack crates so will be normal CTTS
@@ -548,7 +473,6 @@ ctld.wpZones = {
 ctld.transportPilotNames = {
 
     "helicargo1",
-    "helicargo1",
     "helicargo2",
     "helicargo3",
     "helicargo4",
@@ -620,7 +544,17 @@ ctld.transportPilotNames = {
     "yak12",
     "yak13",
     "yak14",
-
+    "yak15",
+    "yak16",
+    "yak17",
+    "yak18",
+    "yak19",
+    "yak20",
+    "yak21",
+    "yak22",
+    "yak23",
+    "yak24",
+    "yak25",
 }
 
 -- *************** Optional Extractable GROUPS *****************
@@ -829,4 +763,16 @@ ctld.jtacUnitTypes = {
     "SKP", "Hummer" -- there are some wierd encoding issues so if you write SKP-11 it wont match as the - sign is encoded differently...
 }
 
+veaf.logInfo("init - ctld")
 ctld.initialize()
+end
+
+veaf.logInfo("init - veafInterpreter")
+veafInterpreter.initialize()
+
+veaf.config.ww2 = false
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- initialize the remote interface
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+veaf.logInfo("init - veafRemote")
+veafRemote.initialize()

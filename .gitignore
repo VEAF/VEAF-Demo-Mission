@@ -4,3 +4,7 @@
 /7za.exe
 /setup_*.cmd
 package-lock.json
+cache/
+templates/*/build
+templates/*/node_modules/
+configuration.json

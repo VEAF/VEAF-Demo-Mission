@@ -7,9 +7,6 @@ Based on [VEAF Demo Mission](https://github.com/VEAF/VEAF-Demo-Mission)
 This shared code aims at being able to build and easily maintain missions for a campaign.
 The goal of the campaign is to be dynamic and it will be up to the Game Master to re-build the second mission and its scenario based on the results of the firs mission execution. The idea is to role-play this campaign. Only the starting story, mission and a few other documents are provided in order to get started. You will build the rest of the campaign as you go.
 
-
-## Context
-
 Tbilisi, Georgia, 2005.
 
 Over the past week Russian forces have reconquered Abkhazia in a blitz invasion. But they didn't stop at Georgian border. Russians, helped by Abkhazian nationalists, have now started to invade Georgia. Their expansion goes South up to Poti and East past Kutaisi. All Georgian forces in these areas have been defeated. The dam of Inguri, providing electricity to the western Georgia is now contolled by Russia.

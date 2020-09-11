@@ -1,0 +1,39 @@
+dictionary = {
+    ["DictKey_ActionText_383"] = "env.info(\"DYNAMIC CONFIGURATION\")\
+local script = VEAF_DYNAMIC_MISSIONPATH .. \"/src/scripts/missionConfig.lua\"\
+assert(loadfile(script))()\
+",
+    ["DictKey_ActionText_384"] = "VEAF_DYNAMIC_PATH = [[D:\\dev\\_VEAF\\VEAF-Demo-Mission\\templates\\Syria\\node_modules\\veaf-mission-creation-tools\\]]",
+    ["DictKey_ActionText_385"] = "return VEAF_DYNAMIC_PATH~=nil",
+    ["DictKey_ActionText_386"] = "return VEAF_DYNAMIC_PATH==nil",
+    ["DictKey_ActionText_445"] = "return false --true=dynamic, false=static",
+    ["DictKey_ActionText_468"] = "env.info(\"DYNAMIC LOADING\")\
+",
+    ["DictKey_ActionText_492"] = "return VEAF_DYNAMIC_PATH~=nil",
+    ["DictKey_ActionText_493"] = "return VEAF_DYNAMIC_PATH==nil",
+    ["DictKey_ActionText_581"] = "local script = VEAF_DYNAMIC_PATH .. \"/src/scripts/community/mist.lua\"\
+assert(loadfile(script))()\
+",
+    ["DictKey_ActionText_582"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/VeafDynamicLoader.lua\"\
+assert(loadfile(script))()\
+",
+    ["DictKey_ActionText_583"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/community/Moose.lua\"\
+assert(loadfile(script))()\
+",
+    ["DictKey_ActionText_584"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/community/CTLD.lua\"\
+assert(loadfile(script))()\
+",
+    ["DictKey_ActionText_585"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/community/WeatherMark.lua\"\
+assert(loadfile(script))()\
+",
+    ["DictKey_ActionText_586"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/community/NIOD.lua\"\
+assert(loadfile(script))()\
+",
+    ["DictKey_ActionText_614"] = "VEAF_DYNAMIC_MISSIONPATH = [[D:\\dev\\_VEAF\\VEAF-Demo-Mission\\templates\\Syria\\]]",
+    ["DictKey_descriptionBlueTask_3"] = "",
+    ["DictKey_descriptionNeutralsTask_4"] = "",
+    ["DictKey_descriptionRedTask_2"] = "",
+    ["DictKey_descriptionText_1"] = "Demonstration mission for VEAF-Mission-Creation-Tools\
+Weather : UGKO 221130Z 24011KT 9999 SCT034 OVC063 23/15 Q1006 NOSIG",
+    ["DictKey_sortie_5"] = "",
+} -- end of dictionary
