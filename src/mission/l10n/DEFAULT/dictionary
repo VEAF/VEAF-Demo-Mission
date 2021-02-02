@@ -3,7 +3,7 @@ dictionary = {
 local script = VEAF_DYNAMIC_MISSIONPATH .. \"/src/scripts/missionConfig.lua\"\
 assert(loadfile(script))()\
 ",
-    ["DictKey_ActionText_384"] = "VEAF_DYNAMIC_PATH = [[D:/DEV/_veaf/VEAF-Mission-Creation-Tools]]",
+    ["DictKey_ActionText_384"] = "VEAF_DYNAMIC_PATH = [[D:\\dev\\_VEAF\\VEAF-Demo-Mission\\node_modules\\veaf-mission-creation-tools\\]]",
     ["DictKey_ActionText_385"] = "return VEAF_DYNAMIC_PATH~=nil",
     ["DictKey_ActionText_386"] = "return VEAF_DYNAMIC_PATH==nil",
     ["DictKey_ActionText_445"] = "return false --true=dynamic, false=static",
@@ -26,10 +26,14 @@ assert(loadfile(script))()\
     ["DictKey_ActionText_585"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/community/WeatherMark.lua\"\
 assert(loadfile(script))()\
 ",
-    ["DictKey_ActionText_586"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/community/NIOD.lua\"\
+    ["DictKey_ActionText_614"] = "VEAF_DYNAMIC_MISSIONPATH = [[D:\\dev\\_VEAF\\VEAF-Demo-Mission\\]]",
+    ["DictKey_ActionText_615"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/community/Hercules_Cargo.lua\"\
 assert(loadfile(script))()\
 ",
-    ["DictKey_ActionText_614"] = "VEAF_DYNAMIC_MISSIONPATH = [[D:/DEV/_veaf/VEAF-Demo-Mission]]",
+    ["DictKey_ActionText_618"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/community/skynet-iads-compiled.lua\"\
+assert(loadfile(script))()\
+",
+    ["DictKey_ActionText_626"] = "env.info(\"STATIC LOADING\")",
     ["DictKey_descriptionBlueTask_3"] = "",
     ["DictKey_descriptionNeutralsTask_4"] = "",
     ["DictKey_descriptionRedTask_2"] = "",

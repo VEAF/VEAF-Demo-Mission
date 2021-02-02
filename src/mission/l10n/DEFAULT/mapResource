@@ -19,4 +19,11 @@ mapResource = {
     ["ResKey_Action_489"] = "veafInterpreter.lua",
     ["ResKey_Action_490"] = "veafCombatMission.lua",
     ["ResKey_Action_494"] = "veafCarrierOperations2.lua",
+    ["ResKey_Action_619"] = "veafSkynetIadsHelper.lua",
+    ["ResKey_Action_620"] = "mist.lua",
+    ["ResKey_Action_621"] = "Moose.lua",
+    ["ResKey_Action_622"] = "CTLD.lua",
+    ["ResKey_Action_623"] = "WeatherMark.lua",
+    ["ResKey_Action_624"] = "skynet-iads-compiled.lua",
+    ["ResKey_Action_625"] = "Hercules_Cargo.lua",
 } -- end of mapResource

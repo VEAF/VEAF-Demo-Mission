@@ -1,6 +1,6 @@
 dictionary = {
     ["DictKey_ActionText_2577"] = "return false --true=dynamic, false=static",
-    ["DictKey_ActionText_2578"] = "VEAF_DYNAMIC_PATH = [[D:\\dev\\_VEAF\\VEAF-Demo-Mission\\templates\\PersianGulf\\node_modules\\veaf-mission-creation-tools\\]]",
+    ["DictKey_ActionText_2578"] = "VEAF_DYNAMIC_PATH = [[d:\\dev\\_VEAF\\VEAF-Mission-Creation-Tools]]",
     ["DictKey_ActionText_2579"] = "return VEAF_DYNAMIC_PATH~=nil\
 ",
     ["DictKey_ActionText_2580"] = "env.info(\"DYNAMIC LOADING\")",
@@ -27,11 +27,21 @@ assert(loadfile(script))()",
     ["DictKey_ActionText_2624"] = "env.info(\"STATIC CONFIGURATION\")",
     ["DictKey_ActionText_2625"] = "local script = VEAF_DYNAMIC_MISSIONPATH .. \"/src/scripts/missionConfig.lua\"\
 assert(loadfile(script))()",
-    ["DictKey_ActionText_2627"] = "VEAF_DYNAMIC_MISSIONPATH = [[D:\\dev\\_VEAF\\VEAF-Demo-Mission\\templates\\PersianGulf\\]]",
+    ["DictKey_ActionText_2627"] = "VEAF_DYNAMIC_MISSIONPATH = [[d:\\dev\\_VEAF\\VEAF-Demo-Mission\\templates\\PersianGulf\\]]",
+    ["DictKey_ActionText_2639"] = "local script = VEAF_DYNAMIC_PATH .. \"/src/scripts/community/skynet-iads-compiled.lua\"\
+assert(loadfile(script))()",
+    ["DictKey_ActionText_2640"] = "local script = VEAF_DYNAMIC_PATH .. \"/src/scripts/community/Hercules_Cargo.lua\"\
+assert(loadfile(script))()",
     ["DictKey_descriptionBlueTask_3"] = "",
     ["DictKey_descriptionNeutralsTask_4"] = "",
     ["DictKey_descriptionRedTask_2"] = "",
     ["DictKey_descriptionText_1"] = "Dynamic Training Mission\
 Use the VEAF script modules with the map markers and the F10 radio menu.",
+    ["DictKey_GroupName_2633"] = "Ground-1",
+    ["DictKey_GroupName_2636"] = "Ground-2",
     ["DictKey_sortie_5"] = "",
+    ["DictKey_UnitName_2634"] = "Ground-1-1",
+    ["DictKey_UnitName_2637"] = "Ground-2-1",
+    ["DictKey_WptName_2635"] = "",
+    ["DictKey_WptName_2638"] = "",
 } -- end of dictionary

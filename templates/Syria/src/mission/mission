@@ -7,113 +7,68 @@ mission = {
             }, -- end of ["bullseye"]
             ["country"] = {
                 [1] = {
-                    ["id"] = 1,
-                    ["name"] = "Ukraine",
-                }, -- end of [1]
-                [2] = {
                     ["id"] = 2,
                     ["name"] = "USA",
-                }, -- end of [2]
-                [3] = {
-                    ["id"] = 3,
-                    ["name"] = "Turkey",
-                }, -- end of [3]
-                [4] = {
-                    ["id"] = 4,
-                    ["name"] = "UK",
-                }, -- end of [4]
-                [5] = {
-                    ["id"] = 5,
-                    ["name"] = "France",
-                }, -- end of [5]
-                [6] = {
-                    ["id"] = 6,
-                    ["name"] = "Germany",
-                }, -- end of [6]
-                [7] = {
-                    ["id"] = 8,
-                    ["name"] = "Canada",
-                }, -- end of [7]
-                [8] = {
-                    ["id"] = 9,
-                    ["name"] = "Spain",
-                }, -- end of [8]
-                [9] = {
-                    ["id"] = 10,
-                    ["name"] = "The Netherlands",
-                }, -- end of [9]
-                [10] = {
-                    ["id"] = 11,
-                    ["name"] = "Belgium",
-                }, -- end of [10]
-                [11] = {
-                    ["id"] = 12,
-                    ["name"] = "Norway",
-                }, -- end of [11]
-                [12] = {
-                    ["id"] = 13,
-                    ["name"] = "Denmark",
-                }, -- end of [12]
-                [13] = {
-                    ["id"] = 15,
-                    ["name"] = "Israel",
-                }, -- end of [13]
-                [14] = {
-                    ["id"] = 16,
-                    ["name"] = "Georgia",
-                }, -- end of [14]
-                [15] = {
-                    ["id"] = 20,
-                    ["name"] = "Italy",
-                }, -- end of [15]
-                [16] = {
-                    ["id"] = 21,
-                    ["name"] = "Australia",
-                }, -- end of [16]
-                [17] = {
-                    ["id"] = 23,
-                    ["name"] = "Austria",
-                }, -- end of [17]
-                [18] = {
-                    ["id"] = 25,
-                    ["name"] = "Bulgaria",
-                }, -- end of [18]
-                [19] = {
-                    ["id"] = 26,
-                    ["name"] = "Czech Republic",
-                }, -- end of [19]
-                [20] = {
-                    ["id"] = 28,
-                    ["name"] = "Croatia",
-                }, -- end of [20]
-                [21] = {
-                    ["id"] = 30,
-                    ["name"] = "Finland",
-                }, -- end of [21]
-                [22] = {
-                    ["id"] = 31,
-                    ["name"] = "Greece",
-                }, -- end of [22]
-                [23] = {
-                    ["id"] = 32,
-                    ["name"] = "Hungary",
-                }, -- end of [23]
-                [24] = {
-                    ["id"] = 40,
-                    ["name"] = "Poland",
-                }, -- end of [24]
-                [25] = {
-                    ["id"] = 41,
-                    ["name"] = "Romania",
-                }, -- end of [25]
-                [26] = {
-                    ["id"] = 44,
-                    ["name"] = "Slovakia",
-                }, -- end of [26]
-                [27] = {
-                    ["id"] = 46,
-                    ["name"] = "Sweden",
-                }, -- end of [27]
+                    ["vehicle"] = {
+                        ["group"] = {
+                            [1] = {
+                                ["groupId"] = 1,
+                                ["hidden"] = false,
+                                ["name"] = "DictKey_GroupName_621",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 214,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_623",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -247804.87804878,
+                                            ["y"] = -73483.409115063,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_622",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "AAV7",
+                                        ["unitId"] = 1,
+                                        ["x"] = -247804.87804878,
+                                        ["y"] = -73483.409115063,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -247804.87804878,
+                                ["y"] = -73483.409115063,
+                            }, -- end of [1]
+                        }, -- end of ["group"]
+                    }, -- end of ["vehicle"]
+                }, -- end of [1]
             }, -- end of ["country"]
             ["name"] = "blue",
             ["nav_points"] = {
@@ -125,182 +80,6 @@ mission = {
                 ["y"] = 0,
             }, -- end of ["bullseye"]
             ["country"] = {
-                [1] = {
-                    ["id"] = 7,
-                    ["name"] = "USAF Aggressors",
-                }, -- end of [1]
-                [2] = {
-                    ["id"] = 17,
-                    ["name"] = "Insurgents",
-                }, -- end of [2]
-                [3] = {
-                    ["id"] = 22,
-                    ["name"] = "Switzerland",
-                }, -- end of [3]
-                [4] = {
-                    ["id"] = 29,
-                    ["name"] = "Egypt",
-                }, -- end of [4]
-                [5] = {
-                    ["id"] = 33,
-                    ["name"] = "India",
-                }, -- end of [5]
-                [6] = {
-                    ["id"] = 34,
-                    ["name"] = "Iran",
-                }, -- end of [6]
-                [7] = {
-                    ["id"] = 35,
-                    ["name"] = "Iraq",
-                }, -- end of [7]
-                [8] = {
-                    ["id"] = 36,
-                    ["name"] = "Japan",
-                }, -- end of [8]
-                [9] = {
-                    ["id"] = 37,
-                    ["name"] = "Kazakhstan",
-                }, -- end of [9]
-                [10] = {
-                    ["id"] = 38,
-                    ["name"] = "North Korea",
-                }, -- end of [10]
-                [11] = {
-                    ["id"] = 39,
-                    ["name"] = "Pakistan",
-                }, -- end of [11]
-                [12] = {
-                    ["id"] = 42,
-                    ["name"] = "Saudi Arabia",
-                }, -- end of [12]
-                [13] = {
-                    ["id"] = 45,
-                    ["name"] = "South Korea",
-                }, -- end of [13]
-                [14] = {
-                    ["id"] = 48,
-                    ["name"] = "Yemen",
-                }, -- end of [14]
-                [15] = {
-                    ["id"] = 49,
-                    ["name"] = "Vietnam",
-                }, -- end of [15]
-                [16] = {
-                    ["id"] = 50,
-                    ["name"] = "Venezuela",
-                }, -- end of [16]
-                [17] = {
-                    ["id"] = 51,
-                    ["name"] = "Tunisia",
-                }, -- end of [17]
-                [18] = {
-                    ["id"] = 52,
-                    ["name"] = "Thailand",
-                }, -- end of [18]
-                [19] = {
-                    ["id"] = 53,
-                    ["name"] = "Sudan",
-                }, -- end of [19]
-                [20] = {
-                    ["id"] = 54,
-                    ["name"] = "Philippines",
-                }, -- end of [20]
-                [21] = {
-                    ["id"] = 55,
-                    ["name"] = "Morocco",
-                }, -- end of [21]
-                [22] = {
-                    ["id"] = 56,
-                    ["name"] = "Mexico",
-                }, -- end of [22]
-                [23] = {
-                    ["id"] = 57,
-                    ["name"] = "Malaysia",
-                }, -- end of [23]
-                [24] = {
-                    ["id"] = 58,
-                    ["name"] = "Libya",
-                }, -- end of [24]
-                [25] = {
-                    ["id"] = 59,
-                    ["name"] = "Jordan",
-                }, -- end of [25]
-                [26] = {
-                    ["id"] = 60,
-                    ["name"] = "Indonesia",
-                }, -- end of [26]
-                [27] = {
-                    ["id"] = 61,
-                    ["name"] = "Honduras",
-                }, -- end of [27]
-                [28] = {
-                    ["id"] = 62,
-                    ["name"] = "Ethiopia",
-                }, -- end of [28]
-                [29] = {
-                    ["id"] = 63,
-                    ["name"] = "Chile",
-                }, -- end of [29]
-                [30] = {
-                    ["id"] = 64,
-                    ["name"] = "Brazil",
-                }, -- end of [30]
-                [31] = {
-                    ["id"] = 65,
-                    ["name"] = "Bahrain",
-                }, -- end of [31]
-                [32] = {
-                    ["id"] = 66,
-                    ["name"] = "Third Reich",
-                }, -- end of [32]
-                [33] = {
-                    ["id"] = 67,
-                    ["name"] = "Yugoslavia",
-                }, -- end of [33]
-                [34] = {
-                    ["id"] = 68,
-                    ["name"] = "USSR",
-                }, -- end of [34]
-                [35] = {
-                    ["id"] = 69,
-                    ["name"] = "Italian Social Republic",
-                }, -- end of [35]
-                [36] = {
-                    ["id"] = 70,
-                    ["name"] = "Algeria",
-                }, -- end of [36]
-                [37] = {
-                    ["id"] = 71,
-                    ["name"] = "Kuwait",
-                }, -- end of [37]
-                [38] = {
-                    ["id"] = 72,
-                    ["name"] = "Qatar",
-                }, -- end of [38]
-                [39] = {
-                    ["id"] = 73,
-                    ["name"] = "Oman",
-                }, -- end of [39]
-                [40] = {
-                    ["id"] = 74,
-                    ["name"] = "United Arab Emirates",
-                }, -- end of [40]
-                [41] = {
-                    ["id"] = 75,
-                    ["name"] = "South Africa",
-                }, -- end of [41]
-                [42] = {
-                    ["id"] = 76,
-                    ["name"] = "Cuba",
-                }, -- end of [42]
-                [43] = {
-                    ["id"] = 77,
-                    ["name"] = "Portugal",
-                }, -- end of [43]
-                [44] = {
-                    ["id"] = 78,
-                    ["name"] = "GDR",
-                }, -- end of [44]
             }, -- end of ["country"]
             ["name"] = "neutrals",
             ["nav_points"] = {
@@ -313,33 +92,68 @@ mission = {
             }, -- end of ["bullseye"]
             ["country"] = {
                 [1] = {
-                    ["id"] = 0,
-                    ["name"] = "Russia",
-                }, -- end of [1]
-                [2] = {
-                    ["id"] = 18,
-                    ["name"] = "Abkhazia",
-                }, -- end of [2]
-                [3] = {
-                    ["id"] = 19,
-                    ["name"] = "South Ossetia",
-                }, -- end of [3]
-                [4] = {
-                    ["id"] = 24,
-                    ["name"] = "Belarus",
-                }, -- end of [4]
-                [5] = {
-                    ["id"] = 27,
-                    ["name"] = "China",
-                }, -- end of [5]
-                [6] = {
-                    ["id"] = 43,
-                    ["name"] = "Serbia",
-                }, -- end of [6]
-                [7] = {
                     ["id"] = 47,
                     ["name"] = "Syria",
-                }, -- end of [7]
+                    ["vehicle"] = {
+                        ["group"] = {
+                            [1] = {
+                                ["groupId"] = 2,
+                                ["hidden"] = false,
+                                ["name"] = "DictKey_GroupName_624",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 788,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_626",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -8292.6829268293,
+                                            ["y"] = 217736.10308005,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_625",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 2,
+                                        ["x"] = -8292.6829268293,
+                                        ["y"] = 217736.10308005,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -8292.6829268293,
+                                ["y"] = 217736.10308005,
+                            }, -- end of [1]
+                        }, -- end of ["group"]
+                    }, -- end of ["vehicle"]
+                }, -- end of [1]
             }, -- end of ["country"]
             ["name"] = "red",
             ["nav_points"] = {
@@ -421,6 +235,11 @@ mission = {
             [42] = 49,
             [43] = 48,
             [44] = 67,
+            [45] = 79,
+            [46] = 80,
+            [47] = 81,
+            [48] = 82,
+            [49] = 83,
         }, -- end of ["neutrals"]
         ["red"] = {
             [1] = 18,
@@ -432,7 +251,7 @@ mission = {
             [7] = 47,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 27774,
+    ["currentKey"] = 27817,
     ["date"] = {
         ["Day"] = 23,
         ["Month"] = 5,
@@ -6701,11 +6520,11 @@ mission = {
         }, -- end of ["roles"]
     }, -- end of ["groundControl"]
     ["map"] = {
-        ["centerX"] = -10000,
-        ["centerY"] = 40175.127470301,
+        ["centerX"] = -9999.9999999942,
+        ["centerY"] = 43101.956738594,
         ["zoom"] = 1707317.0731707,
     }, -- end of ["map"]
-    ["maxDictId"] = 620,
+    ["maxDictId"] = 628,
     ["pictureFileNameB"] = {
     }, -- end of ["pictureFileNameB"]
     ["pictureFileNameN"] = {
@@ -6747,8 +6566,8 @@ mission = {
     ["trig"] = {
         ["actions"] = {
             [1] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_384\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_614\"));",
-            [2] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_468\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_581\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_583\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_584\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_585\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_586\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_582\"));",
-            [3] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_473\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_615\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_616\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_617\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_618\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_619\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_474\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_475\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_476\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_494\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_477\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_478\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_479\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_480\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_481\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_482\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_483\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_620\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_484\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_485\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_486\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_487\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_488\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_489\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_490\"));",
+            [2] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_468\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_581\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_583\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_584\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_585\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_586\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_627\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_582\"));",
+            [3] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_473\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_615\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_616\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_617\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_618\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_628\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_619\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_474\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_475\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_476\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_494\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_477\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_478\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_479\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_480\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_481\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_482\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_483\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_620\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_484\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_485\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_486\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_487\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_488\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_489\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_490\"));",
             [4] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_383\"));",
             [5] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_382\"));",
         }, -- end of ["actions"]
@@ -6879,10 +6698,19 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
+                    ["KeyDict_text"] = "DictKey_ActionText_627",
+                    ["predicate"] = "a_do_script",
+                    ["text"] = "DictKey_ActionText_627",
+                }, -- end of [7]
+                [8] = {
+                    ["ai_task"] = {
+                        [1] = "",
+                        [2] = "",
+                    }, -- end of ["ai_task"]
                     ["KeyDict_text"] = "DictKey_ActionText_582",
                     ["predicate"] = "a_do_script",
                     ["text"] = "DictKey_ActionText_582",
-                }, -- end of [7]
+                }, -- end of [8]
             }, -- end of ["actions"]
             ["colorItem"] = "0x00ff80ff",
             ["comment"] = "mission start - dynamic",
@@ -6944,7 +6772,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_619",
+                    ["file"] = "ResKey_Action_628",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [6]
                 [7] = {
@@ -6952,7 +6780,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_474",
+                    ["file"] = "ResKey_Action_619",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [7]
                 [8] = {
@@ -6960,7 +6788,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_475",
+                    ["file"] = "ResKey_Action_474",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [8]
                 [9] = {
@@ -6968,7 +6796,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_476",
+                    ["file"] = "ResKey_Action_475",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [9]
                 [10] = {
@@ -6976,7 +6804,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_494",
+                    ["file"] = "ResKey_Action_476",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [10]
                 [11] = {
@@ -6984,7 +6812,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_477",
+                    ["file"] = "ResKey_Action_494",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [11]
                 [12] = {
@@ -6992,7 +6820,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_478",
+                    ["file"] = "ResKey_Action_477",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [12]
                 [13] = {
@@ -7000,7 +6828,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_479",
+                    ["file"] = "ResKey_Action_478",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [13]
                 [14] = {
@@ -7008,7 +6836,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_480",
+                    ["file"] = "ResKey_Action_479",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [14]
                 [15] = {
@@ -7016,7 +6844,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_481",
+                    ["file"] = "ResKey_Action_480",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [15]
                 [16] = {
@@ -7024,7 +6852,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_482",
+                    ["file"] = "ResKey_Action_481",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [16]
                 [17] = {
@@ -7032,7 +6860,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_483",
+                    ["file"] = "ResKey_Action_482",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [17]
                 [18] = {
@@ -7040,7 +6868,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_620",
+                    ["file"] = "ResKey_Action_483",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [18]
                 [19] = {
@@ -7048,7 +6876,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_484",
+                    ["file"] = "ResKey_Action_620",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [19]
                 [20] = {
@@ -7056,7 +6884,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_485",
+                    ["file"] = "ResKey_Action_484",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [20]
                 [21] = {
@@ -7064,7 +6892,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_486",
+                    ["file"] = "ResKey_Action_485",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [21]
                 [22] = {
@@ -7072,7 +6900,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_487",
+                    ["file"] = "ResKey_Action_486",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [22]
                 [23] = {
@@ -7080,7 +6908,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_488",
+                    ["file"] = "ResKey_Action_487",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [23]
                 [24] = {
@@ -7088,7 +6916,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_489",
+                    ["file"] = "ResKey_Action_488",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [24]
                 [25] = {
@@ -7096,9 +6924,17 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_490",
+                    ["file"] = "ResKey_Action_489",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [25]
+                [26] = {
+                    ["ai_task"] = {
+                        [1] = "",
+                        [2] = "",
+                    }, -- end of ["ai_task"]
+                    ["file"] = "ResKey_Action_490",
+                    ["predicate"] = "a_do_script_file",
+                }, -- end of [26]
             }, -- end of ["actions"]
             ["colorItem"] = "0x00ff80ff",
             ["comment"] = "mission start - static",
@@ -7164,7 +7000,7 @@ mission = {
             }, -- end of ["rules"]
         }, -- end of [5]
     }, -- end of ["trigrules"]
-    ["version"] = 17,
+    ["version"] = 18,
     ["weather"] = {
         ["atmosphere_type"] = 0,
         ["clouds"] = {

@@ -1,15 +1,45 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Mission configuration file for the VEAF framework
+-- see https://github.com/VEAF/VEAF-Mission-Creation-Tools
+--
+-- This configuration is tailored for a template mission in Syria
+-- see https://github.com/VEAF/VEAF-Demo-Mission/templates/Syria
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- play the radio beacons (on a server, with SRS - see the Caucasus Opentraining Mission)
+veafBeacons = false
+
+-- activate the QRA if it is defined in the mission (it's not the case here)
+-- qraMinevody="ready";
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize all the scripts
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-veaf.logInfo("init - veafRadio")
-veafRadio.initialize(true)
-veaf.logInfo("init - veafSpawn")
-veafSpawn.initialize()
-veaf.logInfo("init - veafGrass")
-veafGrass.initialize()
-veaf.logInfo("init - veafCasMission")
-veafCasMission.initialize()
-veafTransportMission.initialize()
+if veafRadio then
+    veaf.logInfo("init - veafRadio")
+    veafRadio.initialize(true)
+
+    if veafBeacons then
+        -- add the beacons
+        -- veafRadio.startBeacon("Bienvenue-blue", 15, 120, "251.0,124.0,121.5,30.0", "am,am,am,fm", nil, "bienvenue-veaf-fr.mp3", 1.0, 2) 
+    end
+end
+if veafSpawn then
+    veaf.logInfo("init - veafSpawn")
+    veafSpawn.initialize()
+end
+if veafGrass then
+    veaf.logInfo("init - veafGrass")
+    veafGrass.initialize()
+end
+if veafCasMission then
+    veaf.logInfo("init - veafCasMission")
+    veafCasMission.initialize()
+end
+if veafTransportMission then
+    veaf.logInfo("init - veafTransportMission")
+    veafTransportMission.initialize()
+end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- change some default parameters
@@ -19,134 +49,274 @@ veaf.DEFAULT_GROUND_SPEED_KPH = 25
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize SHORTCUTS
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-veaf.logInfo("init - veafShortcuts")
-veafShortcuts.initialize()
+if veafShortcuts then
+    veaf.logInfo("init - veafShortcuts")
+    veafShortcuts.initialize()
 
--- you can add all the shortcuts you want here. Shortcuts can be any VEAF command, as entered in a map marker.
--- here are some examples :
+    -- you can add all the shortcuts you want here. Shortcuts can be any VEAF command, as entered in a map marker.
+    -- here are some examples :
 
--- veafShortcuts.AddAlias(
---     VeafAlias.new()
---         :setName("-sa11")
---         :setDescription("SA-11 Gadfly (9K37 Buk) battery")
---         :setVeafCommand("_spawn group, name sa11")
---         :setBypassSecurity(true)
--- )
+    -- veafShortcuts.AddAlias(
+    --     VeafAlias.new()
+    --         :setName("-sa11")
+    --         :setDescription("SA-11 Gadfly (9K37 Buk) battery")
+    --         :setVeafCommand("_spawn group, name sa11")
+    --         :setBypassSecurity(true)
+    -- )
 
--- veafShortcuts.AddAlias(
---     VeafAlias.new()
---         :setName("-login")
---         :setDescription("Unlock the system")
---         :setHidden(true)
---         :setVeafCommand("_auth")
---         :setBypassSecurity(true)
--- )
+    -- veafShortcuts.AddAlias(
+    --     VeafAlias.new()
+    --         :setName("-login")
+    --         :setDescription("Unlock the system")
+    --         :setHidden(true)
+    --         :setVeafCommand("_auth")
+    --         :setBypassSecurity(true)
+    -- )
 
--- veafShortcuts.AddAlias(
---     VeafAlias.new()
---         :setName("-logout")
---         :setDescription("Lock the system")
---         :setHidden(true)
---         :setVeafCommand("_auth logout")
---         :setBypassSecurity(true)
--- )
+    -- veafShortcuts.AddAlias(
+    --     VeafAlias.new()
+    --         :setName("-logout")
+    --         :setDescription("Lock the system")
+    --         :setHidden(true)
+    --         :setVeafCommand("_auth logout")
+    --         :setBypassSecurity(true)
+    -- )
 
--- veafShortcuts.AddAlias(
---     VeafAlias.new()
---         :setName("-mortar")
---         :setDescription("Mortar team")
---         :setVeafCommand("_spawn group, name mortar, country USA")
---         :setBypassSecurity(true)
--- )
+    -- veafShortcuts.AddAlias(
+    --     VeafAlias.new()
+    --         :setName("-mortar")
+    --         :setDescription("Mortar team")
+    --         :setVeafCommand("_spawn group, name mortar, country USA")
+    --         :setBypassSecurity(true)
+    -- )
+end
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- No MOOSE settings menu. Comment out this line if required.
+if _SETTINGS then
+    _SETTINGS:SetPlayerMenuOff()
+end
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- PSEUDOATC
+--pseudoATC=PSEUDOATC:New()
+--pseudoATC:Start()
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- SCORING
+-- local Scoring = SCORING:New( "Scoring File" )
+-- Scoring:SetScaleDestroyScore( 10 )
+-- Scoring:SetScaleDestroyPenalty( 40 )
+-- Scoring:SetMessagesToCoalition()
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure ASSETS
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-veafAssets.logInfo("Loading configuration")
+if veafAssets then
+    veafAssets.logInfo("Loading configuration")
+    veafAssets.Assets = {
+    }
 
-veafAssets.Assets = {
-    -- {sort=1, name="CSG-01 Tarawa", description="Tarawa (LHA)", information="Tacan 11X TAA\nU226 (11)"},  
-    -- {sort=2, name="CSG-74 Stennis", description="Stennis (CVN)", information="Tacan 10X STS\nICLS 10\nU225 (10)"},  
-    -- {sort=2, name="CSG-71 Roosevelt", description="Roosevelt (CVN)", information="Tacan 12X RHR\nICLS 11\nU227 (12)"},  
-    -- {sort=3, name="T1-Arco-1", description="Arco-1 (KC-135)", information="Tacan 64X\nU290.50 (20)\nZone OUEST", linked="T1-Arco-1 escort"}, 
-    -- {sort=4, name="T2-Shell-1", description="Shell-1 (KC-135 MPRS)", information="Tacan 62X\nU290.30 (18)\nZone EST", linked="T2-Shell-1 escort"},  
-    -- {sort=5, name="T3-Texaco-1", description="Texaco-1 (KC-135 MPRS)", information="Tacan 60X\nU290.10 (17)\nZone OUEST", linked="T3-Texaco-1 escort"},  
-    -- {sort=6, name="T4-Shell-2", description="Shell-2 (KC-135)", information="Tacan 63X\nU290.40 (19)\nZone EST", linked="T4-Shell-2 escort"},  
-    -- {sort=7, name="CVN-74 Stennis S3B-Tanker", description="Texaco-7 (S3-B)", information="Tacan 75X\nU290.90\nZone PA"},  
-    -- {sort=7, name="CVN-71 Roosevelt S3B-Tanker", description="Texaco-8 (S3-B)", information="Tacan 76X\nU290.80\nZone PA"},  
-    -- {sort=8, name="D1-Bizmuth", description="Colt-1 AFAC Bizmuth (MQ-9)", information="V118.80 (18)", jtac=1688},  
-    -- {sort=9, name="D2-Agate", description="Dodge-1 AFAC Agate (MQ-9)", information="V118.90 (19)", jtac=1687},  
-    -- {sort=10, name="A1-Magic", description="Magic (E-2D)", information="Datalink 315.3 Mhz\nU282.20 (13)", linked="A1-Magic escort"},  
-}
-
-veaf.logInfo("init - veafAssets")
-veafAssets.initialize()
+    veaf.logInfo("init - veafAssets")
+    veafAssets.initialize()
+end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure MOVE
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-veafMove.logInfo("Setting move tanker radio menus")
--- table.insert(veafMove.Tankers, "T1-Arco-1")
--- table.insert(veafMove.Tankers, "T2-Shell-1")
--- table.insert(veafMove.Tankers, "T3-Texaco-1")
--- table.insert(veafMove.Tankers, "T4-Shell-2")
---table.insert(veafMove.Tankers, "T5-Petrolsky")
-
-veaf.logInfo("init - veafMove")
-veafMove.initialize()
+if veafMove then
+    veafMove.logInfo("Setting move tanker radio menus")
+    -- keeping the veafMove.Tankers table empty will force veafMove.initialize() to browse the units, and find the tankers
+    veaf.logInfo("init - veafMove")
+    veafMove.initialize()
+end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure COMBAT MISSION
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 if veafCombatMission then 
+	veafCombatMission.logInfo("Loading configuration")
 
-    veafCombatMission.logInfo("Loading configuration")
-    
-    --veafCombatMission.addCapMission("CAP-AnNasiriyah-Mig21", "Mig21 on AnNasiriyah", "A Syrian Mig-21 patrol is taking off from AnNasiriyah.", true, true)
-    
---[[
-        veafCombatMission.AddMission(
-        VeafCombatMission.new()
-        :setName("Test")
-        :setFriendlyName("Test")
-        :setBriefing("Test mission - kill the bombers")
-        :addElement(
-            VeafCombatMissionElement.new()
-            :setName("Bombers")
-            :setGroups({"Bomber - 1", "Bomber - 2"})
-            :setSkill("Excellent")
-            :setSpawnRadius(0)
-        )
-        :addObjective(
-            VeafCombatMissionObjective.new()
-            :setName("< 10 minutes")
-            :setDescription("the mission will be failed after 10 minutes")
-            :setMessage("the 10 minutes have passed !")
-            :configureAsTimedObjective(605)
-        )
-        :addObjective(
-            VeafCombatMissionObjective.new()
-            :setName("HVT Kobuleti")
-            :setDescription("the mission will be failed if 3 HVT on Kobuleti are destroyed")
-            :setMessage("HVT target(s) destroyed : %s !")
-            :configureAsPreventDestructionOfSceneryObjectsInZone(
-                {"TestMission1-FailIfBombed-1", "TestMission1-FailIfBombed-2", "TestMission1-FailIfBombed-3"},
-                {[129467721] = "Helicopter", [129467705] = "Mess", [129468118] = "Tower"}
-            )
-        )
-        :addObjective(
-            VeafCombatMissionObjective.new()
-            :setName("Kill ONE bomber")
-            :setDescription("you must kill one of the bombers")
-            :setMessage("%d bomber(s) destroyed !")
-            :configureAsKillEnemiesObjective(1)
-        )
+    -- cap missions have their own method to create them easily
+    --veafCombatMission.addCapMission("CAP-Maykop-1", "CAP on Maykop", "A Russian CAP patrol has been spotted over Maykop.", true, true)
+
+    -- example of how missions can be configured
+--     veafCombatMission.AddMissionsWithSkillAndScale(
+-- 		VeafCombatMission.new()
+-- 		:setSecured(false)
+-- 		:setRadioMenuEnabled(true)
+-- 		:setName("Intercept-Kraznodar-1")
+-- 		:setFriendlyName("Intercept a transport / KRAZNODAR - MINVODY")
+-- 		:setBriefing([[
+-- A Russian transport plane is taking off from Kraznodar and will transport a VIP to Mineralnye Vody.
+-- It is escorted by a fighter patrol.
+-- ]]
+-- )
+-- 		:addElement(
+-- 			VeafCombatMissionElement.new()
+-- 			:setName("OnDemand-Intercept-Transport-Krasnodar-Mineral-Transport")
+--             :setGroups({"OnDemand-Intercept-Transport-Krasnodar-Mineral-Transport"})
+--             :setScalable(false)
+-- 		)
+-- 		:addElement(
+-- 			VeafCombatMissionElement.new()
+-- 			:setName("OnDemand-Intercept-Transport-Krasnodar-Mineral-Escort")
+--             :setGroups({"OnDemand-Intercept-Transport-Krasnodar-Mineral-Escort"})
+--             :setSkill("Random")
+-- 		)
+-- 		:addObjective(
+-- 			VeafCombatMissionObjective.new()
+-- 			:setName("Destroy the transport")
+-- 			:setDescription("you must destroy the transport and kill the VIP")
+-- 			:setMessage("%d transport planes destroyed !")
+-- 			:configureAsKillEnemiesObjective() -- TODO
+-- 		)
+-- 		:initialize()
+-- 	)
+
+--     veafCombatMission.AddMission(
+-- 		VeafCombatMission.new()
+--         :setSecured(true)
+--         :setRadioMenuEnabled(false)
+-- 		:setName("Red-attack-Gudauta")
+-- 		:setFriendlyName("Red attack On Gudauta")
+-- 		:setBriefing([[
+-- Alert ! This is not a drill !
+-- Tactical and strategic bombers have been detected at the russian border, to the north of Gudauta.
+-- Their course will lead them to the Gudauta airbase, which is probably their mission.
+-- Destroy all the bombers before they hit the base !
+-- ]]
+-- )
+-- 		:addElement(
+-- 			VeafCombatMissionElement.new()
+-- 			:setName("SEAD")
+-- 			:setGroups({
+-- 				"Red Attack On Gudauta - Wave 1-1", 
+-- 				"Red Attack On Gudauta - Wave 1-2", 
+-- 				"Red Attack On Gudauta - Wave 1-3", 
+-- 				"Red Attack On Gudauta - Wave 1-4" })
+-- 			:setSkill("Random")
+-- 		)
+-- 		:addElement(
+-- 			VeafCombatMissionElement.new()
+-- 			:setName("Bombers")
+-- 			:setGroups({
+-- 				"Red Attack On Gudauta - Wave 2-1",
+--                 "Red Attack On Gudauta - Wave 2-2", 
+--                 "Red Attack On Gudauta - Wave 2-3" })
+-- 			:setSkill("Random")
+-- 		)
+-- 		:addObjective(
+-- 			VeafCombatMissionObjective.new()
+-- 			:setName("HVT Gudauta")
+-- 			:setDescription("the mission will be failed if any of the HVT on Gudauta are destroyed")
+-- 			:setMessage("HVT target(s) destroyed : %s !")
+-- 			:configureAsPreventDestructionOfSceneryObjectsInZone(
+-- 				{
+-- 					"Gudauta - Tower", 
+-- 					"Gudauta - Kerosen", 
+-- 					"Gudauta - Mess"},
+-- 				{
+-- 					[156696667] = "Gudauta Tower", 
+-- 					[156735615] = "Gudauta Kerosen tankers", 
+-- 					[156729386] = "Gudauta mess"
+-- 				}
+-- 			)
+-- 		)
+-- 		:addObjective(
+-- 			VeafCombatMissionObjective.new()
+-- 			:setName("Kill all the bombers")
+-- 			:setDescription("you must kill all of the bombers")
+-- 			:setMessage("%d bombers destroyed !")
+-- 			:configureAsKillEnemiesObjective()
+-- 		)
+-- 		:initialize()
+-- 	)
+
+-- 	veafCombatMission.AddMission(
+-- 		VeafCombatMission.new()
+-- 		:setName("Training-Bomber-1-slow")
+-- 		:setFriendlyName("Training - Bomber Scenario 1 - slow Tu-160")
+-- 		:setBriefing([[
+-- You're head-on at 25nm with 11 Tu-160, FL200, Mach 0.8.
+-- Destroy them all in less than 10 minutes !]])
+-- 		:addElement(
+-- 			VeafCombatMissionElement.new()
+-- 			:setName("Bombers")
+-- 			:setGroups({
+-- 				"Red Tu-160 Bomber Wave1-1",
+-- 				"Red Tu-160 Bomber Wave1-2",
+-- 				"Red Tu-160 Bomber Wave1-3",
+-- 				"Red Tu-160 Bomber Wave1-4",
+-- 				"Red Tu-160 Bomber Wave1-5",
+-- 				"Red Tu-160 Bomber Wave1-6",
+-- 				"Red Tu-160 Bomber Wave1-7",
+-- 				"Red Tu-160 Bomber Wave1-8",
+--                 "Red Tu-160 Bomber Wave1-9",
+--                 "Red Tu-160 Bomber Wave1-10",
+--                 "Red Tu-160 Bomber Wave1-11",
+--             })
+-- 			:setSkill("Good")
+-- 		)
+-- 		:addObjective(
+-- 			VeafCombatMissionObjective.new()
+-- 			:setName("< 15 minutes")
+-- 			:setDescription("the mission will be over after 15 minutes")
+-- 			:setMessage("the 15 minutes have passed !")
+-- 			:configureAsTimedObjective(900)
+-- 		)
+-- 		:addObjective(
+-- 			VeafCombatMissionObjective.new()
+-- 			:setName("Kill all the bombers")
+-- 			:setDescription("you must kill or route all bombers")
+-- 			:setMessage("%d bombers destroyed or routed !")
+-- 			:configureAsKillEnemiesObjective(-1, 50)
+-- 		)
+-- 		:initialize()
+-- 	)
+
+    veafCombatMission.AddMission(
+		VeafCombatMission.new()
+		:setName("Test")
+		:setFriendlyName("Test")
+		:setBriefing("Test mission - kill the bombers")
+		:addElement(
+			VeafCombatMissionElement.new()
+			:setName("Bombers")
+			:setGroups({"Bomber - 1", "Bomber - 2"})
+			:setSkill("Excellent")
+			:setSpawnRadius(0)
+		)
+		:addObjective(
+			VeafCombatMissionObjective.new()
+			:setName("< 10 minutes")
+			:setDescription("the mission will be failed after 10 minutes")
+			:setMessage("the 10 minutes have passed !")
+			:configureAsTimedObjective(605)
+		)
+		:addObjective(
+			VeafCombatMissionObjective.new()
+			:setName("HVT Kobuleti")
+			:setDescription("the mission will be failed if 3 HVT on Kobuleti are destroyed")
+			:setMessage("HVT target(s) destroyed : %s !")
+			:configureAsPreventDestructionOfSceneryObjectsInZone(
+				{"TestMission1-FailIfBombed-1", "TestMission1-FailIfBombed-2", "TestMission1-FailIfBombed-3"},
+				{[129467721] = "Helicopter", [129467705] = "Mess", [129468118] = "Tower"}
+			)
+		)
+		:addObjective(
+			VeafCombatMissionObjective.new()
+			:setName("Kill ONE bomber")
+			:setDescription("you must kill one of the bombers")
+			:setMessage("%d bomber(s) destroyed !")
+			:configureAsKillEnemiesObjective(1)
+		)
         :initialize()
     )
- ]]
-    veaf.logInfo("init - veafCombatMission")
+
+
+	veaf.logInfo("init - veafCombatMission")
     veafCombatMission.initialize()
 end
 
@@ -155,71 +325,161 @@ end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafCombatZone then 
 	veafCombatZone.logInfo("Loading configuration")
---[[ 
-	veafCombatZone.AddZone(
-		VeafCombatZone.new()
-			:setMissionEditorZoneName("combatZone_rangeKiryatEasy")
-			:setFriendlyName("Training at Kiryat RANGE")
-			:setBriefing("The Kiryat RANGE (located 7 nm south of Kiryat airbase) is set-up for training")
-	)
- ]]  
+
+    -- example of how zones can be configured
+	-- veafCombatZone.AddZone(
+	-- 	VeafCombatZone.new()
+	-- 		:setMissionEditorZoneName("combatZone_Psebay_Factory")
+	-- 		:setFriendlyName("Psebay chemical weapons factory")
+	-- 		:setBriefing("This factory manufactures chemical weapons for a terrorits group\n" ..
+    --                     "You must destroy both factory buildings, and the bunker where the scientists work\n" ..
+    --                     "The other enemy units are secondary targets\n")
+	-- )
+
+	-- veafCombatZone.AddZone(
+	-- 	VeafCombatZone.new()
+	-- 		:setMissionEditorZoneName("combatZone_BattleOfBeslan")
+	-- 		:setFriendlyName("Battle of Beslan")
+	-- 		:setBriefing("This zone is the place of a battle between red and blue armies.\n" ..
+    --                     "You must do what you can to help your side win\n" ..
+    --                     "Please note that there is an enemy convoy coming from the west and going to Sheripova, that can be ambushed by the blue forces at Malgobek in 15-30 minutes. Be wary of the SAM that can hide anywhere in the cities or the forests !\n" ..
+    --                     "Warning : there are air defenses lurking about, you should be cautious !")
+	-- )
+
+	-- veafCombatZone.AddZone(
+	-- 	VeafCombatZone.new()
+	-- 		:setMissionEditorZoneName("combatZone_EasyPickingsTerek")
+	-- 		:setFriendlyName("Terek logistics parking")
+	-- 		:setBriefing("The enemy has parked a lot of logistics at Terek\n" ..
+    --                     "You must destroy all the trucks to impend the advance of their army on Beslan\n" ..
+    --                     "The other enemy units are secondary targets\n"..
+    --                     "This is a more easy zone, with few air defenses. But beware that there is a chance of manpad in the area !")
+	-- )
+
+	-- veafCombatZone.AddZone(
+	-- 	VeafCombatZone.new()
+	-- 		:setMissionEditorZoneName("combatZone_rangeKobuletiEasy")
+	-- 		:setFriendlyName("Training at Kobuleti RANGE")
+	-- 		:setBriefing("The Kobuleti RANGE (located 6 nm south-west of Kobuleti airbase) is set-up for training")
+	-- )
+
+	-- veafCombatZone.AddZone(
+	-- 	VeafCombatZone.new()
+	-- 		:setMissionEditorZoneName("combatZone_SaveTheHostages")
+	-- 		:setFriendlyName("Hostages at Prohladniy")
+	-- 		:setBriefing("Hostages are being held in a fortified hotel in the city of Prohladniy.\n" ..
+    --                     "Warning : there are air defenses lurking about, you should be cautious !")
+	-- )
+
+    -- veafCombatZone.AddZone(
+	-- 	VeafCombatZone.new()
+	-- 		:setMissionEditorZoneName("combatZone_Antiship-Training-Easy")
+	-- 		:setFriendlyName("Antiship Training - Easy")
+	-- 		:setBriefing("Undefended cargo ships ready for plunder; Arrrrr! Shiver me timbers!")
+	-- )
+
+    -- veafCombatZone.AddZone(
+	-- 	VeafCombatZone.new()
+	-- 		:setMissionEditorZoneName("combatZone_Antiship-Training-Hard")
+	-- 		:setFriendlyName("Antiship Training - Hard")
+	-- 		:setBriefing("Cargo ships defended by escort ships; warning, an FFG 11540 Neustrashimy may escort them as well...")
+	-- )
+
+    -- veafCombatZone.AddZone(
+	-- 	VeafCombatZone.new()
+	-- 		:setMissionEditorZoneName("combatZone_roadBlock")
+	-- 		:setFriendlyName("Road Block KM91")
+	-- 		:setBriefing("38T KM946122 - 6300ft - KOB 67X 115/35\nRussia is blocking a main road between Batumi and Tbilisi.\nDestroy bunkers and vehicles.\nENI convoy is comming from the East.")
+	-- )
+
     veaf.logInfo("init - veafCombatZone")
     veafCombatZone.initialize()
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- configure WW2 settings based on loaded theatre
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+local theatre = string.lower(env.mission.theatre)
+veafNamedPoints.logInfo(string.format("theatre is %s", theatre))
+veaf.config.ww2 = false
+if theatre == "thechannel" then
+    veaf.config.ww2 = true
+elseif theatre == "normandy" then
+    veaf.config.ww2 = true
+end
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure NAMEDPOINTS
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+if veafNamedPoints then
 
 veafNamedPoints.Points = {
-    -- points of interest
-    --{name="RANGE Kiryat",point={x=-213227,y=0,z=-34907}},
-}
+        -- airbases in Georgia
+        {name="AIRBASE Batumi",  point={x=-356437,y=0,z=618211, atc=true, tower="V131, U260", tacan="16X BTM", runways={{name="13", hdg=125, ils="110.30"}, {name="31", hdg=305}}}},
+        {name="AIRBASE Gudauta", point={x=-196850,y=0,z=516496, atc=true, tower="V130, U259", runways={ {name="15", hdg=150}, {name="33", hdg=330}}}},
+        {name="AIRBASE Kobuleti",point={x=-318000,y=0,z=636620, atc=true, tower="V133, U262", tacan="67X KBL", runways={ {name="07", hdg=69, ils="111.50"}}}},
+        {name="AIRBASE Kutaisi", point={x=-284860,y=0,z=683839, atc=true, tower="V134, U264", tacan="44X KTS", runways={ {name="08", hdg=74, ils="109.75"}, {name="26", hdg=254}}}},
+        {name="AIRBASE Senaki",  point={x=-281903,y=0,z=648379, atc=true, tower="V132, U261", tacan="31X TSK", runways={ {name="09", hdg=94, ils="108.90"}, {name="27", hdg=274}}}},
+        {name="AIRBASE Sukhumi", point={x=-221382,y=0,z=565909, atc=true, tower="V129, U258", runways={{name="12", hdg=116}, {name="30", hdg=296}}}},
+        {name="AIRBASE Tbilisi", point={x=-314926,y=0,z=895724, atc=true, tower="V138, U267", tacan="25X GTB", runways={{name="13", hdg=127, ils="110.30"},{name="31", hdg=307, ils="108.90"}}}},
+        {name="AIRBASE Vaziani", point={x=-319000,y=0,z=903271, atc=true, tower="V140, U269", tacan="22X VAS", runways={ {name="13", hdg=135, ils="108.75"}, {name="31", hdg=315, ils="108.75"}}}},
+        -- airbases in Russia
+        {name="AIRBASE Anapa - Vityazevo",   point={x=-004448,y=0,z=244022, atc=true, tower="V121, U250" , runways={ {name="22", hdg=220}, {name="04", hdg=40}}}},
+        {name="AIRBASE Beslan",              point={x=-148472,y=0,z=842252, atc=true, tower="V141, U270", runways={ {name="10", hdg=93, ils="110.50"}, {name="28", hdg=273}}}},
+        {name="AIRBASE Krymsk",              point={x=-007349,y=0,z=293712, atc=true, tower="V124, U253", runways={ {name="04", hdg=39}, {name="22", hdg=219}}}},
+        {name="AIRBASE Krasnodar-Pashkovsky",point={x=-008707,y=0,z=388986, atc=true, tower="V128, U257", runways={ {name="23", hdg=227}, {name="05", hdg=47}}}},
+        {name="AIRBASE Krasnodar-Center",    point={x=-011653,y=0,z=366766, atc=true, tower="V122, U251", runways={ {name="09", hdg=86}, {name="27", hdg=266}}}},
+        {name="AIRBASE Gelendzhik",          point={x=-050996,y=0,z=297849, atc=true, tower="V126, U255", runways={ {hdg=40}, {hdg=220}}}},
+        {name="AIRBASE Maykop",              point={x=-027626,y=0,z=457048, atc=true, tower="V125, U254", runways={ {name="04", hdg=40}, {name="22", hdg=220}}}},
+        {name="AIRBASE Mineralnye Vody",     point={x=-052090,y=0,z=707418, atc=true, tower="V135, U264", runways={ {name="12", hdg=115, ils="111.70"}, {name="30", hdg=295, ils="109.30"}}}},
+        {name="AIRBASE Mozdok",              point={x=-083330,y=0,z=835635, atc=true, tower="V137, U266", runways={ {name="08", hdg=82}, {name="26", hdg=262}}}},
+        {name="AIRBASE Nalchik",             point={x=-125500,y=0,z=759543, atc=true, tower="V136, U265", runways={ {name="06", hdg=55}, {name="24", hdg=235, ils="110.50"}}}},
+        {name="AIRBASE Novorossiysk",        point={x=-040299,y=0,z=279854, atc=true, tower="V123, U252", runways={ {name="04", hdg=40}, {name="22", hdg=220}}}},
+        {name="AIRBASE Sochi",               point={x=-165163,y=0,z=460902, atc=true, tower="V127, U256", runways={ {name="06", hdg=62, ils="111.10"}, {name="24", hdg=242}}}},
 
-veafNamedPoints.logInfo("Loading configuration")
+        -- points of interest
+        {name="RANGE Kobuleti",point={x=-328289,y=0,z=631228}},
+	}
 
-veaf.logInfo("init - veafNamedPoints")
-veafNamedPoints.initialize()
-veafNamedPoints.addAllSyriaCities()
+    veafNamedPoints.logInfo("Loading configuration")
+
+    veafNamedPoints.logInfo("init - veafNamedPoints")
+    veafNamedPoints.initialize()
+    if theatre == "syria" then
+        veafNamedPoints.addAllSyriaCities()
+    elseif theatre == "caucasus" then
+        veafNamedPoints.addAllCaucasusCities()
+    elseif theatre == "persiangulf" then
+        veafNamedPoints.addAllPersianGulfCities()
+    elseif theatre == "thechannel" then
+        veafNamedPoints.addAllTheChannelCities()
+    else
+        veafNamedPoints.logWarning(string.format("theatre %s is not yet supported by veafNamedPoints", theatre))
+    end
+end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure SECURITY
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
---veafSecurity.password_L9["6ade6629f9219d87a011e7b8fbf8ef9584f2786d"] = true
-veafSecurity.logInfo("Loading configuration")
-veaf.logInfo("init - veafSecurity")
-veafSecurity.initialize()
+if veafSecurity then
+    veafSecurity.password_L9["6ade6629f9219d87a011e7b8fbf8ef9584f2786d"] = true -- set the L9 password (the lowest possible security)
+    veafSecurity.logInfo("Loading configuration")
+    veaf.logInfo("init - veafSecurity")
+    veafSecurity.initialize()
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------
--- configure SHORTCUTS
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-if veafShortcuts then 
-    -- example
-    -- veafShortcuts.AddAlias(
-    --     VeafAlias.new()
-    --         :setName("-samLR") -- the name will be the text input in the marker
-    --         :setVeafCommand("_spawn samgroup, defense 5") -- the command will be executed
-    --         :setBypassSecurity(true) -- if true, no password will ever be needed
-    -- )
+    -- force security in order to test it when dynamic loading is in place (change to TRUE)
+    if (false) then
+        veaf.SecurityDisabled = false
+        veafSecurity.authenticated = false
+    end
 end
 
-----------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure CARRIER OPERATIONS 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-local useMooseAirboss = false
-
-if useMooseAirboss then
-    -- veafCarrierOperations2.setCarrierInfo("CVN-74 Stennis", 119.700, 305)
-    -- veafCarrierOperations2.setTankerInfo("CVN-74 Stennis S3B-Tanker", 290.90, 75, "S3B", 511)
-    -- veafCarrierOperations2.setPedroInfo("CVN-74 Stennis Pedro", "Lake Erie", 42)
-    -- veafCarrierOperations2.setRepeaterInfo("Stennis Radio Repeater LSO", "Stennis Radio Repeater MARSHAL")
-    --veafCarrierOperations2.setTraining()
-    -- veaf.logInfo("init - veafCarrierOperations2")
-    -- veafCarrierOperations2.initialize()
-    --veafCarrierOperations2.addRecoveryWindows()
-else
-    -- veaf.logInfo("init - veafCarrierOperations")
-    -- veafCarrierOperations.initialize(true)
+if veafCarrierOperations then
+    --veaf.logInfo("init - veafCarrierOperations")
+    --veafCarrierOperations.initialize(true)
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -229,7 +489,9 @@ if ctld then
     ctld.staticBugWorkaround = false --  DCS had a bug where destroying statics would cause a crash. If this happens again, set this to TRUE
 
     ctld.disableAllSmoke = false -- if true, all smoke is diabled at pickup and drop off zones regardless of settings below. Leave false to respect settings below
+
     ctld.hoverPickup = true --  if set to false you can load crates with the F10 menu instead of hovering... Only if not using real crates!
+
     ctld.enableCrates = true -- if false, Helis will not be able to spawn or unpack crates so will be normal CTTS
     ctld.slingLoad = false -- if false, crates can be used WITHOUT slingloading, by hovering above the crate, simulating slingloading but not the weight...
     -- There are some bug with Sling-loading that can cause crashes, if these occur set slingLoad to false
@@ -371,8 +633,8 @@ if ctld then
         { "pickzone19", "none", 5, "yes", 0 },
         { "pickzone20", "none", 10, "yes", 0, 1000 }, -- optional extra flag number to store the current number of groups available in
 
-        -- { "CVN-74 Stennis", "none", 10, "yes", 0, 1001 }, -- instead of a Zone Name you can also use the UNIT NAME of a ship
-        -- { "LHA-1 Tarawa", "none", 10, "yes", 0, 1002 }, -- instead of a Zone Name you can also use the UNIT NAME of a ship
+        { "CVN-74 Stennis", "none", 10, "yes", 0, 1001 }, -- instead of a Zone Name you can also use the UNIT NAME of a ship
+        { "LHA-1 Tarawa", "none", 10, "yes", 0, 1002 }, -- instead of a Zone Name you can also use the UNIT NAME of a ship
     }
 
     -- dropOffZones = {"name","smoke colour",0,side 1 = Red or 2 = Blue or 0 = Both sides}
@@ -410,89 +672,41 @@ if ctld then
     -- Use any of the predefined names or set your own ones
     ctld.transportPilotNames = {
 
-        "helicargo1",
-        "helicargo2",
-        "helicargo3",
-        "helicargo4",
-        "helicargo5",
-        "helicargo6",
-        "helicargo7",
-        "helicargo8",
-        "helicargo9",
-        "helicargo10",
-        "helicargo11",
-        "helicargo12",
-        "helicargo13",
-        "helicargo14",
-        "helicargo15",
-        "helicargo16",
-        "helicargo17",
-        "helicargo18",
-        "helicargo19",
-        "helicargo20",
-        "helicargo21",
-        "helicargo22",
-        "helicargo23",
-        "helicargo24",
-        "helicargo25",
-        "helicargo26",
-        "helicargo27",
-        "helicargo28",
-        "helicargo29",
-        "helicargo30",
-        "helicargo31",
-        "helicargo32",
-        "helicargo33",
-        "helicargo34",
-        "helicargo35",
-        "helicargo36",
-        "helicargo37",
-        "helicargo38",
-        "helicargo39",
-        "helicargo40",
-        "helicargo41",
-        "helicargo42",
-        "helicargo43",
-        "helicargo44",
-        "helicargo45",
-        "helicargo46",
-        "helicargo47",
-        "helicargo48",
-        "helicargo49",
-        "helicargo51",
-        "helicargo52",
-        "helicargo53",
-        "helicargo54",
-        "helicargo61",
-        "helicargo62",
-        "helicargo63",
-        "helicargo64",
-
-        "yak1",
-        "yak2",
-        "yak3",
-        "yak4",
-        "yak5",
-        "yak6",
-        "yak7",
-        "yak8",
-        "yak9",
-        "yak10",
-        "yak11",
-        "yak12",
-        "yak13",
-        "yak14",
-        "yak15",
-        "yak16",
-        "yak17",
-        "yak18",
-        "yak19",
-        "yak20",
-        "yak21",
-        "yak22",
-        "yak23",
-        "yak24",
-        "yak25",
+        "yak #001",
+        "yak #002",
+        "yak #003",
+        "yak #004",
+        "yak #005",
+        "yak #006",
+        "yak #007",
+        "yak #008",
+        "yak #009",
+        "yak #010",
+        "yak #011",
+        "yak #012",
+        "yak #013",
+        "yak #014",
+        "yak #015",
+        "yak #016",
+        "yak #017",
+        "yak #018",
+        "yak #019",
+        "yak #020",
+        "yak #021",
+        "yak #022",
+        "yak #023",
+        "yak #024",
+        "yak #025",
+        "transport #001",
+        "transport #002",
+        "transport #003",
+        "transport #004",
+        "transport #005",
+        "transport #006",
+        "transport #007",
+        "transport #008",
+        "transport #009",
+        "transport #010",
     }
 
     -- *************** Optional Extractable GROUPS *****************
@@ -500,33 +714,31 @@ if ctld then
     -- Use any of the predefined names or set your own ones
 
     ctld.extractableGroups = {
-        "extract1",
-        "extract2",
-        "extract3",
-        "extract4",
-        "extract5",
-        "extract6",
-        "extract7",
-        "extract8",
-        "extract9",
-        "extract10",
-
-        "extract11",
-        "extract12",
-        "extract13",
-        "extract14",
-        "extract15",
-        "extract16",
-        "extract17",
-        "extract18",
-        "extract19",
-        "extract20",
-
-        "extract21",
-        "extract22",
-        "extract23",
-        "extract24",
-        "extract25",
+        "extract #001",
+        "extract #002",
+        "extract #003",
+        "extract #004",
+        "extract #005",
+        "extract #006",
+        "extract #007",
+        "extract #008",
+        "extract #009",
+        "extract #010",
+        "extract #011",
+        "extract #012",
+        "extract #013",
+        "extract #014",
+        "extract #015",
+        "extract #016",
+        "extract #017",
+        "extract #018",
+        "extract #019",
+        "extract #020",
+        "extract #021",
+        "extract #022",
+        "extract #023",
+        "extract #024",
+        "extract #025",
     }
 
     -- ************** Logistics UNITS FOR CRATE SPAWNING ******************
@@ -535,26 +747,26 @@ if ctld then
     -- When a logistic unit is destroyed, you will no longer be able to spawn crates
 
     ctld.logisticUnits = {
-        "logistic1",
-        "logistic2",
-        "logistic3",
-        "logistic4",
-        "logistic5",
-        "logistic6",
-        "logistic7",
-        "logistic8",
-        "logistic9",
-        "logistic10",
-        "logistic11",
-        "logistic12",
-        "logistic13",
-        "logistic14",
-        "logistic15",
-        "logistic16",
-        "logistic17",
-        "logistic18",
-        "logistic19",
-        "logistic20",
+        "logistic #001",
+        "logistic #002",
+        "logistic #003",
+        "logistic #004",
+        "logistic #005",
+        "logistic #006",
+        "logistic #007",
+        "logistic #008",
+        "logistic #009",
+        "logistic #010",
+        "logistic #011",
+        "logistic #012",
+        "logistic #013",
+        "logistic #014",
+        "logistic #015",
+        "logistic #016",
+        "logistic #017",
+        "logistic #018",
+        "logistic #019",
+        "logistic #020",
     }
 
     -- ************** UNITS ABLE TO TRANSPORT VEHICLES ******************
@@ -701,16 +913,46 @@ if ctld then
         "SKP", "Hummer" -- there are some wierd encoding issues so if you write SKP-11 it wont match as the - sign is encoded differently...
     }
 
+    -- automatically add all the human-manned transport helicopters to ctld.transportPilotNames
+    veafTransportMission.initializeAllHelosInCTLD()
+
+    -- automatically add all the carriers and FARPs to ctld.logisticUnits
+    veafTransportMission.initializeAllLogisticInCTLD()
+    
     veaf.logInfo("init - ctld")
     ctld.initialize()
 end
 
-veaf.logInfo("init - veafInterpreter")
-veafInterpreter.initialize()
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- initialize the interpreter
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+if veafInterpreter then
+    veaf.logInfo("init - veafInterpreter")
+    veafInterpreter.initialize()
+end
 
-veaf.config.ww2 = false
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize the remote interface
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-veaf.logInfo("init - veafRemote")
-veafRemote.initialize()
+if veafRemote then
+    veaf.logInfo("init - veafRemote")
+    veafRemote.initialize()
+
+    -- combat zones
+    --veafRemote.monitorWithSlMod("-veaf start-zone-1"   , [[ veafCombatZone.ActivateZoneNumber(1, true) ]])
+    --veafRemote.monitorWithSlMod("-veaf stop-zone-1"    , [[ veafCombatZone.DesactivateZoneNumber(1, true) ]])
+end
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- initialize Skynet-IADS
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+if veafSkynet then
+    veaf.logInfo("init - veafSkynet")
+    veafSkynet.initialize(
+        true, --includeRedInRadio=true
+        false, --debugRed
+        true, --includeBlueInRadio
+        false --debugBlue
+    )
+end
+

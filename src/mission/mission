@@ -7,10 +7,6 @@ mission = {
             }, -- end of ["bullseye"]
             ["country"] = {
                 [1] = {
-                    ["id"] = 1,
-                    ["name"] = "Ukraine",
-                }, -- end of [1]
-                [2] = {
                     ["helicopter"] = {
                         ["group"] = {
                             [1] = {
@@ -1137,6 +1133,7 @@ mission = {
                                 ["units"] = {
                                     [1] = {
                                         ["AddPropAircraft"] = {
+                                            ["HelmetMountedDevice"] = 1,
                                             ["InnerBoard"] = 0,
                                             ["OuterBoard"] = 0,
                                         }, -- end of ["AddPropAircraft"]
@@ -1322,6 +1319,7 @@ mission = {
                                 ["units"] = {
                                     [1] = {
                                         ["AddPropAircraft"] = {
+                                            ["HelmetMountedDevice"] = 1,
                                             ["InnerBoard"] = 0,
                                             ["OuterBoard"] = 0,
                                         }, -- end of ["AddPropAircraft"]
@@ -1507,6 +1505,7 @@ mission = {
                                 ["units"] = {
                                     [1] = {
                                         ["AddPropAircraft"] = {
+                                            ["HelmetMountedDevice"] = 1,
                                             ["InnerBoard"] = 0,
                                             ["OuterBoard"] = 0,
                                         }, -- end of ["AddPropAircraft"]
@@ -1692,6 +1691,7 @@ mission = {
                                 ["units"] = {
                                     [1] = {
                                         ["AddPropAircraft"] = {
+                                            ["HelmetMountedDevice"] = 1,
                                             ["InnerBoard"] = 0,
                                             ["OuterBoard"] = 0,
                                         }, -- end of ["AddPropAircraft"]
@@ -2849,6 +2849,7 @@ mission = {
                                 ["units"] = {
                                     [1] = {
                                         ["AddPropAircraft"] = {
+                                            ["HelmetMountedDevice"] = 1,
                                             ["InnerBoard"] = 0,
                                             ["OuterBoard"] = 0,
                                         }, -- end of ["AddPropAircraft"]
@@ -3142,64 +3143,8 @@ mission = {
                             }, -- end of [1]
                         }, -- end of ["group"]
                     }, -- end of ["ship"]
-                }, -- end of [2]
-                [3] = {
-                    ["id"] = 3,
-                    ["name"] = "Turkey",
-                }, -- end of [3]
-                [4] = {
-                    ["id"] = 4,
-                    ["name"] = "UK",
-                }, -- end of [4]
-                [5] = {
-                    ["id"] = 5,
-                    ["name"] = "France",
-                }, -- end of [5]
-                [6] = {
-                    ["id"] = 6,
-                    ["name"] = "Germany",
-                }, -- end of [6]
-                [7] = {
-                    ["id"] = 8,
-                    ["name"] = "Canada",
-                }, -- end of [7]
-                [8] = {
-                    ["id"] = 9,
-                    ["name"] = "Spain",
-                }, -- end of [8]
-                [9] = {
-                    ["id"] = 10,
-                    ["name"] = "The Netherlands",
-                }, -- end of [9]
-                [10] = {
-                    ["id"] = 11,
-                    ["name"] = "Belgium",
-                }, -- end of [10]
-                [11] = {
-                    ["id"] = 12,
-                    ["name"] = "Norway",
-                }, -- end of [11]
-                [12] = {
-                    ["id"] = 13,
-                    ["name"] = "Denmark",
-                }, -- end of [12]
-                [13] = {
-                    ["id"] = 15,
-                    ["name"] = "Israel",
-                }, -- end of [13]
-                [14] = {
-                    ["id"] = 16,
-                    ["name"] = "Georgia",
-                }, -- end of [14]
-                [15] = {
-                    ["id"] = 20,
-                    ["name"] = "Italy",
-                }, -- end of [15]
-                [16] = {
-                    ["id"] = 21,
-                    ["name"] = "Australia",
-                }, -- end of [16]
-                [17] = {
+                }, -- end of [1]
+                [2] = {
                     ["id"] = 26,
                     ["name"] = "Czech Republic",
                     ["plane"] = {
@@ -3298,28 +3243,23 @@ mission = {
                             }, -- end of [1]
                         }, -- end of ["group"]
                     }, -- end of ["plane"]
-                }, -- end of [17]
-                [18] = {
-                    ["id"] = 28,
-                    ["name"] = "Croatia",
-                }, -- end of [18]
-                [19] = {
-                    ["id"] = 40,
-                    ["name"] = "Poland",
-                }, -- end of [19]
-                [20] = {
-                    ["id"] = 45,
-                    ["name"] = "South Korea",
-                }, -- end of [20]
-                [21] = {
-                    ["id"] = 46,
-                    ["name"] = "Sweden",
-                }, -- end of [21]
+                }, -- end of [2]
             }, -- end of ["country"]
             ["name"] = "blue",
             ["nav_points"] = {
             }, -- end of ["nav_points"]
         }, -- end of ["blue"]
+        ["neutrals"] = {
+            ["bullseye"] = {
+                ["x"] = 100,
+                ["y"] = 100,
+            }, -- end of ["bullseye"]
+            ["country"] = {
+            }, -- end of ["country"]
+            ["name"] = "neutrals",
+            ["nav_points"] = {
+            }, -- end of ["nav_points"]
+        }, -- end of ["neutrals"]
         ["red"] = {
             ["bullseye"] = {
                 ["x"] = 11557,
@@ -8185,42 +8125,6 @@ mission = {
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
                 }, -- end of [1]
-                [2] = {
-                    ["id"] = 18,
-                    ["name"] = "Abkhazia",
-                }, -- end of [2]
-                [3] = {
-                    ["id"] = 19,
-                    ["name"] = "South Ossetia",
-                }, -- end of [3]
-                [4] = {
-                    ["id"] = 24,
-                    ["name"] = "Belarus",
-                }, -- end of [4]
-                [5] = {
-                    ["id"] = 27,
-                    ["name"] = "China",
-                }, -- end of [5]
-                [6] = {
-                    ["id"] = 34,
-                    ["name"] = "Iran",
-                }, -- end of [6]
-                [7] = {
-                    ["id"] = 37,
-                    ["name"] = "Kazakhstan",
-                }, -- end of [7]
-                [8] = {
-                    ["id"] = 38,
-                    ["name"] = "North Korea",
-                }, -- end of [8]
-                [9] = {
-                    ["id"] = 43,
-                    ["name"] = "Serbia",
-                }, -- end of [9]
-                [10] = {
-                    ["id"] = 47,
-                    ["name"] = "Syria",
-                }, -- end of [10]
             }, -- end of ["country"]
             ["name"] = "red",
             ["nav_points"] = {
@@ -8296,6 +8200,14 @@ mission = {
             [42] = 49,
             [43] = 48,
             [44] = 67,
+            [45] = 76,
+            [46] = 77,
+            [47] = 78,
+            [48] = 79,
+            [49] = 80,
+            [50] = 81,
+            [51] = 82,
+            [52] = 83,
         }, -- end of ["neutrals"]
         ["red"] = {
             [1] = 18,
@@ -8310,7 +8222,7 @@ mission = {
             [10] = 47,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 26718,
+    ["currentKey"] = 27468,
     ["date"] = {
         ["Day"] = 23,
         ["Month"] = 5,
@@ -14579,11 +14491,11 @@ mission = {
         }, -- end of ["roles"]
     }, -- end of ["groundControl"]
     ["map"] = {
-        ["centerX"] = -342296.13237985,
-        ["centerY"] = 496381.01990397,
-        ["zoom"] = 67551.718191399,
+        ["centerX"] = -349136.20621004,
+        ["centerY"] = 507485.07148198,
+        ["zoom"] = 728111.9517908,
     }, -- end of ["map"]
-    ["maxDictId"] = 614,
+    ["maxDictId"] = 626,
     ["pictureFileNameB"] = {
     }, -- end of ["pictureFileNameB"]
     ["pictureFileNameN"] = {
@@ -14625,8 +14537,8 @@ mission = {
     ["trig"] = {
         ["actions"] = {
             [1] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_384\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_614\"));",
-            [2] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_468\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_581\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_583\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_584\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_585\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_586\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_582\"));",
-            [3] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_473\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_474\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_475\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_476\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_494\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_477\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_478\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_479\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_480\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_481\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_482\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_483\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_484\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_485\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_486\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_487\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_488\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_489\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_490\"));",
+            [2] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_468\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_581\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_583\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_584\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_585\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_618\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_615\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_582\"));",
+            [3] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_626\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_620\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_621\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_622\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_623\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_624\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_625\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_473\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_474\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_475\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_476\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_494\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_477\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_478\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_479\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_480\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_481\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_482\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_483\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_484\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_485\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_486\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_487\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_488\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_489\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_490\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_619\"));",
             [4] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_383\"));",
             [5] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_382\"));",
         }, -- end of ["actions"]
@@ -14864,11 +14776,20 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["KeyDict_text"] = "DictKey_ActionText_586",
+                    ["KeyDict_text"] = "DictKey_ActionText_618",
                     ["predicate"] = "a_do_script",
-                    ["text"] = "DictKey_ActionText_586",
+                    ["text"] = "DictKey_ActionText_618",
                 }, -- end of [6]
                 [7] = {
+                    ["ai_task"] = {
+                        [1] = "",
+                        [2] = "",
+                    }, -- end of ["ai_task"]
+                    ["KeyDict_text"] = "DictKey_ActionText_615",
+                    ["predicate"] = "a_do_script",
+                    ["text"] = "DictKey_ActionText_615",
+                }, -- end of [7]
+                [8] = {
                     ["ai_task"] = {
                         [1] = "",
                         [2] = "",
@@ -14876,7 +14797,7 @@ mission = {
                     ["KeyDict_text"] = "DictKey_ActionText_582",
                     ["predicate"] = "a_do_script",
                     ["text"] = "DictKey_ActionText_582",
-                }, -- end of [7]
+                }, -- end of [8]
             }, -- end of ["actions"]
             ["colorItem"] = "0x00ff80ff",
             ["comment"] = "mission start - dynamic",
@@ -14894,19 +14815,18 @@ mission = {
         [3] = {
             ["actions"] = {
                 [1] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_473",
-                    ["predicate"] = "a_do_script_file",
+                    ["KeyDict_text"] = "DictKey_ActionText_626",
+                    ["meters"] = 1000,
+                    ["predicate"] = "a_do_script",
+                    ["text"] = "DictKey_ActionText_626",
+                    ["zone"] = 670,
                 }, -- end of [1]
                 [2] = {
                     ["ai_task"] = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_474",
+                    ["file"] = "ResKey_Action_620",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [2]
                 [3] = {
@@ -14914,7 +14834,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_475",
+                    ["file"] = "ResKey_Action_621",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [3]
                 [4] = {
@@ -14922,7 +14842,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_476",
+                    ["file"] = "ResKey_Action_622",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [4]
                 [5] = {
@@ -14930,7 +14850,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_494",
+                    ["file"] = "ResKey_Action_623",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [5]
                 [6] = {
@@ -14938,7 +14858,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_477",
+                    ["file"] = "ResKey_Action_624",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [6]
                 [7] = {
@@ -14946,7 +14866,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_478",
+                    ["file"] = "ResKey_Action_625",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [7]
                 [8] = {
@@ -14954,7 +14874,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_479",
+                    ["file"] = "ResKey_Action_473",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [8]
                 [9] = {
@@ -14962,7 +14882,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_480",
+                    ["file"] = "ResKey_Action_474",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [9]
                 [10] = {
@@ -14970,7 +14890,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_481",
+                    ["file"] = "ResKey_Action_475",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [10]
                 [11] = {
@@ -14978,7 +14898,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_482",
+                    ["file"] = "ResKey_Action_476",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [11]
                 [12] = {
@@ -14986,7 +14906,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_483",
+                    ["file"] = "ResKey_Action_494",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [12]
                 [13] = {
@@ -14994,7 +14914,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_484",
+                    ["file"] = "ResKey_Action_477",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [13]
                 [14] = {
@@ -15002,7 +14922,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_485",
+                    ["file"] = "ResKey_Action_478",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [14]
                 [15] = {
@@ -15010,7 +14930,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_486",
+                    ["file"] = "ResKey_Action_479",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [15]
                 [16] = {
@@ -15018,7 +14938,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_487",
+                    ["file"] = "ResKey_Action_480",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [16]
                 [17] = {
@@ -15026,7 +14946,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_488",
+                    ["file"] = "ResKey_Action_481",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [17]
                 [18] = {
@@ -15034,7 +14954,7 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_489",
+                    ["file"] = "ResKey_Action_482",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [18]
                 [19] = {
@@ -15042,9 +14962,73 @@ mission = {
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_490",
+                    ["file"] = "ResKey_Action_483",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [19]
+                [20] = {
+                    ["ai_task"] = {
+                        [1] = "",
+                        [2] = "",
+                    }, -- end of ["ai_task"]
+                    ["file"] = "ResKey_Action_484",
+                    ["predicate"] = "a_do_script_file",
+                }, -- end of [20]
+                [21] = {
+                    ["ai_task"] = {
+                        [1] = "",
+                        [2] = "",
+                    }, -- end of ["ai_task"]
+                    ["file"] = "ResKey_Action_485",
+                    ["predicate"] = "a_do_script_file",
+                }, -- end of [21]
+                [22] = {
+                    ["ai_task"] = {
+                        [1] = "",
+                        [2] = "",
+                    }, -- end of ["ai_task"]
+                    ["file"] = "ResKey_Action_486",
+                    ["predicate"] = "a_do_script_file",
+                }, -- end of [22]
+                [23] = {
+                    ["ai_task"] = {
+                        [1] = "",
+                        [2] = "",
+                    }, -- end of ["ai_task"]
+                    ["file"] = "ResKey_Action_487",
+                    ["predicate"] = "a_do_script_file",
+                }, -- end of [23]
+                [24] = {
+                    ["ai_task"] = {
+                        [1] = "",
+                        [2] = "",
+                    }, -- end of ["ai_task"]
+                    ["file"] = "ResKey_Action_488",
+                    ["predicate"] = "a_do_script_file",
+                }, -- end of [24]
+                [25] = {
+                    ["ai_task"] = {
+                        [1] = "",
+                        [2] = "",
+                    }, -- end of ["ai_task"]
+                    ["file"] = "ResKey_Action_489",
+                    ["predicate"] = "a_do_script_file",
+                }, -- end of [25]
+                [26] = {
+                    ["ai_task"] = {
+                        [1] = "",
+                        [2] = "",
+                    }, -- end of ["ai_task"]
+                    ["file"] = "ResKey_Action_490",
+                    ["predicate"] = "a_do_script_file",
+                }, -- end of [26]
+                [27] = {
+                    ["ai_task"] = {
+                        [1] = "",
+                        [2] = "",
+                    }, -- end of ["ai_task"]
+                    ["file"] = "ResKey_Action_619",
+                    ["predicate"] = "a_do_script_file",
+                }, -- end of [27]
             }, -- end of ["actions"]
             ["colorItem"] = "0x00ff80ff",
             ["comment"] = "mission start - static",
@@ -15110,7 +15094,7 @@ mission = {
             }, -- end of ["rules"]
         }, -- end of [5]
     }, -- end of ["trigrules"]
-    ["version"] = 17,
+    ["version"] = 18,
     ["weather"] = {
         ["atmosphere_type"] = 0,
         ["clouds"] = {

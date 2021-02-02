@@ -3,8 +3,9 @@
 /node_modules/
 /7za.exe
 /setup_*.cmd
+configuration.json
 package-lock.json
 cache/
-templates/*/build
-templates/*/node_modules/
-configuration.json
+/templates/*/build
+/templates/*/node_modules/
+build-*.cmd

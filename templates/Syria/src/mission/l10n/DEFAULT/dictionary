@@ -26,14 +26,23 @@ assert(loadfile(script))()\
     ["DictKey_ActionText_585"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/community/WeatherMark.lua\"\
 assert(loadfile(script))()\
 ",
-    ["DictKey_ActionText_586"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/community/NIOD.lua\"\
+    ["DictKey_ActionText_586"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/community/Hercules_Cargo.lua\"\
 assert(loadfile(script))()\
 ",
     ["DictKey_ActionText_614"] = "VEAF_DYNAMIC_MISSIONPATH = [[D:\\dev\\_VEAF\\VEAF-Demo-Mission\\templates\\Syria\\]]",
+    ["DictKey_ActionText_627"] = "local script = VEAF_DYNAMIC_PATH .. \"/src//scripts/community/skynet-iads-compiled.lua\"\
+assert(loadfile(script))()\
+",
     ["DictKey_descriptionBlueTask_3"] = "",
     ["DictKey_descriptionNeutralsTask_4"] = "",
     ["DictKey_descriptionRedTask_2"] = "",
     ["DictKey_descriptionText_1"] = "Demonstration mission for VEAF-Mission-Creation-Tools\
 Weather : UGKO 221130Z 24011KT 9999 SCT034 OVC063 23/15 Q1006 NOSIG",
+    ["DictKey_GroupName_621"] = "Ground-1",
+    ["DictKey_GroupName_624"] = "Ground-2",
     ["DictKey_sortie_5"] = "",
+    ["DictKey_UnitName_622"] = "Ground-1-1",
+    ["DictKey_UnitName_625"] = "Ground-2-1",
+    ["DictKey_WptName_623"] = "",
+    ["DictKey_WptName_626"] = "",
 } -- end of dictionary

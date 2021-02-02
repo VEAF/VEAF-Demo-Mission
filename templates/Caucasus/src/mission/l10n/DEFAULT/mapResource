@@ -22,6 +22,7 @@ mapResource = {
     ["ResKey_Action_615"] = "Moose.lua",
     ["ResKey_Action_616"] = "CTLD.lua",
     ["ResKey_Action_617"] = "WeatherMark.lua",
-    ["ResKey_Action_618"] = "NIOD.lua",
+    ["ResKey_Action_618"] = "Hercules_Cargo.lua",
     ["ResKey_Action_619"] = "veaf.lua",
+    ["ResKey_Action_622"] = "skynet-iads-compiled.lua",
 } -- end of mapResource
