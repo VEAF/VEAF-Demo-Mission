@@ -1,62 +1,80 @@
-# VEAF demonstration mission
+Ce document est également disponible [en français](readme.fr.md)
 
-## Abstract
+## How to build a mission?
 
-This is a barebones mission to demonstrate the [VEAF Mission Creation Tools framework](https://github.com/VEAF/VEAF-Mission-Creation-Tools)
-Please read the documentation for further information on the concept.
+### Prerequisites
 
-TODO *Link to the documentation - in progress*
+#### Manual installation
 
-This mission uses the normalizer and radio preset editor tools, also found in the [VEAF Mission Creation Tools framework](https://github.com/VEAF/VEAF-Mission-Creation-Tools/tree/master/mission-editor-tools)
+You need a few things set up on your PC for these scripts to function.
 
-## Templates
+- LUA : you need a working LUA interpreter, in your PATH, ready to be called with the `lua` command
+- 7zip : you need 7zip, or another zip tool, in your PATH, ready to be called with the `7zip` command
+- Powershell : you need Powershell, and you need it to be configured to allow script execution (read [this article](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.1)) ; basically you need to run this command in an elevated (admin) Powershell prompt : `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope LocalMachine`
+- npm : you need the NPM package manager from NodeJS to get the VEAF mission creation tools ; see [here](https://www.npmjs.com/get-npm)
 
-Empty templates with preset triggers on different terrains can be found in the `templates` folder.
+#### Using Chocolatey
 
-## Prerequisites
+The required tools can easily be installed using *Chocolatey* (see [here](https://chocolatey.org/)).
 
-* 7za from the [7-Zip Extra: standalone console version](https://www.7-zip.org/a/7z1900-extra.7z)
-* lua from [Lua for Windows](https://github.com/rjpcomputing/luaforwindows)
-* npm from [NodeJS](https://nodejs.org/en/)
+**WARNING** : do not do both *manual installation* and *Chocolatey installation*
 
-Note: it is easier to install all the prerequisites with [Chocolatey](https://chocolatey.org)
+To install Chocolatey, use this command  in an elevated (admin) Powershell prompt : `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
 
-We created some scripts that you can use (in the folder named *setup*) :
-1. run *install-chocolatey.cmd* in an **elevated** shell (as administrator)
-2. restart your shell (**important**)
-3. run *install-requirements.cmd* in an **elevated** shell (as administrator)
-4. (optional) run *install-optionals.cmd* in an **elevated** shell (as administrator)
+After *Chocolatey* is installed, use these simple commands (in a regular command prompt) to install the required tools :
 
-## Workflow
+- LUA : `choco install -y lua`
+- 7zip : `choco install -y 7zip.commandline`
+- npm : `choco install -y nodejs`
 
 ### Build the mission
 
-Simply execute **build** in order to build the mission.
+Building the mission from source is easy ; you simply have to run the `build.cmd` script. You don't even need to run it in a `cmd` window, double-clicking it will be ok.
 
-For developpement purpose you way want to use some special flags.
+The process will take all the files in the `src` folder, fetch the latest version of the *VEAF Mission Creation Tools* (from GitHub), and compile all of this in a ready-to-use mission for DCS (in a `.miz` file).
 
-* *VERBOSE_LOG_FLAG* if set to "true", will create a mission with tracing enabled (meaning that, when run, it will log a lot of details in the dcs log file); defaults to "false"
-* *LUA_SCRIPTS_DEBUG_PARAMETER* can be set to "-debug" or "-trace" (or not set) ; this will be passed to the lua helper scripts (e.g. veafMissionRadioPresetsEditor and veafMissionNormalizer); defaults to not set
-* *SECURITY_DISABLED_FLAG* if set to "true", will create a mission with security disabled (meaning that no password is ever required); defaults to "false"
-* *MISSION_FILE_SUFFIX* (a string) will be appended to the mission file name to make it more unique; defaults to the current iso date
-* *SEVENZIP* (a string) points to the 7za executable; defaults "7za", so it needs to be in the path
-* *LUA* (a string) points to the lua executable; defaults "lua", so it needs to be in the path
+This file will be named after the mission (this is configured in the first line of the `build.cmd` script), and placed in the `build` folder.
 
-### Edit the mission
+### Editing a compiled mission
 
-Use the DCS World Mission Editor to make whatever change you want to the .miz file you built in the previous step
+After a mission has been compiled, copy it from the `build` folder to the main mission folder (the folder where `extract.cmd` and `build.cmd` are stored). Then, you can open it in the DCS Mission Editor and edit it (add/remove units, add triggers, change zones, etc.).
 
-### Test the mission
+Also, you can edit the mission source files in parallel (using a text editor, I recommend Notepad++ or Visual Studio Code); specifically, you can edit :
 
-Within DCS World; you can have a look in the dcs.log file (specially if you set the *VERBOSE_LOG_FLAG* to "true")
+- the mission configuration file `src/scripts/missionConfig.lua`, to setup the mission parameters ; this is the main file you'll edit.
+- the radio presets file `src/radio/radioSettings.lua`, to setup the radio presets pushed to the aircrafts.
+- the weather presets in `src/weatherAndTime`
 
-### Save your changes
+If you edit one of these files, and because they're compiled *into* the mission `.miz` file, you'll have to *rebuild* your mission before you can test your editions in the game.
 
-Copy the built .miz file (the one you edited and tested) to the root directory of this project and run **extract**.
-This will :
+There's a way to easily test these changes : the first trigger has a LUA predicate, that conditions the scripts loading method. If set to `false`, the scripts are loading statically (i.e. they're loading *from the mission*) ; if set to `true`, the scripts will be loaded dynamically, so each time you restart the mission in DCS (Left-SHIFT + R) you can test whatever change you saved to the files.
 
-* explode the mission into its constituing files
-* copy these files in the *src* folder
-* clean up everything that is not needed (i.e. lua scripts)
-* normalize the mission files so they can easily be compared with the previous version (see the [normalizer tool](https://github.com/VEAF/VEAF-Mission-Creation-Tools/tree/master/mission-editor-tools/normalizer))
-* commit the changes to your source control system
+![triggers](https://user-images.githubusercontent.com/172286/109670752-bac72180-7b73-11eb-9d20-cadd84bff1a5.jpg)
+
+
+### Extract an edited version of the mission
+
+Once a mission has been edited and saved in the DCS mission editor, you need to *extract* its content to the `src` folder, in order to reinject it later with the `build` script.
+
+To do this, simply run the `extract.cmd` script. You don't even need to run it in a `cmd` window, double-clicking it will be ok.
+
+This script will take any mission file starting with the mission name (configured in the beginning of the script), in the mission folder (the folder where `extract.cmd` and `build.cmd` are stored, not the `build` folder), extract its content, process them and store them in `src`.
+
+### Advanced settings
+
+#### Setting the location of the 7zip executable
+
+If your 7zip tool is not in your PATH, you can set its location in the `SEVENZIP` environment variable. It's a string which should point to the `7za` executable (e.g. `c:\tools\7zip\bin\7zip.exe`)
+
+#### Setting the location of the LUA executable
+
+In the same way, you can set its location of the LUA executable in the `LUA` environment variable. It's a string which should point to the `lua` executable (e.g. `c:\tools\lua\bin\lua.exe`)
+
+#### Skip the pauses
+
+If you set the `NOPAUSE` environment variable to "true", then the pauses in the script will not be marked.
+
+## How to use this - graphic version
+
+![schema](https://user-images.githubusercontent.com/172286/109007616-9ddeaa00-76ac-11eb-89ba-370e16810240.jpg)
+

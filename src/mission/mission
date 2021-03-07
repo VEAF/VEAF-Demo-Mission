@@ -462,10 +462,6 @@ mission = {
                                             ["ETA_locked"] = true,
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_270",
-                                            ["properties"] = {
-                                                ["addopt"] = {
-                                                }, -- end of ["addopt"]
-                                            }, -- end of ["properties"]
                                             ["speed"] = 231.25,
                                             ["speed_locked"] = true,
                                             ["task"] = {
@@ -504,21 +500,17 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -263720.10398545,
-                                            ["y"] = 643130.92623811,
+                                            ["x"] = -271838.73773521,
+                                            ["y"] = 600647.22169819,
                                         }, -- end of [1]
                                         [2] = {
                                             ["action"] = "Turning Point",
                                             ["alt"] = 6096,
                                             ["alt_type"] = "BARO",
-                                            ["ETA"] = 2.1496673202928,
+                                            ["ETA"] = 199.3430409156,
                                             ["ETA_locked"] = false,
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_271",
-                                            ["properties"] = {
-                                                ["addopt"] = {
-                                                }, -- end of ["addopt"]
-                                            }, -- end of ["properties"]
                                             ["speed"] = 231.25,
                                             ["speed_locked"] = true,
                                             ["task"] = {
@@ -541,21 +533,17 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -264145.51738495,
-                                            ["y"] = 643388.10780075,
+                                            ["x"] = -273077.57210012,
+                                            ["y"] = 597992.57663051,
                                         }, -- end of [2]
                                         [3] = {
                                             ["action"] = "Turning Point",
                                             ["alt"] = 6096,
                                             ["alt_type"] = "BARO",
-                                            ["ETA"] = 222.91985615931,
+                                            ["ETA"] = 296.12975269202,
                                             ["ETA_locked"] = false,
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_272",
-                                            ["properties"] = {
-                                                ["addopt"] = {
-                                                }, -- end of ["addopt"]
-                                            }, -- end of ["properties"]
                                             ["speed"] = 231.25,
                                             ["speed_locked"] = true,
                                             ["task"] = {
@@ -566,8 +554,8 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -305141.75590354,
-                                            ["y"] = 673813.88760723,
+                                            ["x"] = -279271.74392471,
+                                            ["y"] = 577109.36876478,
                                         }, -- end of [3]
                                     }, -- end of ["points"]
                                 }, -- end of ["route"]
@@ -587,7 +575,7 @@ mission = {
                                             [3] = 1,
                                             ["name"] = "Arco11",
                                         }, -- end of ["callsign"]
-                                        ["heading"] = 2.5978379087603,
+                                        ["heading"] = -2.0074234866062,
                                         ["livery_id"] = "Standard USAF",
                                         ["name"] = "DictKey_UnitName_269",
                                         ["onboard_num"] = "010",
@@ -599,17 +587,17 @@ mission = {
                                             ["pylons"] = {
                                             }, -- end of ["pylons"]
                                         }, -- end of ["payload"]
-                                        ["psi"] = -2.5978379087603,
+                                        ["psi"] = 2.0074234866062,
                                         ["skill"] = "High",
                                         ["speed"] = 231.25,
                                         ["type"] = "KC-135",
                                         ["unitId"] = 28,
-                                        ["x"] = -263720.10398545,
-                                        ["y"] = 643130.92623811,
+                                        ["x"] = -271838.73773521,
+                                        ["y"] = 600647.22169819,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
-                                ["x"] = -263720.10398545,
-                                ["y"] = 643130.92623811,
+                                ["x"] = -271838.73773521,
+                                ["y"] = 600647.22169819,
                             }, -- end of [1]
                             [2] = {
                                 ["communication"] = true,
@@ -629,10 +617,6 @@ mission = {
                                             ["ETA_locked"] = true,
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_285",
-                                            ["properties"] = {
-                                                ["addopt"] = {
-                                                }, -- end of ["addopt"]
-                                            }, -- end of ["properties"]
                                             ["speed"] = 231.25,
                                             ["speed_locked"] = true,
                                             ["task"] = {
@@ -658,21 +642,17 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -262372.69243888,
-                                            ["y"] = 641416.07474281,
+                                            ["x"] = -266971.88844446,
+                                            ["y"] = 600293.2690225,
                                         }, -- end of [1]
                                         [2] = {
                                             ["action"] = "Turning Point",
                                             ["alt"] = 6096,
                                             ["alt_type"] = "BARO",
-                                            ["ETA"] = 8.1069441255984,
+                                            ["ETA"] = 17.618600067668,
                                             ["ETA_locked"] = false,
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_286",
-                                            ["properties"] = {
-                                                ["addopt"] = {
-                                                }, -- end of ["addopt"]
-                                            }, -- end of ["properties"]
                                             ["speed"] = 231.25,
                                             ["speed_locked"] = true,
                                             ["task"] = {
@@ -707,21 +687,17 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -263859.7333653,
-                                            ["y"] = 642557.70733017,
+                                            ["x"] = -270334.43886352,
+                                            ["y"] = 597992.57663051,
                                         }, -- end of [2]
                                         [3] = {
                                             ["action"] = "Turning Point",
                                             ["alt"] = 6096,
                                             ["alt_type"] = "BARO",
-                                            ["ETA"] = 25.57131717681,
+                                            ["ETA"] = 59.123505887458,
                                             ["ETA_locked"] = false,
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_287",
-                                            ["properties"] = {
-                                                ["addopt"] = {
-                                                }, -- end of ["addopt"]
-                                            }, -- end of ["properties"]
                                             ["speed"] = 231.25,
                                             ["speed_locked"] = true,
                                             ["task"] = {
@@ -732,8 +708,8 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -267142.16836834,
-                                            ["y"] = 644910.62113156,
+                                            ["x"] = -273343.03660689,
+                                            ["y"] = 588878.29523148,
                                         }, -- end of [3]
                                     }, -- end of ["points"]
                                 }, -- end of ["route"]
@@ -754,7 +730,7 @@ mission = {
                                             ["name"] = "Enfield11",
                                         }, -- end of ["callsign"]
                                         ["hardpoint_racks"] = true,
-                                        ["heading"] = 2.4868462193158,
+                                        ["heading"] = -2.5415424401877,
                                         ["livery_id"] = "106th SQN (8th Airbase)",
                                         ["name"] = "DictKey_UnitName_284",
                                         ["onboard_num"] = "011",
@@ -799,13 +775,13 @@ mission = {
                                                 }, -- end of [11]
                                             }, -- end of ["pylons"]
                                         }, -- end of ["payload"]
-                                        ["psi"] = -2.4868462193158,
+                                        ["psi"] = 2.5415424401877,
                                         ["skill"] = "High",
                                         ["speed"] = 231.25,
                                         ["type"] = "F-15C",
                                         ["unitId"] = 31,
-                                        ["x"] = -262372.69243888,
-                                        ["y"] = 641416.07474281,
+                                        ["x"] = -266971.88844446,
+                                        ["y"] = 600293.2690225,
                                     }, -- end of [1]
                                     [2] = {
                                         ["alt"] = 6096,
@@ -816,7 +792,7 @@ mission = {
                                             [3] = 2,
                                             ["name"] = "Enfield12",
                                         }, -- end of ["callsign"]
-                                        ["heading"] = 2.4868462193158,
+                                        ["heading"] = -2.5415424401877,
                                         ["livery_id"] = "106th SQN (8th Airbase)",
                                         ["name"] = "DictKey_UnitName_288",
                                         ["onboard_num"] = "012",
@@ -861,17 +837,17 @@ mission = {
                                                 }, -- end of [11]
                                             }, -- end of ["pylons"]
                                         }, -- end of ["payload"]
-                                        ["psi"] = -2.4868462193158,
+                                        ["psi"] = 2.5415424401877,
                                         ["skill"] = "High",
                                         ["speed"] = 231.25,
                                         ["type"] = "F-15C",
                                         ["unitId"] = 32,
-                                        ["x"] = -262412.69243888,
-                                        ["y"] = 641456.07474281,
+                                        ["x"] = -267011.88844446,
+                                        ["y"] = 600333.2690225,
                                     }, -- end of [2]
                                 }, -- end of ["units"]
-                                ["x"] = -262372.69243888,
-                                ["y"] = 641416.07474281,
+                                ["x"] = -266971.88844446,
+                                ["y"] = 600293.2690225,
                             }, -- end of [2]
                             [3] = {
                                 ["communication"] = true,
@@ -891,10 +867,6 @@ mission = {
                                             ["ETA_locked"] = true,
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_292",
-                                            ["properties"] = {
-                                                ["addopt"] = {
-                                                }, -- end of ["addopt"]
-                                            }, -- end of ["properties"]
                                             ["speed"] = 231.25,
                                             ["speed_locked"] = true,
                                             ["task"] = {
@@ -905,21 +877,17 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -261877.20638152,
-                                            ["y"] = 642733.62641008,
+                                            ["x"] = -268830.13999184,
+                                            ["y"] = 599142.9228265,
                                         }, -- end of [1]
                                         [2] = {
                                             ["action"] = "Turning Point",
                                             ["alt"] = 6096,
                                             ["alt_type"] = "BARO",
-                                            ["ETA"] = 7.1023798008753,
+                                            ["ETA"] = 8.7425619511511,
                                             ["ETA_locked"] = false,
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_293",
-                                            ["properties"] = {
-                                                ["addopt"] = {
-                                                }, -- end of ["addopt"]
-                                            }, -- end of ["properties"]
                                             ["speed"] = 231.25,
                                             ["speed_locked"] = true,
                                             ["task"] = {
@@ -954,21 +922,17 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -263248.08371994,
-                                            ["y"] = 643638.20160551,
+                                            ["x"] = -270688.39153921,
+                                            ["y"] = 598346.5293062,
                                         }, -- end of [2]
                                         [3] = {
                                             ["action"] = "Turning Point",
                                             ["alt"] = 6096,
                                             ["alt_type"] = "BARO",
-                                            ["ETA"] = 24.06490195111,
+                                            ["ETA"] = 50.228060175073,
                                             ["ETA_locked"] = false,
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_294",
-                                            ["properties"] = {
-                                                ["addopt"] = {
-                                                }, -- end of ["addopt"]
-                                            }, -- end of ["properties"]
                                             ["speed"] = 231.25,
                                             ["speed_locked"] = true,
                                             ["task"] = {
@@ -979,8 +943,8 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -266484.16963035,
-                                            ["y"] = 645855.04785909,
+                                            ["x"] = -273077.57210012,
+                                            ["y"] = 589055.27156933,
                                         }, -- end of [3]
                                     }, -- end of ["points"]
                                 }, -- end of ["route"]
@@ -1003,7 +967,7 @@ mission = {
                                             ["name"] = "Enfield11",
                                         }, -- end of ["callsign"]
                                         ["hardpoint_racks"] = true,
-                                        ["heading"] = 2.5583232332826,
+                                        ["heading"] = -2.7367008673053,
                                         ["livery_id"] = "VF-102 Diamondbacks",
                                         ["name"] = "DictKey_UnitName_290",
                                         ["onboard_num"] = "011",
@@ -1046,17 +1010,17 @@ mission = {
                                                 }, -- end of [10]
                                             }, -- end of ["pylons"]
                                         }, -- end of ["payload"]
-                                        ["psi"] = -2.5583232332826,
+                                        ["psi"] = 2.7367008673053,
                                         ["skill"] = "High",
                                         ["speed"] = 231.25,
                                         ["type"] = "F-14B",
                                         ["unitId"] = 33,
-                                        ["x"] = -261877.20638152,
-                                        ["y"] = 642733.62641008,
+                                        ["x"] = -268830.13999184,
+                                        ["y"] = 599142.9228265,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
-                                ["x"] = -261877.20638152,
-                                ["y"] = 642733.62641008,
+                                ["x"] = -268830.13999184,
+                                ["y"] = 599142.9228265,
                             }, -- end of [3]
                             [4] = {
                                 ["communication"] = true,
@@ -2958,6 +2922,100 @@ mission = {
                                 ["x"] = -353694.04679205,
                                 ["y"] = 591629.13271815,
                             }, -- end of [15]
+                            [16] = {
+                                ["communication"] = true,
+                                ["frequency"] = 124,
+                                ["groupId"] = 74,
+                                ["hidden"] = false,
+                                ["modulation"] = 0,
+                                ["name"] = "DictKey_GroupName_627",
+                                ["radioSet"] = false,
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "From Parking Area",
+                                            ["airdromeId"] = 25,
+                                            ["alt"] = 45,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_629",
+                                            ["speed"] = 138.88888888889,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                        [1] = {
+                                                            ["auto"] = true,
+                                                            ["enabled"] = true,
+                                                            ["id"] = "EngageTargets",
+                                                            ["key"] = "CAS",
+                                                            ["number"] = 1,
+                                                            ["params"] = {
+                                                                ["priority"] = 0,
+                                                                ["targetTypes"] = {
+                                                                    [1] = "Helicopters",
+                                                                    [2] = "Ground Units",
+                                                                    [3] = "Light armed ships",
+                                                                }, -- end of ["targetTypes"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "TakeOffParking",
+                                            ["x"] = -284459.46875,
+                                            ["y"] = 683644.5,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "CAS",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["uncontrollable"] = false,
+                                ["uncontrolled"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["AddPropAircraft"] = {
+                                        }, -- end of ["AddPropAircraft"]
+                                        ["alt"] = 45,
+                                        ["alt_type"] = "BARO",
+                                        ["callsign"] = {
+                                            [1] = 8,
+                                            [2] = 1,
+                                            [3] = 1,
+                                            ["name"] = "Pontiac11",
+                                        }, -- end of ["callsign"]
+                                        ["heading"] = 0,
+                                        ["livery_id"] = "104th fs maryland ang, baltimore (md)",
+                                        ["name"] = "DictKey_UnitName_628",
+                                        ["onboard_num"] = "058",
+                                        ["parking"] = "43",
+                                        ["parking_id"] = "36",
+                                        ["payload"] = {
+                                            ["ammo_type"] = 1,
+                                            ["chaff"] = 240,
+                                            ["flare"] = 120,
+                                            ["fuel"] = 5029,
+                                            ["gun"] = 100,
+                                            ["pylons"] = {
+                                            }, -- end of ["pylons"]
+                                        }, -- end of ["payload"]
+                                        ["psi"] = 0,
+                                        ["skill"] = "Client",
+                                        ["speed"] = 138.88888888889,
+                                        ["type"] = "A-10A",
+                                        ["unitId"] = 101,
+                                        ["x"] = -284459.46875,
+                                        ["y"] = 683644.5,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -284459.46875,
+                                ["y"] = 683644.5,
+                            }, -- end of [16]
                         }, -- end of ["group"]
                     }, -- end of ["plane"]
                     ["ship"] = {
@@ -3143,6 +3201,938 @@ mission = {
                             }, -- end of [1]
                         }, -- end of ["group"]
                     }, -- end of ["ship"]
+                    ["vehicle"] = {
+                        ["group"] = {
+                            [1] = {
+                                ["groupId"] = 77,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_638",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 5,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_640",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -268018.95253525,
+                                            ["y"] = 606237.75247799,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_639",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "AAV7",
+                                        ["unitId"] = 104,
+                                        ["x"] = -268018.95253525,
+                                        ["y"] = 606237.75247799,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -268018.95253525,
+                                ["y"] = 606237.75247799,
+                            }, -- end of [1]
+                            [2] = {
+                                ["groupId"] = 85,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_662",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 5,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_664",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -263910.82096204,
+                                            ["y"] = 613280.26374635,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_663",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "AAV7",
+                                        ["unitId"] = 112,
+                                        ["x"] = -263910.82096204,
+                                        ["y"] = 613280.26374635,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -263910.82096204,
+                                ["y"] = 613280.26374635,
+                            }, -- end of [2]
+                            [3] = {
+                                ["groupId"] = 86,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_665",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 5,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_667",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -258125.90099159,
+                                            ["y"] = 610262.04463134,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_666",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "AAV7",
+                                        ["unitId"] = 113,
+                                        ["x"] = -258125.90099159,
+                                        ["y"] = 610262.04463134,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -258125.90099159,
+                                ["y"] = 610262.04463134,
+                            }, -- end of [3]
+                            [4] = {
+                                ["groupId"] = 87,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_668",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 5,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_670",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -232806.39619341,
+                                            ["y"] = 639605.84158287,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_669",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "AAV7",
+                                        ["unitId"] = 114,
+                                        ["x"] = -232806.39619341,
+                                        ["y"] = 639605.84158287,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -232806.39619341,
+                                ["y"] = 639605.84158287,
+                            }, -- end of [4]
+                            [5] = {
+                                ["groupId"] = 88,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_671",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 5,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_673",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -227105.31564283,
+                                            ["y"] = 640192.7175219,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_672",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "AAV7",
+                                        ["unitId"] = 115,
+                                        ["x"] = -227105.31564283,
+                                        ["y"] = 640192.7175219,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -227105.31564283,
+                                ["y"] = 640192.7175219,
+                            }, -- end of [5]
+                            [6] = {
+                                ["groupId"] = 89,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_674",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 5,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_676",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -240351.94398095,
+                                            ["y"] = 664003.11276258,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_675",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "AAV7",
+                                        ["unitId"] = 116,
+                                        ["x"] = -240351.94398095,
+                                        ["y"] = 664003.11276258,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -240351.94398095,
+                                ["y"] = 664003.11276258,
+                            }, -- end of [6]
+                            [7] = {
+                                ["groupId"] = 90,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_677",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 5,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_679",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -259048.13461007,
+                                            ["y"] = 677668.9382,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_678",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "AAV7",
+                                        ["unitId"] = 117,
+                                        ["x"] = -259048.13461007,
+                                        ["y"] = 677668.9382,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -259048.13461007,
+                                ["y"] = 677668.9382,
+                            }, -- end of [7]
+                            [8] = {
+                                ["groupId"] = 91,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_680",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 5,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_682",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -268186.63137497,
+                                            ["y"] = 692592.35493536,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_681",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "AAV7",
+                                        ["unitId"] = 118,
+                                        ["x"] = -268186.63137497,
+                                        ["y"] = 692592.35493536,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -268186.63137497,
+                                ["y"] = 692592.35493536,
+                            }, -- end of [8]
+                            [9] = {
+                                ["groupId"] = 92,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_683",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 5,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_685",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -272546.28120777,
+                                            ["y"] = 701563.17286054,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_684",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "AAV7",
+                                        ["unitId"] = 119,
+                                        ["x"] = -272546.28120777,
+                                        ["y"] = 701563.17286054,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -272546.28120777,
+                                ["y"] = 701563.17286054,
+                            }, -- end of [9]
+                            [10] = {
+                                ["groupId"] = 93,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_686",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 5,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_688",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -285122.194187,
+                                            ["y"] = 703742.99777694,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_687",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "AAV7",
+                                        ["unitId"] = 120,
+                                        ["x"] = -285122.194187,
+                                        ["y"] = 703742.99777694,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -285122.194187,
+                                ["y"] = 703742.99777694,
+                            }, -- end of [10]
+                            [11] = {
+                                ["groupId"] = 94,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_689",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 5,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_691",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -292332.38429509,
+                                            ["y"] = 689071.09930117,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_690",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "AAV7",
+                                        ["unitId"] = 121,
+                                        ["x"] = -292332.38429509,
+                                        ["y"] = 689071.09930117,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -292332.38429509,
+                                ["y"] = 689071.09930117,
+                            }, -- end of [11]
+                            [12] = {
+                                ["groupId"] = 95,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_692",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 5,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_694",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -287888.89504243,
+                                            ["y"] = 678171.97471917,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_693",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "AAV7",
+                                        ["unitId"] = 122,
+                                        ["x"] = -287888.89504243,
+                                        ["y"] = 678171.97471917,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -287888.89504243,
+                                ["y"] = 678171.97471917,
+                            }, -- end of [12]
+                            [13] = {
+                                ["groupId"] = 96,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_695",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 5,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_697",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -294344.53037177,
+                                            ["y"] = 667272.85013718,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_696",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "AAV7",
+                                        ["unitId"] = 123,
+                                        ["x"] = -294344.53037177,
+                                        ["y"] = 667272.85013718,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -294344.53037177,
+                                ["y"] = 667272.85013718,
+                            }, -- end of [13]
+                            [14] = {
+                                ["groupId"] = 97,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_698",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 5,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_700",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -289230.32576022,
+                                            ["y"] = 657882.83511269,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_699",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "AAV7",
+                                        ["unitId"] = 124,
+                                        ["x"] = -289230.32576022,
+                                        ["y"] = 657882.83511269,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -289230.32576022,
+                                ["y"] = 657882.83511269,
+                            }, -- end of [14]
+                            [15] = {
+                                ["groupId"] = 98,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_701",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 5,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_703",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -287218.17968354,
+                                            ["y"] = 624933.94310711,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_702",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "AAV7",
+                                        ["unitId"] = 125,
+                                        ["x"] = -287218.17968354,
+                                        ["y"] = 624933.94310711,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -287218.17968354,
+                                ["y"] = 624933.94310711,
+                            }, -- end of [15]
+                            [16] = {
+                                ["groupId"] = 99,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_704",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 5,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_706",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -291410.15067662,
+                                            ["y"] = 614034.81852511,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] = {
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 0,
+                                        ["name"] = "DictKey_UnitName_705",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "AAV7",
+                                        ["unitId"] = 126,
+                                        ["x"] = -291410.15067662,
+                                        ["y"] = 614034.81852511,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -291410.15067662,
+                                ["y"] = 614034.81852511,
+                            }, -- end of [16]
+                        }, -- end of ["group"]
+                    }, -- end of ["vehicle"]
                 }, -- end of [1]
                 [2] = {
                     ["id"] = 26,
@@ -4072,6 +5062,334 @@ mission = {
                                 ["x"] = -328562.04950077,
                                 ["y"] = 622990.26484271,
                             }, -- end of [4]
+                            [5] = {
+                                ["communication"] = true,
+                                ["frequency"] = 124,
+                                ["groupId"] = 75,
+                                ["hidden"] = false,
+                                ["modulation"] = 0,
+                                ["name"] = "DictKey_GroupName_630",
+                                ["radioSet"] = false,
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "From Parking Area",
+                                            ["airdromeId"] = 25,
+                                            ["alt"] = 45,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_632",
+                                            ["speed"] = 138.88888888889,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                        [1] = {
+                                                            ["auto"] = true,
+                                                            ["enabled"] = true,
+                                                            ["id"] = "EngageTargets",
+                                                            ["key"] = "CAS",
+                                                            ["number"] = 1,
+                                                            ["params"] = {
+                                                                ["priority"] = 0,
+                                                                ["targetTypes"] = {
+                                                                    [1] = "Helicopters",
+                                                                    [2] = "Ground Units",
+                                                                    [3] = "Light armed ships",
+                                                                }, -- end of ["targetTypes"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "TakeOffParking",
+                                            ["x"] = -284525.6875,
+                                            ["y"] = 683413.8125,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "CAS",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["uncontrollable"] = false,
+                                ["uncontrolled"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["AddPropAircraft"] = {
+                                        }, -- end of ["AddPropAircraft"]
+                                        ["alt"] = 45,
+                                        ["alt_type"] = "BARO",
+                                        ["callsign"] = 111,
+                                        ["heading"] = 0.55446539924779,
+                                        ["livery_id"] = "fictional russian air force 1",
+                                        ["name"] = "DictKey_UnitName_631",
+                                        ["onboard_num"] = "059",
+                                        ["parking"] = "41",
+                                        ["parking_id"] = "34",
+                                        ["payload"] = {
+                                            ["ammo_type"] = 1,
+                                            ["chaff"] = 240,
+                                            ["flare"] = 120,
+                                            ["fuel"] = 5029,
+                                            ["gun"] = 100,
+                                            ["pylons"] = {
+                                            }, -- end of ["pylons"]
+                                        }, -- end of ["payload"]
+                                        ["psi"] = 0,
+                                        ["skill"] = "Client",
+                                        ["speed"] = 138.88888888889,
+                                        ["type"] = "A-10A",
+                                        ["unitId"] = 102,
+                                        ["x"] = -284525.6875,
+                                        ["y"] = 683413.8125,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -284525.6875,
+                                ["y"] = 683413.8125,
+                            }, -- end of [5]
+                            [6] = {
+                                ["communication"] = true,
+                                ["frequency"] = 305,
+                                ["groupId"] = 76,
+                                ["hidden"] = false,
+                                ["modulation"] = 0,
+                                ["name"] = "DictKey_GroupName_634",
+                                ["radioSet"] = false,
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 4572,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_636",
+                                            ["speed"] = 261.26192258979,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                        [1] = {
+                                                            ["auto"] = true,
+                                                            ["enabled"] = true,
+                                                            ["id"] = "EngageTargets",
+                                                            ["key"] = "CAP",
+                                                            ["number"] = 1,
+                                                            ["params"] = {
+                                                                ["priority"] = 0,
+                                                                ["targetTypes"] = {
+                                                                    [1] = "Air",
+                                                                }, -- end of ["targetTypes"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                        [2] = {
+                                                            ["auto"] = true,
+                                                            ["enabled"] = true,
+                                                            ["id"] = "WrappedAction",
+                                                            ["number"] = 2,
+                                                            ["params"] = {
+                                                                ["action"] = {
+                                                                    ["id"] = "EPLRS",
+                                                                    ["params"] = {
+                                                                        ["groupId"] = 11,
+                                                                        ["value"] = true,
+                                                                    }, -- end of ["params"]
+                                                                }, -- end of ["action"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [2]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -296349.96052677,
+                                            ["y"] = 692851.89371554,
+                                        }, -- end of [1]
+                                        [2] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 4572,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 179.86758096957,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_637",
+                                            ["speed"] = 261.26192258979,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -259184.92957928,
+                                            ["y"] = 664093.2388157,
+                                        }, -- end of [2]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "CAP",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["uncontrollable"] = false,
+                                ["uncontrolled"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["AddPropAircraft"] = {
+                                            ["HelmetMountedDevice"] = 1,
+                                            ["InnerBoard"] = 0,
+                                            ["OuterBoard"] = 0,
+                                        }, -- end of ["AddPropAircraft"]
+                                        ["alt"] = 4572,
+                                        ["alt_type"] = "BARO",
+                                        ["callsign"] = 112,
+                                        ["dataCartridge"] = {
+                                            ["GroupsPoints"] = {
+                                                ["A/A Waypoint"] = {
+                                                }, -- end of ["A/A Waypoint"]
+                                                ["Initial Point"] = {
+                                                }, -- end of ["Initial Point"]
+                                                ["PB"] = {
+                                                }, -- end of ["PB"]
+                                                ["PP"] = {
+                                                }, -- end of ["PP"]
+                                                ["Sequence 1 Blue"] = {
+                                                }, -- end of ["Sequence 1 Blue"]
+                                                ["Sequence 2 Red"] = {
+                                                }, -- end of ["Sequence 2 Red"]
+                                                ["Sequence 3 Yellow"] = {
+                                                }, -- end of ["Sequence 3 Yellow"]
+                                                ["Start Location"] = {
+                                                }, -- end of ["Start Location"]
+                                            }, -- end of ["GroupsPoints"]
+                                            ["Points"] = {
+                                            }, -- end of ["Points"]
+                                        }, -- end of ["dataCartridge"]
+                                        ["heading"] = -0.65856588242367,
+                                        ["livery_id"] = "fictional russia air force",
+                                        ["name"] = "DictKey_UnitName_635",
+                                        ["onboard_num"] = "059",
+                                        ["payload"] = {
+                                            ["ammo_type"] = 1,
+                                            ["chaff"] = 60,
+                                            ["flare"] = 30,
+                                            ["fuel"] = 4900,
+                                            ["gun"] = 100,
+                                            ["pylons"] = {
+                                            }, -- end of ["pylons"]
+                                        }, -- end of ["payload"]
+                                        ["psi"] = 0.65856588242367,
+                                        ["Radio"] = {
+                                            [1] = {
+                                                ["channels"] = {
+                                                    [1] = 305,
+                                                    [2] = 264,
+                                                    [3] = 265,
+                                                    [4] = 256,
+                                                    [5] = 254,
+                                                    [6] = 250,
+                                                    [7] = 270,
+                                                    [8] = 257,
+                                                    [9] = 255,
+                                                    [10] = 262,
+                                                    [11] = 259,
+                                                    [12] = 268,
+                                                    [13] = 269,
+                                                    [14] = 260,
+                                                    [15] = 263,
+                                                    [16] = 261,
+                                                    [17] = 267,
+                                                    [18] = 251,
+                                                    [19] = 253,
+                                                    [20] = 266,
+                                                }, -- end of ["channels"]
+                                                ["modulations"] = {
+                                                    [1] = 0,
+                                                    [2] = 0,
+                                                    [3] = 0,
+                                                    [4] = 0,
+                                                    [5] = 0,
+                                                    [6] = 0,
+                                                    [7] = 0,
+                                                    [8] = 0,
+                                                    [9] = 0,
+                                                    [10] = 0,
+                                                    [11] = 0,
+                                                    [12] = 0,
+                                                    [13] = 0,
+                                                    [14] = 0,
+                                                    [15] = 0,
+                                                    [16] = 0,
+                                                    [17] = 0,
+                                                    [18] = 0,
+                                                    [19] = 0,
+                                                    [20] = 0,
+                                                }, -- end of ["modulations"]
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["channels"] = {
+                                                    [1] = 305,
+                                                    [2] = 264,
+                                                    [3] = 265,
+                                                    [4] = 256,
+                                                    [5] = 254,
+                                                    [6] = 250,
+                                                    [7] = 270,
+                                                    [8] = 257,
+                                                    [9] = 255,
+                                                    [10] = 262,
+                                                    [11] = 259,
+                                                    [12] = 268,
+                                                    [13] = 269,
+                                                    [14] = 260,
+                                                    [15] = 263,
+                                                    [16] = 261,
+                                                    [17] = 267,
+                                                    [18] = 251,
+                                                    [19] = 253,
+                                                    [20] = 266,
+                                                }, -- end of ["channels"]
+                                                ["modulations"] = {
+                                                    [1] = 0,
+                                                    [2] = 0,
+                                                    [3] = 0,
+                                                    [4] = 0,
+                                                    [5] = 0,
+                                                    [6] = 0,
+                                                    [7] = 0,
+                                                    [8] = 0,
+                                                    [9] = 0,
+                                                    [10] = 0,
+                                                    [11] = 0,
+                                                    [12] = 0,
+                                                    [13] = 0,
+                                                    [14] = 0,
+                                                    [15] = 0,
+                                                    [16] = 0,
+                                                    [17] = 0,
+                                                    [18] = 0,
+                                                    [19] = 0,
+                                                    [20] = 0,
+                                                }, -- end of ["modulations"]
+                                            }, -- end of [2]
+                                        }, -- end of ["Radio"]
+                                        ["skill"] = "Client",
+                                        ["speed"] = 261.26192258979,
+                                        ["type"] = "FA-18C_hornet",
+                                        ["unitId"] = 103,
+                                        ["x"] = -296349.96052677,
+                                        ["y"] = 692851.89371554,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -296349.96052677,
+                                ["y"] = 692851.89371554,
+                            }, -- end of [6]
                         }, -- end of ["group"]
                     }, -- end of ["plane"]
                     ["static"] = {
@@ -8222,7 +9540,7 @@ mission = {
             [10] = 47,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 27468,
+    ["currentKey"] = 36720,
     ["date"] = {
         ["Day"] = 23,
         ["Month"] = 5,
@@ -14491,11 +15809,11 @@ mission = {
         }, -- end of ["roles"]
     }, -- end of ["groundControl"]
     ["map"] = {
-        ["centerX"] = -349136.20621004,
-        ["centerY"] = 507485.07148198,
-        ["zoom"] = 728111.9517908,
+        ["centerX"] = -271410.25706865,
+        ["centerY"] = 653305.20278825,
+        ["zoom"] = 322781.76646687,
     }, -- end of ["map"]
-    ["maxDictId"] = 626,
+    ["maxDictId"] = 707,
     ["pictureFileNameB"] = {
     }, -- end of ["pictureFileNameB"]
     ["pictureFileNameN"] = {
@@ -14536,18 +15854,18 @@ mission = {
     ["theatre"] = "Caucasus",
     ["trig"] = {
         ["actions"] = {
-            [1] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_384\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_614\"));",
-            [2] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_468\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_581\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_583\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_584\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_585\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_618\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_615\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_582\"));",
-            [3] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_626\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_620\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_621\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_622\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_623\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_624\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_625\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_473\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_474\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_475\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_476\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_494\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_477\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_478\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_479\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_480\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_481\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_482\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_483\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_484\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_485\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_486\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_487\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_488\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_489\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_490\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_619\"));",
-            [4] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_383\"));",
-            [5] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_382\"));",
+            [1] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_10001\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_10002\"));",
+            [2] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_10101\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_10102\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_10103\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_10104\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_10105\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_10106\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_10107\"));a_do_script(getValueDictByKey(\"DictKey_ActionText_10108\"));",
+            [3] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_10201\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10202\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10203\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10204\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10205\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10206\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10207\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10208\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10209\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10210\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10211\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10212\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10213\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10214\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10215\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10216\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10217\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10218\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10219\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10220\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10221\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10222\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10223\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10224\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10225\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10226\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10227\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10228\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_707\"));",
+            [4] = "a_do_script(getValueDictByKey(\"DictKey_ActionText_10301\"));",
+            [5] = "a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10401\"));",
         }, -- end of ["actions"]
         ["conditions"] = {
-            [1] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_445\")) )",
-            [2] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_492\")) )",
-            [3] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_493\")) )",
-            [4] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_385\")) )",
-            [5] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_386\")) )",
+            [1] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10501\")) )",
+            [2] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10601\")) )",
+            [3] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10701\")) )",
+            [4] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10801\")) )",
+            [5] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10901\")) )",
         }, -- end of ["conditions"]
         ["custom"] = {
         }, -- end of ["custom"]
@@ -14690,113 +16008,92 @@ mission = {
                 ["y"] = 617377.05927506,
                 ["zoneId"] = 670,
             }, -- end of [5]
+            [6] = {
+                ["color"] = {
+                    [1] = 0,
+                    [2] = 1,
+                    [3] = 0.50196078431373,
+                    [4] = 0.14901960784314,
+                }, -- end of ["color"]
+                ["hidden"] = false,
+                ["name"] = "Sanctuary_Kutaisi",
+                ["properties"] = {
+                }, -- end of ["properties"]
+                ["radius"] = 4.8768,
+                ["x"] = -285694.08306212,
+                ["y"] = 683173.57157797,
+                ["zoneId"] = 835,
+            }, -- end of [6]
         }, -- end of ["zones"]
     }, -- end of ["triggers"]
     ["trigrules"] = {
         [1] = {
             ["actions"] = {
                 [1] = {
-                    ["KeyDict_text"] = "DictKey_ActionText_384",
-                    ["meters"] = 1000,
+                    ["KeyDict_text"] = "DictKey_ActionText_10001",
                     ["predicate"] = "a_do_script",
-                    ["text"] = "DictKey_ActionText_384",
-                    ["zone"] = 332,
+                    ["text"] = "DictKey_ActionText_10001",
                 }, -- end of [1]
                 [2] = {
-                    ["KeyDict_text"] = "DictKey_ActionText_614",
-                    ["meters"] = 1000,
+                    ["KeyDict_text"] = "DictKey_ActionText_10002",
                     ["predicate"] = "a_do_script",
-                    ["text"] = "DictKey_ActionText_614",
-                    ["zone"] = 332,
+                    ["text"] = "DictKey_ActionText_10002",
                 }, -- end of [2]
             }, -- end of ["actions"]
-            ["colorItem"] = "0xff00ffff",
-            ["comment"] = "choose - static or dynamic",
+            ["colorItem"] = "0x00ffffff",
+            ["comment"] = "choose - static or dynamic)",
             ["eventlist"] = "",
             ["predicate"] = "triggerStart",
             ["rules"] = {
                 [1] = {
                     ["flag"] = 1,
-                    ["KeyDict_text"] = "DictKey_ActionText_445",
+                    ["KeyDict_text"] = "DictKey_ActionText_10501",
                     ["predicate"] = "c_predicate",
-                    ["text"] = "DictKey_ActionText_445",
-                    ["zone"] = 332,
+                    ["text"] = "DictKey_ActionText_10501",
                 }, -- end of [1]
             }, -- end of ["rules"]
         }, -- end of [1]
         [2] = {
             ["actions"] = {
                 [1] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["KeyDict_text"] = "DictKey_ActionText_468",
+                    ["KeyDict_text"] = "DictKey_ActionText_10101",
                     ["predicate"] = "a_do_script",
-                    ["text"] = "DictKey_ActionText_468",
+                    ["text"] = "DictKey_ActionText_10101",
                 }, -- end of [1]
                 [2] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["KeyDict_text"] = "DictKey_ActionText_581",
+                    ["KeyDict_text"] = "DictKey_ActionText_10102",
                     ["predicate"] = "a_do_script",
-                    ["text"] = "DictKey_ActionText_581",
+                    ["text"] = "DictKey_ActionText_10102",
                 }, -- end of [2]
                 [3] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["KeyDict_text"] = "DictKey_ActionText_583",
+                    ["KeyDict_text"] = "DictKey_ActionText_10103",
                     ["predicate"] = "a_do_script",
-                    ["text"] = "DictKey_ActionText_583",
+                    ["text"] = "DictKey_ActionText_10103",
                 }, -- end of [3]
                 [4] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["KeyDict_text"] = "DictKey_ActionText_584",
+                    ["KeyDict_text"] = "DictKey_ActionText_10104",
                     ["predicate"] = "a_do_script",
-                    ["text"] = "DictKey_ActionText_584",
+                    ["text"] = "DictKey_ActionText_10104",
                 }, -- end of [4]
                 [5] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["KeyDict_text"] = "DictKey_ActionText_585",
+                    ["KeyDict_text"] = "DictKey_ActionText_10105",
                     ["predicate"] = "a_do_script",
-                    ["text"] = "DictKey_ActionText_585",
+                    ["text"] = "DictKey_ActionText_10105",
                 }, -- end of [5]
                 [6] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["KeyDict_text"] = "DictKey_ActionText_618",
+                    ["KeyDict_text"] = "DictKey_ActionText_10106",
                     ["predicate"] = "a_do_script",
-                    ["text"] = "DictKey_ActionText_618",
+                    ["text"] = "DictKey_ActionText_10106",
                 }, -- end of [6]
                 [7] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["KeyDict_text"] = "DictKey_ActionText_615",
+                    ["KeyDict_text"] = "DictKey_ActionText_10107",
                     ["predicate"] = "a_do_script",
-                    ["text"] = "DictKey_ActionText_615",
+                    ["text"] = "DictKey_ActionText_10107",
                 }, -- end of [7]
                 [8] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["KeyDict_text"] = "DictKey_ActionText_582",
+                    ["KeyDict_text"] = "DictKey_ActionText_10108",
                     ["predicate"] = "a_do_script",
-                    ["text"] = "DictKey_ActionText_582",
+                    ["text"] = "DictKey_ActionText_10108",
                 }, -- end of [8]
             }, -- end of ["actions"]
             ["colorItem"] = "0x00ff80ff",
@@ -14805,230 +16102,131 @@ mission = {
             ["predicate"] = "triggerStart",
             ["rules"] = {
                 [1] = {
-                    ["KeyDict_text"] = "DictKey_ActionText_492",
+                    ["KeyDict_text"] = "DictKey_ActionText_10601",
                     ["predicate"] = "c_predicate",
-                    ["text"] = "DictKey_ActionText_492",
-                    ["zone"] = 332,
+                    ["text"] = "DictKey_ActionText_10601",
                 }, -- end of [1]
             }, -- end of ["rules"]
         }, -- end of [2]
         [3] = {
             ["actions"] = {
                 [1] = {
-                    ["KeyDict_text"] = "DictKey_ActionText_626",
-                    ["meters"] = 1000,
+                    ["KeyDict_text"] = "DictKey_ActionText_10201",
                     ["predicate"] = "a_do_script",
-                    ["text"] = "DictKey_ActionText_626",
-                    ["zone"] = 670,
+                    ["text"] = "DictKey_ActionText_10201",
                 }, -- end of [1]
                 [2] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_620",
+                    ["file"] = "DictKey_ActionText_10202",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [2]
                 [3] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_621",
+                    ["file"] = "DictKey_ActionText_10203",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [3]
                 [4] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_622",
+                    ["file"] = "DictKey_ActionText_10204",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [4]
                 [5] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_623",
+                    ["file"] = "DictKey_ActionText_10205",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [5]
                 [6] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_624",
+                    ["file"] = "DictKey_ActionText_10206",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [6]
                 [7] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_625",
+                    ["file"] = "DictKey_ActionText_10207",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [7]
                 [8] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_473",
+                    ["file"] = "DictKey_ActionText_10208",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [8]
                 [9] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_474",
+                    ["file"] = "DictKey_ActionText_10209",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [9]
                 [10] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_475",
+                    ["file"] = "DictKey_ActionText_10210",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [10]
                 [11] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_476",
+                    ["file"] = "DictKey_ActionText_10211",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [11]
                 [12] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_494",
+                    ["file"] = "DictKey_ActionText_10212",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [12]
                 [13] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_477",
+                    ["file"] = "DictKey_ActionText_10213",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [13]
                 [14] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_478",
+                    ["file"] = "DictKey_ActionText_10214",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [14]
                 [15] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_479",
+                    ["file"] = "DictKey_ActionText_10215",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [15]
                 [16] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_480",
+                    ["file"] = "DictKey_ActionText_10216",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [16]
                 [17] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_481",
+                    ["file"] = "DictKey_ActionText_10217",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [17]
                 [18] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_482",
+                    ["file"] = "DictKey_ActionText_10218",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [18]
                 [19] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_483",
+                    ["file"] = "DictKey_ActionText_10219",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [19]
                 [20] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_484",
+                    ["file"] = "DictKey_ActionText_10220",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [20]
                 [21] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_485",
+                    ["file"] = "DictKey_ActionText_10221",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [21]
                 [22] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_486",
+                    ["file"] = "DictKey_ActionText_10222",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [22]
                 [23] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_487",
+                    ["file"] = "DictKey_ActionText_10223",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [23]
                 [24] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_488",
+                    ["file"] = "DictKey_ActionText_10224",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [24]
                 [25] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_489",
+                    ["file"] = "DictKey_ActionText_10225",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [25]
                 [26] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_490",
+                    ["file"] = "DictKey_ActionText_10226",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [26]
                 [27] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_619",
+                    ["file"] = "DictKey_ActionText_10227",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [27]
+                [28] = {
+                    ["file"] = "DictKey_ActionText_10228",
+                    ["predicate"] = "a_do_script_file",
+                }, -- end of [28]
+                [29] = {
+                    ["file"] = "ResKey_Action_707",
+                    ["predicate"] = "a_do_script_file",
+                }, -- end of [29]
             }, -- end of ["actions"]
             ["colorItem"] = "0x00ff80ff",
             ["comment"] = "mission start - static",
@@ -15036,60 +16234,48 @@ mission = {
             ["predicate"] = "triggerStart",
             ["rules"] = {
                 [1] = {
-                    ["KeyDict_text"] = "DictKey_ActionText_493",
+                    ["KeyDict_text"] = "DictKey_ActionText_10701",
                     ["predicate"] = "c_predicate",
-                    ["text"] = "DictKey_ActionText_493",
-                    ["zone"] = 332,
+                    ["text"] = "DictKey_ActionText_10701",
                 }, -- end of [1]
             }, -- end of ["rules"]
         }, -- end of [3]
         [4] = {
             ["actions"] = {
                 [1] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_380",
-                    ["KeyDict_text"] = "DictKey_ActionText_383",
+                    ["KeyDict_text"] = "DictKey_ActionText_10301",
                     ["predicate"] = "a_do_script",
-                    ["text"] = "DictKey_ActionText_383",
+                    ["text"] = "DictKey_ActionText_10301",
                 }, -- end of [1]
             }, -- end of ["actions"]
-            ["colorItem"] = "0x00ffffff",
-            ["comment"] = "mission config - dynamic",
+            ["colorItem"] = "0x8080ffff",
+            ["comment"] = "mission config - dynamic)",
             ["eventlist"] = "",
             ["predicate"] = "triggerStart",
             ["rules"] = {
                 [1] = {
-                    ["KeyDict_text"] = "DictKey_ActionText_385",
+                    ["KeyDict_text"] = "DictKey_ActionText_10801",
                     ["predicate"] = "c_predicate",
-                    ["text"] = "DictKey_ActionText_385",
-                    ["zone"] = 332,
+                    ["text"] = "DictKey_ActionText_10801",
                 }, -- end of [1]
             }, -- end of ["rules"]
         }, -- end of [4]
         [5] = {
             ["actions"] = {
                 [1] = {
-                    ["ai_task"] = {
-                        [1] = "",
-                        [2] = "",
-                    }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_382",
+                    ["file"] = "DictKey_ActionText_10401",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [1]
             }, -- end of ["actions"]
-            ["colorItem"] = "0x00ffffff",
+            ["colorItem"] = "0x8080ffff",
             ["comment"] = "mission config - static",
             ["eventlist"] = "",
             ["predicate"] = "triggerStart",
             ["rules"] = {
                 [1] = {
-                    ["KeyDict_text"] = "DictKey_ActionText_386",
+                    ["KeyDict_text"] = "DictKey_ActionText_10901",
                     ["predicate"] = "c_predicate",
-                    ["text"] = "DictKey_ActionText_386",
-                    ["zone"] = 332,
+                    ["text"] = "DictKey_ActionText_10901",
                 }, -- end of [1]
             }, -- end of ["rules"]
         }, -- end of [5]

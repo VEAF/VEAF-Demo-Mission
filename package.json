@@ -1,15 +1,8 @@
 {
-  "name": "@veaf/veaf-demo-mission",
+  "name": "veaf-demo-mission",
   "version": "1.0.0",
-  "description": "Demonstration mission",
-  "main": "",
-  "author": "Zip",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VEAF/VEAF-Demo-Mission"
-  },
+  "description": "DCS mission with VEAF scripting",
   "dependencies": {
-    "veaf-mission-creation-tools": "^2.14.0"
+    "veaf-mission-creation-tools": "^2.30.0"
   }
 }

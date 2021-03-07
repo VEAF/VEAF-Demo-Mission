@@ -6,23 +6,12 @@
 -- see https://github.com/VEAF/VEAF-Demo-Mission
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
--- play the radio beacons (on a server, with SRS - see the Caucasus Opentraining Mission)
-veafBeacons = false
-
--- activate the QRA if it is defined in the mission (it's not the case here)
--- qraMinevody="ready";
-
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize all the scripts
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafRadio then
     veaf.logInfo("init - veafRadio")
     veafRadio.initialize(true)
-
-    if veafBeacons then
-        -- add the beacons
-        -- veafRadio.startBeacon("Bienvenue-blue", 15, 120, "251.0,124.0,121.5,30.0", "am,am,am,fm", nil, "bienvenue-veaf-fr.mp3", 1.0, 2) 
-    end
 end
 if veafSpawn then
     veaf.logInfo("init - veafSpawn")
@@ -63,50 +52,12 @@ if veafShortcuts then
     --         :setVeafCommand("_spawn group, name sa11")
     --         :setBypassSecurity(true)
     -- )
-
-    -- veafShortcuts.AddAlias(
-    --     VeafAlias.new()
-    --         :setName("-login")
-    --         :setDescription("Unlock the system")
-    --         :setHidden(true)
-    --         :setVeafCommand("_auth")
-    --         :setBypassSecurity(true)
-    -- )
-
-    -- veafShortcuts.AddAlias(
-    --     VeafAlias.new()
-    --         :setName("-logout")
-    --         :setDescription("Lock the system")
-    --         :setHidden(true)
-    --         :setVeafCommand("_auth logout")
-    --         :setBypassSecurity(true)
-    -- )
-
-    -- veafShortcuts.AddAlias(
-    --     VeafAlias.new()
-    --         :setName("-mortar")
-    --         :setDescription("Mortar team")
-    --         :setVeafCommand("_spawn group, name mortar, country USA")
-    --         :setBypassSecurity(true)
-    -- )
 end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- No MOOSE settings menu. Comment out this line if required.
 if _SETTINGS then
     _SETTINGS:SetPlayerMenuOff()
 end
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------
--- PSEUDOATC
---pseudoATC=PSEUDOATC:New()
---pseudoATC:Start()
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------
--- SCORING
--- local Scoring = SCORING:New( "Scoring File" )
--- Scoring:SetScaleDestroyScore( 10 )
--- Scoring:SetScaleDestroyPenalty( 40 )
--- Scoring:SetMessagesToCoalition()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure ASSETS
@@ -140,184 +91,6 @@ end
 if veafCombatMission then 
 	veafCombatMission.logInfo("Loading configuration")
 
-    -- cap missions have their own method to create them easily
-    --veafCombatMission.addCapMission("CAP-Maykop-1", "CAP on Maykop", "A Russian CAP patrol has been spotted over Maykop.", true, true)
-
-    -- example of how missions can be configured
---     veafCombatMission.AddMissionsWithSkillAndScale(
--- 		VeafCombatMission.new()
--- 		:setSecured(false)
--- 		:setRadioMenuEnabled(true)
--- 		:setName("Intercept-Kraznodar-1")
--- 		:setFriendlyName("Intercept a transport / KRAZNODAR - MINVODY")
--- 		:setBriefing([[
--- A Russian transport plane is taking off from Kraznodar and will transport a VIP to Mineralnye Vody.
--- It is escorted by a fighter patrol.
--- ]]
--- )
--- 		:addElement(
--- 			VeafCombatMissionElement.new()
--- 			:setName("OnDemand-Intercept-Transport-Krasnodar-Mineral-Transport")
---             :setGroups({"OnDemand-Intercept-Transport-Krasnodar-Mineral-Transport"})
---             :setScalable(false)
--- 		)
--- 		:addElement(
--- 			VeafCombatMissionElement.new()
--- 			:setName("OnDemand-Intercept-Transport-Krasnodar-Mineral-Escort")
---             :setGroups({"OnDemand-Intercept-Transport-Krasnodar-Mineral-Escort"})
---             :setSkill("Random")
--- 		)
--- 		:addObjective(
--- 			VeafCombatMissionObjective.new()
--- 			:setName("Destroy the transport")
--- 			:setDescription("you must destroy the transport and kill the VIP")
--- 			:setMessage("%d transport planes destroyed !")
--- 			:configureAsKillEnemiesObjective() -- TODO
--- 		)
--- 		:initialize()
--- 	)
-
---     veafCombatMission.AddMission(
--- 		VeafCombatMission.new()
---         :setSecured(true)
---         :setRadioMenuEnabled(false)
--- 		:setName("Red-attack-Gudauta")
--- 		:setFriendlyName("Red attack On Gudauta")
--- 		:setBriefing([[
--- Alert ! This is not a drill !
--- Tactical and strategic bombers have been detected at the russian border, to the north of Gudauta.
--- Their course will lead them to the Gudauta airbase, which is probably their mission.
--- Destroy all the bombers before they hit the base !
--- ]]
--- )
--- 		:addElement(
--- 			VeafCombatMissionElement.new()
--- 			:setName("SEAD")
--- 			:setGroups({
--- 				"Red Attack On Gudauta - Wave 1-1", 
--- 				"Red Attack On Gudauta - Wave 1-2", 
--- 				"Red Attack On Gudauta - Wave 1-3", 
--- 				"Red Attack On Gudauta - Wave 1-4" })
--- 			:setSkill("Random")
--- 		)
--- 		:addElement(
--- 			VeafCombatMissionElement.new()
--- 			:setName("Bombers")
--- 			:setGroups({
--- 				"Red Attack On Gudauta - Wave 2-1",
---                 "Red Attack On Gudauta - Wave 2-2", 
---                 "Red Attack On Gudauta - Wave 2-3" })
--- 			:setSkill("Random")
--- 		)
--- 		:addObjective(
--- 			VeafCombatMissionObjective.new()
--- 			:setName("HVT Gudauta")
--- 			:setDescription("the mission will be failed if any of the HVT on Gudauta are destroyed")
--- 			:setMessage("HVT target(s) destroyed : %s !")
--- 			:configureAsPreventDestructionOfSceneryObjectsInZone(
--- 				{
--- 					"Gudauta - Tower", 
--- 					"Gudauta - Kerosen", 
--- 					"Gudauta - Mess"},
--- 				{
--- 					[156696667] = "Gudauta Tower", 
--- 					[156735615] = "Gudauta Kerosen tankers", 
--- 					[156729386] = "Gudauta mess"
--- 				}
--- 			)
--- 		)
--- 		:addObjective(
--- 			VeafCombatMissionObjective.new()
--- 			:setName("Kill all the bombers")
--- 			:setDescription("you must kill all of the bombers")
--- 			:setMessage("%d bombers destroyed !")
--- 			:configureAsKillEnemiesObjective()
--- 		)
--- 		:initialize()
--- 	)
-
--- 	veafCombatMission.AddMission(
--- 		VeafCombatMission.new()
--- 		:setName("Training-Bomber-1-slow")
--- 		:setFriendlyName("Training - Bomber Scenario 1 - slow Tu-160")
--- 		:setBriefing([[
--- You're head-on at 25nm with 11 Tu-160, FL200, Mach 0.8.
--- Destroy them all in less than 10 minutes !]])
--- 		:addElement(
--- 			VeafCombatMissionElement.new()
--- 			:setName("Bombers")
--- 			:setGroups({
--- 				"Red Tu-160 Bomber Wave1-1",
--- 				"Red Tu-160 Bomber Wave1-2",
--- 				"Red Tu-160 Bomber Wave1-3",
--- 				"Red Tu-160 Bomber Wave1-4",
--- 				"Red Tu-160 Bomber Wave1-5",
--- 				"Red Tu-160 Bomber Wave1-6",
--- 				"Red Tu-160 Bomber Wave1-7",
--- 				"Red Tu-160 Bomber Wave1-8",
---                 "Red Tu-160 Bomber Wave1-9",
---                 "Red Tu-160 Bomber Wave1-10",
---                 "Red Tu-160 Bomber Wave1-11",
---             })
--- 			:setSkill("Good")
--- 		)
--- 		:addObjective(
--- 			VeafCombatMissionObjective.new()
--- 			:setName("< 15 minutes")
--- 			:setDescription("the mission will be over after 15 minutes")
--- 			:setMessage("the 15 minutes have passed !")
--- 			:configureAsTimedObjective(900)
--- 		)
--- 		:addObjective(
--- 			VeafCombatMissionObjective.new()
--- 			:setName("Kill all the bombers")
--- 			:setDescription("you must kill or route all bombers")
--- 			:setMessage("%d bombers destroyed or routed !")
--- 			:configureAsKillEnemiesObjective(-1, 50)
--- 		)
--- 		:initialize()
--- 	)
-
-    veafCombatMission.AddMission(
-		VeafCombatMission.new()
-		:setName("Test")
-		:setFriendlyName("Test")
-		:setBriefing("Test mission - kill the bombers")
-		:addElement(
-			VeafCombatMissionElement.new()
-			:setName("Bombers")
-			:setGroups({"Bomber - 1", "Bomber - 2"})
-			:setSkill("Excellent")
-			:setSpawnRadius(0)
-		)
-		:addObjective(
-			VeafCombatMissionObjective.new()
-			:setName("< 10 minutes")
-			:setDescription("the mission will be failed after 10 minutes")
-			:setMessage("the 10 minutes have passed !")
-			:configureAsTimedObjective(605)
-		)
-		:addObjective(
-			VeafCombatMissionObjective.new()
-			:setName("HVT Kobuleti")
-			:setDescription("the mission will be failed if 3 HVT on Kobuleti are destroyed")
-			:setMessage("HVT target(s) destroyed : %s !")
-			:configureAsPreventDestructionOfSceneryObjectsInZone(
-				{"TestMission1-FailIfBombed-1", "TestMission1-FailIfBombed-2", "TestMission1-FailIfBombed-3"},
-				{[129467721] = "Helicopter", [129467705] = "Mess", [129468118] = "Tower"}
-			)
-		)
-		:addObjective(
-			VeafCombatMissionObjective.new()
-			:setName("Kill ONE bomber")
-			:setDescription("you must kill one of the bombers")
-			:setMessage("%d bomber(s) destroyed !")
-			:configureAsKillEnemiesObjective(1)
-		)
-        :initialize()
-    )
-
-
 	veaf.logInfo("init - veafCombatMission")
     veafCombatMission.initialize()
 end
@@ -327,72 +100,6 @@ end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafCombatZone then 
 	veafCombatZone.logInfo("Loading configuration")
-
-    -- example of how zones can be configured
-	-- veafCombatZone.AddZone(
-	-- 	VeafCombatZone.new()
-	-- 		:setMissionEditorZoneName("combatZone_Psebay_Factory")
-	-- 		:setFriendlyName("Psebay chemical weapons factory")
-	-- 		:setBriefing("This factory manufactures chemical weapons for a terrorits group\n" ..
-    --                     "You must destroy both factory buildings, and the bunker where the scientists work\n" ..
-    --                     "The other enemy units are secondary targets\n")
-	-- )
-
-	-- veafCombatZone.AddZone(
-	-- 	VeafCombatZone.new()
-	-- 		:setMissionEditorZoneName("combatZone_BattleOfBeslan")
-	-- 		:setFriendlyName("Battle of Beslan")
-	-- 		:setBriefing("This zone is the place of a battle between red and blue armies.\n" ..
-    --                     "You must do what you can to help your side win\n" ..
-    --                     "Please note that there is an enemy convoy coming from the west and going to Sheripova, that can be ambushed by the blue forces at Malgobek in 15-30 minutes. Be wary of the SAM that can hide anywhere in the cities or the forests !\n" ..
-    --                     "Warning : there are air defenses lurking about, you should be cautious !")
-	-- )
-
-	-- veafCombatZone.AddZone(
-	-- 	VeafCombatZone.new()
-	-- 		:setMissionEditorZoneName("combatZone_EasyPickingsTerek")
-	-- 		:setFriendlyName("Terek logistics parking")
-	-- 		:setBriefing("The enemy has parked a lot of logistics at Terek\n" ..
-    --                     "You must destroy all the trucks to impend the advance of their army on Beslan\n" ..
-    --                     "The other enemy units are secondary targets\n"..
-    --                     "This is a more easy zone, with few air defenses. But beware that there is a chance of manpad in the area !")
-	-- )
-
-	-- veafCombatZone.AddZone(
-	-- 	VeafCombatZone.new()
-	-- 		:setMissionEditorZoneName("combatZone_rangeKobuletiEasy")
-	-- 		:setFriendlyName("Training at Kobuleti RANGE")
-	-- 		:setBriefing("The Kobuleti RANGE (located 6 nm south-west of Kobuleti airbase) is set-up for training")
-	-- )
-
-	-- veafCombatZone.AddZone(
-	-- 	VeafCombatZone.new()
-	-- 		:setMissionEditorZoneName("combatZone_SaveTheHostages")
-	-- 		:setFriendlyName("Hostages at Prohladniy")
-	-- 		:setBriefing("Hostages are being held in a fortified hotel in the city of Prohladniy.\n" ..
-    --                     "Warning : there are air defenses lurking about, you should be cautious !")
-	-- )
-
-    -- veafCombatZone.AddZone(
-	-- 	VeafCombatZone.new()
-	-- 		:setMissionEditorZoneName("combatZone_Antiship-Training-Easy")
-	-- 		:setFriendlyName("Antiship Training - Easy")
-	-- 		:setBriefing("Undefended cargo ships ready for plunder; Arrrrr! Shiver me timbers!")
-	-- )
-
-    -- veafCombatZone.AddZone(
-	-- 	VeafCombatZone.new()
-	-- 		:setMissionEditorZoneName("combatZone_Antiship-Training-Hard")
-	-- 		:setFriendlyName("Antiship Training - Hard")
-	-- 		:setBriefing("Cargo ships defended by escort ships; warning, an FFG 11540 Neustrashimy may escort them as well...")
-	-- )
-
-    -- veafCombatZone.AddZone(
-	-- 	VeafCombatZone.new()
-	-- 		:setMissionEditorZoneName("combatZone_roadBlock")
-	-- 		:setFriendlyName("Road Block KM91")
-	-- 		:setBriefing("38T KM946122 - 6300ft - KOB 67X 115/35\nRussia is blocking a main road between Batumi and Tbilisi.\nDestroy bunkers and vehicles.\nENI convoy is comming from the East.")
-	-- )
 
     veafCombatZone.AddZone(
 		VeafCombatZone.new()
@@ -727,6 +434,25 @@ if ctld then
         "transport #008",
         "transport #009",
         "transport #010",
+        "transport #011",
+        "transport #012",
+        "transport #013",
+        "transport #014",
+        "transport #015",
+        "transport #016",
+        "transport #017",
+        "transport #018",
+        "transport #019",
+        "transport #020",
+        "transport #021",
+        "transport #022",
+        "transport #023",
+        "transport #024",
+        "transport #025",
+        "transport #026",
+        "transport #027",
+        "transport #028",
+        "transport #029",
     }
 
     -- *************** Optional Extractable GROUPS *****************
@@ -944,23 +670,20 @@ if ctld then
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
--- initialize the interpreter
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-if veafInterpreter then
-    veaf.logInfo("init - veafInterpreter")
-    veafInterpreter.initialize()
-end
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize the remote interface
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafRemote then
     veaf.logInfo("init - veafRemote")
     veafRemote.initialize()
+end
 
-    -- combat zones
-    --veafRemote.monitorWithSlMod("-veaf start-zone-1"   , [[ veafCombatZone.ActivateZoneNumber(1, true) ]])
-    --veafRemote.monitorWithSlMod("-veaf stop-zone-1"    , [[ veafCombatZone.DesactivateZoneNumber(1, true) ]])
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- initialize the interpreter
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+if veafInterpreter then
+    veaf.logInfo("init - veafInterpreter")
+    veafInterpreter.initialize()
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -976,3 +699,38 @@ if veafSkynet then
     )
 end
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- initialize veafSanctuary
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+if veafSanctuary then
+    --veafSanctuary.addZoneFromTriggerZone("Sanctuary_Kutaisi")
+    veafSanctuary.addZone(
+        VeafSanctuaryZone.new()
+        :setName("Kutaisi Sanctuary")
+        :setPolygonFromUnits({
+            "Sanctuary_Kutaisi_Polygon #001",
+            "Sanctuary_Kutaisi_Polygon #002",
+            "Sanctuary_Kutaisi_Polygon #003",
+            "Sanctuary_Kutaisi_Polygon #004",
+            "Sanctuary_Kutaisi_Polygon #005",
+            "Sanctuary_Kutaisi_Polygon #006",
+            "Sanctuary_Kutaisi_Polygon #007",
+            "Sanctuary_Kutaisi_Polygon #008",
+            "Sanctuary_Kutaisi_Polygon #009",
+            "Sanctuary_Kutaisi_Polygon #010",
+            "Sanctuary_Kutaisi_Polygon #011",
+            "Sanctuary_Kutaisi_Polygon #012",
+            "Sanctuary_Kutaisi_Polygon #013",
+            "Sanctuary_Kutaisi_Polygon #014",
+            "Sanctuary_Kutaisi_Polygon #015",
+            "Sanctuary_Kutaisi_Polygon #016"
+        }))
+        :setCoalition(coalition.side.BLUE)
+        :setDelayWarning(0)    -- immediate warning, as soon as the plane is detected in the zone 
+        :setDelaySpawn(30)     -- after 30 seconds in the zone, start spawning defense systems
+        :setDelayInstant(-1)   -- no instant death
+    veafSanctuary.initialize()
+end
+
+-- example of automatic activation of a combat zone
+--veafCombatZone.ActivateZone("combatZone_MaykopDefenses", true)

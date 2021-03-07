@@ -1,5 +1,5 @@
 @echo off
-set MISSION_NAME=VEAF-Demo-Mission
+set MISSION_NAME=veaf-demo-mission
 echo.
 echo ----------------------------------------
 echo extracting %MISSION_NAME%
@@ -52,7 +52,7 @@ set MISSION_PATH=%cd%\src\mission
 
 rem -- set the loading to static in the mission file
 echo set the loading to static in the mission file
-powershell -Command "(gc '%MISSION_PATH%\l10n\Default\dictionary') -replace 'return(\s*[^\s]+\s*)--true=dynamic, false=static', 'return false --true=dynamic, false=static' | sc '%MISSION_PATH%\l10n\Default\dictionary'"
+powershell -Command "(gc '%MISSION_PATH%\l10n\Default\dictionary') -replace 'return(\s*[^\s]+\s*)-- set to true for dynamic loading', 'return false -- set to true for dynamic loading' | sc '%MISSION_PATH%\l10n\Default\dictionary'"
 
 rem removing unwanted elements
 echo removing unwanted elements
@@ -76,7 +76,7 @@ pushd node_modules\veaf-mission-creation-tools\src\scripts\veaf
 popd
 
 rem -- cleanup
-rem del *%MISSION_NAME%*.miz
+del *%MISSION_NAME%*.miz
 
 echo.
 echo ----------------------------------------
