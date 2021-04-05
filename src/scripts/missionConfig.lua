@@ -90,6 +90,8 @@ end
 
 if veafCombatMission then 
 	veafCombatMission.logInfo("Loading configuration")
+    
+    veafCombatMission.addCapMission("CAP-Maykop-1", "CAP on Maykop", "A Russian CAP patrol has been spotted over Maykop.", true, true)
 
 	veaf.logInfo("init - veafCombatMission")
     veafCombatMission.initialize()
@@ -692,9 +694,9 @@ end
 if veafSkynet then
     veaf.logInfo("init - veafSkynet")
     veafSkynet.initialize(
-        true, --includeRedInRadio=true
+        false, --includeRedInRadio=true
         false, --debugRed
-        true, --includeBlueInRadio
+        false, --includeBlueInRadio
         false --debugBlue
     )
 end
