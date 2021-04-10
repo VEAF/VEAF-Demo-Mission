@@ -729,8 +729,9 @@ if veafSanctuary then
         }))
         :setCoalition(coalition.side.BLUE)
         :setDelayWarning(0)    -- immediate warning, as soon as the plane is detected in the zone 
-        :setDelaySpawn(30)     -- after 30 seconds in the zone, start spawning defense systems
+        :setDelaySpawn(10)     -- after 60 seconds in the zone, start spawning defense systems
         :setDelayInstant(-1)   -- no instant death
+        :setProtectFromMissiles()
     veafSanctuary.initialize()
 end
 
