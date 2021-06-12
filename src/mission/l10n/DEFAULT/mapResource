@@ -1,6 +1,5 @@
 mapResource = {
     ["DictKey_ActionText_10202"] = "mist.lua",
-    ["DictKey_ActionText_10203"] = "Moose.lua",
     ["DictKey_ActionText_10204"] = "CTLD.lua",
     ["DictKey_ActionText_10205"] = "WeatherMark.lua",
     ["DictKey_ActionText_10206"] = "skynet-iads-compiled.lua",
