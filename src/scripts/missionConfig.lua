@@ -211,31 +211,7 @@ end
 -- configure CTLD 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if ctld then
-    -- Simulated Sling load configuration
-    ctld.minimumHoverHeight = 5.0 -- Lowest allowable height for crate hover
-    ctld.maximumHoverHeight = 15.0 -- Highest allowable height for crate hover
-    ctld.maxDistanceFromCrate = 8.0 -- Maximum distance from from crate for hover
-    ctld.hoverTime = 10 -- Time to hold hover above a crate for loading in seconds
 
-    -- ***************** Pickup, dropoff and waypoint zones *****************
-
-    -- Available colors (anything else like "none" disables smoke): "green", "red", "white", "orange", "blue", "none",
-
-    -- Use any of the predefined names or set your own ones
-
-    -- You can add number as a third option to limit the number of soldier or vehicle groups that can be loaded from a zone.
-    -- Dropping back a group at a limited zone will add one more to the limit
-
-    -- If a zone isn't ACTIVE then you can't pickup from that zone until the zone is activated by ctld.activatePickupZone
-    -- using the Mission editor
-
-    -- You can pickup from a SHIP by adding the SHIP UNIT NAME instead of a zone name
-
-    -- Side - Controls which side can load/unload troops at the zone
-
-    -- Flag Number - Optional last field. If set the current number of groups remaining can be obtained from the flag value
-
-    --pickupZones = { "Zone name or Ship Unit Name", "smoke color", "limit (-1 unlimited)", "ACTIVE (yes/no)", "side (0 = Both sides / 1 = Red / 2 = Blue )", flag number (optional) }
     ctld.pickupZones = {
         { "pickzone1", "none", -1, "yes", 0 },
         { "pickzone2", "none", -1, "yes", 0 },
@@ -306,18 +282,6 @@ if ctld then
         "logistic #019",
         "logistic #020",
     }
-    -- ************** Maximum Units SETUP for UNITS ******************
-
-    ctld.unitLoadLimits["Mi-8MT"] = 24
-    ctld.unitLoadLimits["Yak-52"] = 1
-
-    -- ************** Allowable actions for UNIT TYPES ******************
-
-    ctld.unitActions["Yak-52"] = {crates=false, troops=true}
-
-    -- ************** INFANTRY GROUPS FOR PICKUP ******************
-
-    table.insert(ctld.loadableGroups, {name = "Mortar Squad x 4", mortar = 24})
 
     -- automatically add all the human-manned transport helicopters to ctld.transportPilotNames
     veafTransportMission.initializeAllHelosInCTLD()
@@ -394,4 +358,15 @@ if veafSanctuary then
 end
 
 -- example of automatic activation of a combat zone
---veafCombatZone.ActivateZone("combatZone_MaykopDefenses", true)
+veafCombatZone.ActivateZone("combatZone_CrossKobuleti", false)
+
+-- test
+if not STTS_SERVER_CONFIG then 
+    STTS_SERVER_CONFIG = {}
+end
+-- FULL Path to the FOLDER containing DCS-SR-ExternalAudio.exe - EDIT TO CORRECT FOLDER
+STTS_SERVER_CONFIG.DIRECTORY = "C:\\tmp"
+STTS_SERVER_CONFIG.SRS_PORT = 5102 -- LOCAL SRS PORT - DEFAULT IS 5002
+-- DONT CHANGE THIS UNLESS YOU KNOW WHAT YOU'RE DOING
+STTS_SERVER_CONFIG.EXECUTABLE = "STTS-test.cmd"
+
