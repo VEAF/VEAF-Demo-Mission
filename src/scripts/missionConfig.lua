@@ -89,6 +89,26 @@ if veafCombatMission then
     
     veafCombatMission.addCapMission("CAP-Maykop-1", "CAP on Maykop", "A Russian CAP patrol has been spotted over Maykop.", true, true)
 
+    veafCombatMission.AddMission(
+		VeafCombatMission.new()
+		:setName("ELINT-Mission-1")
+		:setFriendlyName("Start ELINT gathering")
+		:setBriefing([[
+West patrol ; ATIS on 282.125, SAM CONTROL on 282.225
+A C-130 pair will fly reciprocical headings, trying to pinpoint enemy SAMS.
+Don't let them be destroyed by the enemy !]])
+		:addElement(
+			VeafCombatMissionElement.new()
+			:setName("ELINT")
+			:setGroups({
+				"ELINT-C-130-1",
+				"ELINT-C-130-2"
+            })
+			:setSkill("Good")
+		)
+		:initialize()
+	)
+
 	veaf.logInfo("init - veafCombatMission")
     veafCombatMission.initialize()
 end
@@ -360,13 +380,35 @@ end
 -- example of automatic activation of a combat zone
 veafCombatZone.ActivateZone("combatZone_CrossKobuleti", false)
 
--- test
-if not STTS_SERVER_CONFIG then 
-    STTS_SERVER_CONFIG = {}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- initialize Hound Elint
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+if veafHoundElint then
+    veaf.logInfo("init - veafHoundElint")
+    veafHoundElint.initialize(
+        "ELINT", -- prefix
+        { -- red
+            admin = false,
+            markers = true,
+            atis = false,
+            controller = false
+        },
+        { -- blue
+            admin = false,
+            markers = true,
+            atis = {
+                freq = 282.125,
+                interval = 15,
+                speed = 1,
+                reportEWR = false
+            },
+            controller = {
+                freq = 282.225,
+                voiceEnabled = true
+            }
+        }
+    )
 end
--- FULL Path to the FOLDER containing DCS-SR-ExternalAudio.exe - EDIT TO CORRECT FOLDER
-STTS_SERVER_CONFIG.DIRECTORY = "C:\\tmp"
-STTS_SERVER_CONFIG.SRS_PORT = 5102 -- LOCAL SRS PORT - DEFAULT IS 5002
--- DONT CHANGE THIS UNLESS YOU KNOW WHAT YOU'RE DOING
-STTS_SERVER_CONFIG.EXECUTABLE = "STTS-test.cmd"
 
+-- automatically start the ELINT mission
+veafCombatMission.ActivateMission("ELINT-Mission-1", true)

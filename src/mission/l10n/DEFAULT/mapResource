@@ -30,4 +30,5 @@ mapResource = {
     ["ResKey_Action_781"] = "DCS-SimpleTextToSpeech.lua",
     ["ResKey_Action_782"] = "HoundElint.lua",
     ["ResKey_Action_784"] = "CTLD.lua",
+    ["ResKey_Action_785"] = "veafHoundElintHelper.lua",
 } -- end of mapResource

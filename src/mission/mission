@@ -3940,6 +3940,222 @@ mission = {
                                 ["x"] = -327188.99528594,
                                 ["y"] = 660533.38247967,
                             }, -- end of [18]
+                            [19] = {
+                                ["communication"] = true,
+                                ["frequency"] = 251,
+                                ["groupId"] = 115,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["modulation"] = 0,
+                                ["name"] = "ELINT-C-130-1",
+                                ["radioSet"] = false,
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["speed"] = 169.44444444444,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -122321.77788669,
+                                            ["y"] = 283903.17359481,
+                                        }, -- end of [1]
+                                        [2] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 848.12366970309,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["speed"] = 169.44444444444,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                        [1] = {
+                                                            ["auto"] = false,
+                                                            ["enabled"] = true,
+                                                            ["id"] = "WrappedAction",
+                                                            ["number"] = 1,
+                                                            ["params"] = {
+                                                                ["action"] = {
+                                                                    ["id"] = "SwitchWaypoint",
+                                                                    ["params"] = {
+                                                                        ["fromWaypointIndex"] = 2,
+                                                                        ["goToWaypointIndex"] = 1,
+                                                                    }, -- end of ["params"]
+                                                                }, -- end of ["action"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -265836.16196115,
+                                            ["y"] = 276410.45474755,
+                                        }, -- end of [2]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Transport",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["uncontrolled"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["alt"] = 6096,
+                                        ["alt_type"] = "BARO",
+                                        ["callsign"] = {
+                                            [1] = 2,
+                                            [2] = 2,
+                                            [3] = 1,
+                                            ["name"] = "Springfield21",
+                                        }, -- end of ["callsign"]
+                                        ["heading"] = -3.0894311771141,
+                                        ["livery_id"] = "US Air Force",
+                                        ["name"] = "ELINT C-130 -1-1",
+                                        ["onboard_num"] = "061",
+                                        ["payload"] = {
+                                            ["chaff"] = 120,
+                                            ["flare"] = 60,
+                                            ["fuel"] = 10415,
+                                            ["gun"] = 100,
+                                            ["pylons"] = {
+                                            }, -- end of ["pylons"]
+                                        }, -- end of ["payload"]
+                                        ["psi"] = 3.0894311771141,
+                                        ["skill"] = "High",
+                                        ["speed"] = 169.44444444444,
+                                        ["type"] = "C-130",
+                                        ["unitId"] = 143,
+                                        ["x"] = -122321.77788669,
+                                        ["y"] = 283903.17359481,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -122321.77788669,
+                                ["y"] = 283903.17359481,
+                            }, -- end of [19]
+                            [20] = {
+                                ["communication"] = true,
+                                ["frequency"] = 251,
+                                ["groupId"] = 116,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["modulation"] = 0,
+                                ["name"] = "ELINT-C-130-2",
+                                ["radioSet"] = false,
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["speed"] = 169.44444444444,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -312521.56400947,
+                                            ["y"] = 243557.76441726,
+                                        }, -- end of [1]
+                                        [2] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 6096,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 1342.8808457491,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["speed"] = 169.44444444444,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                        [1] = {
+                                                            ["auto"] = false,
+                                                            ["enabled"] = true,
+                                                            ["id"] = "WrappedAction",
+                                                            ["number"] = 1,
+                                                            ["params"] = {
+                                                                ["action"] = {
+                                                                    ["id"] = "SwitchWaypoint",
+                                                                    ["params"] = {
+                                                                        ["fromWaypointIndex"] = 2,
+                                                                        ["goToWaypointIndex"] = 1,
+                                                                    }, -- end of ["params"]
+                                                                }, -- end of ["action"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -184568.98061778,
+                                            ["y"] = 247015.94234676,
+                                        }, -- end of [2]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Transport",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["uncontrolled"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["alt"] = 6096,
+                                        ["alt_type"] = "BARO",
+                                        ["callsign"] = {
+                                            [1] = 2,
+                                            [2] = 2,
+                                            [3] = 1,
+                                            ["name"] = "Springfield21",
+                                        }, -- end of ["callsign"]
+                                        ["heading"] = 0.027020449187225,
+                                        ["livery_id"] = "US Air Force",
+                                        ["name"] = "ELINT C-130 -2-1",
+                                        ["onboard_num"] = "061",
+                                        ["payload"] = {
+                                            ["chaff"] = 120,
+                                            ["flare"] = 60,
+                                            ["fuel"] = 10415,
+                                            ["gun"] = 100,
+                                            ["pylons"] = {
+                                            }, -- end of ["pylons"]
+                                        }, -- end of ["payload"]
+                                        ["psi"] = -0.027020449187225,
+                                        ["skill"] = "High",
+                                        ["speed"] = 169.44444444444,
+                                        ["type"] = "C-130",
+                                        ["unitId"] = 144,
+                                        ["x"] = -312521.56400947,
+                                        ["y"] = 243557.76441726,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -312521.56400947,
+                                ["y"] = 243557.76441726,
+                            }, -- end of [20]
                         }, -- end of ["group"]
                     }, -- end of ["plane"]
                     ["ship"] = {
@@ -7925,7 +8141,7 @@ mission = {
                                             ["ETA_locked"] = true,
                                             ["formation_template"] = "",
                                             ["name"] = "",
-                                            ["speed"] = 5.5555555555556,
+                                            ["speed"] = 4,
                                             ["speed_locked"] = true,
                                             ["task"] = {
                                                 ["id"] = "ComboTask",
@@ -7968,65 +8184,9 @@ mission = {
                                 ["y"] = 618729.20287862,
                             }, -- end of [5]
                             [6] = {
-                                ["groupId"] = 57,
-                                ["hidden"] = false,
-                                ["name"] = "combatZone_Batumi - manpad-group1 #002",
-                                ["route"] = {
-                                    ["points"] = {
-                                        [1] = {
-                                            ["action"] = "Off Road",
-                                            ["alt"] = 7,
-                                            ["alt_type"] = "BARO",
-                                            ["ETA"] = 0,
-                                            ["ETA_locked"] = true,
-                                            ["formation_template"] = "",
-                                            ["name"] = "",
-                                            ["speed"] = 5.5555555555556,
-                                            ["speed_locked"] = true,
-                                            ["task"] = {
-                                                ["id"] = "ComboTask",
-                                                ["params"] = {
-                                                    ["tasks"] = {
-                                                    }, -- end of ["tasks"]
-                                                }, -- end of ["params"]
-                                            }, -- end of ["task"]
-                                            ["type"] = "Turning Point",
-                                            ["x"] = -356377.30967887,
-                                            ["y"] = 615797.71835411,
-                                        }, -- end of [1]
-                                    }, -- end of ["points"]
-                                    ["spans"] = {
-                                    }, -- end of ["spans"]
-                                }, -- end of ["route"]
-                                ["start_time"] = 0,
-                                ["task"] = "Ground Nothing",
-                                ["tasks"] = {
-                                }, -- end of ["tasks"]
-                                ["taskSelected"] = true,
-                                ["uncontrollable"] = false,
-                                ["units"] = {
-                                    [1] = {
-                                        ["heading"] = 0,
-                                        ["name"] = "#spawnGroup=\"manpad-group1\",#spawnCount=2,#spawnChance=25 #001",
-                                        ["playerCanDrive"] = false,
-                                        ["skill"] = "Average",
-                                        ["transportable"] = {
-                                            ["randomTransportable"] = false,
-                                        }, -- end of ["transportable"]
-                                        ["type"] = "SA-18 Igla-S manpad",
-                                        ["unitId"] = 79,
-                                        ["x"] = -356377.30967887,
-                                        ["y"] = 615797.71835411,
-                                    }, -- end of [1]
-                                }, -- end of ["units"]
-                                ["visible"] = false,
-                                ["x"] = -356377.30967887,
-                                ["y"] = 615797.71835411,
-                            }, -- end of [6]
-                            [7] = {
                                 ["groupId"] = 58,
                                 ["hidden"] = false,
-                                ["name"] = "combatZone_Batumi - manpad-group1 #003",
+                                ["name"] = "combatZone_Batumi - manpad-group1 #002",
                                 ["route"] = {
                                     ["points"] = {
                                         [1] = {
@@ -8037,7 +8197,7 @@ mission = {
                                             ["ETA_locked"] = true,
                                             ["formation_template"] = "",
                                             ["name"] = "",
-                                            ["speed"] = 5.5555555555556,
+                                            ["speed"] = 4,
                                             ["speed_locked"] = true,
                                             ["task"] = {
                                                 ["id"] = "ComboTask",
@@ -8078,11 +8238,11 @@ mission = {
                                 ["visible"] = false,
                                 ["x"] = -354708.05017176,
                                 ["y"] = 616672.76142335,
-                            }, -- end of [7]
-                            [8] = {
+                            }, -- end of [6]
+                            [7] = {
                                 ["groupId"] = 59,
                                 ["hidden"] = false,
-                                ["name"] = "combatZone_Batumi - manpad-group1 #004",
+                                ["name"] = "combatZone_Batumi - manpad-group1 #003",
                                 ["route"] = {
                                     ["points"] = {
                                         [1] = {
@@ -8093,7 +8253,7 @@ mission = {
                                             ["ETA_locked"] = true,
                                             ["formation_template"] = "",
                                             ["name"] = "",
-                                            ["speed"] = 5.5555555555556,
+                                            ["speed"] = 4,
                                             ["speed_locked"] = true,
                                             ["task"] = {
                                                 ["id"] = "ComboTask",
@@ -8134,11 +8294,11 @@ mission = {
                                 ["visible"] = false,
                                 ["x"] = -357325.33929665,
                                 ["y"] = 618340.92372273,
-                            }, -- end of [8]
-                            [9] = {
+                            }, -- end of [7]
+                            [8] = {
                                 ["groupId"] = 60,
                                 ["hidden"] = false,
-                                ["name"] = "combatZone_Batumi - manpad-group1 #005",
+                                ["name"] = "combatZone_Batumi - manpad-group1 #004",
                                 ["route"] = {
                                     ["points"] = {
                                         [1] = {
@@ -8190,11 +8350,11 @@ mission = {
                                 ["visible"] = false,
                                 ["x"] = -353658.25837991,
                                 ["y"] = 617880.74101945,
-                            }, -- end of [9]
-                            [10] = {
+                            }, -- end of [8]
+                            [9] = {
                                 ["groupId"] = 61,
                                 ["hidden"] = false,
-                                ["name"] = "combatZone_Batumi - manpad-group1 #006",
+                                ["name"] = "combatZone_Batumi - manpad-group1 #005",
                                 ["route"] = {
                                     ["points"] = {
                                         [1] = {
@@ -8205,7 +8365,7 @@ mission = {
                                             ["ETA_locked"] = true,
                                             ["formation_template"] = "",
                                             ["name"] = "",
-                                            ["speed"] = 5.5555555555556,
+                                            ["speed"] = 4,
                                             ["speed_locked"] = true,
                                             ["task"] = {
                                                 ["id"] = "ComboTask",
@@ -8246,8 +8406,8 @@ mission = {
                                 ["visible"] = false,
                                 ["x"] = -358260.08541269,
                                 ["y"] = 617082.61164345,
-                            }, -- end of [10]
-                            [11] = {
+                            }, -- end of [9]
+                            [10] = {
                                 ["condition"] = "",
                                 ["groupId"] = 63,
                                 ["hidden"] = false,
@@ -8735,8 +8895,8 @@ mission = {
                                 ["visible"] = false,
                                 ["x"] = -356465.05932007,
                                 ["y"] = 618604.47476933,
-                            }, -- end of [11]
-                            [12] = {
+                            }, -- end of [10]
+                            [11] = {
                                 ["condition"] = "",
                                 ["groupId"] = 64,
                                 ["hidden"] = false,
@@ -9432,8 +9592,8 @@ mission = {
                                 ["visible"] = false,
                                 ["x"] = -353768.10145263,
                                 ["y"] = 617105.73021377,
-                            }, -- end of [12]
-                            [13] = {
+                            }, -- end of [11]
+                            [12] = {
                                 ["condition"] = "",
                                 ["groupId"] = 65,
                                 ["hidden"] = false,
@@ -10449,148 +10609,16 @@ mission = {
                                 ["visible"] = false,
                                 ["x"] = -355249.29596649,
                                 ["y"] = 617024.54183769,
-                            }, -- end of [13]
-                            [14] = {
-                                ["groupId"] = 66,
-                                ["hidden"] = false,
-                                ["name"] = "New Vehicle Group #001",
-                                ["route"] = {
-                                    ["points"] = {
-                                        [1] = {
-                                            ["action"] = "Off Road",
-                                            ["alt"] = 6,
-                                            ["alt_type"] = "BARO",
-                                            ["ETA"] = 0,
-                                            ["ETA_locked"] = true,
-                                            ["formation_template"] = "",
-                                            ["name"] = "",
-                                            ["speed"] = 5.5555555555556,
-                                            ["speed_locked"] = true,
-                                            ["task"] = {
-                                                ["id"] = "ComboTask",
-                                                ["params"] = {
-                                                    ["tasks"] = {
-                                                    }, -- end of ["tasks"]
-                                                }, -- end of ["params"]
-                                            }, -- end of ["task"]
-                                            ["type"] = "Turning Point",
-                                            ["x"] = -356401.11883848,
-                                            ["y"] = 617131.0312924,
-                                        }, -- end of [1]
-                                    }, -- end of ["points"]
-                                    ["spans"] = {
-                                        [1] = {
-                                            [1] = {
-                                                ["x"] = -356401.11883848,
-                                                ["y"] = 617131.0312924,
-                                            }, -- end of [1]
-                                            [2] = {
-                                                ["x"] = -356409.05522502,
-                                                ["y"] = 615726.29087528,
-                                            }, -- end of [2]
-                                        }, -- end of [1]
-                                    }, -- end of ["spans"]
-                                }, -- end of ["route"]
-                                ["start_time"] = 0,
-                                ["task"] = "Ground Nothing",
-                                ["tasks"] = {
-                                }, -- end of ["tasks"]
-                                ["taskSelected"] = true,
-                                ["uncontrollable"] = false,
-                                ["units"] = {
-                                    [1] = {
-                                        ["heading"] = 4.7067393229811,
-                                        ["name"] = "#veafInterpreter[\"_spawn unit, name sa15\"]",
-                                        ["playerCanDrive"] = false,
-                                        ["skill"] = "Average",
-                                        ["transportable"] = {
-                                            ["randomTransportable"] = false,
-                                        }, -- end of ["transportable"]
-                                        ["type"] = "Kub 2P25 ln",
-                                        ["unitId"] = 93,
-                                        ["x"] = -356401.11883848,
-                                        ["y"] = 617131.0312924,
-                                    }, -- end of [1]
-                                }, -- end of ["units"]
-                                ["visible"] = false,
-                                ["x"] = -356401.11883848,
-                                ["y"] = 617131.0312924,
-                            }, -- end of [14]
-                            [15] = {
-                                ["groupId"] = 68,
-                                ["hidden"] = false,
-                                ["name"] = "New Vehicle Group #002",
-                                ["route"] = {
-                                    ["points"] = {
-                                        [1] = {
-                                            ["action"] = "Off Road",
-                                            ["alt"] = 6,
-                                            ["alt_type"] = "BARO",
-                                            ["ETA"] = 0,
-                                            ["ETA_locked"] = true,
-                                            ["formation_template"] = "",
-                                            ["name"] = "",
-                                            ["speed"] = 5.5555555555556,
-                                            ["speed_locked"] = true,
-                                            ["task"] = {
-                                                ["id"] = "ComboTask",
-                                                ["params"] = {
-                                                    ["tasks"] = {
-                                                    }, -- end of ["tasks"]
-                                                }, -- end of ["params"]
-                                            }, -- end of ["task"]
-                                            ["type"] = "Turning Point",
-                                            ["x"] = -355987.25330719,
-                                            ["y"] = 616766.97788237,
-                                        }, -- end of [1]
-                                    }, -- end of ["points"]
-                                    ["spans"] = {
-                                        [1] = {
-                                            [1] = {
-                                                ["x"] = -356401.11883848,
-                                                ["y"] = 617131.0312924,
-                                            }, -- end of [1]
-                                            [2] = {
-                                                ["x"] = -356409.05522502,
-                                                ["y"] = 615726.29087528,
-                                            }, -- end of [2]
-                                        }, -- end of [1]
-                                    }, -- end of ["spans"]
-                                }, -- end of ["route"]
-                                ["start_time"] = 0,
-                                ["task"] = "Ground Nothing",
-                                ["tasks"] = {
-                                }, -- end of ["tasks"]
-                                ["taskSelected"] = true,
-                                ["uncontrollable"] = false,
-                                ["units"] = {
-                                    [1] = {
-                                        ["heading"] = 4.7067393229811,
-                                        ["name"] = "#veafInterpreter[\"_spawn unit, name sa15\"] #001",
-                                        ["playerCanDrive"] = false,
-                                        ["skill"] = "Average",
-                                        ["transportable"] = {
-                                            ["randomTransportable"] = false,
-                                        }, -- end of ["transportable"]
-                                        ["type"] = "Kub 2P25 ln",
-                                        ["unitId"] = 95,
-                                        ["x"] = -355987.25330719,
-                                        ["y"] = 616766.97788237,
-                                    }, -- end of [1]
-                                }, -- end of ["units"]
-                                ["visible"] = false,
-                                ["x"] = -355987.25330719,
-                                ["y"] = 616766.97788237,
-                            }, -- end of [15]
-                            [16] = {
+                            }, -- end of [12]
+                            [13] = {
                                 ["groupId"] = 69,
                                 ["hidden"] = false,
-                                ["name"] = "New Vehicle Group #003",
+                                ["name"] = "combatZone_Batumi - SA15 #001",
                                 ["route"] = {
                                     ["points"] = {
                                         [1] = {
                                             ["action"] = "Off Road",
-                                            ["alt"] = 6,
+                                            ["alt"] = 8,
                                             ["alt_type"] = "BARO",
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
@@ -10606,8 +10634,8 @@ mission = {
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -356607.63803309,
-                                            ["y"] = 616757.5781138,
+                                            ["x"] = -356593.44534738,
+                                            ["y"] = 616739.97621156,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
                                     ["spans"] = {
@@ -10632,220 +10660,220 @@ mission = {
                                 ["units"] = {
                                     [1] = {
                                         ["heading"] = 4.7067393229811,
-                                        ["name"] = "#veafInterpreter[\"_spawn unit, name sa15\"] #002",
+                                        ["name"] = "#command=\"-sa15\" #001",
                                         ["playerCanDrive"] = false,
                                         ["skill"] = "Average",
                                         ["transportable"] = {
                                             ["randomTransportable"] = false,
                                         }, -- end of ["transportable"]
-                                        ["type"] = "Kub 2P25 ln",
+                                        ["type"] = "Tor 9A331",
                                         ["unitId"] = 96,
-                                        ["x"] = -356607.63803309,
-                                        ["y"] = 616757.5781138,
+                                        ["x"] = -356593.44534738,
+                                        ["y"] = 616739.97621156,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -356607.63803309,
-                                ["y"] = 616757.5781138,
+                                ["x"] = -356593.44534738,
+                                ["y"] = 616739.97621156,
+                            }, -- end of [13]
+                            [14] = {
+                                ["groupId"] = 114,
+                                ["hidden"] = false,
+                                ["name"] = "SA-10 Maykop",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 8,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -26780.854788567,
+                                            ["y"] = 457999.16604769,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["spans"] = {
+                                        [1] = {
+                                            [1] = {
+                                                ["x"] = -332133.27392405,
+                                                ["y"] = 629783.98233368,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -330846.75133478,
+                                                ["y"] = 632191.20904515,
+                                            }, -- end of [2]
+                                        }, -- end of [1]
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 1.0799764006319,
+                                        ["name"] = "#veafInterpreter[\"-sa10\"]",
+                                        ["playerCanDrive"] = false,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "S-300PS 5P85C ln",
+                                        ["unitId"] = 142,
+                                        ["x"] = -26780.854788567,
+                                        ["y"] = 457999.16604769,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -26780.854788567,
+                                ["y"] = 457999.16604769,
+                            }, -- end of [14]
+                            [15] = {
+                                ["groupId"] = 121,
+                                ["hidden"] = false,
+                                ["name"] = "combatZone_Batumi - SA15 #002",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 8,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -359071.69151392,
+                                            ["y"] = 615113.03598009,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["spans"] = {
+                                        [1] = {
+                                            [1] = {
+                                                ["x"] = -356401.11883848,
+                                                ["y"] = 617131.0312924,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -356409.05522502,
+                                                ["y"] = 615726.29087528,
+                                            }, -- end of [2]
+                                        }, -- end of [1]
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 4.7067393229811,
+                                        ["name"] = "#command=\"-sa15\" #002",
+                                        ["playerCanDrive"] = false,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "Tor 9A331",
+                                        ["unitId"] = 149,
+                                        ["x"] = -359071.69151392,
+                                        ["y"] = 615113.03598009,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -359071.69151392,
+                                ["y"] = 615113.03598009,
+                            }, -- end of [15]
+                            [16] = {
+                                ["groupId"] = 122,
+                                ["hidden"] = false,
+                                ["name"] = "combatZone_Batumi - SA15 #003",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 91,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -355638.09090913,
+                                            ["y"] = 621753.22227365,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["spans"] = {
+                                        [1] = {
+                                            [1] = {
+                                                ["x"] = -356401.11883848,
+                                                ["y"] = 617131.0312924,
+                                            }, -- end of [1]
+                                            [2] = {
+                                                ["x"] = -356409.05522502,
+                                                ["y"] = 615726.29087528,
+                                            }, -- end of [2]
+                                        }, -- end of [1]
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["taskSelected"] = true,
+                                ["uncontrollable"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["heading"] = 4.7067393229811,
+                                        ["name"] = "#command=\"-sa15\" #003",
+                                        ["playerCanDrive"] = false,
+                                        ["skill"] = "Average",
+                                        ["transportable"] = {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "Tor 9A331",
+                                        ["unitId"] = 150,
+                                        ["x"] = -355638.09090913,
+                                        ["y"] = 621753.22227365,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -355638.09090913,
+                                ["y"] = 621753.22227365,
                             }, -- end of [16]
-                            [17] = {
-                                ["groupId"] = 70,
-                                ["hidden"] = false,
-                                ["name"] = "New Vehicle Group #004",
-                                ["route"] = {
-                                    ["points"] = {
-                                        [1] = {
-                                            ["action"] = "Off Road",
-                                            ["alt"] = 6,
-                                            ["alt_type"] = "BARO",
-                                            ["ETA"] = 0,
-                                            ["ETA_locked"] = true,
-                                            ["formation_template"] = "",
-                                            ["name"] = "",
-                                            ["speed"] = 5.5555555555556,
-                                            ["speed_locked"] = true,
-                                            ["task"] = {
-                                                ["id"] = "ComboTask",
-                                                ["params"] = {
-                                                    ["tasks"] = {
-                                                    }, -- end of ["tasks"]
-                                                }, -- end of ["params"]
-                                            }, -- end of ["task"]
-                                            ["type"] = "Turning Point",
-                                            ["x"] = -356682.83618168,
-                                            ["y"] = 617669.3556655,
-                                        }, -- end of [1]
-                                    }, -- end of ["points"]
-                                    ["spans"] = {
-                                        [1] = {
-                                            [1] = {
-                                                ["x"] = -356401.11883848,
-                                                ["y"] = 617131.0312924,
-                                            }, -- end of [1]
-                                            [2] = {
-                                                ["x"] = -356409.05522502,
-                                                ["y"] = 615726.29087528,
-                                            }, -- end of [2]
-                                        }, -- end of [1]
-                                    }, -- end of ["spans"]
-                                }, -- end of ["route"]
-                                ["start_time"] = 0,
-                                ["task"] = "Ground Nothing",
-                                ["tasks"] = {
-                                }, -- end of ["tasks"]
-                                ["taskSelected"] = true,
-                                ["uncontrollable"] = false,
-                                ["units"] = {
-                                    [1] = {
-                                        ["heading"] = 4.7067393229811,
-                                        ["name"] = "#veafInterpreter[\"_spawn unit, name sa15\"] #003",
-                                        ["playerCanDrive"] = false,
-                                        ["skill"] = "Average",
-                                        ["transportable"] = {
-                                            ["randomTransportable"] = false,
-                                        }, -- end of ["transportable"]
-                                        ["type"] = "Kub 2P25 ln",
-                                        ["unitId"] = 97,
-                                        ["x"] = -356682.83618168,
-                                        ["y"] = 617669.3556655,
-                                    }, -- end of [1]
-                                }, -- end of ["units"]
-                                ["visible"] = false,
-                                ["x"] = -356682.83618168,
-                                ["y"] = 617669.3556655,
-                            }, -- end of [17]
-                            [18] = {
-                                ["groupId"] = 71,
-                                ["hidden"] = false,
-                                ["name"] = "New Vehicle Group #005",
-                                ["route"] = {
-                                    ["points"] = {
-                                        [1] = {
-                                            ["action"] = "Off Road",
-                                            ["alt"] = 6,
-                                            ["alt_type"] = "BARO",
-                                            ["ETA"] = 0,
-                                            ["ETA_locked"] = true,
-                                            ["formation_template"] = "",
-                                            ["name"] = "",
-                                            ["speed"] = 5.5555555555556,
-                                            ["speed_locked"] = true,
-                                            ["task"] = {
-                                                ["id"] = "ComboTask",
-                                                ["params"] = {
-                                                    ["tasks"] = {
-                                                    }, -- end of ["tasks"]
-                                                }, -- end of ["params"]
-                                            }, -- end of ["task"]
-                                            ["type"] = "Turning Point",
-                                            ["x"] = -356231.64729012,
-                                            ["y"] = 617641.15635977,
-                                        }, -- end of [1]
-                                    }, -- end of ["points"]
-                                    ["spans"] = {
-                                        [1] = {
-                                            [1] = {
-                                                ["x"] = -356401.11883848,
-                                                ["y"] = 617131.0312924,
-                                            }, -- end of [1]
-                                            [2] = {
-                                                ["x"] = -356409.05522502,
-                                                ["y"] = 615726.29087528,
-                                            }, -- end of [2]
-                                        }, -- end of [1]
-                                    }, -- end of ["spans"]
-                                }, -- end of ["route"]
-                                ["start_time"] = 0,
-                                ["task"] = "Ground Nothing",
-                                ["tasks"] = {
-                                }, -- end of ["tasks"]
-                                ["taskSelected"] = true,
-                                ["uncontrollable"] = false,
-                                ["units"] = {
-                                    [1] = {
-                                        ["heading"] = 4.7067393229811,
-                                        ["name"] = "#veafInterpreter[\"_spawn unit, name sa15\"] #004",
-                                        ["playerCanDrive"] = false,
-                                        ["skill"] = "Average",
-                                        ["transportable"] = {
-                                            ["randomTransportable"] = false,
-                                        }, -- end of ["transportable"]
-                                        ["type"] = "Kub 2P25 ln",
-                                        ["unitId"] = 98,
-                                        ["x"] = -356231.64729012,
-                                        ["y"] = 617641.15635977,
-                                    }, -- end of [1]
-                                }, -- end of ["units"]
-                                ["visible"] = false,
-                                ["x"] = -356231.64729012,
-                                ["y"] = 617641.15635977,
-                            }, -- end of [18]
-                            [19] = {
-                                ["groupId"] = 72,
-                                ["hidden"] = false,
-                                ["name"] = "New Vehicle Group #006",
-                                ["route"] = {
-                                    ["points"] = {
-                                        [1] = {
-                                            ["action"] = "Off Road",
-                                            ["alt"] = 6,
-                                            ["alt_type"] = "BARO",
-                                            ["ETA"] = 0,
-                                            ["ETA_locked"] = true,
-                                            ["formation_template"] = "",
-                                            ["name"] = "",
-                                            ["speed"] = 5.5555555555556,
-                                            ["speed_locked"] = true,
-                                            ["task"] = {
-                                                ["id"] = "ComboTask",
-                                                ["params"] = {
-                                                    ["tasks"] = {
-                                                    }, -- end of ["tasks"]
-                                                }, -- end of ["params"]
-                                            }, -- end of ["task"]
-                                            ["type"] = "Turning Point",
-                                            ["x"] = -355479.66580418,
-                                            ["y"] = 616231.19107364,
-                                        }, -- end of [1]
-                                    }, -- end of ["points"]
-                                    ["spans"] = {
-                                        [1] = {
-                                            [1] = {
-                                                ["x"] = -356401.11883848,
-                                                ["y"] = 617131.0312924,
-                                            }, -- end of [1]
-                                            [2] = {
-                                                ["x"] = -356409.05522502,
-                                                ["y"] = 615726.29087528,
-                                            }, -- end of [2]
-                                        }, -- end of [1]
-                                    }, -- end of ["spans"]
-                                }, -- end of ["route"]
-                                ["start_time"] = 0,
-                                ["task"] = "Ground Nothing",
-                                ["tasks"] = {
-                                }, -- end of ["tasks"]
-                                ["taskSelected"] = true,
-                                ["uncontrollable"] = false,
-                                ["units"] = {
-                                    [1] = {
-                                        ["heading"] = 4.7067393229811,
-                                        ["name"] = "#veafInterpreter[\"_spawn unit, name sa15\"] #005",
-                                        ["playerCanDrive"] = false,
-                                        ["skill"] = "Average",
-                                        ["transportable"] = {
-                                            ["randomTransportable"] = false,
-                                        }, -- end of ["transportable"]
-                                        ["type"] = "Kub 2P25 ln",
-                                        ["unitId"] = 99,
-                                        ["x"] = -355479.66580418,
-                                        ["y"] = 616231.19107364,
-                                    }, -- end of [1]
-                                }, -- end of ["units"]
-                                ["visible"] = false,
-                                ["x"] = -355479.66580418,
-                                ["y"] = 616231.19107364,
-                            }, -- end of [19]
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
                 }, -- end of [1]
@@ -10948,7 +10976,7 @@ mission = {
             [10] = 47,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 78626,
+    ["currentKey"] = 85201,
     ["date"] = {
         ["Day"] = 15,
         ["Month"] = 4,
@@ -11478,11 +11506,11 @@ mission = {
         }, -- end of ["roles"]
     }, -- end of ["groundControl"]
     ["map"] = {
-        ["centerX"] = -324369.7017736,
-        ["centerY"] = 639659.01585331,
-        ["zoom"] = 163278.43880348,
+        ["centerX"] = -355330.67487702,
+        ["centerY"] = 620324.9200937,
+        ["zoom"] = 33106.341919449,
     }, -- end of ["map"]
-    ["maxDictId"] = 784,
+    ["maxDictId"] = 785,
     ["pictureFileNameB"] = {
     }, -- end of ["pictureFileNameB"]
     ["pictureFileNameN"] = {
@@ -11523,9 +11551,9 @@ mission = {
     ["theatre"] = "Caucasus",
     ["trig"] = {
         ["actions"] = {
-            [1] = "a_do_script(\"VEAF_DYNAMIC_PATH = [[D:\\\\dev\\\\_VEAF\\\\VEAF-Demo-Mission\\\\node_modules\\\\veaf-mission-creation-tools\\\\]]\");a_do_script(\"VEAF_DYNAMIC_MISSIONPATH = [[D:\\\\dev\\\\_VEAF\\\\VEAF-Demo-Mission\\\\]]\");",
+            [1] = "a_do_script(\"VEAF_DYNAMIC_PATH = [[d:\\\\dev\\\\_VEAF\\\\VEAF-Mission-Creation-Tools]]\");a_do_script(\"VEAF_DYNAMIC_MISSIONPATH = [[d:\\\\dev\\\\_VEAF\\\\VEAF-Demo-Mission\\\\]]\");",
             [2] = "a_do_script(\"env.info(\\\"DYNAMIC LOADING\\\")\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/mist.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/DCS-SimpleTextToSpeech.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/CTLD.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/WeatherMark.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/skynet-iads-compiled.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/Hercules_Cargo.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/DCS-SimpleTextToSpeech.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/HoundElint.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/VeafDynamicLoader.lua\\\"))()\");",
-            [3] = "a_do_script(\"env.info(\\\"STATIC LOADING\\\")\");a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10202\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10204\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_784\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10205\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10206\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10207\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_781\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_782\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10208\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10209\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10210\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10211\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10212\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10213\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10214\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10215\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10216\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10217\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10218\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10219\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10220\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10221\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10222\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10223\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10224\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10225\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10226\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10227\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10228\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_707\"));",
+            [3] = "a_do_script(\"env.info(\\\"STATIC LOADING\\\")\");a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10202\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10204\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_784\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10205\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10206\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10207\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_781\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_782\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10208\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10209\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10210\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10211\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10212\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10213\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10214\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10215\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10216\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10217\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10218\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10219\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10220\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10221\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10222\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10223\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10224\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10225\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10226\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10227\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10228\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_707\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_785\"));",
             [4] = "a_do_script(\"assert(loadfile(VEAF_DYNAMIC_MISSIONPATH .. \\\"/src/scripts/missionConfig.lua\\\"))()\");",
             [5] = "a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10401\"));",
         }, -- end of ["actions"]
@@ -11676,7 +11704,7 @@ mission = {
                 ["name"] = "combatZone_Batumi",
                 ["properties"] = {
                 }, -- end of ["properties"]
-                ["radius"] = 3000,
+                ["radius"] = 4572,
                 ["type"] = 0,
                 ["x"] = -355702.71682319,
                 ["y"] = 617377.05927506,
@@ -11723,11 +11751,11 @@ mission = {
             ["actions"] = {
                 [1] = {
                     ["predicate"] = "a_do_script",
-                    ["text"] = "VEAF_DYNAMIC_PATH = [[D:\\dev\\_VEAF\\VEAF-Demo-Mission\\node_modules\\veaf-mission-creation-tools\\]]",
+                    ["text"] = "VEAF_DYNAMIC_PATH = [[d:\\dev\\_VEAF\\VEAF-Mission-Creation-Tools]]",
                 }, -- end of [1]
                 [2] = {
                     ["predicate"] = "a_do_script",
-                    ["text"] = "VEAF_DYNAMIC_MISSIONPATH = [[D:\\dev\\_VEAF\\VEAF-Demo-Mission\\]]",
+                    ["text"] = "VEAF_DYNAMIC_MISSIONPATH = [[d:\\dev\\_VEAF\\VEAF-Demo-Mission\\]]",
                 }, -- end of [2]
             }, -- end of ["actions"]
             ["colorItem"] = "0x00ffffff",
@@ -11924,6 +11952,10 @@ mission = {
                     ["file"] = "ResKey_Action_707",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [31]
+                [32] = {
+                    ["file"] = "ResKey_Action_785",
+                    ["predicate"] = "a_do_script_file",
+                }, -- end of [32]
             }, -- end of ["actions"]
             ["colorItem"] = "0x00ff80ff",
             ["comment"] = "mission start - static",
