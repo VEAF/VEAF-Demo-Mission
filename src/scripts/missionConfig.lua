@@ -5,6 +5,8 @@
 -- This configuration is tailored for a demonstration mission
 -- see https://github.com/VEAF/VEAF-Demo-Mission
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+veaf.config.MISSION_NAME = "VEAF-Demo-Mission"
+veaf.config.MISSION_EXPORT_PATH = nil -- use default folder
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize all the scripts
@@ -198,6 +200,8 @@ veafNamedPoints.Points = {
         veafNamedPoints.addAllPersianGulfCities()
     elseif theatre == "thechannel" then
         veafNamedPoints.addAllTheChannelCities()
+    elseif theatre == "marianaislands" then
+        veafNamedPoints.addAllMarianasIslandsCities()
     else
         veafNamedPoints.logWarning(string.format("theatre %s is not yet supported by veafNamedPoints", theatre))
     end
@@ -264,15 +268,15 @@ if ctld then
     ctld.transportPilotNames = {}
 
     for i = 1, 24 do
-        table.insert(ctld.transportPilotNames, "yak"..i)
+        table.insert(ctld.transportPilotNames, string.format("yak #%03d",i))
     end
 
     for i = 1, 10 do
-        table.insert(ctld.transportPilotNames, "transport"..i)
+        table.insert(ctld.transportPilotNames, string.format("transport #%03d",i))
     end
 
     for i = 1, 79 do
-        table.insert(ctld.transportPilotNames, "helicargo"..i)
+        table.insert(ctld.transportPilotNames, string.format("helicargo #%03d",i))
     end
 
     -- ************** Logistics UNITS FOR CRATE SPAWNING ******************
@@ -303,11 +307,14 @@ if ctld then
         "logistic #020",
     }
 
-    -- automatically add all the human-manned transport helicopters to ctld.transportPilotNames
-    veafTransportMission.initializeAllHelosInCTLD()
+    if veafTransportMission then
 
-    -- automatically add all the carriers and FARPs to ctld.logisticUnits
-    veafTransportMission.initializeAllLogisticInCTLD()
+        -- automatically add all the human-manned transport helicopters to ctld.transportPilotNames
+        veafTransportMission.initializeAllHelosInCTLD()
+
+        -- automatically add all the carriers and FARPs to ctld.logisticUnits
+        veafTransportMission.initializeAllLogisticInCTLD()
+    end
     
     veaf.logInfo("init - ctld")
     ctld.initialize()

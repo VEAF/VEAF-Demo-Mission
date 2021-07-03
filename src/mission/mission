@@ -61,7 +61,7 @@ mission = {
                                         ["callsign"] = 101,
                                         ["heading"] = 0,
                                         ["livery_id"] = "Bare_Metall",
-                                        ["name"] = "yak1",
+                                        ["name"] = "yak #001",
                                         ["onboard_num"] = "060",
                                         ["payload"] = {
                                             ["chaff"] = 0,
@@ -10976,7 +10976,7 @@ mission = {
             [10] = 47,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 85201,
+    ["currentKey"] = 85747,
     ["date"] = {
         ["Day"] = 15,
         ["Month"] = 4,
@@ -11506,8 +11506,8 @@ mission = {
         }, -- end of ["roles"]
     }, -- end of ["groundControl"]
     ["map"] = {
-        ["centerX"] = -355330.67487702,
-        ["centerY"] = 620324.9200937,
+        ["centerX"] = -327156.71064388,
+        ["centerY"] = 632946.41965413,
         ["zoom"] = 33106.341919449,
     }, -- end of ["map"]
     ["maxDictId"] = 785,
