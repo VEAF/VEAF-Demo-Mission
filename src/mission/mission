@@ -640,6 +640,115 @@ mission = {
                                 ["x"] = -325754.90548348,
                                 ["y"] = 631087.96072884,
                             }, -- end of [6]
+                            [7] = {
+                                ["communication"] = true,
+                                ["frequency"] = 251,
+                                ["groupId"] = 124,
+                                ["hidden"] = false,
+                                ["modulation"] = 0,
+                                ["name"] = "QRA Test UH-1H",
+                                ["radioSet"] = false,
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "From Ground Area",
+                                            ["alt"] = 1691,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["speed"] = 46.25,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "TakeOffGround",
+                                            ["x"] = -98017.834967525,
+                                            ["y"] = 438872.4966007,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Transport",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["uncontrollable"] = false,
+                                ["uncontrolled"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["AddPropAircraft"] = {
+                                            ["EngineResource"] = 90,
+                                            ["ExhaustScreen"] = true,
+                                            ["GunnersAISkill"] = 90,
+                                            ["NetCrewControlPriority"] = 0,
+                                            ["SoloFlight"] = false,
+                                        }, -- end of ["AddPropAircraft"]
+                                        ["alt"] = 1691,
+                                        ["alt_type"] = "BARO",
+                                        ["callsign"] = {
+                                            [1] = 3,
+                                            [2] = 2,
+                                            [3] = 1,
+                                            ["name"] = "Uzi21",
+                                        }, -- end of ["callsign"]
+                                        ["hardpoint_racks"] = true,
+                                        ["heading"] = -2.7454351385277,
+                                        ["livery_id"] = "Army Standard",
+                                        ["name"] = "QRA Test UH-1H",
+                                        ["onboard_num"] = "062",
+                                        ["payload"] = {
+                                            ["chaff"] = 0,
+                                            ["flare"] = 60,
+                                            ["fuel"] = "631",
+                                            ["gun"] = 100,
+                                            ["pylons"] = {
+                                            }, -- end of ["pylons"]
+                                        }, -- end of ["payload"]
+                                        ["psi"] = 2.7454351385277,
+                                        ["Radio"] = {
+                                            [1] = {
+                                                ["channels"] = {
+                                                    [1] = 251,
+                                                    [2] = 264,
+                                                    [3] = 265,
+                                                    [4] = 256,
+                                                    [5] = 254,
+                                                    [6] = 250,
+                                                    [7] = 270,
+                                                    [8] = 257,
+                                                    [9] = 255,
+                                                    [10] = 262,
+                                                    [11] = 259,
+                                                    [12] = 268,
+                                                    [13] = 269,
+                                                    [14] = 260,
+                                                    [15] = 263,
+                                                    [16] = 261,
+                                                    [17] = 267,
+                                                    [18] = 251,
+                                                    [19] = 253,
+                                                    [20] = 266,
+                                                }, -- end of ["channels"]
+                                                ["modulations"] = {
+                                                }, -- end of ["modulations"]
+                                            }, -- end of [1]
+                                        }, -- end of ["Radio"]
+                                        ["ropeLength"] = 15,
+                                        ["skill"] = "Client",
+                                        ["speed"] = 46.25,
+                                        ["type"] = "UH-1H",
+                                        ["unitId"] = 153,
+                                        ["x"] = -98017.834967525,
+                                        ["y"] = 438872.4966007,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -98017.834967525,
+                                ["y"] = 438872.4966007,
+                            }, -- end of [7]
                         }, -- end of ["group"]
                     }, -- end of ["helicopter"]
                     ["id"] = 2,
@@ -7139,6 +7248,238 @@ mission = {
                                 ["x"] = -294390.82440916,
                                 ["y"] = 636161.2855823,
                             }, -- end of [7]
+                            [8] = {
+                                ["communication"] = true,
+                                ["frequency"] = 127.5,
+                                ["groupId"] = 123,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["modulation"] = 0,
+                                ["name"] = "QRA-Maykop",
+                                ["radioSet"] = false,
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 7620,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 251.36809701176,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                        [1] = {
+                                                            ["auto"] = true,
+                                                            ["enabled"] = true,
+                                                            ["id"] = "EngageTargets",
+                                                            ["key"] = "CAP",
+                                                            ["number"] = 1,
+                                                            ["params"] = {
+                                                                ["priority"] = 0,
+                                                                ["targetTypes"] = {
+                                                                    [1] = "Air",
+                                                                }, -- end of ["targetTypes"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = 855.01222803735,
+                                            ["y"] = 446046.23468996,
+                                        }, -- end of [1]
+                                        [2] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 7620,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 118.03486519234,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 251.36809701176,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                        [1] = {
+                                                            ["auto"] = false,
+                                                            ["enabled"] = true,
+                                                            ["id"] = "EngageTargetsInZone",
+                                                            ["number"] = 1,
+                                                            ["params"] = {
+                                                                ["noTargetTypes"] = {
+                                                                    [1] = "Antiship Missiles",
+                                                                    [2] = "AA Missiles",
+                                                                    [3] = "AG Missiles",
+                                                                    [4] = "SA Missiles",
+                                                                }, -- end of ["noTargetTypes"]
+                                                                ["priority"] = 0,
+                                                                ["targetTypes"] = {
+                                                                    [1] = "Air",
+                                                                    [2] = "Cruise missiles",
+                                                                }, -- end of ["targetTypes"]
+                                                                ["value"] = "Air;Cruise missiles;",
+                                                                ["x"] = -78031.38565747,
+                                                                ["y"] = 464381.47845671,
+                                                                ["zoneRadius"] = 60960,
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -26718.191166036,
+                                            ["y"] = 457002.4744492,
+                                        }, -- end of [2]
+                                        [3] = {
+                                            ["action"] = "Turning Point",
+                                            ["alt"] = 7620,
+                                            ["alt_type"] = "BARO",
+                                            ["ETA"] = 508.83831342915,
+                                            ["ETA_locked"] = false,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 251.36809701176,
+                                            ["speed_locked"] = true,
+                                            ["task"] = {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = {
+                                                    ["tasks"] = {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -124593.9330152,
+                                            ["y"] = 465402.25826461,
+                                        }, -- end of [3]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "CAP",
+                                ["tasks"] = {
+                                }, -- end of ["tasks"]
+                                ["uncontrolled"] = false,
+                                ["units"] = {
+                                    [1] = {
+                                        ["alt"] = 7620,
+                                        ["alt_type"] = "BARO",
+                                        ["callsign"] = 114,
+                                        ["hardpoint_racks"] = true,
+                                        ["heading"] = 2.7633719867824,
+                                        ["livery_id"] = "Air Force Standard Early",
+                                        ["name"] = "QRA-Maykop-1",
+                                        ["onboard_num"] = "060",
+                                        ["payload"] = {
+                                            ["chaff"] = 96,
+                                            ["flare"] = 96,
+                                            ["fuel"] = 9400,
+                                            ["gun"] = 100,
+                                            ["pylons"] = {
+                                                [1] = {
+                                                    ["CLSID"] = "{44EE8698-89F9-48EE-AF36-5FD31896A82F}",
+                                                }, -- end of [1]
+                                                [2] = {
+                                                    ["CLSID"] = "{FBC29BFE-3D24-4C64-B81D-941239D12249}",
+                                                }, -- end of [2]
+                                                [3] = {
+                                                    ["CLSID"] = "{B79C379A-9E87-4E50-A1EE-7F7E29C2E87A}",
+                                                }, -- end of [3]
+                                                [4] = {
+                                                    ["CLSID"] = "{E8069896-8435-4B90-95C0-01A03AE6E400}",
+                                                }, -- end of [4]
+                                                [5] = {
+                                                    ["CLSID"] = "{E8069896-8435-4B90-95C0-01A03AE6E400}",
+                                                }, -- end of [5]
+                                                [6] = {
+                                                    ["CLSID"] = "{E8069896-8435-4B90-95C0-01A03AE6E400}",
+                                                }, -- end of [6]
+                                                [7] = {
+                                                    ["CLSID"] = "{E8069896-8435-4B90-95C0-01A03AE6E400}",
+                                                }, -- end of [7]
+                                                [8] = {
+                                                    ["CLSID"] = "{B79C379A-9E87-4E50-A1EE-7F7E29C2E87A}",
+                                                }, -- end of [8]
+                                                [9] = {
+                                                    ["CLSID"] = "{FBC29BFE-3D24-4C64-B81D-941239D12249}",
+                                                }, -- end of [9]
+                                                [10] = {
+                                                    ["CLSID"] = "{44EE8698-89F9-48EE-AF36-5FD31896A82A}",
+                                                }, -- end of [10]
+                                            }, -- end of ["pylons"]
+                                        }, -- end of ["payload"]
+                                        ["psi"] = -2.7633719867824,
+                                        ["skill"] = "High",
+                                        ["speed"] = 251.36809701176,
+                                        ["type"] = "Su-27",
+                                        ["unitId"] = 151,
+                                        ["x"] = 855.01222803735,
+                                        ["y"] = 446046.23468996,
+                                    }, -- end of [1]
+                                    [2] = {
+                                        ["alt"] = 7620,
+                                        ["alt_type"] = "BARO",
+                                        ["callsign"] = 113,
+                                        ["heading"] = 2.7633719867824,
+                                        ["livery_id"] = "Air Force Standard Early",
+                                        ["name"] = "QRA-Maykop-2",
+                                        ["onboard_num"] = "061",
+                                        ["payload"] = {
+                                            ["chaff"] = 96,
+                                            ["flare"] = 96,
+                                            ["fuel"] = 9400,
+                                            ["gun"] = 100,
+                                            ["pylons"] = {
+                                                [1] = {
+                                                    ["CLSID"] = "{44EE8698-89F9-48EE-AF36-5FD31896A82F}",
+                                                }, -- end of [1]
+                                                [2] = {
+                                                    ["CLSID"] = "{FBC29BFE-3D24-4C64-B81D-941239D12249}",
+                                                }, -- end of [2]
+                                                [3] = {
+                                                    ["CLSID"] = "{B79C379A-9E87-4E50-A1EE-7F7E29C2E87A}",
+                                                }, -- end of [3]
+                                                [4] = {
+                                                    ["CLSID"] = "{E8069896-8435-4B90-95C0-01A03AE6E400}",
+                                                }, -- end of [4]
+                                                [5] = {
+                                                    ["CLSID"] = "{E8069896-8435-4B90-95C0-01A03AE6E400}",
+                                                }, -- end of [5]
+                                                [6] = {
+                                                    ["CLSID"] = "{E8069896-8435-4B90-95C0-01A03AE6E400}",
+                                                }, -- end of [6]
+                                                [7] = {
+                                                    ["CLSID"] = "{E8069896-8435-4B90-95C0-01A03AE6E400}",
+                                                }, -- end of [7]
+                                                [8] = {
+                                                    ["CLSID"] = "{B79C379A-9E87-4E50-A1EE-7F7E29C2E87A}",
+                                                }, -- end of [8]
+                                                [9] = {
+                                                    ["CLSID"] = "{FBC29BFE-3D24-4C64-B81D-941239D12249}",
+                                                }, -- end of [9]
+                                                [10] = {
+                                                    ["CLSID"] = "{44EE8698-89F9-48EE-AF36-5FD31896A82A}",
+                                                }, -- end of [10]
+                                            }, -- end of ["pylons"]
+                                        }, -- end of ["payload"]
+                                        ["psi"] = -2.7633719867824,
+                                        ["skill"] = "High",
+                                        ["speed"] = 251.36809701176,
+                                        ["type"] = "Su-27",
+                                        ["unitId"] = 152,
+                                        ["x"] = 815.01222803735,
+                                        ["y"] = 446086.23468996,
+                                    }, -- end of [2]
+                                }, -- end of ["units"]
+                                ["x"] = 855.01222803735,
+                                ["y"] = 446046.23468996,
+                            }, -- end of [8]
                         }, -- end of ["group"]
                     }, -- end of ["plane"]
                     ["static"] = {
@@ -10976,7 +11317,7 @@ mission = {
             [10] = 47,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 85747,
+    ["currentKey"] = 88451,
     ["date"] = {
         ["Day"] = 15,
         ["Month"] = 4,
@@ -11506,9 +11847,9 @@ mission = {
         }, -- end of ["roles"]
     }, -- end of ["groundControl"]
     ["map"] = {
-        ["centerX"] = -327156.71064388,
-        ["centerY"] = 632946.41965413,
-        ["zoom"] = 33106.341919449,
+        ["centerX"] = -97616.395233187,
+        ["centerY"] = 437926.46807947,
+        ["zoom"] = 21783.551475694,
     }, -- end of ["map"]
     ["maxDictId"] = 785,
     ["pictureFileNameB"] = {
@@ -11551,18 +11892,20 @@ mission = {
     ["theatre"] = "Caucasus",
     ["trig"] = {
         ["actions"] = {
-            [1] = "a_do_script(\"VEAF_DYNAMIC_PATH = [[d:\\\\dev\\\\_VEAF\\\\VEAF-Mission-Creation-Tools]]\");a_do_script(\"VEAF_DYNAMIC_MISSIONPATH = [[d:\\\\dev\\\\_VEAF\\\\VEAF-Demo-Mission\\\\]]\");",
-            [2] = "a_do_script(\"env.info(\\\"DYNAMIC LOADING\\\")\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/mist.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/DCS-SimpleTextToSpeech.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/CTLD.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/WeatherMark.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/skynet-iads-compiled.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/Hercules_Cargo.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/DCS-SimpleTextToSpeech.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/HoundElint.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/VeafDynamicLoader.lua\\\"))()\");",
-            [3] = "a_do_script(\"env.info(\\\"STATIC LOADING\\\")\");a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10202\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10204\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_784\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10205\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10206\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10207\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_781\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_782\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10208\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10209\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10210\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10211\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10212\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10213\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10214\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10215\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10216\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10217\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10218\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10219\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10220\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10221\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10222\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10223\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10224\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10225\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10226\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10227\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10228\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_707\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_785\"));",
-            [4] = "a_do_script(\"assert(loadfile(VEAF_DYNAMIC_MISSIONPATH .. \\\"/src/scripts/missionConfig.lua\\\"))()\");",
-            [5] = "a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10401\"));",
+            [1] = "a_do_script(\"VEAF_DYNAMIC_PATH = [[d:\\\\dev\\\\_VEAF\\\\VEAF-Mission-Creation-Tools]]\");",
+            [2] = "a_do_script(\"VEAF_DYNAMIC_MISSIONPATH = [[d:\\\\dev\\\\_VEAF\\\\VEAF-Open-Training-Mission-Marianas\\\\]]\");",
+            [3] = "a_do_script(\"env.info(\\\"DYNAMIC SCRIPTS LOADING\\\")\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/mist.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/DCS-SimpleTextToSpeech.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/CTLD.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/WeatherMark.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/skynet-iads-compiled.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/Hercules_Cargo.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/HoundElint.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/VeafDynamicLoader.lua\\\"))()\");",
+            [4] = "a_do_script(\"env.info(\\\"STATIC SCRIPTS LOADING\\\")\");a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10202\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10203\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10204\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10205\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10206\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10207\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10208\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10308\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10309\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10310\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10311\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10312\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10313\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10314\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10315\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10316\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10317\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10318\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10319\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10320\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10321\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10322\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10323\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10324\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10325\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10326\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10327\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10328\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10329\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10330\"));",
+            [5] = "a_do_script(\"env.info(\\\"DYNAMIC CONFIG LOADING\\\")\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_MISSIONPATH .. \\\"/src/scripts/missionConfig.lua\\\"))()\");",
+            [6] = "a_do_script(\"env.info(\\\"STATIC CONFIG LOADING\\\")\");a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10401\"));",
         }, -- end of ["actions"]
         ["conditions"] = {
             [1] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10501\")) )",
-            [2] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10601\")) )",
-            [3] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10701\")) )",
-            [4] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10801\")) )",
-            [5] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10901\")) )",
+            [2] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10502\")) )",
+            [3] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10601\")) )",
+            [4] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10701\")) )",
+            [5] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10801\")) )",
+            [6] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10901\")) )",
         }, -- end of ["conditions"]
         ["custom"] = {
         }, -- end of ["custom"]
@@ -11576,6 +11919,7 @@ mission = {
             [3] = true,
             [4] = true,
             [5] = true,
+            [6] = true,
         }, -- end of ["flag"]
         ["func"] = {
         }, -- end of ["func"]
@@ -11585,6 +11929,7 @@ mission = {
             [3] = "if mission.trig.conditions[3]() then mission.trig.actions[3]() end",
             [4] = "if mission.trig.conditions[4]() then mission.trig.actions[4]() end",
             [5] = "if mission.trig.conditions[5]() then mission.trig.actions[5]() end",
+            [6] = "if mission.trig.conditions[6]() then mission.trig.actions[6]() end",
         }, -- end of ["funcStartup"]
     }, -- end of ["trig"]
     ["triggers"] = {
@@ -11744,6 +12089,23 @@ mission = {
                 ["y"] = 631101.63875755,
                 ["zoneId"] = 1000,
             }, -- end of [7]
+            [8] = {
+                ["color"] = {
+                    [1] = 1,
+                    [2] = 1,
+                    [3] = 1,
+                    [4] = 0.15,
+                }, -- end of ["color"]
+                ["hidden"] = false,
+                ["name"] = "QRA-Maykop",
+                ["properties"] = {
+                }, -- end of ["properties"]
+                ["radius"] = 91440,
+                ["type"] = 0,
+                ["x"] = -25622.567190113,
+                ["y"] = 457550.28643716,
+                ["zoneId"] = 1165,
+            }, -- end of [8]
         }, -- end of ["zones"]
     }, -- end of ["triggers"]
     ["trigrules"] = {
@@ -11753,13 +12115,9 @@ mission = {
                     ["predicate"] = "a_do_script",
                     ["text"] = "VEAF_DYNAMIC_PATH = [[d:\\dev\\_VEAF\\VEAF-Mission-Creation-Tools]]",
                 }, -- end of [1]
-                [2] = {
-                    ["predicate"] = "a_do_script",
-                    ["text"] = "VEAF_DYNAMIC_MISSIONPATH = [[d:\\dev\\_VEAF\\VEAF-Demo-Mission\\]]",
-                }, -- end of [2]
             }, -- end of ["actions"]
             ["colorItem"] = "0x00ffffff",
-            ["comment"] = "choose - static or dynamic)",
+            ["comment"] = "choose scripts loading method (false = static, true = dynamic)",
             ["eventlist"] = "",
             ["predicate"] = "triggerStart",
             ["rules"] = {
@@ -11775,7 +12133,27 @@ mission = {
             ["actions"] = {
                 [1] = {
                     ["predicate"] = "a_do_script",
-                    ["text"] = "env.info(\"DYNAMIC LOADING\")",
+                    ["text"] = "VEAF_DYNAMIC_MISSIONPATH = [[d:\\dev\\_VEAF\\VEAF-Open-Training-Mission-Marianas\\]]",
+                }, -- end of [1]
+            }, -- end of ["actions"]
+            ["colorItem"] = "0x00ffffff",
+            ["comment"] = "choose config loading method (false = static, true = dynamic)",
+            ["eventlist"] = "",
+            ["predicate"] = "triggerStart",
+            ["rules"] = {
+                [1] = {
+                    ["flag"] = 1,
+                    ["KeyDict_text"] = "DictKey_ActionText_10502",
+                    ["predicate"] = "c_predicate",
+                    ["text"] = "DictKey_ActionText_10502",
+                }, -- end of [1]
+            }, -- end of ["rules"]
+        }, -- end of [2]
+        [3] = {
+            ["actions"] = {
+                [1] = {
+                    ["predicate"] = "a_do_script",
+                    ["text"] = "env.info(\"DYNAMIC SCRIPTS LOADING\")",
                 }, -- end of [1]
                 [2] = {
                     ["predicate"] = "a_do_script",
@@ -11803,16 +12181,12 @@ mission = {
                 }, -- end of [7]
                 [8] = {
                     ["predicate"] = "a_do_script",
-                    ["text"] = "assert(loadfile(VEAF_DYNAMIC_PATH .. \"/src/scripts/community/DCS-SimpleTextToSpeech.lua\"))()",
+                    ["text"] = "assert(loadfile(VEAF_DYNAMIC_PATH .. \"/src/scripts/community/HoundElint.lua\"))()",
                 }, -- end of [8]
                 [9] = {
                     ["predicate"] = "a_do_script",
-                    ["text"] = "assert(loadfile(VEAF_DYNAMIC_PATH .. \"/src/scripts/community/HoundElint.lua\"))()",
-                }, -- end of [9]
-                [10] = {
-                    ["predicate"] = "a_do_script",
                     ["text"] = "assert(loadfile(VEAF_DYNAMIC_PATH .. \"/src/scripts/VeafDynamicLoader.lua\"))()",
-                }, -- end of [10]
+                }, -- end of [9]
             }, -- end of ["actions"]
             ["colorItem"] = "0x00ff80ff",
             ["comment"] = "mission start - dynamic",
@@ -11825,23 +12199,23 @@ mission = {
                     ["text"] = "DictKey_ActionText_10601",
                 }, -- end of [1]
             }, -- end of ["rules"]
-        }, -- end of [2]
-        [3] = {
+        }, -- end of [3]
+        [4] = {
             ["actions"] = {
                 [1] = {
                     ["predicate"] = "a_do_script",
-                    ["text"] = "env.info(\"STATIC LOADING\")",
+                    ["text"] = "env.info(\"STATIC SCRIPTS LOADING\")",
                 }, -- end of [1]
                 [2] = {
                     ["file"] = "DictKey_ActionText_10202",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [2]
                 [3] = {
-                    ["file"] = "DictKey_ActionText_10204",
+                    ["file"] = "DictKey_ActionText_10203",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [3]
                 [4] = {
-                    ["file"] = "ResKey_Action_784",
+                    ["file"] = "DictKey_ActionText_10204",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [4]
                 [5] = {
@@ -11857,105 +12231,101 @@ mission = {
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [7]
                 [8] = {
-                    ["file"] = "ResKey_Action_781",
+                    ["file"] = "DictKey_ActionText_10208",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [8]
                 [9] = {
-                    ["file"] = "ResKey_Action_782",
+                    ["file"] = "DictKey_ActionText_10308",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [9]
                 [10] = {
-                    ["file"] = "DictKey_ActionText_10208",
+                    ["file"] = "DictKey_ActionText_10309",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [10]
                 [11] = {
-                    ["file"] = "DictKey_ActionText_10209",
+                    ["file"] = "DictKey_ActionText_10310",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [11]
                 [12] = {
-                    ["file"] = "DictKey_ActionText_10210",
+                    ["file"] = "DictKey_ActionText_10311",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [12]
                 [13] = {
-                    ["file"] = "DictKey_ActionText_10211",
+                    ["file"] = "DictKey_ActionText_10312",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [13]
                 [14] = {
-                    ["file"] = "DictKey_ActionText_10212",
+                    ["file"] = "DictKey_ActionText_10313",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [14]
                 [15] = {
-                    ["file"] = "DictKey_ActionText_10213",
+                    ["file"] = "DictKey_ActionText_10314",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [15]
                 [16] = {
-                    ["file"] = "DictKey_ActionText_10214",
+                    ["file"] = "DictKey_ActionText_10315",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [16]
                 [17] = {
-                    ["file"] = "DictKey_ActionText_10215",
+                    ["file"] = "DictKey_ActionText_10316",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [17]
                 [18] = {
-                    ["file"] = "DictKey_ActionText_10216",
+                    ["file"] = "DictKey_ActionText_10317",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [18]
                 [19] = {
-                    ["file"] = "DictKey_ActionText_10217",
+                    ["file"] = "DictKey_ActionText_10318",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [19]
                 [20] = {
-                    ["file"] = "DictKey_ActionText_10218",
+                    ["file"] = "DictKey_ActionText_10319",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [20]
                 [21] = {
-                    ["file"] = "DictKey_ActionText_10219",
+                    ["file"] = "DictKey_ActionText_10320",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [21]
                 [22] = {
-                    ["file"] = "DictKey_ActionText_10220",
+                    ["file"] = "DictKey_ActionText_10321",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [22]
                 [23] = {
-                    ["file"] = "DictKey_ActionText_10221",
+                    ["file"] = "DictKey_ActionText_10322",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [23]
                 [24] = {
-                    ["file"] = "DictKey_ActionText_10222",
+                    ["file"] = "DictKey_ActionText_10323",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [24]
                 [25] = {
-                    ["file"] = "DictKey_ActionText_10223",
+                    ["file"] = "DictKey_ActionText_10324",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [25]
                 [26] = {
-                    ["file"] = "DictKey_ActionText_10224",
+                    ["file"] = "DictKey_ActionText_10325",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [26]
                 [27] = {
-                    ["file"] = "DictKey_ActionText_10225",
+                    ["file"] = "DictKey_ActionText_10326",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [27]
                 [28] = {
-                    ["file"] = "DictKey_ActionText_10226",
+                    ["file"] = "DictKey_ActionText_10327",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [28]
                 [29] = {
-                    ["file"] = "DictKey_ActionText_10227",
+                    ["file"] = "DictKey_ActionText_10328",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [29]
                 [30] = {
-                    ["file"] = "DictKey_ActionText_10228",
+                    ["file"] = "DictKey_ActionText_10329",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [30]
                 [31] = {
-                    ["file"] = "ResKey_Action_707",
+                    ["file"] = "DictKey_ActionText_10330",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [31]
-                [32] = {
-                    ["file"] = "ResKey_Action_785",
-                    ["predicate"] = "a_do_script_file",
-                }, -- end of [32]
             }, -- end of ["actions"]
             ["colorItem"] = "0x00ff80ff",
             ["comment"] = "mission start - static",
@@ -11968,16 +12338,22 @@ mission = {
                     ["text"] = "DictKey_ActionText_10701",
                 }, -- end of [1]
             }, -- end of ["rules"]
-        }, -- end of [3]
-        [4] = {
+        }, -- end of [4]
+        [5] = {
             ["actions"] = {
                 [1] = {
+                    ["meters"] = 1000,
+                    ["predicate"] = "a_do_script",
+                    ["text"] = "env.info(\"DYNAMIC CONFIG LOADING\")",
+                    ["zone"] = 184,
+                }, -- end of [1]
+                [2] = {
                     ["predicate"] = "a_do_script",
                     ["text"] = "assert(loadfile(VEAF_DYNAMIC_MISSIONPATH .. \"/src/scripts/missionConfig.lua\"))()",
-                }, -- end of [1]
+                }, -- end of [2]
             }, -- end of ["actions"]
             ["colorItem"] = "0x8080ffff",
-            ["comment"] = "mission config - dynamic)",
+            ["comment"] = "mission config - dynamic",
             ["eventlist"] = "",
             ["predicate"] = "triggerStart",
             ["rules"] = {
@@ -11987,13 +12363,19 @@ mission = {
                     ["text"] = "DictKey_ActionText_10801",
                 }, -- end of [1]
             }, -- end of ["rules"]
-        }, -- end of [4]
-        [5] = {
+        }, -- end of [5]
+        [6] = {
             ["actions"] = {
                 [1] = {
+                    ["meters"] = 1000,
+                    ["predicate"] = "a_do_script",
+                    ["text"] = "env.info(\"STATIC CONFIG LOADING\")",
+                    ["zone"] = 184,
+                }, -- end of [1]
+                [2] = {
                     ["file"] = "DictKey_ActionText_10401",
                     ["predicate"] = "a_do_script_file",
-                }, -- end of [1]
+                }, -- end of [2]
             }, -- end of ["actions"]
             ["colorItem"] = "0x8080ffff",
             ["comment"] = "mission config - static",
@@ -12006,7 +12388,7 @@ mission = {
                     ["text"] = "DictKey_ActionText_10901",
                 }, -- end of [1]
             }, -- end of ["rules"]
-        }, -- end of [5]
+        }, -- end of [6]
     }, -- end of ["trigrules"]
     ["version"] = 19,
     ["weather"] = {
