@@ -174,10 +174,20 @@ pushd %DYNAMIC_SCRIPTS_PATH%\src\scripts\veaf
 popd
 
 rem -- set the waypoints according to the settings file
-echo set the waypoints according to the settings file
-pushd %DYNAMIC_SCRIPTS_PATH%\src\scripts\veaf
-"%LUA%" veafMissionFlightPlanEditor.lua  %DYNAMIC_MISSION_PATH%\build\tempsrc %DYNAMIC_MISSION_PATH%\src\waypoints\waypointsSettings.lua %LUA_SCRIPTS_DEBUG_PARAMETER%
-popd
+if exist %DYNAMIC_MISSION_PATH%\src\waypoints\waypointsSettings.lua (
+	echo set the waypoints according to the settings file
+	pushd %DYNAMIC_SCRIPTS_PATH%\src\scripts\veaf
+	"%LUA%" veafMissionFlightPlanEditor.lua  %DYNAMIC_MISSION_PATH%\build\tempsrc %DYNAMIC_MISSION_PATH%\src\waypoints\waypointsSettings.lua %LUA_SCRIPTS_DEBUG_PARAMETER%
+	popd
+)
+
+rem -- set the spawnable aircrafts according to the settings file
+if exist %DYNAMIC_MISSION_PATH%\src\spawnableAircrafts\settings.lua (
+	echo set the spawnable aircrafts according to the settings file
+	pushd %DYNAMIC_SCRIPTS_PATH%\src\scripts\veaf
+	"%LUA%" veafSpawnableAircraftsEditor.lua  %DYNAMIC_MISSION_PATH%\build\tempsrc %DYNAMIC_MISSION_PATH%\src\spawnableAircrafts\settings.lua %LUA_SCRIPTS_DEBUG_PARAMETER%
+	popd
+)
 
 rem -- set the dynamic load variables in the dictionary
 echo set the dynamic load variables in the dictionary
