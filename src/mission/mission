@@ -2,8 +2,8 @@ mission = {
     ["coalition"] = {
         ["blue"] = {
             ["bullseye"] = {
-                ["x"] = -327735.42154114,
-                ["y"] = 607973.19024268,
+                ["x"] = -327185.79676896,
+                ["y"] = 607093.66320678,
             }, -- end of ["bullseye"]
             ["country"] = {
                 [1] = {
@@ -934,7 +934,7 @@ mission = {
                                         ["hardpoint_racks"] = true,
                                         ["heading"] = -2.5415424401877,
                                         ["livery_id"] = "106th SQN (8th Airbase)",
-                                        ["name"] = "Pilot #008",
+                                        ["name"] = "Pilot #008-1",
                                         ["onboard_num"] = "011",
                                         ["payload"] = {
                                             ["chaff"] = 120,
@@ -2331,7 +2331,7 @@ mission = {
                                         }, -- end of ["callsign"]
                                         ["heading"] = 0,
                                         ["livery_id"] = "VAW-125 Tigertails",
-                                        ["name"] = "Pilot #020",
+                                        ["name"] = "Pilot #020-1",
                                         ["onboard_num"] = "052",
                                         ["payload"] = {
                                             ["chaff"] = 120,
@@ -5566,10 +5566,6 @@ mission = {
                                             ["ETA_locked"] = true,
                                             ["formation_template"] = "",
                                             ["name"] = "",
-                                            ["properties"] = {
-                                                ["addopt"] = {
-                                                }, -- end of ["addopt"]
-                                            }, -- end of ["properties"]
                                             ["speed"] = 255.26193605785,
                                             ["speed_locked"] = true,
                                             ["task"] = {
@@ -6120,10 +6116,6 @@ mission = {
                                             ["ETA_locked"] = true,
                                             ["formation_template"] = "",
                                             ["name"] = "",
-                                            ["properties"] = {
-                                                ["addopt"] = {
-                                                }, -- end of ["addopt"]
-                                            }, -- end of ["properties"]
                                             ["speed"] = 255.26193605785,
                                             ["speed_locked"] = true,
                                             ["task"] = {
@@ -14271,7 +14263,7 @@ mission = {
             [10] = 47,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 90116,
+    ["currentKey"] = 91452,
     ["date"] = {
         ["Day"] = 15,
         ["Month"] = 4,
@@ -14801,9 +14793,9 @@ mission = {
         }, -- end of ["roles"]
     }, -- end of ["groundControl"]
     ["map"] = {
-        ["centerX"] = -97194.075531079,
-        ["centerY"] = 291223.3202203,
-        ["zoom"] = 2404508.2612116,
+        ["centerX"] = -333024.21176645,
+        ["centerY"] = 628771.80399094,
+        ["zoom"] = 103771.21548102,
     }, -- end of ["map"]
     ["maxDictId"] = 785,
     ["pictureFileNameB"] = {
@@ -14846,12 +14838,14 @@ mission = {
     ["theatre"] = "Caucasus",
     ["trig"] = {
         ["actions"] = {
-            [1] = "a_do_script(\"VEAF_DYNAMIC_PATH = [[d:\\dev\\_VEAF\\VEAF-Mission-Creation-Tools]]\");",
-            [2] = "a_do_script(\"VEAF_DYNAMIC_MISSIONPATH = [[d:\\dev\\_VEAF\\VEAF-Demo-Mission\\]]\");",
+            [1] = "a_do_script(\"VEAF_DYNAMIC_PATH = [[d:\\\\dev\\\\_VEAF\\\\VEAF-Mission-Creation-Tools]]\");",
+            [2] = "a_do_script(\"VEAF_DYNAMIC_MISSIONPATH = [[D:\\\\dev\\\\_VEAF\\\\VEAF-Demo-Mission\\\\]]\");",
             [3] = "a_do_script(\"env.info(\\\"DYNAMIC SCRIPTS LOADING\\\")\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/mist.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/DCS-SimpleTextToSpeech.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/CTLD.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/WeatherMark.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/skynet-iads-compiled.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/Hercules_Cargo.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/community/HoundElint.lua\\\"))()\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_PATH .. \\\"/src/scripts/VeafDynamicLoader.lua\\\"))()\");",
             [4] = "a_do_script(\"env.info(\\\"STATIC SCRIPTS LOADING\\\")\");a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10202\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10203\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10204\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10205\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10206\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10207\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10208\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10308\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10309\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10310\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10311\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10312\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10313\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10314\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10315\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10316\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10317\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10318\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10319\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10320\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10321\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10322\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10323\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10324\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10325\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10326\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10327\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10328\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10329\"));a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10330\"));",
             [5] = "a_do_script(\"env.info(\\\"DYNAMIC CONFIG LOADING\\\")\");a_do_script(\"assert(loadfile(VEAF_DYNAMIC_MISSIONPATH .. \\\"/src/scripts/missionConfig.lua\\\"))()\");",
             [6] = "a_do_script(\"env.info(\\\"STATIC CONFIG LOADING\\\")\");a_do_script_file(getValueResourceByKey(\"DictKey_ActionText_10401\"));",
+            [7] = "a_activate_group(16);a_activate_group(27);",
+            [8] = "a_deactivate_group(16);a_deactivate_group(27);",
         }, -- end of ["actions"]
         ["conditions"] = {
             [1] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10501\")) )",
@@ -14860,6 +14854,8 @@ mission = {
             [4] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10701\")) )",
             [5] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10801\")) )",
             [6] = "return(c_predicate(getValueDictByKey(\"DictKey_ActionText_10901\")) )",
+            [7] = "return(c_flag_is_true(666) )",
+            [8] = "return(c_flag_is_false(666) )",
         }, -- end of ["conditions"]
         ["custom"] = {
         }, -- end of ["custom"]
@@ -14874,8 +14870,12 @@ mission = {
             [4] = true,
             [5] = true,
             [6] = true,
+            [7] = true,
+            [8] = true,
         }, -- end of ["flag"]
         ["func"] = {
+            [7] = "if mission.trig.conditions[7]() then if not mission.trig.flag[7] then mission.trig.actions[7](); mission.trig.flag[7] = true;end; else mission.trig.flag[7] = false; end;",
+            [8] = "if mission.trig.conditions[8]() then if not mission.trig.flag[8] then mission.trig.actions[8](); mission.trig.flag[8] = true;end; else mission.trig.flag[8] = false; end;",
         }, -- end of ["func"]
         ["funcStartup"] = {
             [1] = "if mission.trig.conditions[1]() then mission.trig.actions[1]() end",
@@ -15087,7 +15087,7 @@ mission = {
             ["actions"] = {
                 [1] = {
                     ["predicate"] = "a_do_script",
-                    ["text"] = "VEAF_DYNAMIC_MISSIONPATH = [[d:\\dev\\_VEAF\\VEAF-Demo-Mission\\]]",
+                    ["text"] = "VEAF_DYNAMIC_MISSIONPATH = [[D:\\dev\\_VEAF\\VEAF-Demo-Mission\\]]",
                 }, -- end of [1]
             }, -- end of ["actions"]
             ["colorItem"] = "0x00ffffff",
@@ -15343,6 +15343,54 @@ mission = {
                 }, -- end of [1]
             }, -- end of ["rules"]
         }, -- end of [6]
+        [7] = {
+            ["actions"] = {
+                [1] = {
+                    ["group"] = 16,
+                    ["predicate"] = "a_activate_group",
+                }, -- end of [1]
+                [2] = {
+                    ["group"] = 27,
+                    ["predicate"] = "a_activate_group",
+                }, -- end of [2]
+            }, -- end of ["actions"]
+            ["colorItem"] = "0xffff80ff",
+            ["comment"] = "OnFlag-666",
+            ["eventlist"] = "",
+            ["predicate"] = "triggerFront",
+            ["rules"] = {
+                [1] = {
+                    ["coalitionlist"] = "red",
+                    ["flag"] = 666,
+                    ["predicate"] = "c_flag_is_true",
+                    ["zone"] = 670,
+                }, -- end of [1]
+            }, -- end of ["rules"]
+        }, -- end of [7]
+        [8] = {
+            ["actions"] = {
+                [1] = {
+                    ["group"] = 16,
+                    ["predicate"] = "a_deactivate_group",
+                }, -- end of [1]
+                [2] = {
+                    ["group"] = 27,
+                    ["predicate"] = "a_deactivate_group",
+                }, -- end of [2]
+            }, -- end of ["actions"]
+            ["colorItem"] = "0xffff80ff",
+            ["comment"] = "OnFlag-666",
+            ["eventlist"] = "",
+            ["predicate"] = "triggerFront",
+            ["rules"] = {
+                [1] = {
+                    ["coalitionlist"] = "red",
+                    ["flag"] = 666,
+                    ["predicate"] = "c_flag_is_false",
+                    ["zone"] = 670,
+                }, -- end of [1]
+            }, -- end of ["rules"]
+        }, -- end of [8]
     }, -- end of ["trigrules"]
     ["version"] = 19,
     ["weather"] = {

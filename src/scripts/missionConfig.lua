@@ -433,3 +433,17 @@ end
 
 -- automatically start the ELINT mission
 veafCombatMission.ActivateMission("ELINT-Mission-1", true)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Mission Master stuff
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+function mySuperCoolFunction()
+    trigger.action.outText("Yay, my super cool function was run !", 5)
+end
+
+veafSpawn.missionMasterAddRunnable("mscf", mySuperCoolFunction)
+
+if veafSecurity then
+    veafSecurity.password_MM["a7e627f2edbca7a8feac8b652764c043e9ae18d7"] = true -- this password is `encircle-account-cilium`
+    veafSecurity.password_MM["cb02f137c8422720075e53075d062ab6de398af6"] = true -- there can be multiple passwords ; this one is `sudanese-seaweed-yucatan` 
+end
