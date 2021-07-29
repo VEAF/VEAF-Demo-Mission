@@ -242,6 +242,7 @@ end
 if veafCarrierOperations then
     veaf.loggers.get(veaf.Id):info("init - veafCarrierOperations")
     veafCarrierOperations.initialize(true)
+    mist.scheduleFunction(veafCarrierOperations.startCarrierOperations,{{"CSG-74 Stennis", 90}},timer.getTime() + 1)
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
