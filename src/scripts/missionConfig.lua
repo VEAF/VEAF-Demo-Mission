@@ -100,7 +100,7 @@ end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 if veafCombatMission then 
-	veaf.loggers.get(veaf.Id):info("Loading configuration")
+    veaf.loggers.get(veaf.Id):info("Loading configuration")
     
     veafCombatMission.addCapMission("CAP-Maykop-1", "CAP on Maykop", "A Russian CAP patrol has been spotted over Maykop.", true, true)
 
@@ -124,7 +124,7 @@ Don't let them be destroyed by the enemy !]])
 		:initialize()
 	)
 
-	veaf.loggers.get(veaf.Id):info("init - veafCombatMission")
+    veaf.loggers.get(veaf.Id):info("init - veafCombatMission")
     veafCombatMission.initialize()
 end
 
@@ -132,7 +132,7 @@ end
 -- configure COMBAT ZONE
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafCombatZone then 
-	veaf.loggers.get(veaf.Id):info("Loading configuration")
+    veaf.loggers.get(veaf.Id):info("Loading configuration")
 
     veafCombatZone.AddZone(
 		VeafCombatZone.new()
@@ -154,6 +154,7 @@ if veafCombatZone then
     
     veaf.loggers.get(veaf.Id):info("init - veafCombatZone")
     veafCombatZone.initialize()
+
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -176,7 +177,6 @@ if veafNamedPoints then
     veaf.loggers.get(veaf.Id):info("Loading configuration")
 
     veaf.loggers.get(veaf.Id):info("init - veafNamedPoints")
-    veafNamedPoints.initialize()
     if theatre == "syria" then
         veafNamedPoints.Points = {
             -- Turkish Airports
@@ -286,6 +286,7 @@ if veafNamedPoints then
     table.insert(veafNamedPoints.Points,
         {name="RANGE Kobuleti",point={x=-328289,y=0,z=631228}}
     )
+    veafNamedPoints.initialize()
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -306,7 +307,7 @@ if veafSecurity then
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
--- configure CARRIER OPERATIONS 
+-- configure CARRIER OPERATIONS
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafCarrierOperations then
     veaf.loggers.get(veaf.Id):info("init - veafCarrierOperations")
@@ -321,7 +322,6 @@ if veafRemote then
     veaf.loggers.get(veaf.Id):info("init - veafRemote")
     veafRemote.initialize()
 end
-
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize the interpreter
