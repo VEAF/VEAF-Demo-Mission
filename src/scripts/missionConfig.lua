@@ -418,18 +418,17 @@ veafCombatMission.ActivateMission("ELINT-Mission-1", true)
 ]]
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
--- Test of batch aliases
+-- Testing veafShortcuts.ExecuteBatchAliasesList
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-veafShortcuts.AddAlias(
-    VeafAlias:new()
-        :setName("-batch1")
-        :setDescription("Test of batch alias")
-        :setBatchAliases({
-            "-shell#U38TLM3120086100",
-            "-shell#U38TLM3155087960",
-            "-armor#U38TLM3167086723",
-        })
-)
+local delay = nil -- no delay
+local coa = 1 -- blue
+local silent = false -- shout my name baby
+veafShortcuts.ExecuteBatchAliasesList({
+        "-shell#U38TLM3120086100",
+        "-shell#U38TLM3155087960",
+        "-armor#U38TLM3167086723, side red",
+        "-armor#U38TLM3085285707, side blue",
+    }, delay, coa, silent)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- Mission Master stuff
