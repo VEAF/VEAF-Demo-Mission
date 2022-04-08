@@ -431,17 +431,102 @@ veafShortcuts.ExecuteBatchAliasesList({
     }, delay, coa, silent)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
--- Mission Master stuff
+-- Mission Master stuffn  
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-function mySuperCoolFunction()
-    trigger.action.outText("Yay, my super cool function was run !", 5)
+function mySuperCoolFunction(text)
+    trigger.action.outText("Yay, my super cool function was run with "..text, 5)
+    return text.."-result"
 end
 
-veafSpawn.missionMasterAddRunnable("mscf", mySuperCoolFunction)
+function shellsAt(coord)
+    veafShortcuts.ExecuteBatchAliasesList({"-shells#"..coord..", radius 250"})
+end
+
+-- Mission master group ID is "1"
+local mmGroupID = 1
+-- if "silent" is true, no message will be displayed when running the runnable
+local silent = false
+veafSpawn.missionMasterSetMessagingMode(silent, mmGroupID)
+
+veafSpawn.missionMasterAddRunnable("mscf1", mySuperCoolFunction, "test1")
+veafSpawn.missionMasterAddRunnable("mscf2", mySuperCoolFunction, "test2")
+veafSpawn.missionMasterAddRunnable("shellRed", shellsAt, "U38TLM3167086723")
+veafSpawn.missionMasterAddRunnable("shellBlue", shellsAt, "U38TLM3085285707")
+veafSpawn.missionMasterAddRunnable("startPA", veafCarrierOperations.startCarrierOperations, {"CSG-74 Stennis", 90})
+veafSpawn.missionMasterAddRunnable("stopPA", veafCarrierOperations.stopCarrierOperations, "CSG-74 Stennis")
 
 if veafSecurity then
     veafSecurity.password_MM["a7e627f2edbca7a8feac8b652764c043e9ae18d7"] = true -- this password is `encircle-account-cilium`
     veafSecurity.password_MM["cb02f137c8422720075e53075d062ab6de398af6"] = true -- there can be multiple passwords ; this one is `sudanese-seaweed-yucatan` 
+end
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- mission-specific menus
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+if (veafRadio) then
+    local MISSION_MASTER_GROUPID = 1
+    local LOG_NAME = "DEMO"
+    local LOG_LEVEL = "trace"
+    ----------------------------------------
+
+    veaf.loggers.new(LOG_NAME, LOG_LEVEL)
+
+    local function _respawnCap(groupName)
+        local message = string.format("On va respawner le groupe [%s]", veaf.p(groupName))
+        veaf.loggers.get(LOG_NAME):debug(message)
+        trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
+        
+        local newGroup = mist.respawnGroup(groupName)
+
+        if newGroup == nil then
+            local message = string.format("Impossible de trouver le groupe [%s] pour le respawner", veaf.p(groupName))
+            veaf.loggers.get(LOG_NAME):error(message)
+            trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
+        else
+            local message = string.format("Groupe [%s] respawné avec succès", veaf.p(groupName))
+            veaf.loggers.get(LOG_NAME):info(message)
+            trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
+        end
+    end
+
+    local function menu(name, items)
+        return {
+            "menu", name, items
+        }
+    end
+
+    local function command(name, aFunction, parameters)
+        return {
+            "command", name, aFunction, parameters
+        }
+    end
+
+    local userMenu = {
+        menu("Gestion CAP", {
+            menu("CAP Est", {
+                menu("Facile", {
+                    command("Mig21", _respawnCap, "EST on Demand MIG21"),
+                    command("Mig21x3", _respawnCap, "EST on Demand MIG21x3"),
+                }),
+                menu("Moyen", {
+                    command("Mig31", _respawnCap, "EST on Demand mig31"),
+                    command("Mig31x3", _respawnCap, "EST on Demand mig31x3"),
+                }),
+            }),
+            menu("CAP Ouest", {
+                menu("Facile", {
+                    command("Mig21", _respawnCap, "OUEST on Demand MIG21"),
+                    command("Mig21x3", _respawnCap, "OUEST on Demand MIG21x3"),
+                }),
+                menu("Moyen", {
+                    command("Mig31", _respawnCap, "OUEST on Demand mig31"),
+                    command("Mig31x3", _respawnCap, "OUEST on Demand mig31x3"),
+                }),
+            })
+        })
+    }
+
+    veafRadio.createUserMenu(userMenu, MISSION_MASTER_GROUPID)
 end
 
 -- Silence ATC on all the airdromes
