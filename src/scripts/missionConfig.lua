@@ -13,14 +13,20 @@ veaf.config.MISSION_EXPORT_PATH = nil -- use default folder
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veaf then
     VeafQRA.new()
-    :setName("QRA-Maykop")
-    :addGroup("QRA-Maykop")
-    :setRadius(91440) -- 300,000 feet
+    :setName("QRA/Maykop")
+    :setZoneCenterFromCoordinates("U37TEK8250048000")
+    :setGroupsToDeployByEnemyQuantity(1, { "QRA-Maykop-1" }) -- 1 and more
+    :setGroupsToDeployByEnemyQuantity(3, { "QRA-Maykop-1", "QRA-Maykop-2" }) -- 3 and more
+    :setGroupsToDeployByEnemyQuantity(5, { "QRA-Maykop-1", "QRA-Maykop-2", "QRA-Maykop-3" }) -- 5 and more
+    :setZoneRadius(91440) -- 300,000 feet
     :setCoalition(coalition.side.RED)
     :addEnnemyCoalition(coalition.side.BLUE)
-    --:setReactOnHelicopters()
+    :setReactOnHelicopters() -- reacts when helicopters enter the zone
+    :setDelayBeforeRearming(15) -- 15 seconds before the QRA is rearmed
+    :setNoNeedToLeaveZoneBeforeRearming() -- the enemy does not have to leave the zone before the QRA is rearmed
     :start()
 end
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize all the scripts
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -467,6 +473,7 @@ if (veafRadio) then
     local MISSION_MASTER_GROUPID = 1
     local LOG_NAME = "DEMO"
     local LOG_LEVEL = "trace"
+    local RESPAWN_RADIUS = 500 -- rayon de respawn, en mètres
     ----------------------------------------
 
     veaf.loggers.new(LOG_NAME, LOG_LEVEL)
@@ -476,14 +483,23 @@ if (veafRadio) then
         veaf.loggers.get(LOG_NAME):debug(message)
         trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
         
-        local newGroup = mist.respawnGroup(groupName)
-
-        if newGroup == nil then
+        local group = Group.getByName(groupName)
+        if group == nil then
             local message = string.format("Impossible de trouver le groupe [%s] pour le respawner", veaf.p(groupName))
             veaf.loggers.get(LOG_NAME):error(message)
             trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
         else
-            local message = string.format("Groupe [%s] respawné avec succès", veaf.p(groupName))
+            --group:activate()
+            local vars = {}
+            vars.gpName = groupName
+            vars.action = 'respawn'
+            vars.radius = RESPAWN_RADIUS
+            vars.route = mist.getGroupRoute(groupName, 'task')
+            group = mist.teleportToPoint(vars) -- respawn with radius
+            local message = string.format("Groupe [%s] réactivé avec succès", veaf.p(groupName))
+            if not(group) then
+                message = string.format("Impossible de réactiver le groupe [%s]", veaf.p(groupName))
+            end
             veaf.loggers.get(LOG_NAME):info(message)
             trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
         end
