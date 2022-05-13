@@ -14,16 +14,24 @@ veaf.config.MISSION_EXPORT_PATH = nil -- use default folder
 if veaf then
     VeafQRA.new()
     :setName("QRA/Maykop")
-    :setZoneCenterFromCoordinates("U37TEK8250048000")
-    :setGroupsToDeployByEnemyQuantity(1, { "QRA-Maykop-1" }) -- 1 and more
-    :setGroupsToDeployByEnemyQuantity(3, { "QRA-Maykop-1", "QRA-Maykop-2" }) -- 3 and more
-    :setGroupsToDeployByEnemyQuantity(5, { "QRA-Maykop-1", "QRA-Maykop-2", "QRA-Maykop-3" }) -- 5 and more
-    :setZoneRadius(91440) -- 300,000 feet
     :setCoalition(coalition.side.RED)
     :addEnnemyCoalition(coalition.side.BLUE)
+
+    :setTriggerZone("QRA-Maykop")
+    --:setZoneCenterFromCoordinates("U37TEK8250048000")
+    --:setZoneRadius(91440) -- 300,000 feet
+
+    :setRandomGroupsToDeployByEnemyQuantity(1, { "QRA-Maykop-1", "QRA-Maykop-2", "QRA-Maykop-3" }, 1) -- 1 and more
+    :setRandomGroupsToDeployByEnemyQuantity(3, { "QRA-Maykop-1", "QRA-Maykop-2", "QRA-Maykop-3" }, 2, 1) -- 3 and more
+    :setRandomGroupsToDeployByEnemyQuantity(5, { "QRA-Maykop-1", "QRA-Maykop-2", "QRA-Maykop-3" }, 3, 1) -- 5 and more
+    --:setGroupsToDeployByEnemyQuantity(1, { "QRA-Maykop-1" }) -- 1 and more
+    --:setGroupsToDeployByEnemyQuantity(3, { "QRA-Maykop-1", "QRA-Maykop-2" }) -- 3 and more
+    --:setGroupsToDeployByEnemyQuantity(5, { "QRA-Maykop-1", "QRA-Maykop-2", "QRA-Maykop-3" }) -- 5 and more
+
     :setReactOnHelicopters() -- reacts when helicopters enter the zone
     :setDelayBeforeRearming(15) -- 15 seconds before the QRA is rearmed
     :setNoNeedToLeaveZoneBeforeRearming() -- the enemy does not have to leave the zone before the QRA is rearmed
+
     :start()
 end
 
