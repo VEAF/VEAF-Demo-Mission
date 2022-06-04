@@ -148,6 +148,9 @@ end
 if veafCombatZone then 
     veaf.loggers.get(veaf.Id):info("Loading configuration")
 
+    veafCombatZone.EventMessages.CombatZoneComplete = nil
+    veafCombatZone.SecondsBetweenWatchdogChecks = 10
+
     veafCombatZone.AddZone(
 		VeafCombatZone.new()
 			:setMissionEditorZoneName("combatZone_CrossKobuleti")
@@ -166,8 +169,46 @@ if veafCombatZone then
             :setTraining(true)
     )
     
+    function onGoriEnd(zone)
+        trigger.action.outText(string.format("Hook on %s", zone:getFriendlyName()), 10) 
+    end
+
+    -- Operations
+    local gori = VeafCombatZone.new()
+        :setMissionEditorZoneName("subCombatZone_gori")
+        :setFriendlyName("Mission Gori")
+        :setBriefing("Destroy the armored group in the city of Gori")
+        :setOnCompletedHook(onGoriEnd)
+        :initialize()
+        :setTraining(false)
+    local otarasheni = VeafCombatZone.new()
+        :setMissionEditorZoneName("subCombatZone_otarasheni")
+        :setFriendlyName("Mission Otarasheni")
+        :setBriefing("Destroy the mortar group in the city of Otarasheni")
+        :initialize()
+        :setTraining(false)
+    local arashenda = VeafCombatZone.new()
+        :setMissionEditorZoneName("subCombatZone_arashenda")
+        :setFriendlyName("Mission Arashenda")
+        :setBriefing("Destroy the AAA group near Arashenda")
+        :initialize()
+        :setTraining(false)
+
+    veafCombatZone.AddZone(
+        VeafCombatOperation:new()
+            :setMissionEditorZoneName("goriOperation")
+            :setFriendlyName("Operation Gori free")
+            :setBriefing("This operation aims to free the city of Gori of any pressure from local forces.\n" .. 
+            "Complete all tasks to get it done.")
+            :addTaskingOrder(gori)
+            :addTaskingOrder(otarasheni)
+            :addTaskingOrder(arashenda, { gori:getMissionEditorZoneName(), otarasheni:getMissionEditorZoneName() })
+            :initialize()
+    )
+
     veaf.loggers.get(veaf.Id):info("init - veafCombatZone")
     veafCombatZone.initialize()
+
 
 end
 
@@ -555,3 +596,5 @@ end
 
 -- Silence ATC on all the airdromes
 veaf.silenceAtcOnAllAirbases()
+
+veafCombatZone.GetZone("goriOperation"):activate()
