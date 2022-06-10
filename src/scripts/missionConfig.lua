@@ -149,7 +149,10 @@ if veafCombatZone then
     veaf.loggers.get(veaf.Id):info("Loading configuration")
 
     veafCombatZone.EventMessages.CombatZoneComplete = nil
-    veafCombatZone.SecondsBetweenWatchdogChecks = 10
+    veafCombatZone.SecondsBetweenWatchdogChecks = 10 -- for testing purpose
+    veafCombatZone.RadioMenuName = "Command center"
+    veafCombatZone.CombatZoneRadioMenuName = "Secondary missions" -- optional
+    veafCombatZone.OperationRadioMenuName = "Primary operations" -- optional
 
     veafCombatZone.AddZone(
 		VeafCombatZone.new()
