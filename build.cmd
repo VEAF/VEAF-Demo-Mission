@@ -101,7 +101,8 @@ set MISSION_FILE_SUFFIX2=%date:~-4,4%%date:~-7,2%%date:~-10,2%
 echo current value is "%MISSION_FILE_SUFFIX2%"
 
 echo ----------------------------------------
-
+echo MISSION_FILE_SUFFIX1 (a string) will be appended to the mission file name to make it more unique
+echo defaults to empty
 IF [%MISSION_FILE_SUFFIX1%] == [] GOTO DontUseSuffix1
 set MISSION_FILE=.\build\%MISSION_NAME%_%MISSION_FILE_SUFFIX1%_%MISSION_FILE_SUFFIX2%
 goto EndOfSuffix1
@@ -117,6 +118,7 @@ echo prepare the folders
 rd /s /q .\build >nul 2>&1
 mkdir .\build >nul 2>&1
 
+echo.
 IF ["%NPM_UPDATE%"] == [""] GOTO DontNPM_UPDATE
 echo fetching the veaf-mission-creation-tools package
 if exist yarn.lock (
@@ -133,7 +135,7 @@ echo.
 echo prepare the veaf-mission-creation-tools scripts
 rem -- copy the scripts folder
 xcopy /s /y /e /i %DYNAMIC_SCRIPTS_PATH%\src\scripts\community .\build\tempscripts\community >nul 2>&1
-xcopy /s /y /e /i %DYNAMIC_SCRIPTS_PATH%\published\* .\build\tempscripts\veaf >nul 2>&1
+xcopy /s /y /e /i %DYNAMIC_SCRIPTS_PATH%\published\veaf-script*.lua .\build\tempscripts\veaf >nul 2>&1
 
 echo building the mission
 rem -- copy all the source mission files and mission-specific scripts
@@ -195,6 +197,12 @@ powershell -File replace.ps1 .\build\tempsrc\mission "\[\"T-45\"\] = \"T-45\"," 
 rem -- disable the AM2 module requirement
 powershell -File replace.ps1 .\build\tempsrc\mission "\[\"AM2\"\] = \"AM2\"," " " >nul 2>&1
 
+rem -- disable the SU-30* module requirement
+powershell -File replace.ps1 .\build\tempsrc\mission "\[\"FlankerEx by Codename Flanker\"\] = \"FlankerEx by Codename Flanker\"," " " >nul 2>&1
+
+rem -- disable the Bronco-OV-10A module requirement
+powershell -File replace.ps1 .\build\tempsrc\mission "\[\"Bronco-OV-10A\"\] = \"Bronco-OV-10A\"," " " >nul 2>&1
+
 rem -- copy the documentation images to the kneeboard
 xcopy /y /e doc\*.jpg .\build\tempsrc\KNEEBOARD\IMAGES\ >nul 2>&1
 
@@ -202,7 +210,7 @@ rem -- copy all the community scripts
 copy .\src\scripts\community\*.lua .\build\tempsrc\l10n\Default  >nul 2>&1
 copy .\build\tempscripts\community\*.lua .\build\tempsrc\l10n\Default >nul 2>&1
 
-rem -- copy all the VEAF script
+rem -- copy the VEAF script
 copy .\build\tempscripts\veaf\*.lua .\build\tempsrc\l10n\Default >nul 2>&1
 
 rem -- normalize the mission files
