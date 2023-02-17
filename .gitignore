@@ -5,7 +5,9 @@
 /setup_*.cmd
 configuration.json
 package-lock.json
+yarn.lock
 cache/
 /templates/*/build
 /templates/*/node_modules/
 build-*.cmd
+extract-*.cmd
