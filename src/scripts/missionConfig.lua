@@ -11,7 +11,8 @@ veaf.config.MISSION_EXPORT_PATH = nil -- use default folder
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize QRA
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-if veaf then
+if veafQraManager then
+    veaf.loggers.get(veaf.Id):info("init - QRA")
     VeafQRA.new()
     :setName("QRA/Maykop")
     :setCoalition(coalition.side.RED)
@@ -32,7 +33,16 @@ if veaf then
     :setDelayBeforeRearming(15) -- 15 seconds before the QRA is rearmed
     :setNoNeedToLeaveZoneBeforeRearming() -- the enemy does not have to leave the zone before the QRA is rearmed
 
-    :start()
+    veaf.loggers.get(veaf.Id):info("searching for qraMaykop")
+    local qraMaykop = veafQraManager.get("QRA/Maykop")
+    if qraMaykop then
+        veaf.loggers.get(veaf.Id):info("found qraMaykop")
+    end
+
+    qraMaykop:setMaximumAltitudeInFeet(12500) -- hard ceiling is 12500 feet
+    qraMaykop:setMinimumAltitudeInFeet(11500) -- hard floor is 11500 feet
+    qraMaykop:start()
+
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -557,6 +567,17 @@ if (veafRadio) then
         end
     end
 
+    local function _changeQra(name, startOrStop)
+        local qra = veafQraManager.get(name)
+        if qra then 
+            if startOrStop:upper() == "START" then
+                qra:start(false)
+            else
+                qra:stop(false)
+            end
+        end
+    end
+
     local function menu(name, items)
         return {
             "menu", name, items
@@ -570,31 +591,38 @@ if (veafRadio) then
     end
 
     local userMenu = {
-        menu("Gestion CAP", {
-            menu("CAP Est", {
-                menu("Facile", {
-                    command("Mig21", _respawnCap, "EST on Demand MIG21"),
-                    command("Mig21x3", _respawnCap, "EST on Demand MIG21x3"),
+        menu("Mission menus", {
+            menu("Gestion CAP", {
+                menu("CAP Est", {
+                    menu("Facile", {
+                        command("Mig21", _respawnCap, "EST on Demand MIG21"),
+                        command("Mig21x3", _respawnCap, "EST on Demand MIG21x3"),
+                    }),
+                    menu("Moyen", {
+                        command("Mig31", _respawnCap, "EST on Demand mig31"),
+                        command("Mig31x3", _respawnCap, "EST on Demand mig31x3"),
+                    }),
                 }),
-                menu("Moyen", {
-                    command("Mig31", _respawnCap, "EST on Demand mig31"),
-                    command("Mig31x3", _respawnCap, "EST on Demand mig31x3"),
-                }),
+                menu("CAP Ouest", {
+                    menu("Facile", {
+                        command("Mig21", _respawnCap, "OUEST on Demand MIG21"),
+                        command("Mig21x3", _respawnCap, "OUEST on Demand MIG21x3"),
+                    }),
+                    menu("Moyen", {
+                        command("Mig31", _respawnCap, "OUEST on Demand mig31"),
+                        command("Mig31x3", _respawnCap, "OUEST on Demand mig31x3"),
+                    }),
+                })
             }),
-            menu("CAP Ouest", {
-                menu("Facile", {
-                    command("Mig21", _respawnCap, "OUEST on Demand MIG21"),
-                    command("Mig21x3", _respawnCap, "OUEST on Demand MIG21x3"),
-                }),
-                menu("Moyen", {
-                    command("Mig31", _respawnCap, "OUEST on Demand mig31"),
-                    command("Mig31x3", _respawnCap, "OUEST on Demand mig31x3"),
-                }),
+            menu("QRA Maykop", {
+                command("Stop", _changeQra, {"QRA/Maykop", "start"}),
+                command("Start", _changeQra, {"QRA/Maykop", "stop"}),
             })
         })
     }
 
-    veafRadio.createUserMenu(userMenu, MISSION_MASTER_GROUPID)
+    --veafRadio.createUserMenu(userMenu, MISSION_MASTER_GROUPID)
+    veafRadio.createUserMenu(userMenu)
 end
 
 -- Silence ATC on all the airdromes
