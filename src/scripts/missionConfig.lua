@@ -13,7 +13,7 @@ veaf.config.MISSION_EXPORT_PATH = nil -- use default folder
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafQraManager then
     veaf.loggers.get(veaf.Id):info("init - QRA")
-    VeafQRA.new()
+    VeafQRA:new()
     :setName("QRA/Maykop")
     :setCoalition(coalition.side.RED)
     :addEnnemyCoalition(coalition.side.BLUE)
@@ -85,7 +85,7 @@ if veafShortcuts then
     -- here are some examples :
 
     -- veafShortcuts.AddAlias(
-    --     VeafAlias.new()
+    --     VeafAlias:new()
     --         :setName("-sa11")
     --         :setDescription("SA-11 Gadfly (9K37 Buk) battery")
     --         :setVeafCommand("_spawn group, name sa11")
@@ -129,7 +129,7 @@ if veafCombatMission then
     veafCombatMission.addCapMission("CAP-Maykop-1", "CAP on Maykop", "A Russian CAP patrol has been spotted over Maykop.", true, true)
 
     veafCombatMission.AddMission(
-		VeafCombatMission.new()
+		VeafCombatMission:new()
 		:setName("ELINT-Mission-1")
 		:setFriendlyName("Start ELINT gathering")
 		:setBriefing([[
@@ -137,7 +137,7 @@ West patrol ; ATIS on 282.125, SAM CONTROL on 282.225
 A C-130 pair will fly reciprocical headings, trying to pinpoint enemy SAMS.
 Don't let them be destroyed by the enemy !]])
 		:addElement(
-			VeafCombatMissionElement.new()
+			VeafCombatMissionElement:new()
 			:setName("ELINT")
 			:setGroups({
 				"ELINT-C-130-1",
@@ -165,7 +165,7 @@ if veafCombatZone then
     veafCombatZone.OperationRadioMenuName = "Primary operations" -- optional
 
     veafCombatZone.AddZone(
-		VeafCombatZone.new()
+		VeafCombatZone:new()
 			:setMissionEditorZoneName("combatZone_CrossKobuleti")
 			:setFriendlyName("Cross Kobuleti")
 			:setBriefing("This is a simple mission\n" ..
@@ -174,7 +174,7 @@ if veafCombatZone then
 			:initialize()
 	)
 	veafCombatZone.AddZone(
-		VeafCombatZone.new()
+		VeafCombatZone:new()
 			:setMissionEditorZoneName("combatZone_Batumi")
 			:setFriendlyName("Batumi airbase")
 			:setBriefing("A BTR patrol and a few manpads are dispersed around the Batumi airbase")
@@ -187,20 +187,20 @@ if veafCombatZone then
     end
 
     -- Operations
-    local gori = VeafCombatZone.new()
+    local gori = VeafCombatZone:new()
         :setMissionEditorZoneName("subCombatZone_gori")
         :setFriendlyName("Mission Gori")
         :setBriefing("Destroy the armored group in the city of Gori")
         :setOnCompletedHook(onGoriEnd)
         :initialize()
         :setTraining(false)
-    local otarasheni = VeafCombatZone.new()
+    local otarasheni = VeafCombatZone:new()
         :setMissionEditorZoneName("subCombatZone_otarasheni")
         :setFriendlyName("Mission Otarasheni")
         :setBriefing("Destroy the mortar group in the city of Otarasheni")
         :initialize()
         :setTraining(false)
-    local arashenda = VeafCombatZone.new()
+    local arashenda = VeafCombatZone:new()
         :setMissionEditorZoneName("subCombatZone_arashenda")
         :setFriendlyName("Mission Arashenda")
         :setBriefing("Destroy the AAA group near Arashenda")
@@ -384,6 +384,14 @@ if veafCarrierOperations then
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- configure CTLD
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+if ctld then
+    veaf.loggers.get(veaf.Id):info("init - ctld")
+    ctld.initialize()
+end
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize the remote interface
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafRemote then
@@ -419,7 +427,7 @@ if veafSanctuary then
     veaf.loggers.get(veaf.Id):info("init - veafSanctuary")
     --veafSanctuary.addZoneFromTriggerZone("Sanctuary_Kutaisi")
     veafSanctuary.addZone(
-        VeafSanctuaryZone.new()
+        VeafSanctuaryZone:new()
         :setName("Kutaisi Sanctuary")
         :setPolygonFromUnits({
             "Sanctuary_Kutaisi_Polygon #001",
@@ -578,6 +586,15 @@ if (veafRadio) then
         end
     end
 
+    local function _spawnFOB()
+        local delay = nil -- no delay
+        local coa = 1 -- blue
+        local silent = true
+        veafShortcuts.ExecuteBatchAliasesList({
+        "-fob#U37TGG2164791685, side blue, hdg 270, radius 1",
+        }, delay, coa, silent)
+    end
+
     local function menu(name, items)
         return {
             "menu", name, items
@@ -617,6 +634,9 @@ if (veafRadio) then
             menu("QRA Maykop", {
                 command("Stop", _changeQra, {"QRA/Maykop", "start"}),
                 command("Start", _changeQra, {"QRA/Maykop", "stop"}),
+            }),
+            menu("FOB test", {
+                command("Spawn FOB", _spawnFOB),
             })
         })
     }
@@ -629,3 +649,4 @@ end
 veaf.silenceAtcOnAllAirbases()
 
 veafCombatZone.GetZone("goriOperation"):activate()
+
