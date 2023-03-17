@@ -46,6 +46,29 @@ if veafQraManager then
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- initialize AirWaves zones
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+if veafAirWaves then
+    veaf.loggers.get(veaf.Id):info("init - AIRWAVES")
+
+    AirWaveZone:new()
+    :setName("zone1")
+    :setDescription("zone 1")
+    :addPlayerCoalition(coalition.side.BLUE)
+    :setTriggerZone("airWave_zone1")
+    --:setZoneCenterFromCoordinates("U37TEK8250048000")
+    --:setZoneRadius(91440) -- 300,000 feet
+    :addRandomWave({ "airWave_zone1_wave1-1", "airWave_zone1_wave1-2"}, 1) -- spawn one of the 2 groups
+    :addRandomWave({ "airWave_zone1_wave2-1", "airWave_zone1_wave2-2"}, 2) -- spawn two of the 2 groups (can be multiple times the same group!)
+    --:setRespawnRadius(10000) -- 10km respawn radius
+    --:setMaximumAltitudeInFeet(12500) -- hard ceiling is 12500 feet
+    --:setMinimumAltitudeInFeet(11500) -- hard floor is 11500 feet
+    :start()
+
+    veaf.loggers.get(veafAirWaves.Id):debug("created a zone")
+end
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize all the scripts
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafRadio then
@@ -586,6 +609,44 @@ if (veafRadio) then
         end
     end
 
+    local function _destroyGroup(name)
+        local names = name
+        if type(name) == "string" then
+            names = {name}
+        end
+        for _, name in pairs(names) do
+            local _group = Group.getByName(name)
+            if _group then 
+                _group:destroy()
+                trigger.action.outText(string.format("Group %s has been destroyed", name), 10)
+            end
+        end
+    end
+
+    local function _airwaves_destroyWave()
+        local _zone = veafAirWaves.get("zone1")
+        if _zone then 
+            _zone:destroyCurrentWave()
+            trigger.action.outText(string.format("DEBUG - Wave has been forced destroyed"), 10)
+        end
+    end
+
+    local function _airwaves_stop()
+        local _zone = veafAirWaves.get("zone1")
+        if _zone then 
+            _zone:stop()
+            trigger.action.outText(string.format("DEBUG - Zone has been stopped"), 10)
+        end
+    end
+
+    local function _airwaves_start()
+        local _zone = veafAirWaves.get("zone1")
+        if _zone then 
+            _zone:start()
+            trigger.action.outText(string.format("DEBUG - Zone has been started"), 10)
+        end
+    end
+
     local function _spawnFOB()
         local delay = nil -- no delay
         local coa = 1 -- blue
@@ -634,6 +695,11 @@ if (veafRadio) then
             menu("QRA Maykop", {
                 command("Stop", _changeQra, {"QRA/Maykop", "start"}),
                 command("Start", _changeQra, {"QRA/Maykop", "stop"}),
+            }),
+            menu("Airwave tests", {
+                command("Start", _airwaves_start, {}),
+                command("Stop", _airwaves_stop, {}),
+                command("Destroy wave", _airwaves_destroyWave, {}),
             }),
             menu("FOB test", {
                 command("Spawn FOB", _spawnFOB),
