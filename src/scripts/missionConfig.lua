@@ -14,34 +14,33 @@ veaf.config.MISSION_EXPORT_PATH = nil -- use default folder
 if veafQraManager then
     veaf.loggers.get(veaf.Id):info("init - QRA")
     VeafQRA:new()
-    :setName("QRA/Maykop")
+    :setName("QRA-Maykop")
     :setCoalition(coalition.side.RED)
     :addEnnemyCoalition(coalition.side.BLUE)
 
     :setTriggerZone("QRA-Maykop")
-    --:setZoneCenterFromCoordinates("U37TEK8250048000")
-    --:setZoneRadius(91440) -- 300,000 feet
-
-    :setRandomGroupsToDeployByEnemyQuantity(1, { "QRA-Maykop-1", "QRA-Maykop-2", "QRA-Maykop-3" }, 1) -- 1 and more
-    :setRandomGroupsToDeployByEnemyQuantity(3, { "QRA-Maykop-1", "QRA-Maykop-2", "QRA-Maykop-3" }, 2, 1) -- 3 and more
-    :setRandomGroupsToDeployByEnemyQuantity(5, { "QRA-Maykop-1", "QRA-Maykop-2", "QRA-Maykop-3" }, 3, 1) -- 5 and more
+    --:setZoneCenterFromCoordinates("U37TEK8200048000") -- Maykop
+    --:setZoneRadius(40000) -- 22 nm
+    :setRespawnRadius(10000)
+    :setRespawnDefaultOffset(0, -45000) ---set the default respawn offset (in meters, relative to the zone center)
+    --:setRandomGroupsToDeployByEnemyQuantity(1, { "-cap Mig21-Fox1, hdg 180, dist 50", "[0, 0]-cap Mig21-Fox2, hdg 180, dist 30", "[0, 0]-sa15, multiplier 2-4"  }, 1) -- 1 and more
+    :setRandomGroupsToDeployByEnemyQuantity(1, { "[0, 0]-cap Mig21-Fox2, hdg 180, dist 30"  }, 1) -- 1 and more
+    :setRandomGroupsToDeployByEnemyQuantity(3, { "-cap Mig21-Fox1, size 2, hdg 180, dist 50", "-cap Mig23S-Fox1, size 2, hdg 180, dist 50", "-cap Mig25-Fox1, size 2, hdg 180, dist 50" }, 1) -- 3 and more
+    :setRandomGroupsToDeployByEnemyQuantity(5, { "-cap Su27-Fox1, hdg 180, dist 50", "-cap Su33-Fox1, hdg 180, dist 50", "-cap Mig29A-Fox1, hdg 180, dist 50" }, 3) -- 5 and more
+    --:setGroupsToDeployByEnemyQuantity(1, { "[0, -45000]-cap Mig21-Fox1, hdg 180, dist 50" }) -- 1 and more
+    --:setRandomGroupsToDeployByEnemyQuantity(1, { "QRA-Maykop-1", "QRA-Maykop-2", "QRA-Maykop-3" }, 1) -- 1 and more
+    --:setRandomGroupsToDeployByEnemyQuantity(3, { "QRA-Maykop-1", "QRA-Maykop-2", "QRA-Maykop-3" }, 2, 1) -- 3 and more
+    --:setRandomGroupsToDeployByEnemyQuantity(5, { "QRA-Maykop-1", "QRA-Maykop-2", "QRA-Maykop-3" }, 3, 1) -- 5 and more
     --:setGroupsToDeployByEnemyQuantity(1, { "QRA-Maykop-1" }) -- 1 and more
     --:setGroupsToDeployByEnemyQuantity(3, { "QRA-Maykop-1", "QRA-Maykop-2" }) -- 3 and more
     --:setGroupsToDeployByEnemyQuantity(5, { "QRA-Maykop-1", "QRA-Maykop-2", "QRA-Maykop-3" }) -- 5 and more
-
     :setReactOnHelicopters() -- reacts when helicopters enter the zone
     :setDelayBeforeRearming(15) -- 15 seconds before the QRA is rearmed
     :setNoNeedToLeaveZoneBeforeRearming() -- the enemy does not have to leave the zone before the QRA is rearmed
-
-    veaf.loggers.get(veaf.Id):info("searching for qraMaykop")
-    local qraMaykop = veafQraManager.get("QRA/Maykop")
-    if qraMaykop then
-        veaf.loggers.get(veaf.Id):info("found qraMaykop")
-    end
-
-    qraMaykop:setMaximumAltitudeInFeet(12500) -- hard ceiling is 12500 feet
-    qraMaykop:setMinimumAltitudeInFeet(11500) -- hard floor is 11500 feet
-    qraMaykop:start()
+    --:setMaximumAltitudeInFeet(12500) -- hard ceiling is 12500 feet
+    --:setMinimumAltitudeInFeet(11500) -- hard floor is 11500 feet
+    :setDrawZone(true)
+    :start()
 
 end
 
@@ -50,6 +49,117 @@ end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafAirWaves then
     veaf.loggers.get(veaf.Id):info("init - AIRWAVES")
+
+    -- example zone 01 (can easily be copy/pasted, nothing to set in the editor except player slots and if desired trigger zones)
+    AirWaveZone:new()
+
+    -- technical name (AirWave instance name)
+    :setName("Zone 01")
+
+    -- description for the messages
+    :setDescription("Zone 01 - FOX1 fighters")
+    -- coalitions of the players (only human units from these coalitions will be monitored)
+    :addPlayerCoalition(coalition.side.BLUE)
+
+    -- trigger zone name (if set, we'll use a DCS trigger zone)
+    --:setTriggerZone("airWave_HARD")
+
+    -- center (point in the center of the circle, when not using a DCS trigger zone) - can be set with coordinates either in LL or MGRS
+    :setZoneCenterFromCoordinates("U37TCL5297") -- U=UTM (MGRS); 37T=grid number; CL=square; 52000=latitude; 97000=longitude
+
+    -- radius (size of the circle, when not using a zone) - in meters
+    :setZoneRadius(90000) -- 50 nm
+
+    -- draw the zone on screen
+    :setDrawZone(true)
+
+    -- default position for respawns (im meters, lat/lon, relative to the zone center)
+    :setRespawnDefaultOffset(0, -45000) -- 45km north of the zone's center
+
+    -- radius of the waves groups spawn
+    :setRespawnRadius(10000)
+
+    ---add a wave of ennemy planes
+    --@param groups any a list of groups or VEAF commands; VEAF commands can be prefixed with [lat, lon], specifying the location of their spawn relative to the center of the zone; default value is set with "setRespawnDefaultOffset"
+    --@param number any how many of these groups will actually be spawned (can be multiple times the same group!)
+    --@param bias any shifts the random generator to the right of the list
+    :addRandomWave( { "[0, 0]-cap Mig25-Fox2-solo, hdg 180, dist 30"  }, 1) -- a single Mig25 with FOX2 missiles spawning near
+    :addRandomWave( { "[0, -30000]-cap Mig21-Fox1, size 2, hdg 180, dist 50", "[0, -30000]-cap Mig23S-Fox1, size 2, hdg 180, dist 50", "[0, -30000]-cap Mig25-Fox1, size 2, hdg 180, dist 50" }, 1) -- 1 group from FOX1 fighter pairs spawning at 30km to the north
+    :addRandomWave( { "[0, -60000]-cap Su27-Fox1, hdg 180, dist 50", "[0, -60000]-cap Su33-Fox1, hdg 180, dist 50", "[0, -60000]-cap Mig29A-Fox1, hdg 180, dist 50" }, 2) -- 2 groups from modern FOX1 fighter pairs spawning at 60km to the north
+    --:addRandomWave({ "airWave_EASY-1-1", "airWave_EASY-1-2"}, 1) -- one group
+    --:addRandomWave({ "airWave_EASY-2-1", "airWave_EASY-2-1"}, 2) -- two groups
+
+    -- players in the zone will only be detected above this altitude (in feet)
+    :setMaximumAltitudeInFeet(40000) -- hard ceiling
+
+    -- players in the zone will only be detected below this altitude (in feet)
+    :setMinimumAltitudeInFeet(1500) -- hard floor
+
+    -- message when the zone is activated
+    :setMessageStart("%s est maintenant fonctionnelle")
+
+    -- event when the zone is activated
+    --:setOnStart(callbackFunction)
+
+    -- message when a wave is triggered
+    :setMessageDeploy("%s déploie la vague numéro %s")
+
+    -- event when a wave is triggered
+    --:setOnDeploy(callbackFunction)
+
+    -- message when a wave is destroyed
+    :setMessageDestroyed("%s: la vague %s a été détruite")
+
+    -- event when a wave is destroyed
+    --:setOnDestroy(callbackFunction)
+
+    -- message when all waves are finished (won)
+    :setMessageWon("%s: c'est gagné (plus d'ennemi) !")
+
+    -- event when all waves are finished (won)
+    --:setOnWon(callbackFunction)
+
+    -- message when all players are dead (lost)
+    :setMessageLost("%s: c'est perdu (joueur mort ou sorti) !")
+
+    -- event when all players are dead (lost)
+    --:setOnLost(callbackFunction)
+
+    -- message when the zone is deactivated
+    :setMessageStop("%s n'est plus active")
+
+    -- event when the zone is deactivated
+    --:setOnStop(callbackFunction)
+
+    -- start the zone
+    :start()
+
+    -- example zone 02 (copy/pasted from zone 01, changed only the name and coordinates)
+    AirWaveZone:new()
+    :setName("Zone 02")
+    :setDescription("Zone 02 - FOX1 fighters")
+    :addPlayerCoalition(coalition.side.BLUE)
+    :setZoneCenterFromCoordinates("U37TEL4792")
+    :setZoneRadius(90000) -- 50 nm
+    :setDrawZone(true)
+    :setRespawnDefaultOffset(0, -45000) -- 45km north of the zone's center
+    :setRespawnRadius(10000)
+    :addRandomWave( { "[0, 0]-cap Mig21-Fox2-solo, hdg 180, dist 30"  }, 1) -- a single Mig-21 with FOX2 missiles spawning near
+    :addRandomWave( { "-cap Mig21-Fox1, size 2, hdg 180, dist 50", "-cap Mig23S-Fox1, size 2, hdg 180, dist 50", "-cap Mig25-Fox1, size 2, hdg 180, dist 50" }, 1) -- 1 group from FOX1 fighter pairs
+    :addRandomWave( { "-cap Su27-Fox1, hdg 180, dist 50", "-cap Su33-Fox1, hdg 180, dist 50", "-cap Mig29A-Fox1, hdg 180, dist 50" }, 3) -- 3 groups from modern FOX1 fighter pairs
+    :setMessageStart("La zone %s est fonctionnelle")
+    :setMessageDeploy("La zone %s déploie la vague numéro %s")
+    :setMessageDestroyed("La vague %s a été détruite dans la zone %s")
+    :setMessageWon("La zone %s est gagnée (plus d'ennemi)")
+    :setMessageStop("La zone %s n'est plus active")
+    :start()
+
+    -- example zone 03 (deep copied from zone 01, changed only the name and coordinates)
+    mist.utils.deepCopy(veafAirWaves.get("Zone 01"))
+    :setName("Zone 03")
+    :setDescription("Zone 03 - FOX1 fighters")
+    :setZoneCenterFromCoordinates("U37TCH2163")
+    :start()
 
     AirWaveZone:new()
     :setName("zone1")
@@ -65,7 +175,7 @@ if veafAirWaves then
     --:setMinimumAltitudeInFeet(11500) -- hard floor is 11500 feet
     :start()
 
-    veaf.loggers.get(veafAirWaves.Id):debug("created a zone")
+    veaf.loggers.get(veafAirWaves.Id):debug("Initialized")
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -124,8 +234,8 @@ end
 if veafAssets then
     veaf.loggers.get(veaf.Id):info("Loading configuration")
     veafAssets.Assets = {
-	    {sort=1, name="Arco", description="Arco (KC-135)", information="Tacan 11Y\nVHF 251 Mhz\nZone OUEST", linked={"Arco-escort1","Arco-escort2"}}, 
-	    {sort=2, name="Petrolsky", description="900 (IL-78M, RED)", information="VHF 267 Mhz", linked="Petrolsky-escort"},  
+	    {sort=1, name="Arco", description="Arco (KC-135)", information="Tacan 11Y\nVHF 251 Mhz\nZone OUEST", linked={"Arco-escort1","Arco-escort2"}},
+	    {sort=2, name="Petrolsky", description="900 (IL-78M, RED)", information="VHF 267 Mhz", linked="Petrolsky-escort"},
     }
 
     veaf.loggers.get(veaf.Id):info("init - veafAssets")
@@ -146,9 +256,9 @@ end
 -- configure COMBAT MISSION
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-if veafCombatMission then 
+if veafCombatMission then
     veaf.loggers.get(veaf.Id):info("Loading configuration")
-    
+
     veafCombatMission.addCapMission("CAP-Maykop-1", "CAP on Maykop", "A Russian CAP patrol has been spotted over Maykop.", true, true)
 
     veafCombatMission.AddMission(
@@ -178,7 +288,7 @@ end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure COMBAT ZONE
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-if veafCombatZone then 
+if veafCombatZone then
     veaf.loggers.get(veaf.Id):info("Loading configuration")
 
     veafCombatZone.EventMessages.CombatZoneComplete = nil
@@ -204,9 +314,9 @@ if veafCombatZone then
 			:initialize()
             :setTraining(true)
     )
-    
+
     function onGoriEnd(zone)
-        trigger.action.outText(string.format("Hook on %s", zone:getFriendlyName()), 10) 
+        trigger.action.outText(string.format("Hook on %s", zone:getFriendlyName()), 10)
     end
 
     -- Operations
@@ -234,7 +344,7 @@ if veafCombatZone then
         VeafCombatOperation:new()
             :setMissionEditorZoneName("goriOperation")
             :setFriendlyName("Operation Gori free")
-            :setBriefing("This operation aims to free the city of Gori of any pressure from local forces.\n" .. 
+            :setBriefing("This operation aims to free the city of Gori of any pressure from local forces.\n" ..
             "Complete all tasks to get it done.")
             :addTaskingOrder(gori)
             :addTaskingOrder(otarasheni)
@@ -283,16 +393,16 @@ if veafNamedPoints then
             {name="JIRAH AB", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("36.097500", "37.940278"), {atc=true, tower="V118.10, U250.30", runways={{name="10", hdg=96}, {name="28", hdg=276}}})},
             {name="TAFTANAZ HELIPT", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("35.972222", "36.783056"), {atc=true, tower="V122.80, U251.45", runways={{name="10", hdg=100}, {name="28", hdg=280}}})},
             {name="ABU AL DUHUR AB", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("35.732778", "37.101667"), {atc=true, tower="V122.20, U250.45", runways={{name="09", hdg=89}, {name="27", hdg=269}}})},
-            {name="TABQA AB", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("35.754444", "38.566667"), {atc=true, tower="V118.50, U251.40", runways={{name="09", hdg=88}, {name="27", hdg=268}}})}, 
-            {name="BASSEL AL ASSAD (KHMEIMIM)", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("35.400833", "35.948611"), {atc=true, tower="V118.10, U250.55", runways={{name="17R", hdg=174, ils="109.10"}, {name="17L", hdg=174}, {name="35R", hdg=354}, {name="35L", hdg=354}}})}, 
+            {name="TABQA AB", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("35.754444", "38.566667"), {atc=true, tower="V118.50, U251.40", runways={{name="09", hdg=88}, {name="27", hdg=268}}})},
+            {name="BASSEL AL ASSAD (KHMEIMIM)", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("35.400833", "35.948611"), {atc=true, tower="V118.10, U250.55", runways={{name="17R", hdg=174, ils="109.10"}, {name="17L", hdg=174}, {name="35R", hdg=354}, {name="35L", hdg=354}}})},
             {name="HAMA AB", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("35.118056", "36.711111"), {atc=true, tower="V118.05, U250.20", runways={{name="09", hdg=96}, {name="27", hdg=276}}})},
-            {name="AL QUSAYR AB", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("34.570833", "36.571944"),  {atc=true, tower="V119.20, U251.55", runways={{name="10", hdg=98}, {name="28", hdg=278}}})}, 
-            {name="PALYMYRA AIRPORT", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("34.557222", "38.316667"), {atc=true, tower="V121.90, U250.90", runways={{name="08", hdg=80}, {name="26", hdg=260}}})}, 
+            {name="AL QUSAYR AB", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("34.570833", "36.571944"),  {atc=true, tower="V119.20, U251.55", runways={{name="10", hdg=98}, {name="28", hdg=278}}})},
+            {name="PALYMYRA AIRPORT", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("34.557222", "38.316667"), {atc=true, tower="V121.90, U250.90", runways={{name="08", hdg=80}, {name="26", hdg=260}}})},
             {name="AN NASIRIYAH AB", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("33.918889", "36.866389"), {atc=true, tower="V122.30, U251.65", runways={{name="04", hdg=41}, {name="22", hdg=221}}})},
-            {name="AL DUMAYR AB", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("33.609444", "36.748889"), {atc=true, tower="V120.30, U251.95", runways={{name="06", hdg=62}, {name="24", hdg=242}}})}, 
-            {name="MEZZEH AB", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("33.477500", "36.223333"), {atc=true, tower="V120.70, U250.75", runways={{name="06", hdg=57}, {name="24", hdg=237}}})}, 
-            {name="MARJ AS SULTAN NTH HELIPT", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("33.500278", "36.466944"), {atc=true, tower="V122.70, U250.60", runways={{name="08", hdg=80}, {name="26", hdg=260}}})}, 
-            {name="MARJ AS SULTAN STH HELIPT", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("33.486944", "36.475278"), {atc=true, tower="V122.90, U251.90", runways={{name="09", hdg=90}, {name="27", hdg=270}}})}, 
+            {name="AL DUMAYR AB", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("33.609444", "36.748889"), {atc=true, tower="V120.30, U251.95", runways={{name="06", hdg=62}, {name="24", hdg=242}}})},
+            {name="MEZZEH AB", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("33.477500", "36.223333"), {atc=true, tower="V120.70, U250.75", runways={{name="06", hdg=57}, {name="24", hdg=237}}})},
+            {name="MARJ AS SULTAN NTH HELIPT", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("33.500278", "36.466944"), {atc=true, tower="V122.70, U250.60", runways={{name="08", hdg=80}, {name="26", hdg=260}}})},
+            {name="MARJ AS SULTAN STH HELIPT", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("33.486944", "36.475278"), {atc=true, tower="V122.90, U251.90", runways={{name="09", hdg=90}, {name="27", hdg=270}}})},
             {name="QABR AS SITT HELIPT", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("33.458611", "36.357500"), {atc=true, tower="V122.60, U250.95", runways={{name="05", hdg=50}, {name="23", hdg=230}}})},
             {name="DAMASCUS INTL", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("33.415000", "36.519444"), {atc=true, tower="V118.50, U251.85", runways={{name="05R", hdg=46}, {name="05L", hdg=46}, {name="23R", hdg=226, ils="109.90"}, {name="23L", hdg=226}}})},
             {name="MARJ RUHAYYIL AB", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("33.286389", "36.457222"), {atc=true, tower="V120.80, U250.65", runways={{name="06", hdg=59}, {name="24", hdg=239}}})},
@@ -311,13 +421,13 @@ if veafNamedPoints then
             -- Israeli Airports
             {name="KIRYAT SHMONA AIRPORT", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("33.216667", "35.596667"), {atc=true, tower="V118.40, U250.50", runways={{name="03", hdg=34}, {name="21", hdg=214}}})},
             {name="HAIFA INTL", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("32.809167", "35.043056"), {atc=true, tower="V127.80, U250.15", runways={{name="16", hdg=158}, {name="34", hdg=338}}})},
-            {name="RAMAT DAVID INTL", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("32.665000", "35.179444"), {atc=true, tower="V118.60, U251.05", runways={{name="09", hdg=85}, {name="11", hdg=107}, {name="15", hdg=143}, {name="27", hdg=265}, {name="29", hdg=287}, {name="33", hdg=323}}})}, 
-            {name="MEGIDDO AIRFIELD", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("32.597222", "35.228611"), {atc=true, tower="V119.90, U250.70", runways={{name="09", hdg=89}, {name="27", hdg=269}}})}, 
-            {name="EYN SHEMER AIRFIELD", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("32.440556", "35.007500"), {atc=true, tower="V123.40, U250.00", runways={{name="09", hdg=96}, {name="27", hdg=276}}})}, 
+            {name="RAMAT DAVID INTL", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("32.665000", "35.179444"), {atc=true, tower="V118.60, U251.05", runways={{name="09", hdg=85}, {name="11", hdg=107}, {name="15", hdg=143}, {name="27", hdg=265}, {name="29", hdg=287}, {name="33", hdg=323}}})},
+            {name="MEGIDDO AIRFIELD", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("32.597222", "35.228611"), {atc=true, tower="V119.90, U250.70", runways={{name="09", hdg=89}, {name="27", hdg=269}}})},
+            {name="EYN SHEMER AIRFIELD", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("32.440556", "35.007500"), {atc=true, tower="V123.40, U250.00", runways={{name="09", hdg=96}, {name="27", hdg=276}}})},
 
             -- Jordan Airports
             {name="KING HUSSEIN AIR COLLEGE", point=veafNamedPoints.addDataToPoint(coord.LLtoLO("32.356389", "36.259167"), {atc=true, tower="V118.30, U250.40", runways={{name="13", hdg=128}, {name="31", hdg=308}}})},
-            {name="H4",point=veafNamedPoints.addDataToPoint(coord.LLtoLO("32.539122", "38.195841"), {atc=true, tower="V122.60, U250.10", runways={{name="10", hdg=100}, {name="28", hdg=280}}})}, 
+            {name="H4",point=veafNamedPoints.addDataToPoint(coord.LLtoLO("32.539122", "38.195841"), {atc=true, tower="V122.60, U250.10", runways={{name="10", hdg=100}, {name="28", hdg=280}}})},
         }
         veafNamedPoints.addAllSyriaCities()
     elseif theatre == "caucasus" then
@@ -361,10 +471,10 @@ if veafNamedPoints then
             {name="AIRBASE Antonio B. Won Pat Intl", point={x=-000068,y=0,z=-000109, atc=true, tower="V118.1, U340.2", runways={ {name="6", hdg=65, ils="110.30"}, {name="24", hdg=245}}}},
             {name="AIRBASE Olf Orote",point={x=-005047,y=0,z=-016913, atc=false}},
             {name="AIRBASE Santa Rita",point={x=-013576,y=0,z=-009925, atc=false}},
-            
+
             -- airbases in Neutral Island
             {name="AIRBASE Rota Intl", point={x=-075886,y=0,z=048612, atc=true, tower="V123.6, U250", tacan="44X KTS", runways={ {name="09", hdg=92, ils="109.75"}, {name="27", hdg=272}}}},
-            
+
             -- airbases in Red Island
             {name="AIRBASE Tinian Intl",  point={x=-166865,y=0,z=090027, atc=true, tower="V123.65, U250.05", tacan="31X TSK", runways={ {name="0", hdg=94, ils="108.90"}, {name="27", hdg=274}}}},
             {name="AIRBASE Saipan Intl", point={x=180074,y=0,z=101921, atc=true, tower="V125.7, U256.9", runways={{name="07", hdg=68, ils="109.90"}, {name="25", hdg=248}}}},
@@ -575,7 +685,7 @@ if (veafRadio) then
         local message = string.format("On va respawner le groupe [%s]", veaf.p(groupName))
         veaf.loggers.get(LOG_NAME):debug(message)
         trigger.action.outTextForGroup(MISSION_MASTER_GROUPID, message, 5)
-        
+
         local group = Group.getByName(groupName)
         if group == nil then
             local message = string.format("Impossible de trouver le groupe [%s] pour le respawner", veaf.p(groupName))
@@ -598,9 +708,12 @@ if (veafRadio) then
         end
     end
 
-    local function _changeQra(name, startOrStop)
+    local function _changeQra(parameters)
+        local name, startOrStop = veaf.safeUnpack(parameters)
+        veaf.loggers.get(LOG_NAME):info("_changeQra(%s, %s)", name, startOrStop)
         local qra = veafQraManager.get(name)
-        if qra then 
+        if qra then
+            trigger.action.outText(string.format("DEBUG - QRA %s - %s", name, startOrStop), 10)
             if startOrStop:upper() == "START" then
                 qra:start(false)
             else
@@ -616,7 +729,7 @@ if (veafRadio) then
         end
         for _, name in pairs(names) do
             local _group = Group.getByName(name)
-            if _group then 
+            if _group then
                 _group:destroy()
                 trigger.action.outText(string.format("Group %s has been destroyed", name), 10)
             end
@@ -625,7 +738,7 @@ if (veafRadio) then
 
     local function _airwaves_destroyWave()
         local _zone = veafAirWaves.get("zone1")
-        if _zone then 
+        if _zone then
             _zone:destroyCurrentWave()
             trigger.action.outText(string.format("DEBUG - Wave has been forced destroyed"), 10)
         end
@@ -633,7 +746,7 @@ if (veafRadio) then
 
     local function _airwaves_stop()
         local _zone = veafAirWaves.get("zone1")
-        if _zone then 
+        if _zone then
             _zone:stop()
             trigger.action.outText(string.format("DEBUG - Zone has been stopped"), 10)
         end
@@ -641,7 +754,7 @@ if (veafRadio) then
 
     local function _airwaves_start()
         local _zone = veafAirWaves.get("zone1")
-        if _zone then 
+        if _zone then
             _zone:start()
             trigger.action.outText(string.format("DEBUG - Zone has been started"), 10)
         end
@@ -693,8 +806,8 @@ if (veafRadio) then
                 })
             }),
             menu("QRA Maykop", {
-                command("Stop", _changeQra, {"QRA/Maykop", "start"}),
-                command("Start", _changeQra, {"QRA/Maykop", "stop"}),
+                command("Stop", _changeQra, {"QRA-Maykop", "stop"}),
+                command("Start", _changeQra, {"QRA-Maykop", "start"}),
             }),
             menu("Airwave tests", {
                 command("Start", _airwaves_start, {}),

@@ -14903,7 +14903,7 @@ mission = {
                                 ["dead"] = false,
                                 ["groupId"] = 2106,
                                 ["heading"] = 0,
-                                ["name"] = "Static Bus IKARUS-280-1",
+                                ["name"] = "combatZone_CrossKobuleti - Ikarus",
                                 ["route"] = {
                                     ["points"] = {
                                         [1] = {
@@ -14922,7 +14922,7 @@ mission = {
                                     [1] = {
                                         ["category"] = "Unarmed",
                                         ["heading"] = 0,
-                                        ["name"] = "Static Bus IKARUS-280-1",
+                                        ["name"] = "combatZone_CrossKobuleti - Ikarus",
                                         ["rate"] = 3,
                                         ["type"] = "IKARUS Bus",
                                         ["unitId"] = 4305,
@@ -14933,6 +14933,41 @@ mission = {
                                 ["x"] = -328186.37129869,
                                 ["y"] = 631103.1762724,
                             }, -- end of [2]
+                            [3] = {
+                                ["dead"] = false,
+                                ["groupId"] = 2107,
+                                ["heading"] = 0,
+                                ["name"] = "combatZone_CrossKobuleti - Barracks",
+                                ["route"] = {
+                                    ["points"] = {
+                                        [1] = {
+                                            ["action"] = "",
+                                            ["alt"] = 0,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 0,
+                                            ["type"] = "",
+                                            ["x"] = -327888.11107985,
+                                            ["y"] = 631250.05274675,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["units"] = {
+                                    [1] = {
+                                        ["category"] = "Fortifications",
+                                        ["heading"] = 0,
+                                        ["name"] = "combatZone_CrossKobuleti - Barracks",
+                                        ["rate"] = 100,
+                                        ["shape_name"] = "kazarma2",
+                                        ["type"] = "Barracks 2",
+                                        ["unitId"] = 4306,
+                                        ["x"] = -327888.11107985,
+                                        ["y"] = 631250.05274675,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -327888.11107985,
+                                ["y"] = 631250.05274675,
+                            }, -- end of [3]
                         }, -- end of ["group"]
                     }, -- end of ["static"]
                     ["vehicle"] = {
@@ -18957,7 +18992,7 @@ mission = {
             [10] = 47,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 142227,
+    ["currentKey"] = 146431,
     ["date"] = {
         ["Day"] = 17,
         ["Month"] = 2,
@@ -18978,30 +19013,6 @@ mission = {
             [2] = {
                 ["name"] = "Blue",
                 ["objects"] = {
-                    [1] = {
-                        ["closed"] = true,
-                        ["colorString"] = "0xff0000ff",
-                        ["hiddenOnPlanner"] = false,
-                        ["layerName"] = "Blue",
-                        ["lineMode"] = "segment",
-                        ["mapX"] = 77107.677721694,
-                        ["mapY"] = -265060.47949611,
-                        ["name"] = "Line-2",
-                        ["points"] = {
-                            [1] = {
-                                ["x"] = 0,
-                                ["y"] = 0,
-                            }, -- end of [1]
-                            [2] = {
-                                ["x"] = 0,
-                                ["y"] = 31279.95733708,
-                            }, -- end of [2]
-                        }, -- end of ["points"]
-                        ["primitiveType"] = "Line",
-                        ["style"] = "solid",
-                        ["thickness"] = 8,
-                        ["visible"] = true,
-                    }, -- end of [1]
                 }, -- end of ["objects"]
                 ["visible"] = true,
             }, -- end of [2]
@@ -19590,9 +19601,9 @@ mission = {
         }, -- end of ["roles"]
     }, -- end of ["groundControl"]
     ["map"] = {
-        ["centerX"] = -328025.85548508,
-        ["centerY"] = 631439.20937754,
-        ["zoom"] = 10501.034535436,
+        ["centerX"] = -328588.63872165,
+        ["centerY"] = 631655.06042901,
+        ["zoom"] = 6782.4253010321,
     }, -- end of ["map"]
     ["maxDictId"] = 785,
     ["pictureFileNameB"] = {
@@ -19843,18 +19854,36 @@ mission = {
             [8] = {
                 ["color"] = {
                     [1] = 1,
-                    [2] = 1,
-                    [3] = 1,
-                    [4] = 0.15,
+                    [2] = 0,
+                    [3] = 0,
+                    [4] = 0.14901960784314,
                 }, -- end of ["color"]
                 ["hidden"] = false,
                 ["name"] = "QRA-Maykop",
                 ["properties"] = {
                 }, -- end of ["properties"]
                 ["radius"] = 91440,
-                ["type"] = 0,
-                ["x"] = -25622.567190113,
-                ["y"] = 457550.28643716,
+                ["type"] = 2,
+                ["verticies"] = {
+                    [1] = {
+                        ["x"] = -58656.821328002,
+                        ["y"] = 423789.84788385,
+                    }, -- end of [1]
+                    [2] = {
+                        ["x"] = -61138.613387558,
+                        ["y"] = 463861.49145898,
+                    }, -- end of [2]
+                    [3] = {
+                        ["x"] = 9934.8133440476,
+                        ["y"] = 498222.69013329,
+                    }, -- end of [3]
+                    [4] = {
+                        ["x"] = 12285.842727027,
+                        ["y"] = 410872.90613491,
+                    }, -- end of [4]
+                }, -- end of ["verticies"]
+                ["x"] = -24393.694661121,
+                ["y"] = 449186.73390276,
                 ["zoneId"] = 1165,
             }, -- end of [8]
             [9] = {
@@ -20174,7 +20203,7 @@ mission = {
     ["weather"] = {
         ["atmosphere_type"] = 0,
         ["clouds"] = {
-            ["base"] = 420,
+            ["base"] = 400,
             ["density"] = 9,
             ["iprecptns"] = 0,
             ["preset"] = "Preset24",
