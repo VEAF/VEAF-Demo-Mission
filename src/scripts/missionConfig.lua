@@ -48,6 +48,86 @@ end
 -- initialize AirWaves zones
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafAirWaves then
+
+    local groupsImportantUnits = {
+        [".*s300.*"] = {
+            minimumLife = 80,
+            importantSets = {
+                ["TR"] = { "S-300PS 40B6M tr" },
+                ["SR"] = { "S-300PS 40B6MD sr", "S-300PS 64H6E sr" },
+                ["CP"] = { "S-300PS 54K6 cp" }
+            }
+        }
+    }
+
+    -- the function that decides if IA ennemy groups are dead (individually)
+    local function isEnemyGroupDead(zone, waveNumber, group)
+        veaf.loggers.get(veafAirWaves.Id):trace("zone[%s]->isEnemyGroupDead(%s)", veaf.p(zone:getName()), veaf.p(waveNumber))
+        if not group then
+            return
+        end
+        local groupAlive = false
+        veaf.loggers.get(veafAirWaves.Id):trace("group:getName()=%s", veaf.p(group:getName()))
+        if group:getName():lower():match(".*s300.*") then
+            local importantUnitsAlive = { }
+            importantUnitsAlive["S-300PS 40B6M tr"] = false
+            importantUnitsAlive["S-300PS 40B6MD sr"] = false
+            importantUnitsAlive["S-300PS 64H6E sr"] = false
+            importantUnitsAlive["S-300PS 54K6 cp"] = false
+
+            local importantSetsAlive = {}
+            importantSetsAlive["TR"] = { "S-300PS 40B6M tr" }
+            importantSetsAlive["SR"] = { "S-300PS 40B6MD sr", "S-300PS 64H6E sr" }
+            importantSetsAlive["CP"] = { "S-300PS 54K6 cp" }
+
+            -- this is a SA10, consider the radar
+            for _, unit in pairs(group:getUnits()) do
+                veaf.loggers.get(veafAirWaves.Id):trace("unit:getName()=%s", veaf.p(unit:getName()))
+                local typeName = unit:getTypeName()
+                veaf.loggers.get(veafAirWaves.Id):trace("typeName=%s", veaf.p(typeName))
+                local unitLife = unit:getLife()
+                local unitLife0 = unit:getLife0()
+                local unitLifePercent = 100 * unitLife / unitLife0
+                veaf.loggers.get(veafAirWaves.Id):trace("unitLifePercent=%s", veaf.p(unitLifePercent))
+                if unitLifePercent >= 100 then
+                    if importantUnitsAlive[typeName] ~= nil then
+                        importantUnitsAlive[typeName] = true
+                    end
+                else
+                    zone.handleCrippledEnemyUnitCallback(zone, waveNumber, unit)
+                end
+            end
+            -- check that all the important units are alive
+            veaf.loggers.get(veafAirWaves.Id):trace("importantUnitsAlive=%s", veaf.p(importantUnitsAlive))
+            groupAlive = true
+            for importantSetName, importantSet in pairs(importantSetsAlive) do
+                veaf.loggers.get(veafAirWaves.Id):trace("setName=%s", veaf.p(importantSetName))
+                local setAlive = false
+                for _, typeName in pairs(importantSet) do
+                    veaf.loggers.get(veafAirWaves.Id):trace("typeName=%s", veaf.p(typeName))
+                    setAlive = setAlive or importantUnitsAlive[typeName]
+                end
+                veaf.loggers.get(veafAirWaves.Id):trace("setAlive=%s", veaf.p(setAlive))
+                groupAlive = groupAlive and setAlive
+            end
+            veaf.loggers.get(veafAirWaves.Id):trace("groupAlive=%s", veaf.p(groupAlive))
+        end
+        return not groupAlive
+    end
+
+    -- the function that handles crippled enemy units
+    local function handleCrippledEnemyUnit(zone, waveNumber, unit)
+        veaf.loggers.get(veafAirWaves.Id):trace("zone[%s]->handleCrippledEnemyUnit(%s)", veaf.p(zone:getName()), veaf.p(waveNumber))
+        if not unit then
+            return
+        end
+        veaf.loggers.get(veafAirWaves.Id):trace("unit:getName()=%s", veaf.p(unit:getName()))
+        -- bomb the bastard
+        local spot = unit:getPosition().p
+        local power = 50
+        trigger.action.explosion(spot, power)
+    end
+    
     veaf.loggers.get(veaf.Id):info("init - AIRWAVES")
 
     -- example zone 01 (can easily be copy/pasted, nothing to set in the editor except player slots and if desired trigger zones)
@@ -57,7 +137,7 @@ if veafAirWaves then
     :setName("Zone 01")
 
     -- description for the messages
-    :setDescription("Zone 01 - FOX1 fighters")
+    :setDescription("Zone 01")
     -- coalitions of the players (only human units from these coalitions will be monitored)
     :addPlayerCoalition(coalition.side.BLUE)
 
@@ -65,7 +145,7 @@ if veafAirWaves then
     --:setTriggerZone("airWave_HARD")
 
     -- center (point in the center of the circle, when not using a DCS trigger zone) - can be set with coordinates either in LL or MGRS
-    :setZoneCenterFromCoordinates("U37TCL5297") -- U=UTM (MGRS); 37T=grid number; CL=square; 52000=latitude; 97000=longitude
+    :setZoneCenterFromCoordinates("U37TFH2882") -- U=UTM (MGRS); 37T=grid number; CL=square; 52000=latitude; 97000=longitude
 
     -- radius (size of the circle, when not using a zone) - in meters
     :setZoneRadius(90000) -- 50 nm
@@ -74,20 +154,17 @@ if veafAirWaves then
     :setDrawZone(true)
 
     -- default position for respawns (im meters, lat/lon, relative to the zone center)
-    :setRespawnDefaultOffset(0, -45000) -- 45km north of the zone's center
+    :setRespawnDefaultOffset(0, 0)
 
     -- radius of the waves groups spawn
-    :setRespawnRadius(10000)
+    :setRespawnRadius(0)
 
-    ---add a wave of ennemy planes
+    ---add a wave of ennemy groups
     --@param groups any a list of groups or VEAF commands; VEAF commands can be prefixed with [lat, lon], specifying the location of their spawn relative to the center of the zone; default value is set with "setRespawnDefaultOffset"
     --@param number any how many of these groups will actually be spawned (can be multiple times the same group!)
     --@param bias any shifts the random generator to the right of the list
-    :addRandomWave( { "[0, 0]-cap Mig25-Fox2-solo, hdg 180, dist 30"  }, 1) -- a single Mig25 with FOX2 missiles spawning near
-    :addRandomWave( { "[0, -30000]-cap Mig21-Fox1, size 2, hdg 180, dist 50", "[0, -30000]-cap Mig23S-Fox1, size 2, hdg 180, dist 50", "[0, -30000]-cap Mig25-Fox1, size 2, hdg 180, dist 50" }, 1) -- 1 group from FOX1 fighter pairs spawning at 30km to the north
-    :addRandomWave( { "[0, -60000]-cap Su27-Fox1, hdg 180, dist 50", "[0, -60000]-cap Su33-Fox1, hdg 180, dist 50", "[0, -60000]-cap Mig29A-Fox1, hdg 180, dist 50" }, 2) -- 2 groups from modern FOX1 fighter pairs spawning at 60km to the north
-    --:addRandomWave({ "airWave_EASY-1-1", "airWave_EASY-1-2"}, 1) -- one group
-    --:addRandomWave({ "airWave_EASY-2-1", "airWave_EASY-2-1"}, 2) -- two groups
+    --:addRandomWave( { "-cap easy x1, hdg 180, dist 30"  }, 1) -- a single Mig25 with FOX2 missiles spawning near
+    :addRandomWave( { "-sa10, radius 0"  }, 1) -- a SA10 site
 
     -- players in the zone will only be detected above this altitude (in feet)
     :setMaximumAltitudeInFeet(40000) -- hard ceiling
@@ -105,7 +182,9 @@ if veafAirWaves then
     :setMessageDeploy("%s déploie la vague numéro %s")
 
     -- event when a wave is triggered
-    --:setOnDeploy(callbackFunction)
+    :setOnDeploy(function ()
+        trigger.action.setUserFlag("monBeauDrapeau", 1)
+    end)
 
     -- message when a wave is destroyed
     :setMessageDestroyed("%s: la vague %s a été détruite")
@@ -130,49 +209,14 @@ if veafAirWaves then
 
     -- event when the zone is deactivated
     --:setOnStop(callbackFunction)
+ 
+    -- the function that handles crippled enemy units
+    :setHandleCrippledEnemyUnitCallback(handleCrippledEnemyUnit)
+
+    ---the function that decides if a group is dead or not (individually)
+    :setIsEnemyGroupDeadCallback(isEnemyGroupDead)
 
     -- start the zone
-    :start()
-
-    -- example zone 02 (copy/pasted from zone 01, changed only the name and coordinates)
-    AirWaveZone:new()
-    :setName("Zone 02")
-    :setDescription("Zone 02 - FOX1 fighters")
-    :addPlayerCoalition(coalition.side.BLUE)
-    :setZoneCenterFromCoordinates("U37TEL4792")
-    :setZoneRadius(90000) -- 50 nm
-    :setDrawZone(true)
-    :setRespawnDefaultOffset(0, -45000) -- 45km north of the zone's center
-    :setRespawnRadius(10000)
-    :addRandomWave( { "[0, 0]-cap Mig21-Fox2-solo, hdg 180, dist 30"  }, 1) -- a single Mig-21 with FOX2 missiles spawning near
-    :addRandomWave( { "-cap Mig21-Fox1, size 2, hdg 180, dist 50", "-cap Mig23S-Fox1, size 2, hdg 180, dist 50", "-cap Mig25-Fox1, size 2, hdg 180, dist 50" }, 1) -- 1 group from FOX1 fighter pairs
-    :addRandomWave( { "-cap Su27-Fox1, hdg 180, dist 50", "-cap Su33-Fox1, hdg 180, dist 50", "-cap Mig29A-Fox1, hdg 180, dist 50" }, 3) -- 3 groups from modern FOX1 fighter pairs
-    :setMessageStart("La zone %s est fonctionnelle")
-    :setMessageDeploy("La zone %s déploie la vague numéro %s")
-    :setMessageDestroyed("La vague %s a été détruite dans la zone %s")
-    :setMessageWon("La zone %s est gagnée (plus d'ennemi)")
-    :setMessageStop("La zone %s n'est plus active")
-    :start()
-
-    -- example zone 03 (deep copied from zone 01, changed only the name and coordinates)
-    mist.utils.deepCopy(veafAirWaves.get("Zone 01"))
-    :setName("Zone 03")
-    :setDescription("Zone 03 - FOX1 fighters")
-    :setZoneCenterFromCoordinates("U37TCH2163")
-    :start()
-
-    AirWaveZone:new()
-    :setName("zone1")
-    :setDescription("zone 1")
-    :addPlayerCoalition(coalition.side.BLUE)
-    :setTriggerZone("airWave_zone1")
-    --:setZoneCenterFromCoordinates("U37TEK8250048000")
-    --:setZoneRadius(91440) -- 300,000 feet
-    :addRandomWave({ "airWave_zone1_wave1-1", "airWave_zone1_wave1-2"}, 1) -- spawn one of the 2 groups
-    :addRandomWave({ "airWave_zone1_wave2-1", "airWave_zone1_wave2-2"}, 2) -- spawn two of the 2 groups (can be multiple times the same group!)
-    --:setRespawnRadius(10000) -- 10km respawn radius
-    --:setMaximumAltitudeInFeet(12500) -- hard ceiling is 12500 feet
-    --:setMinimumAltitudeInFeet(11500) -- hard floor is 11500 feet
     :start()
 
     veaf.loggers.get(veafAirWaves.Id):debug("Initialized")
@@ -217,13 +261,29 @@ if veafShortcuts then
     -- you can add all the shortcuts you want here. Shortcuts can be any VEAF command, as entered in a map marker.
     -- here are some examples :
 
-    -- veafShortcuts.AddAlias(
-    --     VeafAlias:new()
-    --         :setName("-sa11")
-    --         :setDescription("SA-11 Gadfly (9K37 Buk) battery")
-    --         :setVeafCommand("_spawn group, name sa11")
-    --         :setBypassSecurity(true)
-    -- )
+    veafShortcuts.AddAlias(
+        VeafAlias:new()
+            :setName("-b")
+            :setDescription("")
+            :setVeafCommand("_spawn bomb, power 50")
+            :setBypassSecurity(true)
+    )
+
+    veafShortcuts.AddAlias(
+        VeafAlias:new()
+            :setName("-d1")
+            :setDescription("")
+            :setVeafCommand("_destroy, radius 10")
+            :setBypassSecurity(true)
+    )
+
+    veafShortcuts.AddAlias(
+        VeafAlias:new()
+            :setName("-d")
+            :setDescription("")
+            :setVeafCommand("_destroy, radius 10000")
+            :setBypassSecurity(true)
+    )
 end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
