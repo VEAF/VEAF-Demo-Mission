@@ -40,7 +40,7 @@ if veafQraManager then
     --:setMaximumAltitudeInFeet(12500) -- hard ceiling is 12500 feet
     --:setMinimumAltitudeInFeet(11500) -- hard floor is 11500 feet
     :setDrawZone(true)
-    :start()
+    --:start()
 
 end
 
@@ -138,11 +138,12 @@ if veafAirWaves then
 
     -- description for the messages
     :setDescription("Zone 01")
+
     -- coalitions of the players (only human units from these coalitions will be monitored)
     :addPlayerCoalition(coalition.side.BLUE)
 
     -- trigger zone name (if set, we'll use a DCS trigger zone)
-    --:setTriggerZone("airWave_HARD")
+    --:setTriggerZone("Airwaves-1")
 
     -- center (point in the center of the circle, when not using a DCS trigger zone) - can be set with coordinates either in LL or MGRS
     :setZoneCenterFromCoordinates("U37TFH2882") -- U=UTM (MGRS); 37T=grid number; CL=square; 52000=latitude; 97000=longitude
@@ -159,12 +160,33 @@ if veafAirWaves then
     -- radius of the waves groups spawn
     :setRespawnRadius(0)
 
-    ---add a wave of ennemy groups
-    --@param groups any a list of groups or VEAF commands; VEAF commands can be prefixed with [lat, lon], specifying the location of their spawn relative to the center of the zone; default value is set with "setRespawnDefaultOffset"
-    --@param number any how many of these groups will actually be spawned (can be multiple times the same group!)
-    --@param bias any shifts the random generator to the right of the list
-    --:addRandomWave( { "-cap easy x1, hdg 180, dist 30"  }, 1) -- a single Mig25 with FOX2 missiles spawning near
-    :addRandomWave( { "-sa10, radius 0"  }, 1) -- a SA10 site
+    -- delay in seconds between the first human in zone and the actual activation of the zone
+    --:setDelayBeforeActivation(15)
+
+    -- default delay in seconds between waves of enemy planes
+    --:setDelayBetweenWaves(60)
+
+    ---adds a wave of enemy planes
+    ---parameters are very flexible: they can be:
+    --- a table containing the following fields:
+    ---     - groups a list of groups or VEAF commands; VEAF commands can be prefixed with [lat, lon], specifying the location of their spawn relative to the center of the zone; default value is set with "setRespawnDefaultOffset"
+    ---     - number how many of these groups will actually be spawned (can be multiple times the same group!); it can be a "randomizable number", e.g., "2-6" for "between 2 and 6"
+    ---     - bias shifts the random generator to the right of the list; it can be a "randomizable number" too
+    ---     - delay the delay between this wave and the next one - if negative, then the next wave is spawned instantaneously (no waiting for this wave to be completed); it can be a "randomizable number" too
+    --- or a list of strings (the groups or VEAF commands)
+    --- or almost anything in between; we'll take a string as if it were a table containing one string, anywhere
+    --- examples:
+    ---   :addWave("group1")
+    ---   :addWave("group1", "group2")
+    ---   :addWave({"group1", "group2"})
+    ---   :addWave({ groups={"group1", "group2"}, number = 2})
+    ---   :addWave({ groups="group1", number = 2})
+    :addWave({ groups = "-cap f15, hdg 180, dist 30", delay = -1 })                    -- an easy single fighter cap
+    --:addWave({ groups = "-sa9, hdg 180, dist 30", number = "1-3", delay = "15-30" })       -- and simultaneously, between 1 and 3 SA9 groups 
+    --:addWave({ groups = "-cap normal x1, hdg 180, dist 30" , number = "1-2", delay = -1 }) -- a normal single or two-ship fighter cap after 15-30 seconds
+    --:addWave({ groups = "-sa8, hdg 180, dist 30", number = "1-3", delay = "15-30" })       -- and simultaneously, between 1 and 3 SA8 groups 
+    --:addWave({ groups = "-cap hard x1, hdg 180, dist 30" , number = "2-3", delay = -1 })   -- a hard 2 to 3 fighters cap after 15-30 seconds
+    --:addWave({ groups = "-sa15, hdg 180, dist 30", number = "1-3"})                        -- and simultaneously, between 1 and 3 SA15 groups 
 
     -- players in the zone will only be detected above this altitude (in feet)
     :setMaximumAltitudeInFeet(40000) -- hard ceiling
@@ -172,11 +194,25 @@ if veafAirWaves then
     -- players in the zone will only be detected below this altitude (in feet)
     :setMinimumAltitudeInFeet(1500) -- hard floor
 
+    :setMaxSecondsOutsideOfZoneIA(1)
+
     -- message when the zone is activated
     :setMessageStart("%s est maintenant fonctionnelle")
 
     -- event when the zone is activated
     --:setOnStart(callbackFunction)
+
+    -- message when the zone is waiting for more players
+    :setMessageWaitForHumans("%s: attente d'autres joueurs pendant %s secondes")
+
+    -- event when the zone is waiting for more players
+    --:setOnWaitForHumans(callbackFunction)
+
+    -- message when a wave will be triggered
+    :setMessageWaitToDeploy("%s: déploiement de la prochaine vague dans %s secondes")
+
+    -- event when a wave will be triggered
+    --:setOnWaitToDeploy(callbackFunction)
 
     -- message when a wave is triggered
     :setMessageDeploy("%s déploie la vague numéro %s")
@@ -213,11 +249,15 @@ if veafAirWaves then
     -- the function that handles crippled enemy units
     :setHandleCrippledEnemyUnitCallback(handleCrippledEnemyUnit)
 
+    :setMinimumLifeForAiInPercent(50)
+
     ---the function that decides if a group is dead or not (individually)
-    :setIsEnemyGroupDeadCallback(isEnemyGroupDead)
+    --:setIsEnemyGroupDeadCallback(isEnemyGroupDead)
+
+    :setResetWhenDying(false)
 
     -- start the zone
-    :start()
+    --:start()
 
     veaf.loggers.get(veafAirWaves.Id):debug("Initialized")
 end
@@ -362,8 +402,8 @@ if veafCombatZone then
 			:setMissionEditorZoneName("combatZone_CrossKobuleti")
 			:setFriendlyName("Cross Kobuleti")
 			:setBriefing("This is a simple mission\n" ..
-						 "You must destroy the comm antenna\n" ..
-						 "The other ennemy units are secondary targets\n")
+        "You must destroy the comm antenna\n" ..
+        "The other ennemy units are secondary targets\n")
 			:initialize()
 	)
 	veafCombatZone.AddZone(
@@ -554,17 +594,19 @@ end
 -- configure SECURITY
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if veafSecurity then
-    --let's not set a password
-    --veafSecurity.password_L9["SHA1 hash of the password"] = true -- set the L9 password (the lowest possible security)
-    veaf.loggers.get(veaf.Id):info("Loading configuration")
-    veaf.loggers.get(veaf.Id):info("init - veafSecurity")
-    veafSecurity.initialize()
+  -- disable security
+  veafSecurity.SecurityDisabled = true
+  --let's not set a password
+  --veafSecurity.password_L9["SHA1 hash of the password"] = true -- set the L9 password (the lowest possible security)
+  veaf.loggers.get(veaf.Id):info("Loading configuration")
+  veaf.loggers.get(veaf.Id):info("init - veafSecurity")
+  veafSecurity.initialize()
 
-    -- force security in order to test it when dynamic loading is in place (change to TRUE)
-    if (false) then
-        veaf.SecurityDisabled = false
-        veafSecurity.authenticated = false
-    end
+  -- force security in order to test it when dynamic loading is in place (change to TRUE)
+  if (false) then
+      veaf.SecurityDisabled = false
+      veafSecurity.authenticated = false
+  end
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -829,56 +871,45 @@ if (veafRadio) then
         }, delay, coa, silent)
     end
 
-    local function menu(name, items)
-        return {
-            "menu", name, items
-        }
-    end
-
-    local function command(name, aFunction, parameters)
-        return {
-            "command", name, aFunction, parameters
-        }
-    end
-
-    local userMenu = {
-        menu("Mission menus", {
-            menu("Gestion CAP", {
-                menu("CAP Est", {
-                    menu("Facile", {
-                        command("Mig21", _respawnCap, "EST on Demand MIG21"),
-                        command("Mig21x3", _respawnCap, "EST on Demand MIG21x3"),
-                    }),
-                    menu("Moyen", {
-                        command("Mig31", _respawnCap, "EST on Demand mig31"),
-                        command("Mig31x3", _respawnCap, "EST on Demand mig31x3"),
-                    }),
-                }),
-                menu("CAP Ouest", {
-                    menu("Facile", {
-                        command("Mig21", _respawnCap, "OUEST on Demand MIG21"),
-                        command("Mig21x3", _respawnCap, "OUEST on Demand MIG21x3"),
-                    }),
-                    menu("Moyen", {
-                        command("Mig31", _respawnCap, "OUEST on Demand mig31"),
-                        command("Mig31x3", _respawnCap, "OUEST on Demand mig31x3"),
-                    }),
-                })
-            }),
-            menu("QRA Maykop", {
-                command("Stop", _changeQra, {"QRA-Maykop", "stop"}),
-                command("Start", _changeQra, {"QRA-Maykop", "start"}),
-            }),
-            menu("Airwave tests", {
-                command("Start", _airwaves_start, {}),
-                command("Stop", _airwaves_stop, {}),
-                command("Destroy wave", _airwaves_destroyWave, {}),
-            }),
-            menu("FOB test", {
-                command("Spawn FOB", _spawnFOB),
-            })
-        })
-    }
+    local userMenu = 
+    veafRadio.mainmenu(
+        veafRadio.menu("Mission menus", 
+            veafRadio.menu("Gestion CAP", 
+                veafRadio.menu("CAP Est", 
+                    veafRadio.menu("Facile", 
+                        veafRadio.command("Mig21", _respawnCap, "EST on Demand MIG21"),
+                        veafRadio.command("Mig21x3", _respawnCap, "EST on Demand MIG21x3")
+                    ),
+                    veafRadio.menu("Moyen", 
+                        veafRadio.command("Mig31", _respawnCap, "EST on Demand mig31"),
+                        veafRadio.command("Mig31x3", _respawnCap, "EST on Demand mig31x3")
+                    )
+                ),
+                veafRadio.menu("CAP Ouest", 
+                    veafRadio.menu("Facile", 
+                        veafRadio.command("Mig21", _respawnCap, "OUEST on Demand MIG21"),
+                        veafRadio.command("Mig21x3", _respawnCap, "OUEST on Demand MIG21x3")
+                    ),
+                    veafRadio.menu("Moyen", 
+                        veafRadio.command("Mig31", _respawnCap, "OUEST on Demand mig31"),
+                        veafRadio.command("Mig31x3", _respawnCap, "OUEST on Demand mig31x3")
+                    )
+                )
+            ),
+            veafRadio.menu("QRA Maykop", 
+                veafRadio.command("Stop", _changeQra, {"QRA-Maykop", "stop"}),
+                veafRadio.command("Start", _changeQra, {"QRA-Maykop", "start"})
+            ),
+            veafRadio.menu("Airwave tests", 
+                veafRadio.command("Start", _airwaves_start, {}),
+                veafRadio.command("Stop", _airwaves_stop, {}),
+                veafRadio.command("Destroy wave", _airwaves_destroyWave, {})
+            ),
+            veafRadio.menu("FOB test", 
+                veafRadio.command("Spawn FOB", _spawnFOB)
+            )
+        )
+    )
 
     --veafRadio.createUserMenu(userMenu, MISSION_MASTER_GROUPID)
     veafRadio.createUserMenu(userMenu)
