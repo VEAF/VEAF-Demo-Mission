@@ -913,6 +913,23 @@ if (veafRadio) then
 
     --veafRadio.createUserMenu(userMenu, MISSION_MASTER_GROUPID)
     veafRadio.createUserMenu(userMenu)
+
+    local groupId = nil -- set this to a flight group id if you want the menu to be specific to a flight
+    veafRadio.createUserMenu(
+        veafRadio.mainmenu(
+            veafRadio.menu("Gestion de flags",
+                veafRadio.menu("Gérer le drapeau ALPHA",
+                    veafRadio.command("ON", veafSpawn.missionMasterSetFlagFromTable, { "alpha", 1 }),
+                    veafRadio.command("OFF", veafSpawn.missionMasterSetFlagFromTable, { "alpha", 0 })
+                ),
+                veafRadio.menu("Gérer le drapeau 127",
+                    veafRadio.command("Incrémenter", veafSpawn.missionMasterIncrementFlagValue, 127),
+                    veafRadio.command("Décrémenter", veafSpawn.missionMasterDecrementFlagValue, 127)
+                )
+            )
+        ), groupId
+    )
+
 end
 
 -- Silence ATC on all the airdromes
