@@ -10,4 +10,5 @@ mapResource = {
     ["DictKey_ActionText_10309"] = "missionConfig.lua",
     ["ResKey_Action_796"] = "beaconsilent.ogg",
     ["ResKey_Action_797"] = "beacon.ogg",
+    ["ResKey_Action_803"] = "CSAR.ogg",
 } -- end of mapResource
