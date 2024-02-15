@@ -663,6 +663,7 @@ if csar then
         csar.aircraftType["UH-1H"] = 8
         csar.aircraftType["Mi-8MT"] = 16
         csar.useprefix  = false
+        csar.radioSound = "csar-beacon.ogg"
     end
     csar.initialize(configurationCallback)
 end
