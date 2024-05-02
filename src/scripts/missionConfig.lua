@@ -913,6 +913,23 @@ if (veafRadio) then
         }, delay, coa, silent)
     end
 
+    local function _setNoShowUnitsList()
+        veafCombatZone.GetZone("combatZone_CrossKobuleti"):setShowUnitsList(false)
+    end
+
+    local function _setNoShowPosition()
+        veafCombatZone.GetZone("combatZone_CrossKobuleti"):setShowZonePositionInfo(false)
+    end
+
+    local function _resetDisplay()
+        veafCombatZone.GetZone("combatZone_CrossKobuleti"):setShowUnitsList(true)
+        veafCombatZone.GetZone("combatZone_CrossKobuleti"):setShowZonePositionInfo(true)
+    end
+
+    local function _showInfos()
+        veafCombatZone.GetInformationOnZone("combatZone_CrossKobuleti")
+    end
+
     local userMenu = 
     veafRadio.mainmenu(
         veafRadio.menu("Mission menus", 
@@ -949,6 +966,12 @@ if (veafRadio) then
             ),
             veafRadio.menu("FOB test", 
                 veafRadio.command("Spawn FOB", _spawnFOB)
+            ),
+            veafRadio.menu("Combat Zone CrossKobuleti options",
+                veafRadio.command("Show infos", _showInfos),
+                veafRadio.command("Hide units list", _setNoShowUnitsList),
+                veafRadio.command("Hide zone coordinates", _setNoShowPosition),
+                veafRadio.command("Reset displays", _resetDisplay)
             )
         )
     )
