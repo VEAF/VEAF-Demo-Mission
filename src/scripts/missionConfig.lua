@@ -399,12 +399,43 @@ if veafCombatZone then
 
     veafCombatZone.AddZone(
 		VeafCombatZone:new()
+			:setMissionEditorZoneName("combatZone_CrossKobuleti-1")
+			:setFriendlyName("chained mission - Cross Kobuleti - 1")
+			:setBriefing("This is a chained mission for Cross Kobuleti")
+            :disableUserActivation()
+            :addChainedCombatZone("combatZone_CrossKobuleti-2")
+			:initialize()
+	)
+    veafCombatZone.AddZone(
+		VeafCombatZone:new()
+			:setMissionEditorZoneName("combatZone_CrossKobuleti-2")
+			:setFriendlyName("chained mission - Cross Kobuleti - 2")
+			:setBriefing("This is a chained mission for Cross Kobuleti")
+            :disableUserActivation()
+            :addChainedCombatZone("combatZone_CrossKobuleti-3")
+			:initialize()
+	)
+    veafCombatZone.AddZone(
+		VeafCombatZone:new()
+			:setMissionEditorZoneName("combatZone_CrossKobuleti-3")
+			:setFriendlyName("chained mission - Cross Kobuleti - 3")
+			:setBriefing("This is a chained mission for Cross Kobuleti")
+            :disableUserActivation()
+            :addChainedCombatZone("combatZone_CrossKobuleti-1")
+			:initialize()
+	)
+    veafCombatZone.AddZone(
+		VeafCombatZone:new()
 			:setMissionEditorZoneName("combatZone_CrossKobuleti")
 			:setFriendlyName("Cross Kobuleti")
 			:setBriefing("This is a simple mission\n" ..
         "You must destroy the comm antenna\n" ..
         "The other ennemy units are secondary targets\n")
 			:initialize()
+            :addChainedCombatZone("combatZone_CrossKobuleti-1")
+            :addChainedCombatZone("combatZone_CrossKobuleti-2")
+            :addChainedCombatZone("combatZone_CrossKobuleti-3")
+            :setChainedCombatZonesDelay("5-10")
 	)
 	veafCombatZone.AddZone(
 		VeafCombatZone:new()
@@ -1000,5 +1031,6 @@ end
 -- Silence ATC on all the airdromes
 veaf.silenceAtcOnAllAirbases()
 
-veafCombatZone.GetZone("goriOperation"):activate()
+--veafCombatZone.GetZone("goriOperation"):activate()
+veafCombatZone.GetZone("combatZone_CrossKobuleti"):activate()
 
