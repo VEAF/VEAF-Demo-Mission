@@ -653,50 +653,64 @@ end
 -- configure CTLD
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if ctld then
-    veaf.loggers.get(veaf.Id):info("init - ctld")
-    function configurationCallback()
-        veaf.loggers.get(veaf.Id):info("configuring CTLD for %s", veaf.config.MISSION_NAME)
-        -- do what you have to do in CTLD before it is initialized
-        -- ctld.hoverPickup = false
-        -- ctld.slingLoad = true
-      end
-    ctld.initialize(configurationCallback)
+    local initializeCTLD = true
+    if initializeCTLD then -- we want to use CTLD
+        veaf.loggers.get(veaf.Id):info("initialize CTLD")
+        local function configurationCallback()
+            veaf.loggers.get(veaf.Id):info("configuring CTLD for %s", veaf.config.MISSION_NAME)
+            -- do what you have to do in CTLD before it is initialized
+            -- ctld.hoverPickup = false
+            -- ctld.slingLoad = true
+        end
+        -- call the VEAF function that replaced ctld.initialize
+        ctld.initialize(configurationCallback)
+    else
+        -- make the already scheduled ctld.initialize function think it's already initialized
+        ctld.alreadyInitialized = true
+    end
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- configure CSAR
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 if csar then
-    veaf.loggers.get(veaf.Id):info("init - csar")
-    function configurationCallback()
-        veaf.loggers.get(veaf.Id):info("configuring CSAR for %s", veaf.config.MISSION_NAME)
-        --[[
-        -- do what you have to do in csar before it is initialized
-        csar.enableAllslots = false  -- Doesn't require to set the Unit name check Aircraft Type and Limit below
-        -- All slot / Limit settings
-        csar.aircraftType = {} -- Type and limit
-        csar.aircraftType["SA342Mistral"] = 2
-        csar.aircraftType["SA342Minigun"] = 2
-        csar.aircraftType["SA342L"] = 2
-        csar.aircraftType["SA342M"] = 2
-        csar.aircraftType["UH-1H"] = 8
-        csar.aircraftType["Mi-8MT"] = 16
-        
-        -- Prefix Settings - Only For helicopters
-        csar.useprefix    = true  -- Use the Prefixed defined below, Requires Unit have the Prefix defined below 
-        csar.csarPrefix = { "helicargo", "MEDEVAC"}
-        ]]
-        csar.enableAllslots = true
-        csar.aircraftType["SA342Mistral"] = 2
-        csar.aircraftType["SA342Minigun"] = 2
-        csar.aircraftType["SA342L"] = 2
-        csar.aircraftType["SA342M"] = 2
-        csar.aircraftType["UH-1H"] = 8
-        csar.aircraftType["Mi-8MT"] = 16
-        csar.useprefix  = false
-        csar.radioSound = "csar-beacon.ogg"
+    local initializeCSAR = true
+    if initializeCSAR then -- we want to use CSAR
+        veaf.loggers.get(veaf.Id):info("initialize CSAR")
+        local function configurationCallback()
+            veaf.loggers.get(veaf.Id):info("configuring CSAR for %s", veaf.config.MISSION_NAME)
+            --[[
+            -- do what you have to do in csar before it is initialized
+            csar.enableAllslots = true  -- Doesn't require to set the Unit name check Aircraft Type and Limit below
+            -- All slot / Limit settings
+            csar.aircraftType = {} -- Type and limit
+            csar.aircraftType["SA342Mistral"] = 2
+            csar.aircraftType["SA342Minigun"] = 2
+            csar.aircraftType["SA342L"] = 2
+            csar.aircraftType["SA342M"] = 2
+            csar.aircraftType["UH-1H"] = 8
+            csar.aircraftType["Mi-8MT"] = 16
+            
+            -- Prefix Settings - Only For helicopters
+            csar.useprefix    = true  -- Use the Prefixed defined below, Requires Unit have the Prefix defined below 
+            csar.csarPrefix = { "helicargo", "MEDEVAC"}
+            ]]
+            csar.enableAllslots = true
+            csar.aircraftType["SA342Mistral"] = 2
+            csar.aircraftType["SA342Minigun"] = 2
+            csar.aircraftType["SA342L"] = 2
+            csar.aircraftType["SA342M"] = 2
+            csar.aircraftType["UH-1H"] = 8
+            csar.aircraftType["Mi-8MT"] = 16
+            csar.useprefix  = false
+            csar.radioSound = "csar-beacon.ogg"
+        end
+        -- call the VEAF function that replaced csar.initialize
+        csar.initialize(configurationCallback)
+    else
+        -- make the already scheduled csar.initialize function think it's already initialized
+        csar.alreadyInitialized = true
     end
-    csar.initialize(configurationCallback)
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
