@@ -3,7 +3,7 @@
 
 ### Prérequis
 
-Voir {cette page](https://veaf.github.io/documentation/environment/index.fr.html) - [also in english](https://veaf.github.io/documentation/environment/) - pour les instructions aidant à installer tous les outils prérequis.
+Voir [cette page](https://veaf.github.io/documentation/environment/index.fr.html) - [also in english](https://veaf.github.io/documentation/environment/) - pour les instructions aidant à installer tous les outils prérequis.
 
 ### Compiler une mission
 
