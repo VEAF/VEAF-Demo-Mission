@@ -285,6 +285,10 @@ if veafTransportMission then
     veaf.loggers.get(veaf.Id):info("init - veafTransportMission")
     veafTransportMission.initialize()
 end
+if veafWeather then
+    veaf.loggers.get(veaf.Id):info("init - veafWeather")
+    veafWeather.initialize()
+end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- change some default parameters
@@ -816,16 +820,24 @@ veafCombatMission.ActivateMission("ELINT-Mission-1", true)
 ]]
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- initialize the GROUND AI module
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+if veafGroundAI then
+    veaf.loggers.get(veaf.Id):info("init - veafGroundAI")
+    veafGroundAI.initialize()
+end
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- Testing veafShortcuts.ExecuteBatchAliasesList
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 local delay = nil -- no delay
 local coa = 1 -- blue
 local silent = false -- shout my name baby
 veafShortcuts.ExecuteBatchAliasesList({
+        --"-arty#U37TGG3400039000, unitName ARTY-1, side blue, AlarmState 1, dest U37TGG3230138561, offroad",
         "-shell#U38TLM3120086100",
         "-shell#U38TLM3155087960",
         "-armor#U38TLM3167086723, side red",
-        "-armor#U38TLM3085285707, side blue",
+        "-armor#U38TLM3085285707, side blue"
     }, delay, coa, silent)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -852,6 +864,7 @@ veafSpawn.missionMasterAddRunnable("shellRed", shellsAt, "U38TLM3167086723")
 veafSpawn.missionMasterAddRunnable("shellBlue", shellsAt, "U38TLM3085285707")
 veafSpawn.missionMasterAddRunnable("startPA", veafCarrierOperations.startCarrierOperations, {"CSG-74 Stennis", 90})
 veafSpawn.missionMasterAddRunnable("stopPA", veafCarrierOperations.stopCarrierOperations, "CSG-74 Stennis")
+veafSpawn.missionMasterAddRunnable("fillFarps", veafGrass.fillAllFarpWarehouses)
 
 if veafSecurity then
     veafSecurity.password_MM["a7e627f2edbca7a8feac8b652764c043e9ae18d7"] = true -- this password is `encircle-account-cilium`
@@ -975,12 +988,24 @@ if (veafRadio) then
         veafCombatZone.GetInformationOnZone("combatZone_CrossKobuleti")
     end
 
-    local userMenu = 
+    --local group = Group.getByName("ARTY-1")
+    --ArtilleryUnitHandler:new():setName("ARTY-1"):setDcsGroup(group):start()
+
+    local function _Arty_fireForAim()
+        local target = "U37TGG3029240908"
+        veafGroundAI.get("ARTY-1"):fireForAim(target)
+    end
+    
+    local function _Arty_fireForEffect()
+        veafGroundAI.get("ARTY-1"):fireForEffect()
+    end
+
+    local userMenu =
     veafRadio.mainmenu(
-        veafRadio.menu("Mission menus", 
-            veafRadio.menu("Gestion CAP", 
-                veafRadio.menu("CAP Est", 
-                    veafRadio.menu("Facile", 
+        veafRadio.menu("Mission menus",
+            veafRadio.menu("Gestion CAP",
+                veafRadio.menu("CAP Est",
+                    veafRadio.menu("Facile",
                         veafRadio.command("Mig21", _respawnCap, "EST on Demand MIG21"),
                         veafRadio.command("Mig21x3", _respawnCap, "EST on Demand MIG21x3")
                     ),
@@ -1017,6 +1042,11 @@ if (veafRadio) then
                 veafRadio.command("Hide units list", _setNoShowUnitsList),
                 veafRadio.command("Hide zone coordinates", _setNoShowPosition),
                 veafRadio.command("Reset displays", _resetDisplay)
+            ),
+            veafRadio.command("Refill all FARPs", veafGrass.fillAllFarpWarehouses),
+            veafRadio.menu("Artillery test",
+                veafRadio.command("Fire for aim", _Arty_fireForAim),
+                veafRadio.command("Fire for effect", _Arty_fireForEffect)
             )
         )
     )
@@ -1047,4 +1077,3 @@ veaf.silenceAtcOnAllAirbases()
 
 --veafCombatZone.GetZone("goriOperation"):activate()
 veafCombatZone.GetZone("combatZone_CrossKobuleti"):activate()
-

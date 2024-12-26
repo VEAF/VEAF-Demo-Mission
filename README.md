@@ -4,28 +4,7 @@ Ce document est également disponible [en français](readme.fr.md)
 
 ### Prerequisites
 
-#### Manual installation
-
-You need a few things set up on your PC for these scripts to function.
-
-- LUA : you need a working LUA interpreter, in your PATH, ready to be called with the `lua` command
-- 7zip : you need 7zip, or another zip tool, in your PATH, ready to be called with the `7zip` command
-- Powershell : you need Powershell, and you need it to be configured to allow script execution (read [this article](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.1)) ; basically you need to run this command in an elevated (admin) Powershell prompt : `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope LocalMachine`
-- npm : you need the NPM package manager from NodeJS to get the VEAF mission creation tools ; see [here](https://www.npmjs.com/get-npm)
-
-#### Using Chocolatey
-
-The required tools can easily be installed using *Chocolatey* (see [here](https://chocolatey.org/)).
-
-**WARNING** : do not do both *manual installation* and *Chocolatey installation*
-
-To install Chocolatey, use this command  in an elevated (admin) Powershell prompt : `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
-
-After *Chocolatey* is installed, use these simple commands in a elevated (admin) command prompt to install the required tools :
-
-- LUA : `choco install -y lua`
-- 7zip : `choco install -y 7zip.commandline`
-- npm : `choco install -y nodejs`
+See [this page](https://veaf.github.io/documentation/environment/) - [ou en français](https://veaf.github.io/documentation/environment/index.fr.html) - for help installing all the prerequisite tools.
 
 ### Build the mission
 
