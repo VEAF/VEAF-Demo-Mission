@@ -3,28 +3,7 @@
 
 ### Prérequis
 
-#### Installation manuelle
-
-Vous aurez besoin de quelques outils installés sur votre PC pour que ces scripts fonctionnent.
-
-- LUA : il vous faudra un interpreter LUA, dans votre PATH, prêt à être appelé avec la commande `lua`
-- 7zip : il vous faudra 7zip, ou un autre outil de compression ZIP, dans votre PATH, prêt à être appelé avec la commande `7zip`
-- Powershell : vous aurez besoin de Powershell, et il faudra le configurer pour qu'il soit autorisé à exécuter des scripts (lire [cet article en anglais](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.1)) ; dit simplement, vous devez lancer cette commande dans une fenêtre Powershell (en mode administrateur) : `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope LocalMachine`
-- npm : il vous faudra le gestionnaire de modules de NodeJS, NPM, pour récupérer automatiquement les outils de création de mission VEAF ; voir [ici (en anglais)](https://www.npmjs.com/get-npm)
-
-#### Installation avec Chocolatey
-
-Ces outils nécessaires peuvent être installés facilement en utilisant *Chocolatey* (voir [ici (en anglais)](https://chocolatey.org/)).
-
-**ATTENTION** : il ne faut surtout pas installer deux fois les outils, avec *l'installation manuelle* et *l'installation par Chocolatey* ! C'est **l'un ou l'autre** !
-
-Pour installer Chocolatey, lancez cette commande dans une fenêtre Powershell (en mode administrateur) : `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
-
-Une fois que *Chocolatey* est installé, vous pouvez installer les outils à l'aide de ces simples commandes dans une fenêtre *cmd* (en mode administrateur) :
-
-- LUA : `choco install -y lua`
-- 7zip : `choco install -y 7zip.commandline`
-- npm : `choco install -y nodejs`
+Voir {cette page](https://veaf.github.io/documentation/environment/index.fr.html) - [also in english](https://veaf.github.io/documentation/environment/) - pour les instructions aidant à installer tous les outils prérequis.
 
 ### Compiler une mission
 
