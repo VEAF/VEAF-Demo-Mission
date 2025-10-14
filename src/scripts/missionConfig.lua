@@ -403,47 +403,47 @@ if veafCombatZone then
 
     veafCombatZone.AddZone(
 		VeafCombatZone:new()
-			:setMissionEditorZoneName("combatZone_CrossKobuleti-1")
+			:setMissionEditorZoneName("czCrossKobuleti-1")
 			:setFriendlyName("chained mission - Cross Kobuleti - 1")
 			:setBriefing("This is a chained mission for Cross Kobuleti")
             :disableUserActivation()
-            :addChainedCombatZone("combatZone_CrossKobuleti-2")
+            :addChainedCombatZone("czCrossKobuleti-2")
 			:initialize()
 	)
     veafCombatZone.AddZone(
 		VeafCombatZone:new()
-			:setMissionEditorZoneName("combatZone_CrossKobuleti-2")
+			:setMissionEditorZoneName("czCrossKobuleti-2")
 			:setFriendlyName("chained mission - Cross Kobuleti - 2")
 			:setBriefing("This is a chained mission for Cross Kobuleti")
             :disableUserActivation()
-            :addChainedCombatZone("combatZone_CrossKobuleti-3")
+            :addChainedCombatZone("czCrossKobuleti-3")
 			:initialize()
 	)
     veafCombatZone.AddZone(
 		VeafCombatZone:new()
-			:setMissionEditorZoneName("combatZone_CrossKobuleti-3")
+			:setMissionEditorZoneName("czCrossKobuleti-3")
 			:setFriendlyName("chained mission - Cross Kobuleti - 3")
 			:setBriefing("This is a chained mission for Cross Kobuleti")
             :disableUserActivation()
-            :addChainedCombatZone("combatZone_CrossKobuleti-1")
+            :addChainedCombatZone("czCrossKobuleti-1")
 			:initialize()
 	)
     veafCombatZone.AddZone(
 		VeafCombatZone:new()
-			:setMissionEditorZoneName("combatZone_CrossKobuleti")
+			:setMissionEditorZoneName("czCrossKobuleti")
 			:setFriendlyName("Cross Kobuleti")
 			:setBriefing("This is a simple mission\n" ..
         "You must destroy the comm antenna\n" ..
         "The other ennemy units are secondary targets\n")
 			:initialize()
-            :addChainedCombatZone("combatZone_CrossKobuleti-1")
-            :addChainedCombatZone("combatZone_CrossKobuleti-2")
-            :addChainedCombatZone("combatZone_CrossKobuleti-3")
+            :addChainedCombatZone("czCrossKobuleti-1")
+            :addChainedCombatZone("czCrossKobuleti-2")
+            :addChainedCombatZone("czCrossKobuleti-3")
             :setChainedCombatZonesDelay("5-10")
 	)
 	veafCombatZone.AddZone(
 		VeafCombatZone:new()
-			:setMissionEditorZoneName("combatZone_Batumi")
+			:setMissionEditorZoneName("czBatumi")
 			:setFriendlyName("Batumi airbase")
 			:setBriefing("A BTR patrol and a few manpads are dispersed around the Batumi airbase")
 			:initialize()
@@ -782,7 +782,7 @@ if veafSanctuary then
 end
 
 -- example of automatic activation of a combat zone
---veafCombatZone.ActivateZone("combatZone_CrossKobuleti", false)
+--veafCombatZone.ActivateZone("czCrossKobuleti", false)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- initialize Hound Elint
@@ -972,20 +972,20 @@ if (veafRadio) then
     end
 
     local function _setNoShowUnitsList()
-        veafCombatZone.GetZone("combatZone_CrossKobuleti"):setShowUnitsList(false)
+        veafCombatZone.GetZone("czCrossKobuleti"):setShowUnitsList(false)
     end
 
     local function _setNoShowPosition()
-        veafCombatZone.GetZone("combatZone_CrossKobuleti"):setShowZonePositionInfo(false)
+        veafCombatZone.GetZone("czCrossKobuleti"):setShowZonePositionInfo(false)
     end
 
     local function _resetDisplay()
-        veafCombatZone.GetZone("combatZone_CrossKobuleti"):setShowUnitsList(true)
-        veafCombatZone.GetZone("combatZone_CrossKobuleti"):setShowZonePositionInfo(true)
+        veafCombatZone.GetZone("czCrossKobuleti"):setShowUnitsList(true)
+        veafCombatZone.GetZone("czCrossKobuleti"):setShowZonePositionInfo(true)
     end
 
     local function _showInfos()
-        veafCombatZone.GetInformationOnZone("combatZone_CrossKobuleti")
+        veafCombatZone.GetInformationOnZone("czCrossKobuleti")
     end
 
     --local group = Group.getByName("ARTY-1")
@@ -1075,5 +1075,9 @@ end
 -- Silence ATC on all the airdromes
 veaf.silenceAtcOnAllAirbases()
 
+-- debug mode for spawned groups names
+veaf.HideNamesFromSpawnedGroups = false
+
 --veafCombatZone.GetZone("goriOperation"):activate()
-veafCombatZone.GetZone("combatZone_CrossKobuleti"):activate()
+veafCombatZone.GetZone("czCrossKobuleti"):activate()
+veafCombatZone.GetZone("czBatumi"):activate()
