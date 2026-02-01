@@ -1,18 +1,19 @@
-dictionary = {
-    ["DictKey_ActionText_10501"] = "return false -- scripts",
-    ["DictKey_ActionText_10502"] = "return false -- config",
-    ["DictKey_ActionText_10601"] = "return VEAF_DYNAMIC_PATH~=nil",
-    ["DictKey_ActionText_10701"] = "return VEAF_DYNAMIC_PATH==nil",
-    ["DictKey_ActionText_10801"] = "return VEAF_DYNAMIC_MISSIONPATH~=nil",
-    ["DictKey_ActionText_10901"] = "return VEAF_DYNAMIC_MISSIONPATH==nil",
-    ["DictKey_ActionText_786"] = "alpha -> ON",
-    ["DictKey_ActionText_787"] = "alpha -> OFF",
-    ["DictKey_ActionText_788"] = "127 < 5",
-    ["DictKey_ActionText_789"] = "127 > 5",
-    ["DictKey_descriptionBlueTask_3"] = "",
-    ["DictKey_descriptionNeutralsTask_4"] = "",
-    ["DictKey_descriptionRedTask_2"] = "",
-    ["DictKey_descriptionText_1"] = "Demonstration mission for VEAF-Mission-Creation-Tools\
+dictionary = 
+{
+  DictKey_ActionText_10501 = "return true -- scripts",
+  DictKey_ActionText_10502 = "return true -- config",
+  DictKey_ActionText_10601 = "return VEAF_DYNAMIC_PATH~=nil",
+  DictKey_ActionText_10701 = "return VEAF_DYNAMIC_PATH==nil",
+  DictKey_ActionText_10801 = "return VEAF_DYNAMIC_MISSIONPATH~=nil",
+  DictKey_ActionText_10901 = "return VEAF_DYNAMIC_MISSIONPATH==nil",
+  DictKey_ActionText_786 = "alpha -> ON",
+  DictKey_ActionText_787 = "alpha -> OFF",
+  DictKey_ActionText_788 = "127 < 5",
+  DictKey_ActionText_789 = "127 > 5",
+  DictKey_descriptionBlueTask_3 = "",
+  DictKey_descriptionNeutralsTask_4 = "",
+  DictKey_descriptionRedTask_2 = "",
+  DictKey_descriptionText_1 = "Demonstration mission for VEAF-Mission-Creation-Tools\
 METAR: UGKO 171130Z 15005KT 4000 SN BR SCT003 BKN019 OVC030 01/M00 Q1030 NOSIG",
-    ["DictKey_sortie_5"] = "",
-} -- end of dictionary
+  DictKey_sortie_5 = "",
+}

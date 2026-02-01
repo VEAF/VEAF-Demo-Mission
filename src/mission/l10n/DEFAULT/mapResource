@@ -1,14 +1,15 @@
-mapResource = {
-    ["DictKey_ActionText_10202"] = "mist.lua",
-    ["DictKey_ActionText_10203"] = "DCS-SimpleTextToSpeech.lua",
-    ["DictKey_ActionText_10204"] = "CTLD.lua",
-    ["DictKey_ActionText_10205"] = "WeatherMark.lua",
-    ["DictKey_ActionText_10206"] = "skynet-iads-compiled.lua",
-    ["DictKey_ActionText_10207"] = "Hercules_Cargo.lua",
-    ["DictKey_ActionText_10208"] = "HoundElint.lua",
-    ["DictKey_ActionText_10308"] = "veaf-scripts.lua",
-    ["DictKey_ActionText_10309"] = "missionConfig.lua",
-    ["ResKey_Action_796"] = "beaconsilent.ogg",
-    ["ResKey_Action_797"] = "beacon.ogg",
-    ["ResKey_Action_803"] = "CSAR.ogg",
-} -- end of mapResource
+mapResource = 
+{
+  DictKey_ActionText_10202 = "mist.lua",
+  DictKey_ActionText_10203 = "DCS-SimpleTextToSpeech.lua",
+  DictKey_ActionText_10204 = "CTLD.lua",
+  DictKey_ActionText_10205 = "WeatherMark.lua",
+  DictKey_ActionText_10206 = "skynet-iads-compiled.lua",
+  DictKey_ActionText_10207 = "Hercules_Cargo.lua",
+  DictKey_ActionText_10208 = "HoundElint.lua",
+  DictKey_ActionText_10308 = "veaf-scripts.lua",
+  DictKey_ActionText_10309 = "missionConfig.lua",
+  ResKey_Action_796 = "beaconsilent.ogg",
+  ResKey_Action_797 = "beacon.ogg",
+  ResKey_Action_803 = "CSAR.ogg",
+}
