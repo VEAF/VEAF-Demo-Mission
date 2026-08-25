@@ -1,8 +1,0 @@
-{
-  "name": "veaf-demo-mission",
-  "version": "1.0.0",
-  "description": "DCS mission with VEAF scripting",
-  "dependencies": {
-    "veaf-mission-creation-tools": "^5.0.0"
-  }
-}

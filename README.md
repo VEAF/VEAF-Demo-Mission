@@ -1,59 +1,83 @@
-Ce document est également disponible [en français](readme.fr.md)
+This document is also available [in French](readme.fr.md).
 
-## How to build a mission?
+# VEAF Demo Mission
 
-### Prerequisites
+A demonstration mission for the [VEAF Mission Creation Tools](https://github.com/VEAF/VEAF-Mission-Creation-Tools),
+and the mission we use to check them in game. If a VEAF feature works here, it works.
 
-See [this page](https://veaf.github.io/documentation/environment/) - [ou en français](https://veaf.github.io/documentation/environment/index.fr.html) - for help installing all the prerequisite tools.
+**This mission folder is a v6 mission folder.** It was converted from the v5 layout in
+August 2026: there is no `build.cmd`, no `configuration.json`, no node or yarn, and no
+7zip to install. One executable does everything, and the mission is described by
+`mission.yaml`.
 
-### Build the mission
+## Prerequisites
 
-Building the mission from source is easy ; you simply have to run the `build.cmd` script. You don't even need to run it in a `cmd` window, double-clicking it will be ok.
+Nothing but the tools themselves. Download `veaf-tools-updater.exe` from the
+[latest release](https://github.com/VEAF/VEAF-Mission-Creation-Tools/releases/latest),
+drop it in this folder and run it — it fetches `veaf-tools.exe` and keeps it up to date.
 
-The process will take all the files in the `src` folder, fetch the latest version of the *VEAF Mission Creation Tools* (from GitHub), and compile all of this in a ready-to-use mission for DCS (in a `.miz` file).
+See the [documentation](https://veaf.github.io/documentation/) for everything else.
 
-This file will be named after the mission (this is configured in the first line of the `build.cmd` script), and placed in the `build` folder.
+## Building the mission
 
-### Editing a compiled mission
+From **this folder**:
 
-After a mission has been compiled, copy it from the `build` folder to the main mission folder (the folder where `extract.cmd` and `build.cmd` are stored). Then, you can open it in the DCS Mission Editor and edit it (add/remove units, add triggers, change zones, etc.).
+```
+veaf-tools.exe build
+```
 
-Also, you can edit the mission source files in parallel (using a text editor, I recommend Notepad++ or Visual Studio Code); specifically, you can edit :
+That is all. The built missions land in `missions/`, one per weather variant declared in
+`src/versions.yaml` — twenty-five of them at the time of writing.
 
-- the mission configuration file `src/scripts/missionConfig.lua`, to setup the mission parameters ; this is the main file you'll edit.
-- the radio presets file `src/radio/radioSettings.lua`, to setup the radio presets pushed to the aircrafts.
-- the weather presets in `src/weatherAndTime`
+> **Run it from here, not from the tools repository.** `veaf-tools.exe` resolves
+> `published/` and its output relative to the current directory, so launching it elsewhere
+> with this folder as an argument fails on a missing `mist.lua`.
 
-If you edit one of these files, and because they're compiled *into* the mission `.miz` file, you'll have to *rebuild* your mission before you can test your editions in the game.
+## What you edit
 
-There's a way to easily test these changes : the first trigger has a LUA predicate, that conditions the scripts loading method. If set to `false`, the scripts are loading statically (i.e. they're loading *from the mission*) ; if set to `true`, the scripts will be loaded dynamically, so each time you restart the mission in DCS (Left-SHIFT + R) you can test whatever change you saved to the files.
+| File | What it holds |
+|---|---|
+| `mission.yaml` | the whole mission's configuration — which VEAF modules are on, and how each is set up |
+| `src/mission/` | the mission itself, as the DCS editor left it |
+| `src/scripts/` | the mission's own Lua, loaded after the VEAF scripts |
+| `src/versions.yaml` | the weather and time variants, each producing one `.miz` |
+| `src/presets.yaml` | the radio presets pushed into the aircraft |
+| `src/spawnables.yaml`, `src/spawn-groups.yaml` | what the spawn commands can create |
+| `src/waypoints.yaml` | the flight plans injected into player slots |
+| `src/warehouses.yaml` | airfield and ship stocks |
+| `src/dynamic-slot-templates.yaml` | the templates behind DCS dynamic slots |
 
-![triggers](https://user-images.githubusercontent.com/172286/109670752-bac72180-7b73-11eb-9d20-cadd84bff1a5.jpg)
+Everything is compiled **into** the `.miz`, so a change means a rebuild before you can test
+it in game.
 
+### Testing a Lua change without rebuilding
 
-### Extract an edited version of the mission
+Build once with `--dev-mode`: the mission then loads the VEAF scripts from your local copy
+of the tools repository instead of from inside the `.miz`. Restarting the mission in DCS
+(Left-Shift + R) picks up whatever you saved.
 
-Once a mission has been edited and saved in the DCS mission editor, you need to *extract* its content to the `src` folder, in order to reinject it later with the `build` script.
+```
+veaf-tools.exe build --dev-mode
+```
 
-To do this, simply run the `extract.cmd` script. You don't even need to run it in a `cmd` window, double-clicking it will be ok.
+This needs `scripts_path` set in your `~/veafmct.yaml` — see
+[the global user configuration](https://veaf.github.io/documentation/mission-maker/GUIDE/#global-user-configuration).
 
-This script will take any mission file starting with the mission name (configured in the beginning of the script), in the mission folder (the folder where `extract.cmd` and `build.cmd` are stored, not the `build` folder), extract its content, process them and store them in `src`.
+## Extracting an edited mission
 
-### Advanced settings
+Once you have edited and saved the mission in the DCS Mission Editor, put its `.miz` back
+into `src/mission/`:
 
-#### Setting the location of the 7zip executable
+```
+veaf-tools.exe extract <the .miz file>
+```
 
-If your 7zip tool is not in your PATH, you can set its location in the `SEVENZIP` environment variable. It's a string which should point to the `7za` executable (e.g. `c:\tools\7zip\bin\7zip.exe`)
+## What became of the v5 files
 
-#### Setting the location of the LUA executable
+`build.cmd`, `extract.cmd`, `weather.cmd`, `replace.ps1`, `package.json` and the `setup/`
+installers were removed when this folder moved to v6 — they drove a toolchain that no longer
+exists. They are in the git history if you ever need to look.
 
-In the same way, you can set its location of the LUA executable in the `LUA` environment variable. It's a string which should point to the `lua` executable (e.g. `c:\tools\lua\bin\lua.exe`)
-
-#### Skip the pauses
-
-If you set the `NOPAUSE` environment variable to "true", then the pauses in the script will not be marked.
-
-## How to use this - graphic version
-
-![schema](https://user-images.githubusercontent.com/172286/109007616-9ddeaa00-76ac-11eb-89ba-370e16810240.jpg)
-
+`configuration.json` is gone too. It held a CheckWX API key, which is why `.gitignore` has
+always excluded it and why it never reached this public repository. v6 needs no key: a
+weather variant declaring `airport_icao` fetches its METAR without one.
