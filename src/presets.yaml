@@ -1,0 +1,3186 @@
+radios_collection:
+  blue_radios:
+    radio_uhf_blue:
+      title: UHF
+      type: uhf
+      channels:
+        1:
+          title: Guard
+          freq: 243.0
+        2:
+          title: Batumi / 16X
+          freq: 260.0
+        3:
+          title: Beslan
+          freq: 270.0
+        4:
+          title: Gudauta
+          freq: 259.0
+        5:
+          title: Kutaisi / 44X
+          freq: 263.0
+        6:
+          title: Sochi-Adler
+          freq: 256.0
+        7:
+          title: Sukhumi
+          freq: 258.0
+        8:
+          title: Tbilisi / 25X
+          freq: 267.0
+        9:
+          title: Vaziani / 22X
+          freq: 269.0
+        10:
+          title: Stennis / 10X
+          freq: 225.0
+        11:
+          title: Tarawa / 11X
+          freq: 226.0
+        12:
+          title: Roosevelt / 12X
+          freq: 227.0
+        13:
+          title: Forrestal / 13X
+          freq: 228.0
+        14:
+          title: Magic
+          freq: 282.2
+        15:
+          title: Package 01
+          freq: 291.0
+        16:
+          title: Range KOBULETI
+          freq: 305.1
+        17:
+          title: Texaco-1/BS/60Y
+          freq: 290.1
+        18:
+          title: Shell-1/BS/62Y
+          freq: 290.3
+        19:
+          title: Shell-2/BM/63Y
+          freq: 290.4
+        20:
+          title: Arco-1/BM/64Y
+          freq: 290.5
+    radio_vhf_blue:
+      title: VHF
+      type: vhf
+      channels:
+        1:
+          title: Guard
+          freq: 121.5
+        2:
+          title: Archer
+          freq: 120.0
+        3:
+          title: Arctic
+          freq: 120.1
+        4:
+          title: Astro
+          freq: 120.2
+        5:
+          title: Nickel
+          freq: 120.3
+        6:
+          title: Nitro
+          freq: 120.4
+        7:
+          title: Ninja
+          freq: 120.5
+        8:
+          title: Pinder
+          freq: 120.6
+        9:
+          title: Bengal
+          freq: 120.7
+        10:
+          title: Blade
+          freq: 120.8
+        11:
+          title: Gordon
+          freq: 120.9
+        12:
+          title: Gypsy
+          freq: 121.1
+        13:
+          title: Gunstar
+          freq: 121.2
+        14:
+          title: Leica
+          freq: 121.3
+        15:
+          title: Lucid
+          freq: 121.4
+        16:
+          title: Lusty
+          freq: 121.6
+        17:
+          title: Lion
+          freq: 121.7
+        18:
+          title: AFAC Bizmuth/Colt
+          freq: 118.8
+        19:
+          title: AFAC Agate/Dodge
+          freq: 118.9
+        20:
+          title: JTAC 3
+          freq: 118.85
+    radio_fm_blue:
+      title: FM
+      type: fm
+      channels:
+        1: 30.0
+        2: 31.0
+        3: 32.0
+        4: 33.0
+        5: 34.0
+        6: 35.0
+        7: 36.0
+        8: 37.0
+        9: 38.0
+        10: 39.0
+        11: 40.0
+        12: 41.0
+        13: 42.0
+        14: 43.0
+        15: 44.0
+        16: 45.0
+        17: 46.0
+        18: 47.0
+        19: 48.0
+        20: 49.0
+        21: 50.0
+        22: 51.0
+        23: 52.0
+        24: 53.0
+        25: 54.0
+        26: 55.0
+        27: 56.0
+        28: 57.0
+        29: 58.0
+        30: 59.0
+    radio_warbird_blue:
+      title: Warbird
+      type: vhf
+      channels:
+        1: 39.0
+        2: 38.4
+        3: 41.0
+        4: 42.0
+    radio_blue_bf_109k_4_1:
+      title: Bf-109K-4 radio 1
+      type: vhf
+      channels:
+        1: 39.0
+        2: 38.4
+        3: 41.0
+        4: 42.0
+        5: 38.4
+    radio_blue_fw_190_1:
+      title: FW[-]190.* radio 1
+      type: vhf
+      channels:
+        1: 39.0
+        2: 38.4
+        3: 41.0
+        4: 42.0
+        5: 38.4
+    radio_blue_mosquitofbmkvi_1:
+      title: MosquitoFBMkVI radio 1
+      type: vhf
+      channels:
+        1: 121.5
+        2: 120.0
+        3: 120.1
+        4: 120.2
+        5: 108.9
+    radio_blue_mosquitofbmkvi_2:
+      title: MosquitoFBMkVI radio 2
+      type: uhf
+      channels:
+        1:
+          freq: 9.255
+          mod: 0
+        2:
+          freq: 8.0
+          mod: 0
+        3:
+          freq: 7.71
+          mod: 0
+        4:
+          freq: 6.872
+          mod: 0
+        5:
+          freq: 5.955
+          mod: 0
+        6:
+          freq: 5.85
+          mod: 0
+        7:
+          freq: 5.75
+          mod: 0
+        8:
+          freq: 5.65
+          mod: 0
+    radio_blue_mosquitofbmkvi_3:
+      title: MosquitoFBMkVI radio 3
+      type: uhf
+      channels:
+        1:
+          freq: 5.25
+          mod: 0
+        2:
+          freq: 5.0
+          mod: 0
+        3:
+          freq: 4.75
+          mod: 0
+        4:
+          freq: 4.5
+          mod: 0
+        5:
+          freq: 4.25
+          mod: 0
+        6:
+          freq: 3.25
+          mod: 0
+        7:
+          freq: 3.012
+          mod: 0
+        8:
+          freq: 3.011
+          mod: 0
+    radio_blue_mosquitofbmkvi_4:
+      title: MosquitoFBMkVI radio 4
+      type: uhf
+      channels:
+        1:
+          freq: 0.444
+          mod: 0
+        2:
+          freq: 0.421
+          mod: 0
+        3:
+          freq: 0.303
+          mod: 0
+        4:
+          freq: 0.3
+          mod: 0
+        5:
+          freq: 0.27
+          mod: 0
+        6:
+          freq: 0.26
+          mod: 0
+        7:
+          freq: 0.25
+          mod: 0
+        8:
+          freq: 0.24
+          mod: 0
+    radio_blue_p_47d_1:
+      title: P[-]47D.* radio 1
+      type: vhf
+      channels:
+        1: 121.5
+        2: 120.0
+        3: 120.1
+        4: 120.2
+    radio_blue_p_47d_2:
+      title: P[-]47D.* radio 2
+      type: uhf
+      channels:
+        1: 108.9
+    radio_blue_p_51d_1:
+      title: P[-]51D.* radio 1
+      type: vhf
+      channels:
+        1: 121.5
+        2: 120.0
+        3: 120.1
+        4: 120.2
+    radio_blue_p_51d_2:
+      title: P[-]51D.* radio 2
+      type: uhf
+      channels:
+        1: 108.9
+    radio_blue_tf_51d_1:
+      title: TF-51D radio 1
+      type: vhf
+      channels:
+        1: 121.5
+        2: 120.0
+        3: 120.1
+        4: 120.2
+    radio_blue_tf_51d_2:
+      title: TF-51D radio 2
+      type: uhf
+      channels:
+        1: 108.9
+    radio_blue_spitfire_1:
+      title: Spitfire.* radio 1
+      type: vhf
+      channels:
+        1: 121.5
+        2: 120.0
+        3: 120.1
+        4: 120.2
+        5: 108.9
+    radio_blue_yak_52_1:
+      title: Yak-52 radio 1
+      type: uhf
+      channels:
+        1: 0.625
+        2: 0.303
+        3: 0.289
+        4: 0.591
+        5: 0.408
+        6: 0.803
+        7: 0.443
+        8: 0.215
+    radio_blue_ajs37_1:
+      title: AJS37 radio 1
+      type: vhf
+      channels:
+        1:
+          freq: 0.0
+          mod: 0
+        2:
+          freq: 243.0
+          mod: 0
+        3:
+          freq: 260.0
+          mod: 0
+        4:
+          freq: 270.0
+          mod: 0
+        5:
+          freq: 259.0
+          mod: 0
+        6:
+          freq: 263.0
+          mod: 0
+        7:
+          freq: 256.0
+          mod: 0
+        8:
+          freq: 258.0
+          mod: 0
+        9:
+          freq: 267.0
+          mod: 0
+        10:
+          freq: 269.0
+          mod: 0
+        11:
+          freq: 225.0
+          mod: 0
+        12:
+          freq: 226.0
+          mod: 0
+        13:
+          freq: 227.0
+          mod: 0
+        14:
+          freq: 228.0
+          mod: 0
+        15:
+          freq: 282.2
+          mod: 0
+        16:
+          freq: 291.0
+          mod: 0
+        17:
+          freq: 305.1
+          mod: 0
+        18:
+          freq: 290.1
+          mod: 0
+        19:
+          freq: 290.3
+          mod: 0
+        20:
+          freq: 290.4
+          mod: 0
+        21:
+          freq: 290.5
+          mod: 0
+        22:
+          freq: 121.5
+          mod: 0
+        23:
+          freq: 120.0
+          mod: 0
+        24:
+          freq: 120.1
+          mod: 0
+        25:
+          freq: 120.2
+          mod: 0
+        26:
+          freq: 120.3
+          mod: 0
+        27:
+          freq: 120.4
+          mod: 0
+        28:
+          freq: 120.5
+          mod: 0
+        29:
+          freq: 120.6
+          mod: 0
+        30:
+          freq: 120.7
+          mod: 0
+        31:
+          freq: 120.8
+          mod: 0
+        32:
+          freq: 120.9
+          mod: 0
+        33:
+          freq: 121.1
+          mod: 0
+        34:
+          freq: 121.2
+          mod: 0
+        35:
+          freq: 121.3
+          mod: 0
+        36:
+          freq: 121.4
+          mod: 0
+        37:
+          freq: 121.6
+          mod: 0
+        38:
+          freq: 121.7
+          mod: 0
+        39:
+          freq: 118.8
+          mod: 0
+        40:
+          freq: 118.9
+          mod: 0
+        41:
+          freq: 30.0
+          mod: 1
+        42:
+          freq: 31.0
+          mod: 1
+        43:
+          freq: 32.0
+          mod: 1
+        44:
+          freq: 33.0
+          mod: 1
+        45:
+          freq: 34.0
+          mod: 1
+        46:
+          freq: 127.5
+          mod: 0
+        47:
+          freq: 243.0
+          mod: 0
+    radio_blue_a_10c_1:
+      title: A[-]10C.* radio 1
+      type: vhf
+      channels:
+        1:
+          freq: 121.5
+          mod: 0
+        2:
+          freq: 120.0
+          mod: 0
+        3:
+          freq: 120.1
+          mod: 0
+        4:
+          freq: 120.2
+          mod: 0
+        5:
+          freq: 120.3
+          mod: 0
+        6:
+          freq: 120.4
+          mod: 0
+        7:
+          freq: 120.5
+          mod: 0
+        8:
+          freq: 120.6
+          mod: 0
+        9:
+          freq: 120.7
+          mod: 0
+        10:
+          freq: 120.8
+          mod: 0
+        11:
+          freq: 120.9
+          mod: 0
+        12:
+          freq: 121.1
+          mod: 0
+        13:
+          freq: 121.2
+          mod: 0
+        14:
+          freq: 121.3
+          mod: 0
+        15:
+          freq: 121.4
+          mod: 0
+        16:
+          freq: 121.6
+          mod: 0
+        17:
+          freq: 121.7
+          mod: 0
+        18:
+          freq: 118.8
+          mod: 0
+        19:
+          freq: 118.9
+          mod: 0
+        20:
+          freq: 118.85
+          mod: 0
+        21:
+          freq: 0.0
+          mod: 1
+        22:
+          freq: 0.0
+          mod: 1
+        23:
+          freq: 0.0
+          mod: 1
+        24:
+          freq: 0.0
+          mod: 1
+        25:
+          freq: 0.0
+          mod: 1
+    radio_blue_a_10c_2:
+      title: A[-]10C.* radio 2
+      type: uhf
+      channels:
+        1:
+          freq: 243.0
+          mod: 0
+        2:
+          freq: 260.0
+          mod: 0
+        3:
+          freq: 270.0
+          mod: 0
+        4:
+          freq: 259.0
+          mod: 0
+        5:
+          freq: 263.0
+          mod: 0
+        6:
+          freq: 256.0
+          mod: 0
+        7:
+          freq: 258.0
+          mod: 0
+        8:
+          freq: 267.0
+          mod: 0
+        9:
+          freq: 269.0
+          mod: 0
+        10:
+          freq: 225.0
+          mod: 0
+        11:
+          freq: 226.0
+          mod: 0
+        12:
+          freq: 227.0
+          mod: 0
+        13:
+          freq: 228.0
+          mod: 0
+        14:
+          freq: 282.2
+          mod: 0
+        15:
+          freq: 291.0
+          mod: 0
+        16:
+          freq: 305.1
+          mod: 0
+        17:
+          freq: 290.1
+          mod: 0
+        18:
+          freq: 290.3
+          mod: 0
+        19:
+          freq: 290.4
+          mod: 0
+        20:
+          freq: 290.5
+          mod: 0
+        21:
+          freq: 0.0
+          mod: 1
+        22:
+          freq: 0.0
+          mod: 1
+        23:
+          freq: 0.0
+          mod: 1
+        24:
+          freq: 0.0
+          mod: 1
+        25:
+          freq: 0.0
+          mod: 1
+        26:
+          freq: 0.0
+          mod: 1
+    radio_blue_a_10c_3:
+      title: A[-]10C.* radio 3
+      type: fm
+      channels:
+        1:
+          freq: 30.0
+          mod: 1
+        2:
+          freq: 31.0
+          mod: 1
+        3:
+          freq: 32.0
+          mod: 1
+        4:
+          freq: 33.0
+          mod: 1
+        5:
+          freq: 34.0
+          mod: 1
+        6:
+          freq: 35.0
+          mod: 1
+        7:
+          freq: 36.0
+          mod: 1
+        8:
+          freq: 37.0
+          mod: 1
+        9:
+          freq: 38.0
+          mod: 1
+        10:
+          freq: 39.0
+          mod: 1
+        11:
+          freq: 40.0
+          mod: 1
+        12:
+          freq: 41.0
+          mod: 1
+        13:
+          freq: 42.0
+          mod: 1
+        14:
+          freq: 43.0
+          mod: 1
+        15:
+          freq: 44.0
+          mod: 1
+        16:
+          freq: 45.0
+          mod: 1
+        17:
+          freq: 46.0
+          mod: 1
+        18:
+          freq: 47.0
+          mod: 1
+        19:
+          freq: 48.0
+          mod: 1
+        20:
+          freq: 49.0
+          mod: 1
+        21:
+          freq: 50.0
+          mod: 1
+        22:
+          freq: 51.0
+          mod: 1
+        23:
+          freq: 52.0
+          mod: 1
+        24:
+          freq: 53.0
+          mod: 1
+        25:
+          freq: 54.0
+          mod: 1
+        26:
+          freq: 55.0
+          mod: 1
+        27:
+          freq: 56.0
+          mod: 1
+        28:
+          freq: 57.0
+          mod: 1
+        29:
+          freq: 58.0
+          mod: 1
+        30:
+          freq: 59.0
+          mod: 1
+    radio_blue_f_14_1:
+      title: F[-]14.* radio 1
+      type: uhf
+      channels:
+        1: 243.0
+        2: 260.0
+        3: 270.0
+        4: 259.0
+        5: 263.0
+        6: 256.0
+        7: 258.0
+        8: 267.0
+        9: 269.0
+        10: 225.0
+        11: 226.0
+        12: 227.0
+        13: 228.0
+        14: 282.2
+        15: 291.0
+        16: 305.1
+        17: 290.1
+        18: 290.3
+        19: 290.4
+        20: 290.5
+    radio_blue_f_14_2:
+      title: F[-]14.* radio 2
+      type: vhf
+      channels:
+        1:
+          freq: 121.5
+          mod: 0
+        2:
+          freq: 120.0
+          mod: 0
+        3:
+          freq: 120.1
+          mod: 0
+        4:
+          freq: 120.2
+          mod: 0
+        5:
+          freq: 120.3
+          mod: 0
+        6:
+          freq: 120.4
+          mod: 0
+        7:
+          freq: 120.5
+          mod: 0
+        8:
+          freq: 120.6
+          mod: 0
+        9:
+          freq: 120.7
+          mod: 0
+        10:
+          freq: 120.8
+          mod: 0
+        11:
+          freq: 120.9
+          mod: 0
+        12:
+          freq: 121.1
+          mod: 0
+        13:
+          freq: 121.2
+          mod: 0
+        14:
+          freq: 121.3
+          mod: 0
+        15:
+          freq: 121.4
+          mod: 0
+        16:
+          freq: 121.6
+          mod: 0
+        17:
+          freq: 121.7
+          mod: 0
+        18:
+          freq: 118.8
+          mod: 0
+        19:
+          freq: 118.9
+          mod: 0
+        20:
+          freq: 118.85
+          mod: 0
+        21:
+          freq: 0.0
+          mod: 1
+        22:
+          freq: 0.0
+          mod: 1
+        23:
+          freq: 0.0
+          mod: 1
+        24:
+          freq: 0.0
+          mod: 1
+        25:
+          freq: 0.0
+          mod: 1
+        26:
+          freq: 0.0
+          mod: 1
+        27:
+          freq: 0.0
+          mod: 1
+        28:
+          freq: 0.0
+          mod: 1
+        29:
+          freq: 0.0
+          mod: 1
+        30:
+          freq: 0.0
+          mod: 1
+    radio_blue_av8bna_1:
+      title: AV8BNA radio 1
+      type: uhf
+      channels:
+        1:
+          freq: 243.0
+          mod: 0
+        2:
+          freq: 260.0
+          mod: 0
+        3:
+          freq: 270.0
+          mod: 0
+        4:
+          freq: 259.0
+          mod: 0
+        5:
+          freq: 263.0
+          mod: 0
+        6:
+          freq: 256.0
+          mod: 0
+        7:
+          freq: 258.0
+          mod: 0
+        8:
+          freq: 267.0
+          mod: 0
+        9:
+          freq: 269.0
+          mod: 0
+        10:
+          freq: 225.0
+          mod: 0
+        11:
+          freq: 226.0
+          mod: 0
+        12:
+          freq: 227.0
+          mod: 0
+        13:
+          freq: 228.0
+          mod: 0
+        14:
+          freq: 282.2
+          mod: 0
+        15:
+          freq: 291.0
+          mod: 0
+        16:
+          freq: 305.1
+          mod: 0
+        17:
+          freq: 290.1
+          mod: 0
+        18:
+          freq: 290.3
+          mod: 0
+        19:
+          freq: 290.4
+          mod: 0
+        20:
+          freq: 290.5
+          mod: 0
+        21:
+          freq: 0.0
+          mod: 1
+        22:
+          freq: 0.0
+          mod: 1
+        23:
+          freq: 0.0
+          mod: 1
+        24:
+          freq: 0.0
+          mod: 1
+        25:
+          freq: 0.0
+          mod: 1
+        26:
+          freq: 0.0
+          mod: 1
+    radio_blue_av8bna_2:
+      title: AV8BNA radio 2
+      type: vhf
+      channels:
+        1:
+          freq: 121.5
+          mod: 0
+        2:
+          freq: 120.0
+          mod: 0
+        3:
+          freq: 120.1
+          mod: 0
+        4:
+          freq: 120.2
+          mod: 0
+        5:
+          freq: 120.3
+          mod: 0
+        6:
+          freq: 120.4
+          mod: 0
+        7:
+          freq: 120.5
+          mod: 0
+        8:
+          freq: 120.6
+          mod: 0
+        9:
+          freq: 120.7
+          mod: 0
+        10:
+          freq: 120.8
+          mod: 0
+        11:
+          freq: 120.9
+          mod: 0
+        12:
+          freq: 121.1
+          mod: 0
+        13:
+          freq: 121.2
+          mod: 0
+        14:
+          freq: 121.3
+          mod: 0
+        15:
+          freq: 121.4
+          mod: 0
+        16:
+          freq: 121.6
+          mod: 0
+        17:
+          freq: 121.7
+          mod: 0
+        18:
+          freq: 118.8
+          mod: 0
+        19:
+          freq: 118.9
+          mod: 0
+        20:
+          freq: 118.85
+          mod: 0
+        21:
+          freq: 0.0
+          mod: 1
+        22:
+          freq: 0.0
+          mod: 1
+        23:
+          freq: 0.0
+          mod: 1
+        24:
+          freq: 0.0
+          mod: 1
+        25:
+          freq: 0.0
+          mod: 1
+        26:
+          freq: 0.0
+          mod: 1
+    radio_blue_av8bna_3:
+      title: AV8BNA radio 3
+      type: fm
+      channels:
+        1:
+          freq: 30.0
+          mod: 1
+        2:
+          freq: 31.0
+          mod: 1
+        3:
+          freq: 32.0
+          mod: 1
+        4:
+          freq: 33.0
+          mod: 1
+        5:
+          freq: 34.0
+          mod: 1
+        6:
+          freq: 35.0
+          mod: 1
+        7:
+          freq: 36.0
+          mod: 1
+        8:
+          freq: 37.0
+          mod: 1
+        9:
+          freq: 38.0
+          mod: 1
+        10:
+          freq: 39.0
+          mod: 1
+        11:
+          freq: 40.0
+          mod: 1
+        12:
+          freq: 41.0
+          mod: 1
+        13:
+          freq: 42.0
+          mod: 1
+        14:
+          freq: 43.0
+          mod: 1
+        15:
+          freq: 44.0
+          mod: 1
+        16:
+          freq: 45.0
+          mod: 1
+        17:
+          freq: 46.0
+          mod: 1
+        18:
+          freq: 47.0
+          mod: 1
+        19:
+          freq: 48.0
+          mod: 1
+        20:
+          freq: 49.0
+          mod: 1
+        21:
+          freq: 50.0
+          mod: 1
+        22:
+          freq: 51.0
+          mod: 1
+        23:
+          freq: 52.0
+          mod: 1
+        24:
+          freq: 53.0
+          mod: 1
+        25:
+          freq: 54.0
+          mod: 1
+        26:
+          freq: 55.0
+          mod: 1
+        27:
+          freq: 56.0
+          mod: 1
+        28:
+          freq: 57.0
+          mod: 1
+        29:
+          freq: 58.0
+          mod: 1
+        30:
+          freq: 59.0
+          mod: 1
+    radio_blue_f_15ese_1:
+      title: F-15ESE radio 1
+      type: uhf
+      channels:
+        1:
+          freq: 243.0
+          mod: 0
+        2:
+          freq: 260.0
+          mod: 0
+        3:
+          freq: 270.0
+          mod: 0
+        4:
+          freq: 259.0
+          mod: 0
+        5:
+          freq: 263.0
+          mod: 0
+        6:
+          freq: 256.0
+          mod: 0
+        7:
+          freq: 258.0
+          mod: 0
+        8:
+          freq: 267.0
+          mod: 0
+        9:
+          freq: 269.0
+          mod: 0
+        10:
+          freq: 225.0
+          mod: 0
+        11:
+          freq: 226.0
+          mod: 0
+        12:
+          freq: 227.0
+          mod: 0
+        13:
+          freq: 228.0
+          mod: 0
+        14:
+          freq: 282.2
+          mod: 0
+        15:
+          freq: 291.0
+          mod: 0
+        16:
+          freq: 305.1
+          mod: 0
+        17:
+          freq: 290.1
+          mod: 0
+        18:
+          freq: 290.3
+          mod: 0
+        19:
+          freq: 290.4
+          mod: 0
+        20:
+          freq: 290.5
+          mod: 0
+    radio_blue_f_15ese_2:
+      title: F-15ESE radio 2
+      type: vhf
+      channels:
+        1:
+          freq: 121.5
+          mod: 0
+        2:
+          freq: 120.0
+          mod: 0
+        3:
+          freq: 120.1
+          mod: 0
+        4:
+          freq: 120.2
+          mod: 0
+        5:
+          freq: 120.3
+          mod: 0
+        6:
+          freq: 120.4
+          mod: 0
+        7:
+          freq: 120.5
+          mod: 0
+        8:
+          freq: 120.6
+          mod: 0
+        9:
+          freq: 120.7
+          mod: 0
+        10:
+          freq: 120.8
+          mod: 0
+        11:
+          freq: 120.9
+          mod: 0
+        12:
+          freq: 121.1
+          mod: 0
+        13:
+          freq: 121.2
+          mod: 0
+        14:
+          freq: 121.3
+          mod: 0
+        15:
+          freq: 121.4
+          mod: 0
+        16:
+          freq: 121.6
+          mod: 0
+        17:
+          freq: 121.7
+          mod: 0
+        18:
+          freq: 118.8
+          mod: 0
+        19:
+          freq: 118.9
+          mod: 0
+        20:
+          freq: 118.85
+          mod: 0
+        21:
+          freq: 123.0
+          mod: 0
+        22:
+          freq: 124.0
+          mod: 0
+        23:
+          freq: 135.0
+          mod: 0
+        24:
+          freq: 136.0
+          mod: 0
+        25:
+          freq: 141.0
+          mod: 0
+        26:
+          freq: 127.0
+          mod: 0
+        27:
+          freq: 127.0
+          mod: 0
+        28:
+          freq: 127.0
+          mod: 0
+        29:
+          freq: 127.0
+          mod: 0
+        30:
+          freq: 127.0
+          mod: 0
+        31:
+          freq: 123.0
+          mod: 0
+        32:
+          freq: 124.0
+          mod: 0
+        33:
+          freq: 135.0
+          mod: 0
+        34:
+          freq: 136.0
+          mod: 0
+        35:
+          freq: 141.0
+          mod: 0
+        36:
+          freq: 127.0
+          mod: 0
+        37:
+          freq: 127.0
+          mod: 0
+        38:
+          freq: 127.0
+          mod: 0
+        39:
+          freq: 127.0
+          mod: 0
+        40:
+          freq: 127.0
+          mod: 0
+    radio_blue_t_45_1:
+      title: T-45 radio 1
+      type: uhf
+      channels:
+        1:
+          freq: 243.0
+          mod: 0
+        2:
+          freq: 260.0
+          mod: 0
+        3:
+          freq: 270.0
+          mod: 0
+        4:
+          freq: 259.0
+          mod: 0
+        5:
+          freq: 263.0
+          mod: 0
+        6:
+          freq: 256.0
+          mod: 0
+        7:
+          freq: 258.0
+          mod: 0
+        8:
+          freq: 267.0
+          mod: 0
+        9:
+          freq: 269.0
+          mod: 0
+        10:
+          freq: 225.0
+          mod: 0
+        11:
+          freq: 226.0
+          mod: 0
+        12:
+          freq: 227.0
+          mod: 0
+        13:
+          freq: 228.0
+          mod: 0
+        14:
+          freq: 282.2
+          mod: 0
+        15:
+          freq: 291.0
+          mod: 0
+        16:
+          freq: 305.1
+          mod: 0
+        17:
+          freq: 290.1
+          mod: 0
+        18:
+          freq: 290.3
+          mod: 0
+        19:
+          freq: 290.4
+          mod: 0
+        20:
+          freq: 290.5
+          mod: 0
+        21:
+          freq: 0.0
+          mod: 0
+        22:
+          freq: 0.0
+          mod: 0
+        23:
+          freq: 0.0
+          mod: 0
+        24:
+          freq: 0.0
+          mod: 0
+        25:
+          freq: 0.0
+          mod: 0
+        26:
+          freq: 0.0
+          mod: 0
+        27:
+          freq: 0.0
+          mod: 0
+        28:
+          freq: 0.0
+          mod: 0
+        29:
+          freq: 0.0
+          mod: 0
+        30:
+          freq: 0.0
+          mod: 0
+    radio_blue_ah_64d_blk_ii_1:
+      title: AH-64D_BLK_II radio 1
+      type: vhf
+      channels:
+        1:
+          freq: 121.5
+          mod: 0
+        2:
+          freq: 120.0
+          mod: 0
+        3:
+          freq: 120.1
+          mod: 0
+        4:
+          freq: 120.2
+          mod: 0
+        5:
+          freq: 120.3
+          mod: 0
+        6:
+          freq: 120.4
+          mod: 0
+        7:
+          freq: 120.5
+          mod: 0
+        8:
+          freq: 120.6
+          mod: 0
+        9:
+          freq: 120.7
+          mod: 0
+        10:
+          freq: 120.8
+          mod: 0
+    radio_blue_ah_64d_blk_ii_2:
+      title: AH-64D_BLK_II radio 2
+      type: uhf
+      channels:
+        1:
+          freq: 243.0
+          mod: 0
+        2:
+          freq: 260.0
+          mod: 0
+        3:
+          freq: 270.0
+          mod: 0
+        4:
+          freq: 259.0
+          mod: 0
+        5:
+          freq: 263.0
+          mod: 0
+        6:
+          freq: 256.0
+          mod: 0
+        7:
+          freq: 258.0
+          mod: 0
+        8:
+          freq: 267.0
+          mod: 0
+        9:
+          freq: 269.0
+          mod: 0
+        10:
+          freq: 225.0
+          mod: 0
+    radio_blue_ah_64d_blk_ii_3:
+      title: AH-64D_BLK_II radio 3
+      type: fm
+      channels:
+        1: 30.0
+        2: 31.0
+        3: 32.0
+        4: 33.0
+        5: 34.0
+        6: 35.0
+        7: 36.0
+        8: 37.0
+        9: 38.0
+        10: 39.0
+    radio_blue_ah_64d_blk_ii_4:
+      title: AH-64D_BLK_II radio 4
+      type: uhf
+      channels:
+        1: 30.0
+        2: 30.01
+        3: 30.015
+        4: 30.02
+        5: 30.025
+        6: 30.03
+        7: 30.035
+        8: 30.04
+        9: 30.045
+        10: 30.05
+    radio_blue_ka_50_1:
+      title: Ka[-]50.* radio 1
+      type: fm
+      channels:
+        1: 30.0
+        2: 31.0
+        3: 32.0
+        4: 33.0
+        5: 34.0
+        6: 35.0
+        7: 36.0
+        8: 37.0
+        9: 38.0
+        10: 39.0
+    radio_blue_ka_50_2:
+      title: Ka[-]50.* radio 2
+      type: uhf
+      channels:
+        1: 0.441
+        2: 0.442
+        3: 0.443
+        4: 0.444
+        5: 0.445
+        6: 0.446
+        7: 0.447
+        8: 0.448
+        9: 0.449
+        10: 0.45
+        11: 0.451
+        12: 0.452
+        13: 0.453
+        14: 0.454
+        15: 0.455
+        16: 0.456
+    radio_blue_mi_24p_1:
+      title: Mi-24P radio 1
+      type: uhf
+      channels:
+        1: 290.5
+        2: 243.0
+        3: 260.0
+        4: 270.0
+        5: 259.0
+        6: 263.0
+        7: 256.0
+        8: 258.0
+        9: 267.0
+        10: 269.0
+        11: 225.0
+        12: 226.0
+        13: 227.0
+        14: 228.0
+        15: 282.2
+        16: 291.0
+        17: 305.1
+        18: 290.1
+        19: 290.3
+        20: 290.4
+    radio_blue_mi_24p_2:
+      title: Mi-24P radio 2
+      type: fm
+      channels:
+        1: 30.0
+        2: 31.0
+        3: 32.0
+        4: 33.0
+        5: 34.0
+        6: 35.0
+        7: 36.0
+        8: 37.0
+        9: 38.0
+        10: 39.0
+    radio_blue_oh58d_1:
+      title: OH58D radio 1
+      type: uhf
+      channels:
+        1: 243.0
+        2: 243.0
+        3: 260.0
+        4: 270.0
+        5: 259.0
+        6: 263.0
+        7: 256.0
+        8: 258.0
+        9: 267.0
+        10: 269.0
+        11: 225.0
+        12: 226.0
+        13: 227.0
+        14: 228.0
+        15: 282.2
+        16: 291.0
+        17: 305.1
+        18: 290.1
+        19: 290.3
+        20: 290.4
+    radio_blue_oh58d_2:
+      title: OH58D radio 2
+      type: vhf
+      channels:
+        1: 121.5
+        2: 121.5
+        3: 120.0
+        4: 120.1
+        5: 120.2
+        6: 120.3
+        7: 120.4
+        8: 120.5
+        9: 120.6
+        10: 120.7
+        11: 120.8
+        12: 120.9
+        13: 121.1
+        14: 121.2
+        15: 121.3
+        16: 121.4
+        17: 121.6
+        18: 121.7
+        19: 118.8
+        20: 118.9
+    radio_blue_oh58d_3:
+      title: OH58D radio 3
+      type: fm
+      channels:
+        1: 30.0
+        2: 30.0
+        3: 30.0
+        4: 31.0
+        5: 32.0
+        6: 33.0
+        7: 34.0
+        8: 35.0
+        9: 36.0
+        10: 37.0
+        11: 38.0
+        12: 39.0
+        13: 40.0
+        14: 41.0
+        15: 42.0
+        16: 43.0
+        17: 44.0
+        18: 45.0
+        19: 46.0
+        20: 47.0
+        21: 48.0
+    radio_blue_oh58d_4:
+      title: OH58D radio 4
+      type: fm
+      channels:
+        1: 30.0
+        2: 30.0
+        3: 30.0
+        4: 31.0
+        5: 32.0
+        6: 33.0
+        7: 34.0
+        8: 35.0
+        9: 36.0
+        10: 37.0
+        11: 38.0
+        12: 39.0
+        13: 40.0
+        14: 41.0
+        15: 42.0
+        16: 43.0
+        17: 44.0
+        18: 45.0
+        19: 46.0
+        20: 47.0
+        21: 48.0
+  red_radios:
+    radio_uhf_red:
+      title: UHF
+      type: uhf
+      channels:
+        1: 243.0
+        2: 260.0
+        3: 270.0
+        4: 259.0
+        5: 263.0
+        6: 256.0
+        7: 258.0
+        8: 267.0
+        9: 269.0
+        10: 225.0
+        11: 226.0
+        12: 227.0
+        13: 228.0
+        14: 282.2
+        15: 291.0
+        16: 305.1
+        17: 290.1
+        18: 290.3
+        19: 290.4
+        20: 290.5
+    radio_vhf_red:
+      title: VHF
+      type: vhf
+      channels:
+        1: 121.5
+        2: 120.0
+        3: 120.1
+        4: 120.2
+        5: 120.3
+        6: 120.4
+        7: 120.5
+        8: 120.6
+        9: 120.7
+        10: 120.8
+        11: 120.9
+        12: 121.1
+        13: 121.2
+        14: 121.3
+        15: 121.4
+        16: 121.6
+        17: 121.7
+        18: 118.8
+        19: 118.9
+        20: 118.85
+    radio_fm_red:
+      title: FM
+      type: fm
+      channels:
+        1: 30.0
+        2: 31.0
+        3: 32.0
+        4: 33.0
+        5: 34.0
+        6: 35.0
+        7: 36.0
+        8: 37.0
+        9: 38.0
+        10: 39.0
+        11: 40.0
+        12: 41.0
+        13: 42.0
+        14: 43.0
+        15: 44.0
+        16: 45.0
+        17: 46.0
+        18: 47.0
+        19: 48.0
+        20: 49.0
+        21: 50.0
+        22: 51.0
+        23: 52.0
+        24: 53.0
+        25: 54.0
+        26: 55.0
+        27: 56.0
+        28: 57.0
+        29: 58.0
+        30: 59.0
+    radio_warbird_red:
+      title: Warbird
+      type: vhf
+      channels:
+        1: 39.0
+        2: 38.4
+        3: 41.0
+        4: 42.0
+    radio_red_bf_109k_4_1:
+      title: Bf-109K-4 radio 1
+      type: vhf
+      channels:
+        1: 39.0
+        2: 38.4
+        3: 41.0
+        4: 42.0
+        5: 38.4
+    radio_red_fw_190_1:
+      title: FW[-]190.* radio 1
+      type: vhf
+      channels:
+        1: 39.0
+        2: 38.4
+        3: 41.0
+        4: 42.0
+        5: 38.4
+    radio_red_mosquitofbmkvi_1:
+      title: MosquitoFBMkVI radio 1
+      type: vhf
+      channels:
+        1: 121.5
+        2: 120.0
+        3: 120.1
+        4: 120.2
+        5: 108.9
+    radio_red_mosquitofbmkvi_2:
+      title: MosquitoFBMkVI radio 2
+      type: uhf
+      channels:
+        1:
+          freq: 9.255
+          mod: 0
+        2:
+          freq: 8.0
+          mod: 0
+        3:
+          freq: 7.71
+          mod: 0
+        4:
+          freq: 6.872
+          mod: 0
+        5:
+          freq: 5.955
+          mod: 0
+        6:
+          freq: 5.85
+          mod: 0
+        7:
+          freq: 5.75
+          mod: 0
+        8:
+          freq: 5.65
+          mod: 0
+    radio_red_mosquitofbmkvi_3:
+      title: MosquitoFBMkVI radio 3
+      type: uhf
+      channels:
+        1:
+          freq: 5.25
+          mod: 0
+        2:
+          freq: 5.0
+          mod: 0
+        3:
+          freq: 4.75
+          mod: 0
+        4:
+          freq: 4.5
+          mod: 0
+        5:
+          freq: 4.25
+          mod: 0
+        6:
+          freq: 3.25
+          mod: 0
+        7:
+          freq: 3.012
+          mod: 0
+        8:
+          freq: 3.011
+          mod: 0
+    radio_red_mosquitofbmkvi_4:
+      title: MosquitoFBMkVI radio 4
+      type: uhf
+      channels:
+        1:
+          freq: 0.444
+          mod: 0
+        2:
+          freq: 0.421
+          mod: 0
+        3:
+          freq: 0.303
+          mod: 0
+        4:
+          freq: 0.3
+          mod: 0
+        5:
+          freq: 0.27
+          mod: 0
+        6:
+          freq: 0.26
+          mod: 0
+        7:
+          freq: 0.25
+          mod: 0
+        8:
+          freq: 0.24
+          mod: 0
+    radio_red_p_47d_1:
+      title: P[-]47D.* radio 1
+      type: vhf
+      channels:
+        1: 121.5
+        2: 120.0
+        3: 120.1
+        4: 120.2
+    radio_red_p_47d_2:
+      title: P[-]47D.* radio 2
+      type: uhf
+      channels:
+        1: 108.9
+    radio_red_p_51d_1:
+      title: P[-]51D.* radio 1
+      type: vhf
+      channels:
+        1: 121.5
+        2: 120.0
+        3: 120.1
+        4: 120.2
+    radio_red_p_51d_2:
+      title: P[-]51D.* radio 2
+      type: uhf
+      channels:
+        1: 108.9
+    radio_red_tf_51d_1:
+      title: TF-51D radio 1
+      type: vhf
+      channels:
+        1: 121.5
+        2: 120.0
+        3: 120.1
+        4: 120.2
+    radio_red_tf_51d_2:
+      title: TF-51D radio 2
+      type: uhf
+      channels:
+        1: 108.9
+    radio_red_spitfire_1:
+      title: Spitfire.* radio 1
+      type: vhf
+      channels:
+        1: 121.5
+        2: 120.0
+        3: 120.1
+        4: 120.2
+        5: 108.9
+    radio_red_yak_52_1:
+      title: Yak-52 radio 1
+      type: uhf
+      channels:
+        1: 0.625
+        2: 0.303
+        3: 0.289
+        4: 0.591
+        5: 0.408
+        6: 0.803
+        7: 0.443
+        8: 0.215
+    radio_red_ajs37_1:
+      title: AJS37 radio 1
+      type: vhf
+      channels:
+        1:
+          freq: 0.0
+          mod: 0
+        2:
+          freq: 243.0
+          mod: 0
+        3:
+          freq: 260.0
+          mod: 0
+        4:
+          freq: 270.0
+          mod: 0
+        5:
+          freq: 259.0
+          mod: 0
+        6:
+          freq: 263.0
+          mod: 0
+        7:
+          freq: 256.0
+          mod: 0
+        8:
+          freq: 258.0
+          mod: 0
+        9:
+          freq: 267.0
+          mod: 0
+        10:
+          freq: 269.0
+          mod: 0
+        11:
+          freq: 225.0
+          mod: 0
+        12:
+          freq: 226.0
+          mod: 0
+        13:
+          freq: 227.0
+          mod: 0
+        14:
+          freq: 228.0
+          mod: 0
+        15:
+          freq: 282.2
+          mod: 0
+        16:
+          freq: 291.0
+          mod: 0
+        17:
+          freq: 305.1
+          mod: 0
+        18:
+          freq: 290.1
+          mod: 0
+        19:
+          freq: 290.3
+          mod: 0
+        20:
+          freq: 290.4
+          mod: 0
+        21:
+          freq: 290.5
+          mod: 0
+        22:
+          freq: 121.5
+          mod: 0
+        23:
+          freq: 120.0
+          mod: 0
+        24:
+          freq: 120.1
+          mod: 0
+        25:
+          freq: 120.2
+          mod: 0
+        26:
+          freq: 120.3
+          mod: 0
+        27:
+          freq: 120.4
+          mod: 0
+        28:
+          freq: 120.5
+          mod: 0
+        29:
+          freq: 120.6
+          mod: 0
+        30:
+          freq: 120.7
+          mod: 0
+        31:
+          freq: 120.8
+          mod: 0
+        32:
+          freq: 120.9
+          mod: 0
+        33:
+          freq: 121.1
+          mod: 0
+        34:
+          freq: 121.2
+          mod: 0
+        35:
+          freq: 121.3
+          mod: 0
+        36:
+          freq: 121.4
+          mod: 0
+        37:
+          freq: 121.6
+          mod: 0
+        38:
+          freq: 121.7
+          mod: 0
+        39:
+          freq: 118.8
+          mod: 0
+        40:
+          freq: 118.9
+          mod: 0
+        41:
+          freq: 30.0
+          mod: 1
+        42:
+          freq: 31.0
+          mod: 1
+        43:
+          freq: 32.0
+          mod: 1
+        44:
+          freq: 33.0
+          mod: 1
+        45:
+          freq: 34.0
+          mod: 1
+        46:
+          freq: 127.5
+          mod: 0
+        47:
+          freq: 243.0
+          mod: 0
+    radio_red_f_14_1:
+      title: F[-]14.* radio 1
+      type: uhf
+      channels:
+        1: 243.0
+        2: 260.0
+        3: 270.0
+        4: 259.0
+        5: 263.0
+        6: 256.0
+        7: 258.0
+        8: 267.0
+        9: 269.0
+        10: 225.0
+        11: 226.0
+        12: 227.0
+        13: 228.0
+        14: 282.2
+        15: 291.0
+        16: 305.1
+        17: 290.1
+        18: 290.3
+        19: 290.4
+        20: 290.5
+    radio_red_f_14_2:
+      title: F[-]14.* radio 2
+      type: vhf
+      channels:
+        1:
+          freq: 121.5
+          mod: 0
+        2:
+          freq: 120.0
+          mod: 0
+        3:
+          freq: 120.1
+          mod: 0
+        4:
+          freq: 120.2
+          mod: 0
+        5:
+          freq: 120.3
+          mod: 0
+        6:
+          freq: 120.4
+          mod: 0
+        7:
+          freq: 120.5
+          mod: 0
+        8:
+          freq: 120.6
+          mod: 0
+        9:
+          freq: 120.7
+          mod: 0
+        10:
+          freq: 120.8
+          mod: 0
+        11:
+          freq: 120.9
+          mod: 0
+        12:
+          freq: 121.1
+          mod: 0
+        13:
+          freq: 121.2
+          mod: 0
+        14:
+          freq: 121.3
+          mod: 0
+        15:
+          freq: 121.4
+          mod: 0
+        16:
+          freq: 121.6
+          mod: 0
+        17:
+          freq: 121.7
+          mod: 0
+        18:
+          freq: 118.8
+          mod: 0
+        19:
+          freq: 118.9
+          mod: 0
+        20:
+          freq: 118.85
+          mod: 0
+        21:
+          freq: 0.0
+          mod: 1
+        22:
+          freq: 0.0
+          mod: 1
+        23:
+          freq: 0.0
+          mod: 1
+        24:
+          freq: 0.0
+          mod: 1
+        25:
+          freq: 0.0
+          mod: 1
+        26:
+          freq: 0.0
+          mod: 1
+        27:
+          freq: 0.0
+          mod: 1
+        28:
+          freq: 0.0
+          mod: 1
+        29:
+          freq: 0.0
+          mod: 1
+        30:
+          freq: 0.0
+          mod: 1
+    radio_red_av8bna_1:
+      title: AV8BNA radio 1
+      type: uhf
+      channels:
+        1:
+          freq: 243.0
+          mod: 0
+        2:
+          freq: 260.0
+          mod: 0
+        3:
+          freq: 270.0
+          mod: 0
+        4:
+          freq: 259.0
+          mod: 0
+        5:
+          freq: 263.0
+          mod: 0
+        6:
+          freq: 256.0
+          mod: 0
+        7:
+          freq: 258.0
+          mod: 0
+        8:
+          freq: 267.0
+          mod: 0
+        9:
+          freq: 269.0
+          mod: 0
+        10:
+          freq: 225.0
+          mod: 0
+        11:
+          freq: 226.0
+          mod: 0
+        12:
+          freq: 227.0
+          mod: 0
+        13:
+          freq: 228.0
+          mod: 0
+        14:
+          freq: 282.2
+          mod: 0
+        15:
+          freq: 291.0
+          mod: 0
+        16:
+          freq: 305.1
+          mod: 0
+        17:
+          freq: 290.1
+          mod: 0
+        18:
+          freq: 290.3
+          mod: 0
+        19:
+          freq: 290.4
+          mod: 0
+        20:
+          freq: 290.5
+          mod: 0
+        21:
+          freq: 0.0
+          mod: 1
+        22:
+          freq: 0.0
+          mod: 1
+        23:
+          freq: 0.0
+          mod: 1
+        24:
+          freq: 0.0
+          mod: 1
+        25:
+          freq: 0.0
+          mod: 1
+        26:
+          freq: 0.0
+          mod: 1
+    radio_red_av8bna_2:
+      title: AV8BNA radio 2
+      type: vhf
+      channels:
+        1:
+          freq: 121.5
+          mod: 0
+        2:
+          freq: 120.0
+          mod: 0
+        3:
+          freq: 120.1
+          mod: 0
+        4:
+          freq: 120.2
+          mod: 0
+        5:
+          freq: 120.3
+          mod: 0
+        6:
+          freq: 120.4
+          mod: 0
+        7:
+          freq: 120.5
+          mod: 0
+        8:
+          freq: 120.6
+          mod: 0
+        9:
+          freq: 120.7
+          mod: 0
+        10:
+          freq: 120.8
+          mod: 0
+        11:
+          freq: 120.9
+          mod: 0
+        12:
+          freq: 121.1
+          mod: 0
+        13:
+          freq: 121.2
+          mod: 0
+        14:
+          freq: 121.3
+          mod: 0
+        15:
+          freq: 121.4
+          mod: 0
+        16:
+          freq: 121.6
+          mod: 0
+        17:
+          freq: 121.7
+          mod: 0
+        18:
+          freq: 118.8
+          mod: 0
+        19:
+          freq: 118.9
+          mod: 0
+        20:
+          freq: 118.85
+          mod: 0
+        21:
+          freq: 0.0
+          mod: 1
+        22:
+          freq: 0.0
+          mod: 1
+        23:
+          freq: 0.0
+          mod: 1
+        24:
+          freq: 0.0
+          mod: 1
+        25:
+          freq: 0.0
+          mod: 1
+        26:
+          freq: 0.0
+          mod: 1
+    radio_red_av8bna_3:
+      title: AV8BNA radio 3
+      type: fm
+      channels:
+        1:
+          freq: 30.0
+          mod: 1
+        2:
+          freq: 31.0
+          mod: 1
+        3:
+          freq: 32.0
+          mod: 1
+        4:
+          freq: 33.0
+          mod: 1
+        5:
+          freq: 34.0
+          mod: 1
+        6:
+          freq: 35.0
+          mod: 1
+        7:
+          freq: 36.0
+          mod: 1
+        8:
+          freq: 37.0
+          mod: 1
+        9:
+          freq: 38.0
+          mod: 1
+        10:
+          freq: 39.0
+          mod: 1
+        11:
+          freq: 40.0
+          mod: 1
+        12:
+          freq: 41.0
+          mod: 1
+        13:
+          freq: 42.0
+          mod: 1
+        14:
+          freq: 43.0
+          mod: 1
+        15:
+          freq: 44.0
+          mod: 1
+        16:
+          freq: 45.0
+          mod: 1
+        17:
+          freq: 46.0
+          mod: 1
+        18:
+          freq: 47.0
+          mod: 1
+        19:
+          freq: 48.0
+          mod: 1
+        20:
+          freq: 49.0
+          mod: 1
+        21:
+          freq: 50.0
+          mod: 1
+        22:
+          freq: 51.0
+          mod: 1
+        23:
+          freq: 52.0
+          mod: 1
+        24:
+          freq: 53.0
+          mod: 1
+        25:
+          freq: 54.0
+          mod: 1
+        26:
+          freq: 55.0
+          mod: 1
+        27:
+          freq: 56.0
+          mod: 1
+        28:
+          freq: 57.0
+          mod: 1
+        29:
+          freq: 58.0
+          mod: 1
+        30:
+          freq: 59.0
+          mod: 1
+    radio_red_t_45_1:
+      title: T-45 radio 1
+      type: uhf
+      channels:
+        1:
+          freq: 243.0
+          mod: 0
+        2:
+          freq: 260.0
+          mod: 0
+        3:
+          freq: 270.0
+          mod: 0
+        4:
+          freq: 259.0
+          mod: 0
+        5:
+          freq: 263.0
+          mod: 0
+        6:
+          freq: 256.0
+          mod: 0
+        7:
+          freq: 258.0
+          mod: 0
+        8:
+          freq: 267.0
+          mod: 0
+        9:
+          freq: 269.0
+          mod: 0
+        10:
+          freq: 225.0
+          mod: 0
+        11:
+          freq: 226.0
+          mod: 0
+        12:
+          freq: 227.0
+          mod: 0
+        13:
+          freq: 228.0
+          mod: 0
+        14:
+          freq: 282.2
+          mod: 0
+        15:
+          freq: 291.0
+          mod: 0
+        16:
+          freq: 305.1
+          mod: 0
+        17:
+          freq: 290.1
+          mod: 0
+        18:
+          freq: 290.3
+          mod: 0
+        19:
+          freq: 290.4
+          mod: 0
+        20:
+          freq: 290.5
+          mod: 0
+        21:
+          freq: 0.0
+          mod: 0
+        22:
+          freq: 0.0
+          mod: 0
+        23:
+          freq: 0.0
+          mod: 0
+        24:
+          freq: 0.0
+          mod: 0
+        25:
+          freq: 0.0
+          mod: 0
+        26:
+          freq: 0.0
+          mod: 0
+        27:
+          freq: 0.0
+          mod: 0
+        28:
+          freq: 0.0
+          mod: 0
+        29:
+          freq: 0.0
+          mod: 0
+        30:
+          freq: 0.0
+          mod: 0
+    radio_red_ah_64d_blk_ii_1:
+      title: AH-64D_BLK_II radio 1
+      type: vhf
+      channels:
+        1:
+          freq: 121.5
+          mod: 0
+        2:
+          freq: 120.0
+          mod: 0
+        3:
+          freq: 120.1
+          mod: 0
+        4:
+          freq: 120.2
+          mod: 0
+        5:
+          freq: 120.3
+          mod: 0
+        6:
+          freq: 120.4
+          mod: 0
+        7:
+          freq: 120.5
+          mod: 0
+        8:
+          freq: 120.6
+          mod: 0
+        9:
+          freq: 120.7
+          mod: 0
+        10:
+          freq: 120.8
+          mod: 0
+    radio_red_ah_64d_blk_ii_2:
+      title: AH-64D_BLK_II radio 2
+      type: uhf
+      channels:
+        1:
+          freq: 243.0
+          mod: 0
+        2:
+          freq: 260.0
+          mod: 0
+        3:
+          freq: 270.0
+          mod: 0
+        4:
+          freq: 259.0
+          mod: 0
+        5:
+          freq: 263.0
+          mod: 0
+        6:
+          freq: 256.0
+          mod: 0
+        7:
+          freq: 258.0
+          mod: 0
+        8:
+          freq: 267.0
+          mod: 0
+        9:
+          freq: 269.0
+          mod: 0
+        10:
+          freq: 225.0
+          mod: 0
+    radio_red_ah_64d_blk_ii_3:
+      title: AH-64D_BLK_II radio 3
+      type: fm
+      channels:
+        1: 30.0
+        2: 31.0
+        3: 32.0
+        4: 33.0
+        5: 34.0
+        6: 35.0
+        7: 36.0
+        8: 37.0
+        9: 38.0
+        10: 39.0
+    radio_red_ah_64d_blk_ii_4:
+      title: AH-64D_BLK_II radio 4
+      type: uhf
+      channels:
+        1: 30.0
+        2: 30.01
+        3: 30.015
+        4: 30.02
+        5: 30.025
+        6: 30.03
+        7: 30.035
+        8: 30.04
+        9: 30.045
+        10: 30.05
+    radio_red_ka_50_1:
+      title: Ka[-]50.* radio 1
+      type: fm
+      channels:
+        1: 30.0
+        2: 31.0
+        3: 32.0
+        4: 33.0
+        5: 34.0
+        6: 35.0
+        7: 36.0
+        8: 37.0
+        9: 38.0
+        10: 39.0
+    radio_red_ka_50_2:
+      title: Ka[-]50.* radio 2
+      type: uhf
+      channels:
+        1: 0.441
+        2: 0.442
+        3: 0.443
+        4: 0.444
+        5: 0.445
+        6: 0.446
+        7: 0.447
+        8: 0.448
+        9: 0.449
+        10: 0.45
+        11: 0.451
+        12: 0.452
+        13: 0.453
+        14: 0.454
+        15: 0.455
+        16: 0.456
+    radio_red_mi_24p_1:
+      title: Mi-24P radio 1
+      type: uhf
+      channels:
+        1: 290.5
+        2: 243.0
+        3: 260.0
+        4: 270.0
+        5: 259.0
+        6: 263.0
+        7: 256.0
+        8: 258.0
+        9: 267.0
+        10: 269.0
+        11: 225.0
+        12: 226.0
+        13: 227.0
+        14: 228.0
+        15: 282.2
+        16: 291.0
+        17: 305.1
+        18: 290.1
+        19: 290.3
+        20: 290.4
+    radio_red_mi_24p_2:
+      title: Mi-24P radio 2
+      type: fm
+      channels:
+        1: 30.0
+        2: 31.0
+        3: 32.0
+        4: 33.0
+        5: 34.0
+        6: 35.0
+        7: 36.0
+        8: 37.0
+        9: 38.0
+        10: 39.0
+presets_collection:
+  blue_presets:
+    blue_standard:
+      title: Blue coalition - standard (UHF/VHF/FM)
+      radios:
+        radio_1: radio_uhf_blue
+        radio_2: radio_vhf_blue
+        radio_3: radio_fm_blue
+    blue_warbird:
+      title: Blue coalition - warbird
+      radios:
+        radio_1: radio_warbird_blue
+    blue_bf_109k_4:
+      title: Blue coalition - Bf-109K-4 (iso-functional)
+      radios:
+        radio_1: radio_blue_bf_109k_4_1
+    blue_fw_190:
+      title: Blue coalition - FW[-]190.* (iso-functional)
+      radios:
+        radio_1: radio_blue_fw_190_1
+    blue_vhf_primary:
+      title: Blue coalition - VHF primary
+      radios:
+        radio_1: radio_vhf_blue
+    blue_mosquitofbmkvi:
+      title: Blue coalition - MosquitoFBMkVI (iso-functional)
+      radios:
+        radio_1: radio_blue_mosquitofbmkvi_1
+        radio_2: radio_blue_mosquitofbmkvi_2
+        radio_3: radio_blue_mosquitofbmkvi_3
+        radio_4: radio_blue_mosquitofbmkvi_4
+    blue_p_47d:
+      title: Blue coalition - P[-]47D.* (iso-functional)
+      radios:
+        radio_1: radio_blue_p_47d_1
+        radio_2: radio_blue_p_47d_2
+    blue_p_51d:
+      title: Blue coalition - P[-]51D.* (iso-functional)
+      radios:
+        radio_1: radio_blue_p_51d_1
+        radio_2: radio_blue_p_51d_2
+    blue_tf_51d:
+      title: Blue coalition - TF-51D (iso-functional)
+      radios:
+        radio_1: radio_blue_tf_51d_1
+        radio_2: radio_blue_tf_51d_2
+    blue_spitfire:
+      title: Blue coalition - Spitfire.* (iso-functional)
+      radios:
+        radio_1: radio_blue_spitfire_1
+    blue_yak_52:
+      title: Blue coalition - Yak-52 (iso-functional)
+      radios:
+        radio_1: radio_blue_yak_52_1
+    blue_ajs37:
+      title: Blue coalition - AJS37 (iso-functional)
+      radios:
+        radio_1: radio_blue_ajs37_1
+    blue_a_10c:
+      title: Blue coalition - A[-]10C.* (iso-functional)
+      radios:
+        radio_1: radio_blue_a_10c_1
+        radio_2: radio_blue_a_10c_2
+        radio_3: radio_blue_a_10c_3
+    blue_f_14:
+      title: Blue coalition - F[-]14.* (iso-functional)
+      radios:
+        radio_1: radio_blue_f_14_1
+        radio_2: radio_blue_f_14_2
+    blue_av8bna:
+      title: Blue coalition - AV8BNA (iso-functional)
+      radios:
+        radio_1: radio_blue_av8bna_1
+        radio_2: radio_blue_av8bna_2
+        radio_3: radio_blue_av8bna_3
+    blue_f_15ese:
+      title: Blue coalition - F-15ESE (iso-functional)
+      radios:
+        radio_1: radio_blue_f_15ese_1
+        radio_2: radio_blue_f_15ese_2
+    blue_t_45:
+      title: Blue coalition - T-45 (iso-functional)
+      radios:
+        radio_1: radio_blue_t_45_1
+    blue_ah_64d_blk_ii:
+      title: Blue coalition - AH-64D_BLK_II (iso-functional)
+      radios:
+        radio_1: radio_blue_ah_64d_blk_ii_1
+        radio_2: radio_blue_ah_64d_blk_ii_2
+        radio_3: radio_blue_ah_64d_blk_ii_3
+        radio_4: radio_blue_ah_64d_blk_ii_4
+    blue_fm_primary:
+      title: Blue coalition - FM primary
+      radios:
+        radio_1: radio_fm_blue
+    blue_ka_50:
+      title: Blue coalition - Ka[-]50.* (iso-functional)
+      radios:
+        radio_1: radio_blue_ka_50_1
+        radio_2: radio_blue_ka_50_2
+    blue_mi_24p:
+      title: Blue coalition - Mi-24P (iso-functional)
+      radios:
+        radio_1: radio_blue_mi_24p_1
+        radio_2: radio_blue_mi_24p_2
+    blue_oh58d:
+      title: Blue coalition - OH58D (iso-functional)
+      radios:
+        radio_1: radio_blue_oh58d_1
+        radio_2: radio_blue_oh58d_2
+        radio_3: radio_blue_oh58d_3
+        radio_4: radio_blue_oh58d_4
+  red_presets:
+    red_standard:
+      title: Red coalition - standard (UHF/VHF/FM)
+      radios:
+        radio_1: radio_uhf_red
+        radio_2: radio_vhf_red
+        radio_3: radio_fm_red
+    red_warbird:
+      title: Red coalition - warbird
+      radios:
+        radio_1: radio_warbird_red
+    red_bf_109k_4:
+      title: Red coalition - Bf-109K-4 (iso-functional)
+      radios:
+        radio_1: radio_red_bf_109k_4_1
+    red_fw_190:
+      title: Red coalition - FW[-]190.* (iso-functional)
+      radios:
+        radio_1: radio_red_fw_190_1
+    red_vhf_primary:
+      title: Red coalition - VHF primary
+      radios:
+        radio_1: radio_vhf_red
+    red_mosquitofbmkvi:
+      title: Red coalition - MosquitoFBMkVI (iso-functional)
+      radios:
+        radio_1: radio_red_mosquitofbmkvi_1
+        radio_2: radio_red_mosquitofbmkvi_2
+        radio_3: radio_red_mosquitofbmkvi_3
+        radio_4: radio_red_mosquitofbmkvi_4
+    red_p_47d:
+      title: Red coalition - P[-]47D.* (iso-functional)
+      radios:
+        radio_1: radio_red_p_47d_1
+        radio_2: radio_red_p_47d_2
+    red_p_51d:
+      title: Red coalition - P[-]51D.* (iso-functional)
+      radios:
+        radio_1: radio_red_p_51d_1
+        radio_2: radio_red_p_51d_2
+    red_tf_51d:
+      title: Red coalition - TF-51D (iso-functional)
+      radios:
+        radio_1: radio_red_tf_51d_1
+        radio_2: radio_red_tf_51d_2
+    red_spitfire:
+      title: Red coalition - Spitfire.* (iso-functional)
+      radios:
+        radio_1: radio_red_spitfire_1
+    red_yak_52:
+      title: Red coalition - Yak-52 (iso-functional)
+      radios:
+        radio_1: radio_red_yak_52_1
+    red_ajs37:
+      title: Red coalition - AJS37 (iso-functional)
+      radios:
+        radio_1: radio_red_ajs37_1
+    red_f_14:
+      title: Red coalition - F[-]14.* (iso-functional)
+      radios:
+        radio_1: radio_red_f_14_1
+        radio_2: radio_red_f_14_2
+    red_av8bna:
+      title: Red coalition - AV8BNA (iso-functional)
+      radios:
+        radio_1: radio_red_av8bna_1
+        radio_2: radio_red_av8bna_2
+        radio_3: radio_red_av8bna_3
+    red_t_45:
+      title: Red coalition - T-45 (iso-functional)
+      radios:
+        radio_1: radio_red_t_45_1
+    red_ah_64d_blk_ii:
+      title: Red coalition - AH-64D_BLK_II (iso-functional)
+      radios:
+        radio_1: radio_red_ah_64d_blk_ii_1
+        radio_2: radio_red_ah_64d_blk_ii_2
+        radio_3: radio_red_ah_64d_blk_ii_3
+        radio_4: radio_red_ah_64d_blk_ii_4
+    red_fm_primary:
+      title: Red coalition - FM primary
+      radios:
+        radio_1: radio_fm_red
+    red_ka_50:
+      title: Red coalition - Ka[-]50.* (iso-functional)
+      radios:
+        radio_1: radio_red_ka_50_1
+        radio_2: radio_red_ka_50_2
+    red_mi_24p:
+      title: Red coalition - Mi-24P (iso-functional)
+      radios:
+        radio_1: radio_red_mi_24p_1
+        radio_2: radio_red_mi_24p_2
+presets_assignments:
+  blue:
+    plane:
+      all: blue_standard
+      Bf-109K-4: blue_bf_109k_4
+      FW[-]190.*: blue_fw_190
+      I-16: blue_vhf_primary
+      MosquitoFBMkVI: blue_mosquitofbmkvi
+      P[-]47D.*: blue_p_47d
+      P[-]51D.*: blue_p_51d
+      TF-51D: blue_tf_51d
+      Spitfire.*: blue_spitfire
+      Christen Eagle II: blue_vhf_primary
+      Yak-52: blue_yak_52
+      AJS37: blue_ajs37
+      MiG-19P: blue_vhf_primary
+      Mirage[-]F1.*: blue_vhf_primary
+      A[-]10C.*: blue_a_10c
+      F[-]14.*: blue_f_14
+      AV8BNA: blue_av8bna
+      F-15ESE: blue_f_15ese
+      T-45: blue_t_45
+      SA342.+: blue_fm_primary
+      Ka[-]50.*: blue_ka_50
+    helicopter:
+      all: blue_standard
+      AH-64D_BLK_II: blue_ah_64d_blk_ii
+      SA342.+: blue_fm_primary
+      Ka[-]50.*: blue_ka_50
+      Mi-24P: blue_mi_24p
+      OH58D: blue_oh58d
+  red:
+    plane:
+      all: red_standard
+      Bf-109K-4: red_bf_109k_4
+      FW[-]190.*: red_fw_190
+      I-16: red_vhf_primary
+      MosquitoFBMkVI: red_mosquitofbmkvi
+      P[-]47D.*: red_p_47d
+      P[-]51D.*: red_p_51d
+      TF-51D: red_tf_51d
+      Spitfire.*: red_spitfire
+      Christen Eagle II: red_vhf_primary
+      Yak-52: red_yak_52
+      AJS37: red_ajs37
+      MiG-19P: red_vhf_primary
+      Mirage[-]F1.*: red_vhf_primary
+      F[-]14.*: red_f_14
+      AV8BNA: red_av8bna
+      T-45: red_t_45
+      SA342.+: red_fm_primary
+      Ka[-]50.*: red_ka_50
+    helicopter:
+      all: red_standard
+      AH-64D_BLK_II: red_ah_64d_blk_ii
+      SA342.+: red_fm_primary
+      Ka[-]50.*: red_ka_50
+      Mi-24P: red_mi_24p
+channel_lists:
+  blue:
+    primary_1:
+      '01': 243.0
+      '02': 260.0
+      '03': 270.0
+      '04': 259.0
+      '05': 263.0
+      '06': 256.0
+      '07': 258.0
+      08: 267.0
+      09: 269.0
+      '10': 225.0
+      '11': 226.0
+      '12': 227.0
+      '13': 228.0
+      '14': 282.2
+      '15': 291.0
+      '16': 305.1
+      '17': 290.1
+      '18': 290.3
+      '19': 290.4
+      '20': 290.5
+    primary_2:
+      '01': 121.5
+      '02': 120.0
+      '03': 120.1
+      '04': 120.2
+      '05': 120.3
+      '06': 120.4
+      '07': 120.5
+      08: 120.6
+      09: 120.7
+      '10': 120.8
+      '11': 120.9
+      '12': 121.1
+      '13': 121.2
+      '14': 121.3
+      '15': 121.4
+      '16': 121.6
+      '17': 121.7
+      '18': 118.8
+      '19': 118.9
+      '20': 118.85
+    fm_substitute:
+      '01': 30.0
+      '02': 31.0
+      '03': 32.0
+      '04': 33.0
+      '05': 34.0
+      '06': 35.0
+      '07': 36.0
+      08: 37.0
+      09: 38.0
+      '10': 39.0
+      '11': 40.0
+      '12': 41.0
+      '13': 42.0
+      '14': 43.0
+      '15': 44.0
+      '16': 45.0
+      '17': 46.0
+      '18': 47.0
+      '19': 48.0
+      '20': 49.0
+      '21': 50.0
+      '22': 51.0
+      '23': 52.0
+      '24': 53.0
+      '25': 54.0
+      '26': 55.0
+      '27': 56.0
+      '28': 57.0
+      '29': 58.0
+      '30': 59.0
+    fm_supplement:
+      '01': 30.0
+      '02': 31.0
+      '03': 32.0
+      '04': 33.0
+      '05': 34.0
+      '06': 35.0
+      '07': 36.0
+      08: 37.0
+      09: 38.0
+      '10': 39.0
+      '11': 40.0
+      '12': 41.0
+      '13': 42.0
+      '14': 43.0
+      '15': 44.0
+      '16': 45.0
+      '17': 46.0
+      '18': 47.0
+      '19': 48.0
+      '20': 49.0
+      '21': 50.0
+      '22': 51.0
+      '23': 52.0
+      '24': 53.0
+      '25': 54.0
+      '26': 55.0
+      '27': 56.0
+      '28': 57.0
+      '29': 58.0
+      '30': 59.0
+  red:
+    primary_1:
+      '01': 243.0
+      '02': 260.0
+      '03': 270.0
+      '04': 259.0
+      '05': 263.0
+      '06': 256.0
+      '07': 258.0
+      08: 267.0
+      09: 269.0
+      '10': 225.0
+      '11': 226.0
+      '12': 227.0
+      '13': 228.0
+      '14': 282.2
+      '15': 291.0
+      '16': 305.1
+      '17': 290.1
+      '18': 290.3
+      '19': 290.4
+      '20': 290.5
+    primary_2:
+      '01': 121.5
+      '02': 120.0
+      '03': 120.1
+      '04': 120.2
+      '05': 120.3
+      '06': 120.4
+      '07': 120.5
+      08: 120.6
+      09: 120.7
+      '10': 120.8
+      '11': 120.9
+      '12': 121.1
+      '13': 121.2
+      '14': 121.3
+      '15': 121.4
+      '16': 121.6
+      '17': 121.7
+      '18': 118.8
+      '19': 118.9
+      '20': 118.85
+    fm_substitute:
+      '01': 30.0
+      '02': 31.0
+      '03': 32.0
+      '04': 33.0
+      '05': 34.0
+      '06': 35.0
+      '07': 36.0
+      08: 37.0
+      09: 38.0
+      '10': 39.0
+      '11': 40.0
+      '12': 41.0
+      '13': 42.0
+      '14': 43.0
+      '15': 44.0
+      '16': 45.0
+      '17': 46.0
+      '18': 47.0
+      '19': 48.0
+      '20': 49.0
+      '21': 50.0
+      '22': 51.0
+      '23': 52.0
+      '24': 53.0
+      '25': 54.0
+      '26': 55.0
+      '27': 56.0
+      '28': 57.0
+      '29': 58.0
+      '30': 59.0
+    fm_supplement:
+      '01': 30.0
+      '02': 31.0
+      '03': 32.0
+      '04': 33.0
+      '05': 34.0
+      '06': 35.0
+      '07': 36.0
+      08: 37.0
+      09: 38.0
+      '10': 39.0
+      '11': 40.0
+      '12': 41.0
+      '13': 42.0
+      '14': 43.0
+      '15': 44.0
+      '16': 45.0
+      '17': 46.0
+      '18': 47.0
+      '19': 48.0
+      '20': 49.0
+      '21': 50.0
+      '22': 51.0
+      '23': 52.0
+      '24': 53.0
+      '25': 54.0
+      '26': 55.0
+      '27': 56.0
+      '28': 57.0
+      '29': 58.0
+      '30': 59.0

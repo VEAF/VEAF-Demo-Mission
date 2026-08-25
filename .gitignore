@@ -1,14 +1,47 @@
-/build
+# ── Ce que veaf-tools dépose ici et qui n'a pas à être versionné ────────────
+# `veaf-build publish-local` remplit published/ (scripts VEAF et communautaires,
+# sons) et y dépose les deux exécutables ; `veaf-tools.exe build` écrit missions/.
+# Tout est reconstructible, et published/ pèse une cinquantaine de mégaoctets.
+/published/
+/missions/
+/veaf-tools.exe
+/veaf-tools-updater.exe
 /*.miz
+*.log
+
+# Fichiers que le build écrit dans src/scripts/ : ils portent tous un en-tête
+# "généré, ne pas éditer". mission-script.lua, lui, est une SOURCE et reste suivi.
+/src/scripts/veaf-config.lua
+/src/scripts/veafDynamicConfig.lua
+/src/scripts/CTLD_userConfig.lua
+/presets-validation-report.md
+/convert-other-report.md
+
+# ── Secrets et caches locaux ────────────────────────────────────────────────
+# configuration.json portait la clé d'API CheckWX du poste. Il appartient à la
+# chaîne v5, retirée en 6.16.0, mais la ligne reste : ce dépôt est public, et le
+# fichier traîne encore sur les postes qui ont connu la v5.
+configuration.json
+cache/
+
+# ── Restes de la chaîne v5 ──────────────────────────────────────────────────
+# Le dépôt est passé en v6 (voir readme.md). Ces fichiers ne sont plus produits
+# ni utilisés ; les lignes restent pour qu'un poste qui a encore la v5 installée
+# ne les propose pas au commit.
 /node_modules/
 /7za.exe
-/setup_*.cmd
-configuration.json
+package.json
 package-lock.json
 yarn.lock
-cache/
+build.cmd
+build-*.cmd
+extract.cmd
+extract-*.cmd
+extract_spawnableaircrafts.cmd
+weather.cmd
+replace.ps1
+/setup/
+/setup_*.cmd
+/build
 /templates/*/build
 /templates/*/node_modules/
-build-*.cmd
-extract-*.cmd
-*.log
